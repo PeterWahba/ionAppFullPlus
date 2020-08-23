@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar transparent  [class.header-background]="showToolbar"  > 
+        <ion-buttons  (click)="closeModal()" >
+            <button color="light" ion-button icon-only>
+                <ion-icon name="md-close"></ion-icon>close
+            </button>
+        </ion-buttons> 
+    </ion-navbar>
+</ion-header>
+
+<ion-content  no-padding  class="content" (ionScroll)="onScroll($event)" [class.transition]="transition"  >
+
+    <div class="image-header">
+        <div class="image-header" [ngStyle]="{'background-image': 'url(' + map?.image + ')'}" (click)="fullscreenImage(map?.image)">
+        </div>
+            <h2 class="image-name "> {{map?.name}}</h2>
+            <ion-fab bottom right edge class="hello pop-in">
+                <button ion-fab *ngIf="!favorite" color="amber" (click)="addToFav()"><ion-icon name="ios-heart-outline"></ion-icon></button>
+                <button ion-fab *ngIf="favorite" color="amber" (click)="addToFav()"><ion-icon name="ios-heart"></ion-icon></button>
+            </ion-fab>
+    </div>
+
+
+      <ion-card>
+        <ion-card-header>
+          Description
+        </ion-card-header>
+        <ion-card-content>
+          <div [innerHTML]="map?.description"></div>
+          <!--<div >{{(item | async)?.description}}</div>-->
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          Contact
+        </ion-card-header>
+          <div class="info">
+            <ion-list no-lines>
+
+                <ion-item>
+                    <ion-icon name="ios-globe-outline" item-left color="blue"></ion-icon>
+                    <h2>Website</h2>
+                    <a href="http://{{map?.web}}" target="_top">{{map?.web}} </a>
+                </ion-item>
+
+                <ion-item>
+                    <ion-icon name="ios-mail-outline" item-left color="blue"></ion-icon>
+                    <h2>E-mail</h2>
+                    <a href="mailto:{{map?.email}}">{{map?.email}} </a>
+                </ion-item>
+
+                <ion-item (click)="MakeCall(map?.phone)">
+                    <ion-icon name="ios-call-outline" item-left color="blue"></ion-icon>
+                    <h2>Phone</h2>
+                    <span>{{map?.phone}} </span>
+                </ion-item>
+
+              <ion-item (click)="launchNavigation(map?.lat,map?.lng)">
+                  <ion-icon name="ios-pin-outline" item-left  color="blue" ></ion-icon>
+                  <h2>Address</h2>
+                  <span>{{map?.address}} </span>
+             </ion-item>
+
+              <ion-item (click)="launchNavigation(map?.lat,map?.lng)">
+                  <ion-icon name="ios-navigate-outline" item-left  color="blue" ></ion-icon>
+                  <h2>Gps position</h2>
+                  <span>{{map?.lat}},{{map?.lng}}</span>
+              </ion-item>
+            </ion-list>
+          </div>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+          Amenities
+          </ion-card-header>
+        <ion-card-content>
+          <div [innerHTML]="map?.amenities" ></div>
+          <!--<div >{{(item | async)?.description}}</div>-->
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>

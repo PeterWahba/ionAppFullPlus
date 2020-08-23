@@ -1,0 +1,15 @@
+install:
+    npm install papaparse --save
+    npm install @types/papaparse --save
+
+
+Plugins:
+    ionic cordova plugin add cordova-plugin-file-transfer
+    npm install --save @ionic-native/file-transfer
+    npm install --save @ionic-native/file
+
+    ionic cordova plugin add cordova-plugin-file-opener2
+    npm install --save @ionic-native/file-opener
+
+assets:
+    data.csv

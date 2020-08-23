@@ -1,0 +1,35 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created :
+-Install the cordoba plugin and ionic native wrapper:
+
+$ ionic cordova plugin add cordova-plugin-admob-free
+$ npm install --save @ionic-native/admob-free
+
+more info here: https://ionicframework.com/docs/native/admob-free/
+
+-Go to your app.modules.ts and import AdMobFree, and register it withing the providers array, also copy from src/providers/admob folder to the providers folder on your app and import it as well
+
+import { AdMobFree } from '@ionic-native/admob-free';
+import { AdmobProvider } from '../providers/admob/admob';
+ 
+ providers: [
+    ...
+    AdmobProvider,
+    AdMobFree,
+	...
+	]
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.
+Also, you'll need to set up the login component, since it is required for the cart to work (to import the login, see instructions.txt files on the login component)
+Also the cart was built to work with the Restaurant component and Shopping component, making some changes in the code you should be able to adapt it to your own application/functionality

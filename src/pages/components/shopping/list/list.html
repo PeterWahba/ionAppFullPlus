@@ -1,0 +1,69 @@
+
+<ion-header>
+    <ion-navbar color="indigo">
+        <button ion-button menuToggle color="light">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title color="light" >{{name}}</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="buyNow('bottom')">
+                <ion-badge *ngIf="totalItemsInCart" color="pink">{{ totalItemsInCart }}</ion-badge>
+                <ion-icon name="md-cart"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+  <ion-toolbar color="indigo">
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+    <h2 *ngIf="items.length == 0" padding>There are no items to show</h2>
+        <!--*********** 2 colomns list  ***********-->
+        <ion-grid *ngIf="items.length > 0">
+            <ion-row wrap >
+            <ion-col tappable  col-6  *ngFor="let item of filteredItems" color="gray">
+                    <ion-card class="cardList">
+
+                        <div (click)="goToDetail(item.$key)">
+                            <div *ngIf="item.discount" class="ribbon pop-in">30%</div>
+                            <!--<img class="pop-in" src={{item.imgSmall}}   />-->
+                          
+                            <div class="banner-bg pop-in" [ngStyle]="{'background-image': 'url(' + item.imgSmall+ ')'}"></div>
+                            <ion-row>
+                                <ion-col text-align-right *ngIf="item.discount">
+                                    <p ion-text color="special-blue" class="discount">${{item.price}}</p>
+                                </ion-col>
+                                <ion-col text-align-center *ngIf="!item.discount">
+                                    <p ion-text color="special-blue"><strong>${{item.price}}</strong></p>
+                                </ion-col>
+                                <ion-col text-align-left *ngIf="item.discount">
+                                    <p ion-text large color="red"><strong>${{item.discountPrice}}</strong></p>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col class="item-title" padding><strong>{{item.name}} </strong></ion-col>
+                            </ion-row>
+                        </div>
+
+                        <ion-row>
+                            <ion-col col-6  class="item-button-left">
+
+                                <button ion-button clear icon-left (click)="addToFav(item.$key)" color="black">
+                                    <ion-icon name="heart-outline" *ngIf="!favorite[item.$key]"></ion-icon>
+                                    <ion-icon name="ios-heart" *ngIf="favorite[item.$key]"></ion-icon>
+                                </button>
+                            </ion-col>
+                            <ion-col class="item-button-right">
+                                <button ion-button clear icon-left (click)="addToCart(item)" color="black">
+                                    <ion-icon name="ios-cart"></ion-icon>
+                                </button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card>
+            </ion-col>
+            </ion-row>
+        </ion-grid>
+</ion-content>
+

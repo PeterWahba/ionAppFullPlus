@@ -1,0 +1,27 @@
+﻿<ion-header>
+
+  <ion-navbar>
+    <ion-title>Archived Categories</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="primary-bg-dark">
+  <h1 *ngIf="!!items && items.length == 0">It is lonely here..</h1>
+  <ion-card class="large-thumbnail" *ngFor="let category of items">
+    <ion-item>
+      <ion-row class="row" no-padding>
+        <ion-col class="col" text-center col-10>
+          <h2 style="color:white!important">{{category.name}}</h2>
+          <p style="margin:15px">{{category.excerpt.substring(0, 25)}} ...</p>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon class="undo" name="ios-redo-outline" (click)="undoArchive(category.id)"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-item>
+  </ion-card>
+</ion-content>

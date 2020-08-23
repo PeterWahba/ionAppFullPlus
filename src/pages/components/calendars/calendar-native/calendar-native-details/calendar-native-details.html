@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ calName }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let ev of events">
+    <ion-card-header>
+      {{ ev.title }}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <ion-icon name="calendar"></ion-icon> Start: {{isIos? ev.startDate: ev.dtstart | date}}
+        </ion-item>
+        <ion-item>
+          <ion-icon name="calendar"></ion-icon> End: {{isIos?  ev.endDate: ev.dtend | date}}
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate"></ion-icon> {{isIos?  ev.location: ev.eventLocation | date}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

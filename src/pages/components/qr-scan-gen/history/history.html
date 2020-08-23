@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of scanneds">
+      <ion-icon color="pink" style="font-size:5rem" name="{{item.icon}}" item-start></ion-icon>
+      <h1 text-capitalize style="font-size:3rem!important;font-weight:bold;color:black;" (click)="openDetails(item.text, item.date)">{{item.type}}</h1>
+      <p>{{item.date}}</p>
+      <p>{{item.text}}</p>
+      <ion-icon style="font-size:3rem" name="md-trash" item-end (click)="removeItem(item.id)" color="danger"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

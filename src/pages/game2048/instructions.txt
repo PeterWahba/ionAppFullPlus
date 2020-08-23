@@ -1,0 +1,30 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+
+
+copy ./assets/vendor/2048 folder into your assets folder 
+include the following files into your index.html
+
+ <!-- 2048 game dependencies -->
+    <script src="assets/vendor/2048/js/bind_polyfill.js"></script>
+    <script src="assets/vendor/2048/js/classlist_polyfill.js"></script>
+    <script src="assets/vendor/2048/js/animframe_polyfill.js"></script>
+    <script src="assets/vendor/2048/js/keyboard_input_manager.js"></script>
+    <script src="assets/vendor/2048/js/html_actuator.js"></script>
+    <script src="assets/vendor/2048/js/grid.js"></script>
+    <script src="assets/vendor/2048/js/tile.js"></script>
+    <script src="assets/vendor/2048/js/local_storage_manager.js"></script>
+    <script src="assets/vendor/2048/js/game_manager.js"></script>
+    <script src="assets/vendor/2048/js/application.js"></script>
+
+
+

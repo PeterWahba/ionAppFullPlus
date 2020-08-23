@@ -1,0 +1,39 @@
+﻿<ion-header>
+
+  <ion-navbar>
+    <ion-title>Leader Board</ion-title>
+  </ion-navbar>
+  <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="search"></ion-searchbar>
+
+</ion-header>
+
+
+<ion-content padding class="primary-bg-dark">
+  <ion-list>
+    <ion-item style="border-bottom: 1px solid white" class="dark-theme" *ngFor="let leader of leadersFiltered; let i = index">
+      <ion-row>
+        <ion-col col-2>
+          <ion-avatar item-start>
+            <img [src]="leader.pic" onerror="this.src='./assets/imgs/avatar.png'"
+            />
+          </ion-avatar>
+        </ion-col>
+        <ion-col col-10>
+          <ion-row>
+            <ion-col>
+              <h2 style="font-size:1.6rem;font-weight:bold;word-wrap: break-word;">#{{i + 1}} - {{leader.name}}</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <h2 class="pull-right">
+                {{leader.score}} Pts
+              </h2>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

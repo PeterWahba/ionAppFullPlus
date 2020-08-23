@@ -1,0 +1,40 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created:
+-Install the cordoba plugin and ionic native wrapper:
+
+For google login:
+$ ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID=myreversedclientid
+$ npm install --save @ionic-native/google-plus
+
+more info here: https://ionicframework.com/docs/native/google-plus/
+
+For facebook:
+$ ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+$ npm install --save @ionic-native/facebook
+
+more info here: https://ionicframework.com/docs/native/facebook/
+
+
+
+
+-Go to your app.modules.ts and import the google provider and facebook provider, and register it withing the providers array, 
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+
+See documentation to configure firebase and enable the sign-in methods: http://jomendez.com/ionAppFullPlus-documentation/#!/firebase_configuration
+
+See documentation to configure social login: http://jomendez.com/ionAppFullPlus-documentation/#!/social_login_device
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.

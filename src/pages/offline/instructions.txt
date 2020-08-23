@@ -1,0 +1,29 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+Install network plugin:
+
+$ ionic cordova plugin add cordova-plugin-network-information
+$ npm install --save @ionic-native/network
+
+For more info go here: https://ionicframework.com/docs/native/network/
+
+-Go to your app.modules.ts and import and register the providers for those plugins in the providers array, 
+
+ providers: [
+    ...
+
+	]
+
+
+Define your root page for navigation in the offline.ts file
+ 
+ that.navCtrl.setRoot(IntroPage);
+
+

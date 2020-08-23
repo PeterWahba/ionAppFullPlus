@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar [color]="isRecording ? 'danger' : 'primary'">
+    <ion-title>
+      Speech Command
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <h3>
+      Press "Start Listening" button to excecute one of this commands:
+    </h3>
+    <div>- {{commandShowFeiry}}</div>
+    <div>- {{commandHideFeiry}}</div>
+
+    <div>- {{commandShowElf}}</div>
+    <div>- {{commandHideElf}}</div>
+
+  </div>
+
+  <div margin-top *ngIf="!!matches && matches.length > 0">
+    <h2>This is what I understood...</h2>
+    <div>
+      <p *ngFor="let match of matches">
+        {{ match }}
+      </p>
+    </div>
+
+    <div *ngIf="!!recognized">
+      <h2>This is what I recognized...</h2>
+      <div>
+        <p>
+          {{ recognized }} with a <b>levenshtein</b> of {{levenshteinStr}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-command" *ngIf="doShowFeiry">
+    <img style="width:100%;" src="./assets/feiry.gif" />
+  </div>
+  <div class="img-command" *ngIf="doShowGnomo">
+    <img style="width:100%;" src="./assets/gnomo.gif" />
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <div text-center>Sensibility</div>
+        <ion-range color="black" min="1" max="10" pin="true" [(ngModel)]="sensibility">
+            <ion-label range-left>1</ion-label>
+            <ion-label range-right>10</ion-label>
+          <!-- <ion-icon color="black" small range-left name="aperture"></ion-icon>
+          <ion-icon color="black" range-right name="aperture"></ion-icon> -->
+        </ion-range>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button color="red" ion-button block (click)="startListening()" icon-left>
+          <ion-icon name="mic"></ion-icon> Start Listening
+      </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button color="green" ion-button block (click)="getPermission()" icon-left>
+          <ion-icon name="checkmark-circle"></ion-icon> Permission
+        </button>
+      </ion-col>
+
+      <ion-col *ngIf="isIos()">
+        <button color="deeporange" ion-button block (click)="stopListening()" icon-left>
+          <ion-icon name="mic-off"></ion-icon> Stop Listening
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

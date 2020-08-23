@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="blue2">
+    <ion-title>Face Recognition</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <!-- <div class="photo" [ngStyle]="{'background': 'url(' + image + ') no-repeat center'}">
+        {{ image ? "" : "No Photo Taken"}}
+  </div> -->
+  <div text-center>
+    <img [src]="image" style="max-width: 70%" onerror="this.src = './assets/no-image-found.jpg'"/>
+  </div>
+ 
+  <ion-spinner *ngIf="loading" name="crescent"></ion-spinner>
+  <div *ngIf="error" class="error">
+        {{ error }}
+  </div>
+  <div *ngIf="!loading && analysis?.length > 0" class="analysis">
+        <h1>Analysis</h1>
+        <div *ngFor="let an of analysis" class="subanalysis">
+              <h2>{{an?.feature}}</h2>
+              <p><ion-badge>{{an?.value}}</ion-badge></p>
+        </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="pink" (click)="gotoGallery()">Load from the gallery</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-10>
+          <ion-item>
+              <ion-input type="text" placeholder="http://..." [(ngModel)]="url"></ion-input>
+            </ion-item>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button icon-only clear (click)="analyzeFace(url)">
+          <ion-icon name="ios-navigate" color="deeporange"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

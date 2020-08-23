@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar no-border color="weather-dark">
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>main</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding color="weather-dark">
+    <div id="menu-ios" class="sideMenu-header"  color="weather-dark">
+        <div class="header-menu">
+            <img style="float:left; margin-right: 1.3rem;" class="avatar-user round" src="./assets/bot-avatar.png" />
+            <p class="title">ionAppFullPlus</p>
+            <p class="sub-title">with firestore backend</p>
+        </div>
+        <ion-list margin-top no-lines color="weather-dark">
+            <div>
+                <ion-item menuClose (click)="openPage(intro)">
+                    <ion-icon [name]="intro.icon" item-left></ion-icon>
+                    {{intro.title}}
+                </ion-item>
+            </div>
+
+            <div *ngFor="let d of menu">
+                <ion-item tappable (click)="toggleDetails(d)">
+                    <ion-icon  [name]="d.iconLeft" item-left></ion-icon>
+                    {{d.title}}
+                    <ion-icon item-right [name]="d.icon"></ion-icon>
+                </ion-item>
+                <div class="sub-menu" *ngIf="d.showDetails">
+                    <div>
+                        <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+                    </div>
+                    <ion-item tappable menuClose item-right *ngFor="let item of filtered" (click)="openPage(item)">
+                        <div>{{item.name}}</div>
+                    </ion-item>
+                </div>
+            </div>
+            <div *ngFor="let p of pages">
+                <ion-item menuClose (click)="openPage(p)">
+                    <ion-icon [name]="p.icon" item-left></ion-icon>
+                    {{p.title}}
+                </ion-item>
+            </div>
+        </ion-list>
+    </div>
+
+</ion-content>

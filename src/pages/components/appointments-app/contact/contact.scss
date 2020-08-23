@@ -1,0 +1,41 @@
+page-contact {
+    ion-scroll[scrollX] {
+        white-space: nowrap;
+        height: 15rem;
+        overflow: hidden;
+
+        .scroll-item {
+            display: inline-block;
+        }
+
+        .scroll-image{
+            margin: 10px 20px 10px 5px;
+            max-width: 150px;
+            max-height: 100px;
+        }
+
+    }
+
+
+    /* Hide ion-content scrollbar */
+    ::-webkit-scrollbar{
+    display:none;
+    }
+
+    ul {
+        padding: 0px;
+      
+        &.rating li {
+          padding: 5px 10px !important;
+          background: none;
+          color: #ffb400;
+      
+          ion-icon {
+            font-size: 20px;
+          }
+        }
+      }
+      ion-content{
+        background-color: #efefef!important;
+    }
+}

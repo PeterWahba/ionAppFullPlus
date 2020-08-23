@@ -1,0 +1,1740 @@
+﻿{
+  "id": "11",
+  "language": "java",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic Java questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "Java",
+  "level": "2",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1617291994&asins=1617291994&linkId=f1f0a387cd8a0d31594afe645d55ec1d&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1119272092&asins=1119272092&linkId=717e4b162e182a66df5dbebc83b0f701&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1285856910&asins=1285856910&linkId=841f33f1e016c962f59f0a7f24a2388c&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"    
+  ],
+  "questions": [
+    {
+      "answer": 0,
+      "options": [ "encapsulation", "inheritance", "interface", "abstraction" ],
+      "title": "The process of putting methods and data members in a single class is called __________.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "data member", "mehtod", "class", "package" ],
+      "title": "Which one does not exist in the block of a class?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "data members and methods", "setters and getters", "constructors", "access modifiers" ],
+      "title": "When you create class, what is the most important thing that you have to think about?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Book myBook = new Book( );", "Books myBook = Books( );", "Books myBook = new Books( );", "Books myBook = new books( );" ],
+      "title": "Which one is the correct syntax to create an object from the “Books” class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "public Class MyClass { }", "public class MyClass { }", "private class MyClass { }", "Class MyClass { }" ],
+      "title": "Which one is the correct syntax to create a class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "delimiter", "access specifier", "class protector", "instance variable" ],
+      "title": "The keyword “ public “ and “ private “ are called ____________.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "one", "two", "three", "unlimited" ],
+      "title": "How many objects that you can create from a class Users?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "method", "object", "class", "data member" ],
+      "title": "The term ________ refers to an actual instance of a class.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "public", "private", "package-private", "protected" ],
+      "title": "If you declare an instance variable without any access modifier, what is the default access modifier?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Instance variable", "Class variable", "Local variable", "Non-static variable" ],
+      "title": "Which one is the variable that cannot be declared with any access modifier?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Generally, getter methods always have parameters.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "Generally, setter methods always have return type “ void “.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Every class definition must have data member, otherwise it will not work.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "In the same package, you cannot have two classes with the same name.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "In the same class, you cannot have two objects with the same name.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "The “ this “ keyword can be used to represent the current class.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "The “ new “ keyword is used to instantiate a new object from a class.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "If you create a method with public access modifier, it means that you can access it anywhere.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Setter is a method that is used to get value from an instance variable.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "Every instance variable should be declared with private access specifier.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "SMTP", "POP", "IMAP", "MAPI" ],
+      "title": "Which Protocol is used to deliver email to recipient mail Server?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Synchronous", "Asynchronous", "Both Synchronous ans Asynchronous", "None" ],
+      "title": "What type of messaging in provided by JMS?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Protected means only inherited class and class have access to protected members. ", "abstract class VQCourse should have a implemented method. ", "You cannot instantiate a abstract class", "Declare class VQCourse as final." ],
+      "title": "Following program have compilation error, can you guess root cause of it?",
+      "code": "abstract class VQCourse {    public String courseName;    public String courseID;} public class VirtuQCourseProvide extends VQCourse {    public static void main(String[]args) {        VQCourse course1 = new VQCourse();         course1.courseID = \"0001\";         course1.courseName = \"JAVA\";         System.out.println(course1.toString());}}"
+    },
+    {
+      "answer": 1,
+      "options": [ "10 10", "10 20", "20 20", "20 10" ],
+      "title": "Code below has class VQClassB which inherits another class VQClassA, study following code carefully and choose correct option about program output.",
+      "code": "package com.vq.classes;public class VQClassB {    class VQClassA {        public VQClassA(int x) {            this.x = x;        } protected int x;    } public VQClassB(int x, int x2, int y) {        x = x2;        this.y = y;    }    private VQClassB(int x, int y) {        this.x = x;        this.y = y;    }    private int x;    private int y;    public static void main(String[]args) {        VQClassB vqb = new VQClassB(20, 10);        VQClassB.VQClassA vqa = new VQClassB(10, 10).new VQClassA(10);        System.out.println(vqa.x + \" \" + vqb.x);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "10 10", "10 20", "20 20", "20 10", "None" ],
+      "title": "ode below has class VQClassB which inherits another class VQClassA, study following code carefully and choose correct option about output of program.",
+      "code": "package com.vq.classes;class VQClassA {    public VQClassA(int x) {        this.x = x;    } protected int x;}public class VQClassB extends VQClassA {    public VQClassB(int x, int x2, int y) {        super(x);        x = x2;        this.y = y;    } private VQClassB(int x, int y) {        super(x);        this.x = x;        this.y = y;    }    private int x;    private int y;    public static void main(String[]args) {        VQClassA vqa = new VQClassA(10);        VQClassB vqb = new VQClassB(20, 10);        vqa = vqb;        System.out.println(vqa.x + \" \" + vqb.y);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "Write a new class VQCourse.java ", "include a import statement vq.com.VQCourse.", "include a import statement package VQCourse ", "include a import statement VQCourse ", "None" ],
+      "title": "Class VQCourse contains declaration about a course, which is inside package com.vq . You are declaring a new class VirtuQCourseProvider where you want to create a object of VQCourse but following program fails to compile. Choose option which eliminates compilation error.",
+      "code": "public class VirtuQCourseProvide {    public static void main(String[]args) {        VQCourse course1 = new VQCourse();}}"
+    },
+    {
+      "answer": 4,
+      "options": [ "String str = new String(); ", "String str = new String('VirtuQ'); ", "String str = 'VirtuQ' + ' '+ Simplifying Education'; ", "int [] arr = {1,2,3,4,5}; ", "All" ],
+      "title": "Which of following statement(s) can result in new object instance creation if executed successfully.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "int [][] arr = new int[3][];", "int [3][] arr = new int[3][]; ", "int [][3] arr = new int[3][]; ", "int [][] arr = new int[3][3];", "None" ],
+      "title": "Choose correct equivalent statement of following code.",
+      "code": "int[][] arr = new int[3][];for (int i = 0; i < arr.length; i++)    arr[i] = new int[3];"
+    },
+    {
+      "answer": 4,
+      "options": [ "The statement courseProvider==FullName will evaluate to true. ", "The statement courseProvider.equals(FullName) will evaluate to true. ", "The statement courseProvider.equals(courseProvider==firstName+lastName) will evaluate to true. ", "The statement courseProvider.equals(courseProvider==firstName+lastName) will evaluate to false ", "Options 1,2 & 4." ],
+      "title": "Which statement(s) is true about following program?",
+      "code": "public class VirtuQCourseProvide {    public static void main(String[]args) {        String firstName = \"VirtuQ\";        String lastName = \"Simplifying Education\";        String FullName = firstName + lastName;        String courseProvider = FullName;}}"
+    },
+    {
+      "answer": 0,
+      "options": [ "1 and 3", "2 and 4", "3 and 4", "1 and 2" ],
+      "title": "What will be the output of the program?",
+      "code": "String s = \"hello\"; Object o = s; if( o.equals(s) ){    System.out.println(\"A\"); } else{    System.out.println(\"B\"); } if( s.equals(o) ){    System.out.println(\"C\"); } else{     System.out.println(\"D\"); }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "Compilation Fails" ],
+      "title": "What will be the output of the program?",
+      "code": "public class ExamQuestion6 {    static int x;     boolean catch()    {        x++;         return true;     }     public static void main(String[] args)    {        x=0;         if ((catch() | catch()) || catch())             x++;         System.out.println(x);     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "9.0", "bad number", "Compilation fails on line 9.", "Compilation fails on line 11." ],
+      "title": "What will be the output of the program?",
+      "code": "try {    Float f1 = new Float(\"3.0\");    int x = f1.intValue();    byte b = f1.byteValue();    double d = f1.doubleValue();    System.out.println(x + b + d);}catch (NumberFormatException e) /* Line 9 */{    System.out.println(\"bad number\"); /* Line 11 */}"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "Which of the following statements is true?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 2", "3 and 5", "4 and 6", "1 and 3" ],
+      "title": "Which two statements are true?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "void run()", "public void run()", "public void start()", "void run(int priority)" ],
+      "title": "Which method must be defined by a class implementing the<em>java.lang.Runnable</em>interface?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "2, 3, 4 and 5", "1, 3, 4 and 5", "3, 4 and 5", "1, 2 and 3" ],
+      "title": "Which of the following are true statements?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "0 to 32767", "0 to 65535", "-256 to 255", "-32768 to 32767" ],
+      "title": "What is the numerical range of char?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "java.util.SortedMap", "java.util.TreeMap", "java.util.TreeSet", "java.util.Hashtable" ],
+      "title": "Which collection class allows you to access its elements by associating a key with an element's value, and provides synchronization?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Java.util.Map", "Java.util.List", "Java.util.Collection", "none of the precents" ],
+      "title": "You need to store elements in a collection that guarantees that no duplicates are stored. Which one of the following interfaces provide that capability?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "No code is necessary.", "throws Exception", "catch ( Exception e )", "throws RuntimeException" ],
+      "title": "At Point X on line 5, which code is necessary to make the code compile?",
+      "code": "public class ExceptionTest {     class TestException extends Exception {}     public void runTest() throws TestException {}     public void test() /* Point X */     {         runTest();     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "BD", "BCD", "BDE", "BCDE" ],
+      "title": "What will be the output of the program?",
+      "code": "public class X {      public static void main(String [] args)     {        try         {            badMethod();              System.out.print(\"A\");          }         catch (RuntimeException ex) /* Line 10 */        {             System.out.print(\"B\");         }         catch (Exception ex1)         {             System.out.print(\"C\");         }         finally         {            System.out.print(\"D\");         }         System.out.print(\"E\");     }     public static void badMethod()     {         throw new RuntimeException();     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "x = 1", "x = 3", "Compilation fails.", "The code runs with no output." ],
+      "title": "What will be the output of the program?",
+      "code": "int x = 3; int y = 1; if (x = y) /* Line 3 */{    System.out.println(\"x =\" + x); }"
+    },
+    {
+      "answer": 3,
+      "options": [ "0 2 4", "0 2 4 5", "0 1 2 3 4", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "for (int i = 0; i < 4; i += 2) {     System.out.print(i + \" \"); } System.out.println(i); /* Line 5 */"
+    },
+    {
+      "answer": 3,
+      "options": [ "x = 6 y = 0", "x = 7 y = 0", "x = 6 y = -1", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "int x = l, y = 6; while (y--) {    x++; } System.out.println(\"x = \" + x +\" y = \" + y);"
+    },
+    {
+      "answer": 1,
+      "options": [ "ok", "dokey", "ok dokey", "No output is produced", "Compilation error" ],
+      "title": "What will be the output of the program?",
+      "code": "class SSBool {    public static void main(String [] args)     {        boolean b1 = true;        boolean b2 = false;        boolean b3 = true;        if ( b1 & b2 | b2 & b3 | b2 ) /* Line 8 */            System.out.print(\"ok \");        if ( b1 & b2 | b2 & b3 | b2 | b1 ) /*Line 10*/            System.out.println(\"dokey\");    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "7", "8", "14" ],
+      "title": "What will be the output of the program?",
+      "code": "class Bitwise {    public static void main(String [] args)     {        int x = 11 & 9;        int y = x ^ 3;        System.out.println( y | 12 );    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "true", "false", "Compilation fails", "An exception is thrown at runtime" ],
+      "title": "What will be the output of the program?",
+      "code": "class Equals {    public static void main(String [] args)     {        int x = 100;        double y = 100.1;        boolean b = (x = y); /* Line 7 */        System.out.println(b);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "12 15", "15 15", "3 4 5 3 7 5", "3 7 5 3 7 5" ],
+      "title": "What will be the output of the program?",
+      "code": "class PassA {    public static void main(String [] args)     {        PassA p = new PassA();        p.start();    }    void start()     {        long [] a1 = {3,4,5};        long [] a2 = fix(a1);        System.out.print(a1[0] + a1[1] + a1[2] + \" \");        System.out.println(a2[0] + a2[1] + a2[2]);    }    long [] fix(long [] a3)     {        a3[1] = 7;        return a3;    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "1", "2", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {    public int aMethod()    {        static int i = 0;        i++;        return i;    }    public static void main(String args[])    {        Test test = new Test();        test.aMethod();        int j = test.aMethod();        System.out.println(j);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "0.0 < d <= 1.0", "0.0 <= d < 1.0", "Compilation fail", "Cannot say." ],
+      "title": "Which statement is true given the following?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "ACCBAD", "ABBCAD", "CDDACB", "Indeterminate output" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {     public static void main(String[] args)     {        final StringBuffer a = new StringBuffer();         final StringBuffer b = new StringBuffer();         new Thread()         {             public void run()             {                System.out.print(a.append(\"A\"));                 synchronized(b)                 {                     System.out.print(b.append(\"B\"));                 }             }         }.start();                     new Thread()         {            public void run()             {                System.out.print(b.append(\"C\"));                 synchronized(a)                 {                    System.out.print(a.append(\"D\"));                 }             }         }.start();     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "-2", "NaN", "Compile Error", "Runtime Exception" ],
+      "title": "What will be the output of the program?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "3", "4", "5" ],
+      "title": "What will be the output of the program?",
+      "code": "String x = new String(\"xyz\");String y = \"abc\";x = x + y;"
+    },
+    {
+      "answer": 0,
+      "options": [ "int a = Math.abs(-5);", "int b = Math.abs(5.0);", "int c = Math.abs(5.5F);", "int d = Math.abs(5L);" ],
+      "title": "Which of the following would compile without error?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "1", "2", "3" ],
+      "title": "After line 11 runs, how many objects are eligible for garbage collection?",
+      "code": "class X2 {    public X2 x;    public static void main(String [] args)     {        X2 x2 = new X2();  /* Line 6 */        X2 x3 = new X2();  /* Line 7 */        x2.x = x3;        x3.x = x2;        x2 = new X2();        x3 = x2; /* Line 11 */        doComplexStuff();    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "after line 5", "after line 6", "after line 7", "There is no way to be absolutely certain." ],
+      "title": "When is the B object, created in line 3, eligible for garbage collection?",
+      "code": "void start() {      A a = new A();     B b = new B();     a.s(b);      b = null; /* Line 5 */    a = null;  /* Line 6 */    System.out.println(\"start completed\"); /* Line 7 */}"
+    },
+    {
+      "answer": 2,
+      "options": [ "new Runnable(MyRunnable).start();", "new Thread(MyRunnable).run();", "new Thread(new MyRunnable()).start();", "new MyRunnable().start();" ],
+      "title": "which of these will create and start this thread?",
+      "code": "public class MyRunnable implements Runnable {    public void run()     {        // some code here    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "run();", "construct();", "start();", "register();" ],
+      "title": "Which method registers a thread in a thread scheduler?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Calling the SetPriority() method on a Thread object.", "Calling the wait() method on an object.", "Calling notify() method on an object.", "Calling read() method on an InputStream object." ],
+      "title": "Which cannot directly cause a thread to stop executing?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1, 2, 4", "2, 4, 5", "1, 2, 6", "2, 3, 4" ],
+      "title": "Which three are methods of the Object class?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "1 and 3" ],
+      "title": "What two statements are true about properly overridden<em>hashCode()</em>and<em>equals()</em>methods?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Compilation will succeed.", "Compilation will fail at line 3.", "Compilation will fail at line 5.", "Compilation will fail at line 15." ],
+      "title": "What will be the output of the program?",
+      "code": "package foo; import java.util.Vector; /* Line 2 */private class MyVector extends Vector {    int i = 1; /* Line 5 */    public MyVector()     {         i = 2;     } } public class MyNewVector extends MyVector {    public MyNewVector ()     {         i = 4; /* Line 15 */    }     public static void main (String args [])     {         MyVector v = new MyNewVector(); /* Line 19 */    } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "Java.util.Map", "Java.util.List", "Java.util.HashTable", "Java.util.Collection" ],
+      "title": "Which interface does<em>java.util.Hashtable</em>implement?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "AB", "BC", "ABC", "BCD" ],
+      "title": "What will be the output of the program?",
+      "code": "public class X {      public static void main(String [] args)     {        try         {            badMethod(); /* Line 7 */            System.out.print(\"A\");         }         catch (Exception ex) /* Line 10 */        {            System.out.print(\"B\"); /* Line 12 */        }         finally /* Line 14 */        {            System.out.print(\"C\"); /* Line 16 */        }          System.out.print(\"D\"); /* Line 18 */    }     public static void badMethod()     {        throw new RuntimeException();     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "ABCD", "Compilation fails.", "C is printed before exiting with an error message.", "BC is printed before exiting with an error message." ],
+      "title": "What will be the output of the program?",
+      "code": "public class X {      public static void main(String [] args)     {        try         {            badMethod();              System.out.print(\"A\");         }          catch (Exception ex)         {            System.out.print(\"B\");          }         finally         {            System.out.print(\"C\");         }         System.out.print(\"D\");     }      public static void badMethod()     {        throw new Error(); /* Line 22 */    } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1 and 3", "2 and 4", "1 and 5", "2 and 6" ],
+      "title": "Which two statements are true for any concrete class implementing the java.lang.Runnable interface?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "0 2 4", "0 2 4 6", "Compilation fails at line 2", "Compilation fails at line 10" ],
+      "title": "What will be the output of the program?",
+      "code": "import java.util.*;public class NewTreeSet2 extends NewTreeSet {    public static void main(String [] args)     {        NewTreeSet2 t = new NewTreeSet2();        t.count();    }}protected class NewTreeSet{    void count()     {        for (int x = 0; x < 7; x++,x++ )         {            System.out.print(\" \" + x);        }    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "Base", "BaseBase", "Compilation fails", "The code runs with no output" ],
+      "title": "What will be the output of the program?",
+      "code": "class Base{     Base()    {        System.out.print(\"Base\");    }} public class Alpha extends Base{     public static void main(String[] args)    {         new Alpha(); /* Line 12 */        new Base(); /* Line 13 */    } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "1", "2", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "class Super{     public int i = 0;     public Super(String text) /* Line 4 */    {        i = 1;     } } class Sub extends Super{    public Sub(String text)    {        i = 2;     }     public static void main(String args[])    {        Sub sub = new Sub(\"Hello\");         System.out.println(sub.i);     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "abcdefghi", "abcdefdef", "abcghidef", "abcghighi" ],
+      "title": "What will be the output of the program?",
+      "code": "public class StringRef {    public static void main(String [] args)     {        String s1 = \"abc\";        String s2 = \"def\";        String s3 = s2;   /* Line 7 */        s2 = \"ghi\";        System.out.println(s1 + s2 + s3);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "18", "117", "567", "Compiler error" ],
+      "title": "What will be the output of the program?",
+      "code": "class Q207 {     public static void main(String[] args)     {        int i1 = 5;         int i2 = 6;         String s1 = \"7\";         System.out.println(i1 + i2 + s1); /* Line 8 */    } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "result = 1", "result = 10", "result = 11", "result = 11010" ],
+      "title": "What will be the output of the program?",
+      "code": "public class WrapTest {    public static void main(String [] args)     {        int result = 0;        short s = 42;        Long x = new Long(\"42\");        Long y = new Long(42);        Short z = new Short(\"42\");        Short x2 = new Short(s);        Integer y2 = new Integer(\"42\");        Integer z2 = new Integer(42);        if (x == y) /* Line 13 */            result = 1;        if (x.equals(y) ) /* Line 15 */            result = result + 10;        if (x.equals(z) ) /* Line 17 */            result = result + 100;        if (x.equals(x2) ) /* Line 19 */            result = result + 1000;        if (x.equals(z2) ) /* Line 21 */            result = result + 10000;        System.out.println(\"result = \" + result);    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "It is sometimes good practice to throw an AssertionError explicitly.", "Private getter() and setter() methods should not use assertions to verify arguments.", "If an AssertionError is thrown in a try-catch block, the finally block will be bypassed.", "It is proper to handle assertion statement failures using a catch (AssertionException ae) block." ],
+      "title": "Which of the following statements is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "x.delete()", "x.finalize()", "Runtime.getRuntime().gc()", "Only the garbage collection system can destroy an object." ],
+      "title": "What allows the programmer to destroy an object x?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Compilation error.", "Will print in this order: x = 1 y = 1 x = 2 y = 2 x = 3 y = 3 x = 4 y = 4 x = 5 y = 5... but the output will be produced by both threads running simultaneously.", "Will print in this order: x = 1 y = 1 x = 2 y = 2 x = 3 y = 3 x = 4 y = 4 x = 5 y = 5... but the output will be produced by first one thread then the other. This is guaranteed by the synchronised code.", "Will print in this order x = 1 y = 2 x = 3 y = 4 x = 5 y = 6 x = 7 y = 8..." ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test107 implements Runnable {     private int x;     private int y;     public static void main(String args[])     {        Test107 that = new Test107();         (new Thread(that)).start();         (new Thread(that)).start();     }     public synchronized void run()     {        for(int i = 0; i < 10; i++)         {             x++;             y++;             System.out.println(\"x = \" + x + \", y = \" + y); /* Line 17 */        }     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "The code fails to compile in the main() method", "The code fails to compile in the run() method", "Only the text 'In run' will be displayed", "The text 'In run' followed by 'Leaving run' will be displayed" ],
+      "title": "What will be the output of the program?",
+      "code": "public class ThreadTest extends Thread {     public void run()     {         System.out.println(\"In run\");         yield();         System.out.println(\"Leaving run\");     }     public static void main(String []argv)     {         (new ThreadTest()).start();     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "This code will not compile due to line 5.", "This code will not compile due to line 6.", "1..2..", "1..2..3.." ],
+      "title": "What will be the output of the program?",
+      "code": "class MyThread extends Thread {    public static void main(String [] args)     {        MyThread t = new MyThread(); /* Line 5 */        t.run();  /* Line 6 */    }    public void run()     {        for(int i=1; i < 3; ++i)         {            System.out.print(i + \"..\");        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Q126 implements Runnable {     private int x;     private int y;     public static void main(String [] args)     {         Q126 that = new Q126();         (new Thread(that)).start( ); /* Line 8 */        (new Thread(that)).start( ); /* Line 9 */    }     public synchronized void run( ) /* Line 11 */    {         for (;;) /* Line 13 */        {             x++;             y++;             System.out.println(\"x = \" + x + \"y = \" + y);         }     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "57 22", "45 38", "45 57", "An exception occurs at runtime." ],
+      "title": "What will be the output of the program?",
+      "code": "public abstract class AbstractTest {    public int getNum()     {        return 45;    }    public abstract class Bar     {        public int getNum()         {            return 38;        }    }    public static void main (String [] args)     {        AbstractTest t = new AbstractTest()         {            public int getNum()             {                return 22;            }        };        AbstractTest.Bar f = t.new Bar()         {            public int getNum()             {                return 57;            }        };                System.out.println(f.getNum() + \" \" + t.getNum());    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "An exception occurs at runtime at line 10.", "It prints 'Zippo'.", "Compilation fails because of an error on line 7.", "Compilation fails because of an error on line 13." ],
+      "title": "What will be the output of the program?",
+      "code": "public class HorseTest {    public static void main (String [] args)     {        class Horse         {            public String name; /* Line 7 */            public Horse(String s)             {                name = s;            }        } /* class Horse ends */                Object obj = new Horse(\"Zippo\"); /* Line 13 */        Horse h = (Horse) obj; /* Line 14 */        System.out.println(h.name);    }} /* class HorseTest ends */"
+    },
+    {
+      "answer": 3,
+      "options": [ "Runnable r = new Runnable() { };", "Runnable r = new Runnable(public void run() { });", "Runnable r = new Runnable { public void run(){}};", "System.out.println(new Runnable() {public void run() { }});" ],
+      "title": "Which constructs an anonymous inner class instance?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "You must have a reference to an instance of the enclosing class in order to instantiate it.", "It does not have access to nonstatic members of the enclosing class.", "It's variables and methods must be static.", "It must extend the enclosing class." ],
+      "title": "Which statement is true about a static nested class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Boo f = new Boo(24) { };", "Boo f = new Bar() { };", "Bar f = new Boo(String s) { };", "Boo f = new Boo.Bar(String s) { };" ],
+      "title": "which one create an anonymous inner class from within class Bar?",
+      "code": "class Boo {    Boo(String s) { }    Boo() { }}class Bar extends Boo {    Bar() { }    Bar(String s) {super(s);}    void zoo()     {    // insert code here    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "x2.equals(x1)", "x3.hashCode() == x4.hashCode()", "x5.hashCode() != x6.hashCode()", "x8.equals(x7)" ],
+      "title": "And assuming that the<em>equals()</em>and<em>hashCode()</em>methods are properly implemented, if the output is '<em>x = 1111</em>', which of the following statements will always be true?",
+      "code": "x = 0;if (x1.hashCode() != x2.hashCode() )  x = x + 1;if (x3.equals(x4) )  x = x + 10;if (!x5.equals(x6) ) x = x + 100;if (x7.hashCode() == x8.hashCode() )  x = x + 1000;System.out.println(\"x = \" + x);"
+    },
+    {
+      "answer": 0,
+      "options": [ "1 and 4", "2 and 3", "3 and 4", "1 and 3" ],
+      "title": "Which two statements are true about comparing two instances of the same class, given that the<em>equals()</em>and<em>hashCode()</em>methods have been properly overridden?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "f[0] = 0", "f[0] = 0.0", "Compile Error", "Runtime Exception" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {     private static float[] f = new float[2];     public static void main (String[] args)     {        System.out.println(\"f[0] = \" + f[0]);     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "What will be the output of the program?",
+      "code": "int I = 0;    outer:    while (true)     {        I++;        inner:        for (int j = 0; j < 10; j++)         {            I += j;            if (j == 3)                continue inner;            break outer;        }        continue outer;    }System.out.println(I);"
+    },
+    {
+      "answer": 3,
+      "options": [ "There is a syntax error on line 1.", "There are syntax errors on lines 1 and 6.", "There are syntax errors on lines 1, 6, and 8.", "There is a syntax error on line 6." ],
+      "title": "Which statement is true?",
+      "code": "public class While {    public void loop()     {        int x= 0;        while ( 1 ) /* Line 6 */        {            System.out.print(\"x plus one is \" + (x + 1)); /* Line 8 */        }    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 4", "2 and 5", "3 and 6", "4 and 6" ],
+      "title": "Which two of the following are legal declarations for nonnested classes and interfaces?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "It compiles and runs printing nothing", "Compiles but fails at runtime", "Compile Error", "Prints 'complete'" ],
+      "title": "What will be the output of the program?",
+      "code": "class A {     public A(int x){} } class B extends A { } public class test {     public static void main (String args [])     {        A a = new B();         System.out.println(\"complete\");     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "i = 0", "i = 1", "value of i is undetermined", "Statement causes a compile error" ],
+      "title": "What will be the output of the program?",
+      "code": "int i = (int) Math.random();"
+    },
+    {
+      "answer": 2,
+      "options": [ "java Myfile 222", "java Myfile 1 2 2 3 4", "java Myfile 1 3 2 2", "java Myfile 0 1 2 3" ],
+      "title": "Select how you would start the program to cause it to print:<em>Arg is 2</em>",
+      "code": "public class Myfile {     public static void main (String[] args)     {        String biz = args[1];         String baz = args[2];         String rip = args[3];         System.out.println(\"Arg is \" + rip);     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "public class MyRunnable extends Runnable{public void run(){}}", "public class MyRunnable extends Object{public void run(){}}", "public class MyRunnable implements Runnable{public void run(){}}", "public class MyRunnable implements Runnable{void run(){}}" ],
+      "title": "The following block of code creates a Thread using a Runnable target:",
+      "code": "Runnable target = new MyRunnable();Thread myThread = new Thread(target);"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 2", "2 and 3", "1 and 4", "3 and 4" ],
+      "title": "Which two can be used to create a new Thread?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "It will print the numbers 0 to 19 sequentially", "It will print the numbers 1 to 20 sequentially", "It will print the numbers 1 to 20, but the order cannot be determined", "The code will not compile." ],
+      "title": "What will be the output of the program?",
+      "code": "public class ThreadDemo {     private int count = 1;     public synchronized void doSomething()     {         for (int i = 0; i < 10; i++)             System.out.println(count++);     }     public static void main(String[] args)     {         ThreadDemo demo = new ThreadDemo();         Thread a1 = new A(demo);         Thread a2 = new A(demo);         a1.start();         a2.start();     } } class A extends Thread {     ThreadDemo demo;     public A(ThreadDemo td)     {         demo = td;     }     public void run()     {         demo.doSomething();     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "Object", "Thread", "Runnable", "Class" ],
+      "title": "Which class or interface defines the<em>wait()</em>,<em>notify()</em>,and<em>notifyAll()</em>methods?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "wait()", "notify()", "notifyall()", "exits synchronized code" ],
+      "title": "Which of the following will directly stop the execution of a Thread?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "It prints 'true'.", "It prints 'Fred'.", "An exception occurs at runtime.", "Compilation fails" ],
+      "title": "What will be the output of the program?",
+      "code": "public class TestObj {    public static void main (String [] args)     {        Object o = new Object() /* Line 5 */        {            public boolean equals(Object obj)             {                return true;            }         }      /* Line 11 */                System.out.println(o.equals(\"Fred\"));    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "1 and 4" ],
+      "title": "Which of the following statements about the<em>hashcode()</em>method are incorrect?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Java.util.Map", "Java.util.Set", "Java.util.List", "Java.util.Collection" ],
+      "title": "Which interface provides the capability to store objects using a key-value pair?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "The program will not compile.", "The program will print Hello world, then will print that a RuntimeException has occurred, then will print Done with try block, and then will print Finally executing.", "The program will print Hello world, then will print that a RuntimeException has occurred, and then will print Finally executing.", "The program will print Hello world, then will print Finally executing, then will print that a RuntimeException has occurred." ],
+      "title": "which answer most closely indicates the behavior of the program?",
+      "code": "public class MyProgram {    public static void throwit()     {        throw new RuntimeException();    }    public static void main(String args[])    {        try         {            System.out.println(\"Hello world \");            throwit();            System.out.println(\"Done with try block \");        }        finally         {            System.out.println(\"Finally executing \");        }    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "Ex0 caught", "exception caught", "Compilation fails because of an error at line 2.", "Compilation fails because of an error at line 9." ],
+      "title": "What will be the output of the program?",
+      "code": "class Exc0 extends Exception { } class Exc1 extends Exc0 { } /* Line 2 */public class Test {      public static void main(String args[])     {         try         {              throw new Exc1(); /* Line 9 */        }         catch (Exc0 e0) /* Line 11 */        {            System.out.println(\"Ex0 caught\");         }         catch (Exception e)         {            System.out.println(\"exception caught\");          }     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "a", "b", "c", "d" ],
+      "title": "What will be the output of the program?",
+      "code": "boolean bool = true; if(bool = false) /* Line 2 */{    System.out.println(\"a\"); } else if(bool) /* Line 6 */{    System.out.println(\"b\"); } else if(!bool) /* Line 10 */{    System.out.println(\"c\"); /* Line 12 */} else {    System.out.println(\"d\"); }"
+    },
+    {
+      "answer": 3,
+      "options": [ "done", "one two done", "one two three done", "one two three two three done" ],
+      "title": "What will be the output of the program?",
+      "code": "for(int i = 0; i < 3; i++) {     switch(i)     {         case 0: break;         case 1: System.out.print(\"one \");         case 2: System.out.print(\"two \");         case 3: System.out.print(\"three \");     } } System.out.println(\"done\");"
+    },
+    {
+      "answer": 3,
+      "options": [ "j = -1", "j = 0", "j = 1", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "int i = l, j = -1; switch (i) {    case 0, 1: j = 1; /* Line 4 */    case 2: j = 2;     default: j = 0; } System.out.println(\"j = \" + j); "
+    },
+    {
+      "answer": 2,
+      "options": [ "5 2", "5 3", "6 3", "6 4" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    public static void main(String [] args)     {        int x= 0;        int y= 0;        for (int z = 0; z < 5; z++)         {            if (( ++x > 2 ) && (++y > 2))             {                x++;            }        }        System.out.println(x + \" \" + y);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "4, 4", "4, 5", "5, 4", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "class Super {     public Integer getLength()     {        return new Integer(4);     } } public class Sub extends Super {     public Long getLength()     {        return new Long(5);     }     public static void main(String[] args)     {         Super sooper = new Super();         Sub sub = new Sub();         System.out.println(         sooper.getLength().toString() + \",\" + sub.getLength().toString() );     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2, 3 and 5", "3, 4, and 5", "2 and 4" ],
+      "title": "Which three are valid method signatures in an interface?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "int[ ] scores = {3, 5, 7};", "int [ ][ ] scores = {2,7,6}, {9,3,45};", "String cats[ ] = {'Fluffy', 'Spot', 'Zeus'};", "boolean results[ ] = new boolean [] {true, false, true};", "Integer results[ ] = {new Integer(3), new Integer(5), new Integer(8)};" ],
+      "title": "Which cause a compiler error?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "4 and 5" ],
+      "title": "What two statements are true about the result obtained from calling<em>Math.random()</em>?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Pine", "Tree", "Forest", "Oops" ],
+      "title": "What will be the output of the program?",
+      "code": "class Tree { } class Pine extends Tree { } class Oak extends Tree { } public class Forest1 {     public static void main (String [] args)    {         Tree tree = new Pine();         if( tree instanceof Pine )             System.out.println (\"Pine\");         else if( tree instanceof Tree )             System.out.println (\"Tree\");         else if( tree instanceof Oak )             System.out.println ( \"Oak\" );         else             System.out.println (\"Oops \");     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "abcXyZ", "abcxyz", "xyzabc", "XyZabc" ],
+      "title": "What will be the output of the program?",
+      "code": "String x = \"xyz\";x.toUpperCase(); /* Line 2 */String y = x.replace('Y', 'y');y = y + \"abc\";System.out.println(y);"
+    },
+    {
+      "answer": 0,
+      "options": [ "Assertions can be enabled or disabled on a class-by-class basis.", "Conditional compilation is used to allow tested classes to run at full speed.", "Assertions are appropriate for checking the validity of arguments in a method.", "The programmer can choose to execute a return statement or to throw an exception if an assertion fails." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Line 11", "Line 12", "Line 14", "Line 22" ],
+      "title": "which line is an example of an inappropriate use of assertions?",
+      "code": "public class Test2 {    public static int x;    public static int foo(int y)     {        return y * 2;    }    public static void main(String [] args)     {        int z = 5;        assert z > 0; /* Line 11 */        assert z > 2: foo(z); /* Line 12 */        if ( z < 7 )            assert z > 4; /* Line 14 */        switch (z)         {            case 4: System.out.println(\"4 \");            case 5: System.out.println(\"5 \");            default: assert z < 10;        }        if ( z < 10 )            assert z > 4: z++; /* Line 22 */        System.out.println(z);    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "finished", "Compilation fails.", "An AssertionError is thrown.", "An AssertionError is thrown and finished is output." ],
+      "title": "What will be the output of the program (when you run with the -ea option) ?",
+      "code": "public class Test {      public static void main(String[] args)     {        int x = 0;          assert (x > 0) : \"assertion failed\"; /* Line 6 */        System.out.println(\"finished\");     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "Memory is reclaimed by calling Runtime.gc().", "Objects are not collected if they are accessible from live threads.", "An OutOfMemory error is only thrown if a single block of memory cannot be found that is large enough for a particular requirement.", "Objects that have finalize() methods always have their finalize() methods called before the program ends." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "main() will finish before starting threads.", "main() will finish in the middle of one thread.", "main() will finish after one thread.", "Cannot be determined." ],
+      "title": "What will be the output of the program?",
+      "code": "class Test116 { static final StringBuffer sb1 = new StringBuffer(); static final StringBuffer sb2 = new StringBuffer(); public static void main(String args[]) {     new Thread()     {         public void run()         {             synchronized(sb1)             {                 sb1.append(\"A\");                 sb2.append(\"B\");             }         }     }.start();     new Thread()     {         public void run()         {             synchronized(sb1)             {                 sb1.append(\"C\");                 sb2.append(\"D\");             }         }     }.start(); /* Line 28 */    System.out.println (sb1 + \" \" + sb2);     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "Synchronize the run method.", "Wrap a synchronize(this) around the call to f.increase().", "The existing code will cause a runtime exception.", "Synchronize the increase() method" ],
+      "title": "What will be the output of the program?",
+      "code": "public class SyncTest {    public static void main (String [] args)     {        Thread t = new Thread()         {            Foo f = new Foo();            public void run()             {                f.increase(20);            }        };    t.start();    }}class Foo {    private int data = 23;    public void increase(int amt)     {        int x = data;        data = x + amt;    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "notify()", "wait()", "InputStream access", "sleep()" ],
+      "title": "Which of the following will not directly cause a thread to stop?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "NULL", "Compile Error", "Code runs but no output", "Runtime Exception" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {     public static void main (String args[])     {        String str = NULL;         System.out.println(str);     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "java.util.HashSet", "java.util.LinkedHashSet", "java.util.List", "java.util.ArrayList" ],
+      "title": "Which collection class allows you to grow or shrink its size and provides indexed access to its elements, but whose methods are not synchronized?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "0 def 1", "2 1 0 def 1", "2 1 0 def def", "2 1 0 def 1 def 1" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Switch2 {    final static short x = 2;    public static int y = 0;    public static void main(String [] args)     {        for (int z=0; z < 4; z++)         {            switch (z)             {                case x: System.out.print(\"0 \");                default: System.out.print(\"def \");                case x-1: System.out.print(\"1 \");                              break;                case x-2: System.out.print(\"2 \");            }        }    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "0 1 2", "0 1 2 1 2 2", "Compilation fails at line 11.", "Compilation fails at line 12." ],
+      "title": "What will be the output of the program?",
+      "code": "public class Switch2 {    final static short x = 2;    public static int y = 0;    public static void main(String [] args)     {        for (int z=0; z < 3; z++)         {            switch (z)             {                case y: System.out.print(\"0 \");   /* Line 11 */                case x-1: System.out.print(\"1 \"); /* Line 12 */                case x: System.out.print(\"2 \");   /* Line 13 */            }        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0 1 2", "0 1 2 1 2 2", "2 1 0 1 0 0", "2 1 2 0 1 2" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Switch2 {    final static short x = 2;    public static int y = 0;    public static void main(String [] args)     {        for (int z=0; z < 3; z++)         {            switch (z)             {                case x: System.out.print(\"0 \");                case x-1: System.out.print(\"1 \");                case x-2: System.out.print(\"2 \");            }        }    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "1 and 3", "2 and 4", "3 and 5", "4 and 6" ],
+      "title": "Which two are acceptable types for x?",
+      "code": "switch(x) {     default:          System.out.println(\"Hello\"); }"
+    },
+    {
+      "answer": 0,
+      "options": [ "public static short stop = 23;", "protected short stop = 23;", "transient short stop = 23;", "final void madness(short stop);" ],
+      "title": "Which is a valid declaration within an interface?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "public", "private", "protected", "default access" ],
+      "title": "You want a class to have access to members of another class in the same package. Which is the most restrictive access that accomplishes this objective?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "public", "abstract", "protected", "synchronized", "default access" ],
+      "title": "What is the most restrictive access modifier that will allow members of one class to have access to members of another class in the same package?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "j = 0", "j = 4", "j = 8", "The code will run with no output" ],
+      "title": "What will be the output of the program?",
+      "code": "public class ExamQuestion7 {      static int j;     static void methodA(int i)    {        boolean b;         do        {             b = i<10 | methodB(4); /* Line 9 */            b = i<10 || methodB(8);  /* Line 10 */        }while (!b);     }     static boolean methodB(int i)    {        j += i;         return true;     }     public static void main(String[] args)    {        methodA(0);         System.out.println( \"j = \" + j );     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "i = 6 and j = 5", "i = 5 and j = 5", "i = 6 and j = 6", "i = 5 and j = 6" ],
+      "title": "What will be the output of the program?",
+      "code": "int i = 1, j = 10; do {    if(i++ > --j) /* Line 4 */    {        continue;     } } while (i < 5); System.out.println(\"i = \" + i + \"and j = \" + j); /* Line 9 */"
+    },
+    {
+      "answer": 0,
+      "options": [ "AAACCC", "AAADDD", "BBBCCC", "BBBDDD" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test178 {     public static void main(String[] args)     {        String s = \"foo\";         Object o = (Object)s;         if (s.equals(o))         {             System.out.print(\"AAA\");         }         else         {            System.out.print(\"BBB\");         }         if (o.equals(s))         {            System.out.print(\"CCC\");         }         else         {            System.out.print(\"DDD\");         }     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "10", "101", "1101" ],
+      "title": "What will be the output of the program?",
+      "code": "public class ObjComp {    public static void main(String [] args )     {        int result = 0;        ObjComp oc = new ObjComp();        Object o = oc;        if (o == oc)              result = 1;        if (o != oc)              result = result + 10;        if (o.equals(oc) )              result = result + 100;        if (oc.equals(o) )              result = result + 1000;        System.out.println(\"result = \" + result);    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "Assertion expressions should not contain side effects.", "Assertion expression values can be any primitive type.", "Assertions should be used for enforcing preconditions on public methods.", "An AssertionError thrown as a result of a failed assertion should always be handled by the enclosing method." ],
+      "title": "Which statement is true about assertions in the Java programming language?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Calling Runtime.gc() will cause eligible objects to be garbage collected.", "The garbage collector uses a mark and sweep algorithm.", "If an object can be accessed from a live thread, it can't be garbage collected.", "If object 1 refers to object 2, then object 2 can't be garbage collected." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "A static method cannot be synchronized.", "If a class has synchronized code, multiple threads can still access the nonsynchronized code.", "Variables can be protected from concurrent access problems by marking them with the synchronized keyword.", "When a thread sleeps, it releases its locks." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Compilation fails.", "1..2..3..", "0..1..2..3..", "0..1..2.." ],
+      "title": "What will be the output of the program?",
+      "code": "class MyThread extends Thread {    public static void main(String [] args)     {        MyThread t = new MyThread();        Thread x = new Thread(t);        x.start(); /* Line 7 */    }    public void run()     {        for(int i = 0; i < 3; ++i)         {            System.out.print(i + \"..\");        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "ABBCAD", "ABCBCAD", "CDADACB", "Output determined by the underlying platform." ],
+      "title": "What will be the output of the program?",
+      "code": "class Happy extends Thread {     final StringBuffer sb1 = new StringBuffer();     final StringBuffer sb2 = new StringBuffer();     public static void main(String args[])     {         final Happy h = new Happy();         new Thread()         {             public void run()             {                 synchronized(this)                 {                     h.sb1.append(\"A\");                     h.sb2.append(\"B\");                     System.out.println(h.sb1);                     System.out.println(h.sb2);                 }             }         }.start();         new Thread()         {             public void run()             {                 synchronized(this)                 {                     h.sb1.append(\"D\");                     h.sb2.append(\"C\");                     System.out.println(h.sb2);                     System.out.println(h.sb1);                 }             }         }.start();     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "baz =", "baz = null", "baz = blue", "Runtime Exception" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {     public static void main (String[] args)     {        String foo = args[1];         String bar = args[2];         String baz = args[3];         System.out.println(\"baz = \" + baz); /* Line 8 */    } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "2 and 4" ],
+      "title": "Which of the following are Java reserved words?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "AC", "BC", "ACD", "ABCD" ],
+      "title": "What will be the output of the program?",
+      "code": "public class X {     public static void main(String [] args)     {        try         {            badMethod();              System.out.print(\"A\");         }          catch (Exception ex)         {            System.out.print(\"B\");         }          finally         {            System.out.print(\"C\");         }          System.out.print(\"D\");     }      public static void badMethod() {} }"
+    },
+    {
+      "answer": 3,
+      "options": [ "hello throwit caught", "Compilation fails", "hello throwit RuntimeException caught after", "hello throwit caught finally after" ],
+      "title": "What will be the output of the program?",
+      "code": "public class RTExcept {    public static void throwit ()     {        System.out.print(\"throwit \");        throw new RuntimeException();    }    public static void main(String [] args)     {        try         {            System.out.print(\"hello \");            throwit();        }        catch (Exception re )         {            System.out.print(\"caught \");        }        finally         {            System.out.print(\"finally \");        }        System.out.println(\"after \");    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "I is 1", "I is 1 I is 1", "No output is produced.", "Compilation error" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {    public static void main(String [] args)     {        int I = 1;        do while ( I < 1 )        System.out.print(\"I is \" + I);        while ( I > 1 ) ;    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2 and 4", "3 and 4", "1 and 3" ],
+      "title": "Which two statements are equivalent?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "All statements are correct." ],
+      "title": "Which of the following are legal lines of code?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "small", "tiny", "huge", "Compilation fails" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    public static void main(String [] args)     {        int x=20;        String sup = (x < 15) ? \"small\" : (x < 22)? \"tiny\" : \"huge\";        System.out.println(sup);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1, 2 and 4", "2,3 and 5", "3, 4 and 5", "1, 2 and 3" ],
+      "title": "Which three statements are true?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1 only", "2 only", "3 and 5", "1 and 4" ],
+      "title": "which two code fragments inserted at end of the program, will allow to compile?",
+      "code": "interface DoMath {    double getArea(int rad); }interface MathPlus {    double getVol(int b, int h); }/* Missing Statements ? */"
+    },
+    {
+      "answer": 2,
+      "options": [ "final", "static", "private", "protected", "volatile" ],
+      "title": "Given a method in a protected class, what access modifier do you use to restrict access to that method to only the other members of the same class?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "0", "10", "10010" ],
+      "title": "What will be the output of the program?",
+      "code": "public class BoolTest {    public static void main(String [] args)     {        int result = 0;        Boolean b1 = new Boolean(\"TRUE\");        Boolean b2 = new Boolean(\"true\");        Boolean b3 = new Boolean(\"tRuE\");        Boolean b4 = new Boolean(\"false\");        if (b1 == b2)  /* Line 10 */            result = 1;        if (b1.equals(b2) ) /* Line 12 */            result = result + 10;        if (b2 == b4)  /* Line 14 */            result = result + 100;        if (b2.equals(b4) ) /* Line 16 */            result = result + 1000;        if (b2.equals(b3) ) /* Line 18 */            result = result + 10000;        System.out.println(\"result = \" + result);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "finished", "Compiliation fails.", "An AssertionError is thrown and finished is output.", "An AssertionError is thrown with the message 'assertion failed.'" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {      public static void main(String[] args)     {         int x = 0;          assert (x > 0) ? \"assertion failed\" : \"assertion passed\" ;         System.out.println(\"finished\");      } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "run();", "start();", "stop();", "main();" ],
+      "title": "Which will contain the body of the thread?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1, 2 and 4", "2, 5 and 6", "3, 4 and 7", "4, 5 and 7" ],
+      "title": "Which three guarantee that a thread will leave the running state?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Foo.Bar b = new Foo.Bar();", "Foo.Bar b = f.new Bar();", "Bar b = new f.Bar();", "Bar b = f.new Bar();" ],
+      "title": "which statement, inserted at line 10, creates an instance of<em>Bar</em>?",
+      "code": "class Foo {    class Bar{ }}class Test {    public static void main (String [] args)     {        Foo f = new Foo();        /* Line 10: Missing statement ? */    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "one two three four", "four three two one", "four one three two", "one two three four one" ],
+      "title": "What will be the output of the program?",
+      "code": "TreeSet map = new TreeSet();map.add(\"one\");map.add(\"two\");map.add(\"three\");map.add(\"four\");map.add(\"one\");Iterator it = map.iterator();while (it.hasNext() ) {    System.out.print( it.next() + \" \" );}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Prints: false,false,false", "Prints: false,false,true", "Prints: false,true,false", "Prints: true,false,false" ],
+      "title": "What will be the output of the program?",
+      "code": "import java.util.*; class H {    public static void main (String[] args)     {         Object x = new Vector().elements();         System.out.print((x instanceof Enumeration)+\",\");         System.out.print((x instanceof Iterator)+\",\");         System.out.print(x instanceof ListIterator);     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "float f = 1F;", "float f = 1.0;", "float f = '1';", "float f = 1.0d;" ],
+      "title": "Which is valid declaration of a float?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "catch(X x) can catch subclasses of X where X is a subclass of Exception.", "The Error class is a RuntimeException.", "Any statement that can throw an Error must be enclosed in a try block.", "Any statement that can throw an Exception must be enclosed in a try block." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "This program will compile successfully.", "This program fails to compile due to an error at line 4.", "This program fails to compile due to an error at line 6.", "This program fails to compile due to an error at line 18." ],
+      "title": "and given that all methods of class<em>FileOutputStream</em>, including<em>close()</em>, throw an<em>IOException</em>, which of these is true?",
+      "code": "import java.io.*;public class MyProgram {    public static void main(String args[])    {        FileOutputStream out = null;        try         {            out = new FileOutputStream(\"test.txt\");            out.write(122);        }        catch(IOException io)         {            System.out.println(\"IO Error.\");        }        finally         {            out.close();        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "j = 0", "j = 2", "j = 4", "j = 6" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {      public static void main(String args[])     {         int i = 1, j = 0;         switch(i)         {             case 2: j += 6;             case 4: j += 1;             default: j += 2;             case 0: j += 4;         }         System.out.println(\"j = \" + j);     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "i = 6 and j = 5", "i = 5 and j = 5", "i = 6 and j = 4", "i = 5 and j = 6" ],
+      "title": "What will be the output of the program?",
+      "code": "int i = 1, j = 10; do {    if(i > j)     {        break;     }     j--; } while (++i < 5); System.out.println(\"i = \" + i + \" and j = \" + j);"
+    },
+    {
+      "answer": 0,
+      "options": [ "Compilation fails.", "'odd' will always be output.", "'even' will always be output.", "'odd' will be output for odd values of x, and 'even' for even values." ],
+      "title": "Which statement is true?",
+      "code": "public void test(int x) {     int odd = 1;     if(odd) /* Line 4 */    {        System.out.println(\"odd\");     }     else     {        System.out.println(\"even\");     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1 and 4", "2 and 3", "1 and 3", "2 and 4" ],
+      "title": "which two of the following statements, inserted independently, could legally be inserted into missing section of this code?",
+      "code": "import java.awt.*;class Ticker extends Component {    public static void main (String [] args)     {        Ticker t = new Ticker();        /* Missing Statements ? */    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "7 7", "7 14", "14 0", "14 14" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    static int s;    public static void main(String [] args)     {        Test p = new Test();        p.start();        System.out.println(s);    }    void start()     {        int x = 7;        twice(x);        System.out.print(x + \" \");    }    void twice(int x)     {        x = x*2;        s = x;    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "slip stream", "slipstream stream", "stream slip stream", "slipstream slip stream" ],
+      "title": "What will be the output of the program?",
+      "code": "class PassS {    public static void main(String [] args)     {        PassS p = new PassS();        p.start();    }    void start()     {        String s1 = \"slip\";        String s2 = fix(s1);        System.out.println(s1 + \" \" + s2);    }    String fix(String s1)     {        s1 = s1 + \"stream\";        System.out.print(s1 + \" \");        return \"stream\";    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true true", "false true", "true false", "false false" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    public static void main(String [] args)     {        Test p = new Test();        p.start();    }    void start()     {        boolean b1 = false;        boolean b2 = fix(b1);        System.out.println(b1 + \" \" + b2);    }    boolean fix(boolean b1)     {        b1 = true;        return b1;    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "public int method1(int a, int b) {return 0; }", "private int method1(int a, int b) { return 0; }", "public short method1(int a, int b) { return 0; }", "static protected int method1(int a, int b) { return 0; }" ],
+      "title": "Which is valid in a class that extends<em>class A</em>?",
+      "code": "class A {      protected int method1(int a, int b)     {        return 0;     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "1 and 5" ],
+      "title": "which two code fragments will compile?",
+      "code": "interface Base {    boolean m1 ();    byte m2(short s);}"
+    },
+    {
+      "answer": 2,
+      "options": [ "public", "private", "protected", "transient" ],
+      "title": "You want subclasses in any package to have access to members of a superclass. Which is the most restrictive access that accomplishes this objective?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "abcd", "ABCD", "dccd", "dcba" ],
+      "title": "What will be the output of the program?",
+      "code": "String a = \"ABCD\"; String b = a.toLowerCase(); b.replace('a','d'); b.replace('b','c'); System.out.println(b);"
+    },
+    {
+      "answer": 2,
+      "options": [ "just after line 5", "just after line 6", "just after line 7", "just after line 8" ],
+      "title": "When is the<em>Float</em>object, created in line 3, eligible for garbage collection?",
+      "code": "public Object m() {      Object o = new Float(3.14F);     Object [] oa = new Object[l];    oa[0] = o; /* Line 5 */    o = null;  /* Line 6 */    oa[0] = null; /* Line 7 */    return o; /* Line 8 */}"
+    },
+    {
+      "answer": 0,
+      "options": [ "The notifyAll() method must be called from a synchronized context.", "To call wait(), an object must own the lock on the thread.", "The notify() method is defined in class java.lang.Thread.", "The notify() method causes a thread to immediately release its locks." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 3", "2 and 4", "1 and 4", "2 and 3" ],
+      "title": "Under which conditions will a currently executing thread stop?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "1 and 4", "2 and 3", "3 and 4", "2 and 4" ],
+      "title": "Which two of the following methods are defined in class Thread?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 3", "2 and 4", "1 and 2", "2 and 5" ],
+      "title": "Which two are valid constructors for Thread?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "MyOuter.MyInner m = new MyOuter.MyInner();", "MyOuter.MyInner mi = new MyInner();", "MyOuter m = new MyOuter();MyOuter.MyInner mi = m.new MyOuter.MyInner();", "MyInner mi = new MyOuter.MyInner();" ],
+      "title": "which statement, if placed in a class other than<em>MyOuter</em>or<em>MyInner</em>, instantiates an instance of the nested class?",
+      "code": "public class MyOuter {    public static class MyInner     {        public static void foo() { }    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "It can extend exactly one class and implement exactly one interface.", "It can extend exactly one class and can implement multiple interfaces.", "It can extend exactly one class or implement exactly one interface.", "It can implement multiple interfaces regardless of whether it also extends a class." ],
+      "title": "Which is true about an anonymous inner class?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "No statement required.", "import java.io.*;", "include java.io.*;", "import java.io.PrintWriter;" ],
+      "title": "What line of code should replace the missing statement to make this program compile?",
+      "code": "/* Missing Statement ? */public class foo {    public static void main(String[]args)throws Exception     {        java.io.PrintWriter out = new java.io.PrintWriter();         new java.io.OutputStreamWriter(System.out,true);         out.println(\"Hello\");     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "java.util.Map", "java.util.Set", "java.util.List", "java.util.Collection" ],
+      "title": "You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "java.lang.String", "java.lang.Double", "java.lang.StringBuffer", "java.lang.Character" ],
+      "title": "Which class does not override the<em>equals()</em>and<em>hashCode()</em>methods, inheriting them directly from class Object?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "The code will not compile.", "Code output: Start Hello world File Not Found.", "Code output: Start Hello world End of file exception.", "Code output: Start Hello world Catch Here File not found." ],
+      "title": "and given that<em>EOFException</em>and<em>FileNotFoundException</em>are both subclasses of<em>IOException</em>, and further assuming this block of code is placed into a class, which statement is most true concerning this code?",
+      "code": "System.out.print(\"Start \");try {    System.out.print(\"Hello world\");    throw new FileNotFoundException();}System.out.print(\" Catch Here \"); /* Line 7 */catch(EOFException e) {    System.out.print(\"End of file exception\");}catch(FileNotFoundException e) {    System.out.print(\"File not found\");}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Nothing. The program will not compile because no exceptions are specified.", "Nothing. The program will not compile because no catch clauses are specified.", "Hello world.", "Hello world Finally executing" ],
+      "title": "What will be the output of the program?",
+      "code": "public class MyProgram {    public static void main(String args[])    {        try         {            System.out.print(\"Hello world \");        }        finally         {            System.out.println(\"Finally executing \");        }    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1, 2 and 3", "2, 4 and 5", "3, 4 and 5", "1, 4 and 5" ],
+      "title": "which three statements are true?",
+      "code": "import java.awt.Button;class CompareReference {    public static void main(String [] args)     {        float f = 42.0f;        float [] f1 = new float[2];        float [] f2 = new float[2];        float [] f3 = f1;        long x = 42;        f1[0] = 42.0f;    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "5 3", "8 2", "8 3", "8 5" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    public static void main(String [] args)     {        int x= 0;        int y= 0;        for (int z = 0; z < 5; z++)         {            if (( ++x > 2 ) || (++y > 2))             {                x++;            }        }    System.out.println(x + \" \" + y);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Class A", "Compilation fails.", "An exception is thrown at line 3.", "The code executes with no output." ],
+      "title": "What will be the output of the program?",
+      "code": "public class A{     void A() /* Line 3 */    {        System.out.println(\"Class A\");     }     public static void main(String[] args)     {         new A();     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "i = 3", "Compilation fails.", "i = 5", "A ClassCastException will occur." ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {      public static void main(String args[])    {         class Foo         {            public int i = 3;        }         Object o = (Object)new Foo();        Foo foo = (Foo)o;        System.out.println(\"i = \" + foo.i);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "2, 4", "3, 5", "4, 5", "1, 2" ],
+      "title": "Which two cause a compiler error?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "int", "byte", "long", "double" ],
+      "title": "What is the widest valid returnType for methodA in line 3?",
+      "code": "public class ReturnIt {     returnType methodA(byte x, double y) /* Line 3 */    {         return (long)x / y * 2;     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "Test( )", "Test(void)", "public Test( )", "public Test(void)" ],
+      "title": "What is the prototype of the default constructor?",
+      "code": "public class Test { }"
+    },
+    {
+      "answer": 1,
+      "options": [ "apa", "app", "apea", "apep" ],
+      "title": "What will be the output of the program?",
+      "code": "String a = \"newspaper\";a = a.substring(5,7);char b = a.charAt(1);a = a + b;System.out.println(a);"
+    },
+    {
+      "answer": 2,
+      "options": [ "3.0", "-3.0", "NaN", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "public class SqrtExample {    public static void main(String [] args)     {        double value = -9.0;        System.out.println( Math.sqrt(value));    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Line 5", "Line 6", "Line 12", "Line 14" ],
+      "title": "What causes compilation to fail?",
+      "code": "public class Test {     public void foo()     {        assert false; /* Line 5 */        assert false; /* Line 6 */    }     public void bar()    {        while(true)        {            assert false; /* Line 12 */        }         assert false;  /* Line 14 */    } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "1", "2", "3" ],
+      "title": "After line 8 runs. how many objects are eligible for garbage collection?",
+      "code": "public class X {    public static void main(String [] args)     {        X x = new X();        X x2 = m1(x); /* Line 6 */        X x4 = new X();        x2 = x4; /* Line 8 */        doComplexStuff();    }    static X m1(X mx)     {        mx = new X();        return mx;    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "After line 7", "After line 8", "After the start() method completes", "When the instance running this code is made eligible for garbage collection." ],
+      "title": "When is the Demo object eligible for garbage collection?",
+      "code": "class Test {      private Demo d;     void start()     {          d = new Demo();         this.takeDemo(d); /* Line 7 */    } /* Line 8 */    void takeDemo(Demo demo)     {         demo = null;          demo = new Demo();     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "after line 12", "after line 14", "after line 7, when doBar() completes", "after line 15, when main() completes" ],
+      "title": "At what point is the<em>Bar</em>object, created on line 6, eligible for garbage collection?",
+      "code": "class Bar { } class Test {      Bar doBar()     {        Bar b = new Bar(); /* Line 6 */        return b; /* Line 7 */    }     public static void main (String args[])     {         Test t = new Test();  /* Line 11 */        Bar newBar = t.doBar();  /* Line 12 */        System.out.println(\"newBar\");         newBar = new Bar(); /* Line 14 */        System.out.println(\"finishing\"); /* Line 15 */    } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "Compilation fails.", "An error occurs at runtime.", "It prints 'foobarhi'", "It prints 'barhi'" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Foo {    Foo()     {        System.out.print(\"foo\");    }    class Bar{    Bar()     {        System.out.print(\"bar\");    }    public void go()     {        System.out.print(\"hi\");    }} /* class Bar ends */    public static void main (String [] args)     {        Foo f = new Foo();        f.makeBar();    }    void makeBar()     {        (new Bar() {}).go();    }}/* class Foo ends */"
+    },
+    {
+      "answer": 2,
+      "options": [ "class Test1 will not compile.", "The Test1 hashCode() method is more efficient than the Test2 hashCode() method.", "The Test1 hashCode() method is less efficient than the Test2 hashCode() method.", "class Test2 will not compile." ],
+      "title": "which statement is true?",
+      "code": "class Test1 {    public int value;    public int hashCode() { return 42; }}class Test2 {    public int value;    public int hashcode() { return (int)(value^5); }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "A try statement must have at least one corresponding catch block.", "Multiple catch statements can catch the same class of exception more than once.", "An Error that might be thrown in a method must be declared as thrown by that method, or be handled within that method.", "Except in case of VM shutdown, if a try block starts to execute, a corresponding finally block will always start to execute." ],
+      "title": "Which statement is true?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "finished", "Exception", "Compilation fails.", "Arithmetic Exception" ],
+      "title": "What will be the output of the program?",
+      "code": "try {     int x = 0;     int y = 5 / x; } catch (Exception e) {    System.out.println(\"Exception\"); } catch (ArithmeticException ae) {    System.out.println(\" Arithmetic Exception\"); } System.out.println(\"finished\");"
+    },
+    {
+      "answer": 2,
+      "options": [ "I is 0", "I is 0 I is 1", "Compilation fails.", "none of the precents" ],
+      "title": "What will be the output of the program?",
+      "code": "int I = 0;label:    if (I < 2) {    System.out.print(\"I is \" + I);    I++;    continue label;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "i = 1, j = 0", "i = 1, j = 4", "i = 3, j = 4", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "int i = 0, j = 5; tp: for (;;)     {        i++;          for (;;)         {            if(i > --j)             {                break tp;             }         }         System.out.println(\"i =\" + i + \", j = \" + j);"
+    },
+    {
+      "answer": 3,
+      "options": [ "i = 0", "i = 3", "i = 4", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "int i = 0; while(1) {    if(i == 4)     {        break;    }     ++i; } System.out.println(\"i = \" + i);"
+    },
+    {
+      "answer": 3,
+      "options": [ "41", "42", "50", "51" ],
+      "title": "What will be the output of the program?",
+      "code": "public class If1 {    static boolean b;    public static void main(String [] args)     {        short hand = 42;        if ( hand < 50 && !b ) /* Line 7 */            hand++;        if ( hand > 50 );     /* Line 9 */        else if ( hand > 40 )         {            hand += 7;            hand++;            }        else            --hand;        System.out.println(hand);    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "1", "101", "111" ],
+      "title": "What will be the output of the program?",
+      "code": "public class If2 {    static boolean b1, b2;    public static void main(String [] args)     {        int x = 0;        if ( !b1 ) /* Line 7 */        {            if ( !b2 ) /* Line 9 */            {                b1 = true;                x++;                if ( 5 > 6 )                 {                    x++;                }                if ( !b1 )                     x = x + 10;                else if ( b2 = true ) /* Line 19 */                    x = x + 100;                else if ( b1 | b2 ) /* Line 21 */                    x = x + 1000;            }        }        System.out.println(x);    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "null null 42", "0 0 42", "0 42 42", "0 0 0" ],
+      "title": "What will be the output of the program?",
+      "code": "class Two {    byte x;}class PassO {    public static void main(String [] args)     {        PassO p = new PassO();        p.start();    }    void start()     {        Two t = new Two();        System.out.print(t.x + \" \");        Two t2 = fix(t);        System.out.println(t.x + \" \" + t2.x);    }    Two fix(Two tt)     {        tt.x = 42;        return tt;    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 only", "2 and 5", "3 and 4", "3 and 5" ],
+      "title": "which two statements, added independently at beginning of the program, allow the code to compile?",
+      "code": "/* Missing statements ? */public class NewTreeSet extends java.util.TreeSet{    public static void main(String [] args)     {        java.util.TreeSet t = new java.util.TreeSet();        t.clear();    }    public void clear()     {        TreeMap m = new TreeMap();        m.clear();    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "Class B'S constructor is public.", "Class B'S constructor has no arguments.", "Class B'S constructor includes a call to this( ).", "None of these." ],
+      "title": "Which statement is true?",
+      "code": "class A {     A( ) { } } class B extends A { }"
+    },
+    {
+      "answer": 0,
+      "options": [ "It prints f2[0] = 0.0", "It prints f2[0] = NaN", "An error at f2 = f1; causes compile to fail.", "It prints the garbage value." ],
+      "title": "What will be the output of the program?",
+      "code": "public class ArrayTest {     public static void main(String[ ] args)    {         float f1[ ], f2[ ];         f1 = new float[10];         f2 = f1;         System.out.println(\"f2[0] = \" + f2[0]);     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "protected int a;", "transient int b = 3;", "private synchronized int e;", "volatile int d;" ],
+      "title": "Which of the following class level (nonlocal) variable declarations will not compile?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "z", "x z", "y z", "Compilation fails." ],
+      "title": "What will be the output of the program (in jdk1.6 or above)?",
+      "code": "public class BoolTest {    public static void main(String [] args)     {        Boolean b1 = new Boolean(\"false\");        boolean b2;        b2 = b1.booleanValue();        if (!b2)         {            b2 = true;            System.out.print(\"x \");        }        if (b1 & b2) /* Line 13 */        {            System.out.print(\"y \");        }        System.out.println(\"z\");    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "java", "javac", "javajavac", "Compile error" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test138 {     public static void stringReplace (String text)     {        text = text.replace ('j' , 'c'); /* Line 5 */    }     public static void bufferReplace (StringBuffer text)     {         text = text.append (\"c\");  /* Line 9 */    }     public static void main (String args[])     {         String textString = new String (\"java\");         StringBuffer textBuffer = new StringBuffer (\"java\"); /* Line 14 */        stringReplace(textString);         bufferReplace(textBuffer);         System.out.println (textString + textBuffer);     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "42", "42.5", "43", "bad number" ],
+      "title": "What will be the output of the program?",
+      "code": "public class NFE {    public static void main(String [] args)     {    String s = \"42\";        try         {            s = s.concat(\".5\");  /* Line 8 */            double d = Double.parseDouble(s);            s = Double.toString(d);            int x = (int) Math.ceil(Double.valueOf(s).doubleValue());            System.out.println(x);        }        catch (NumberFormatException e)         {            System.out.println(\"bad number\");        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Line 11", "Line 12", "Line 14", "Line 22" ],
+      "title": "which line is an example of an inappropriate use of assertions?",
+      "code": "public class Test2 {    public static int x;    public static int foo(int y)     {        return y * 2;    }    public static void main(String [] args)     {        int z = 5;        assert z > 0; /* Line 11 */        assert z > 2: foo(z); /* Line 12 */        if ( z < 7 )            assert z > 4; /* Line 14 */        switch (z)         {            case 4: System.out.println(\"4 \");            case 5: System.out.println(\"5 \");            default: assert z < 10;        }        if ( z < 10 )            assert z > 4: z++; /* Line 22 */        System.out.println(z);    }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "In an assert statement, the expression after the colon ( : ) can be any Java expression.", "If a switch block has no default, adding an assert default is considered appropriate.", "In an assert statement, if the expression after the colon ( : ) does not have a value, the assert's error message will be empty.", "It is appropriate to handle assertion failures using a catch clause." ],
+      "title": "Which of the following statements is true?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "bar", "bar done", "foo done", "Compilation fails" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {    public static int y;    public static void foo(int x)     {        System.out.print(\"foo \");        y = x;    }    public static int bar(int z)     {        System.out.print(\"bar \");        return y = z;    }    public static void main(String [] args )     {        int t = 0;        assert t > 0 : bar(7);        assert t > 1 : foo(8); /* Line 18 */        System.out.println(\"done \");    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Line 5", "Line 6", "Line 12", "Line 14" ],
+      "title": "What causes compilation to fail?",
+      "code": "public class Test {     public void foo()     {        assert false; /* Line 5 */        assert false; /* Line 6 */    }     public void bar()    {        while(true)        {            assert false; /* Line 12 */        }         assert false;  /* Line 14 */    } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "DeadLock", "It print 12 12 12 12", "Compilation Error", "Cannot determine output." ],
+      "title": "What will be the output of the program?",
+      "code": "class s implements Runnable {     int x, y;     public void run()     {         for(int i = 0; i < 1000; i++)             synchronized(this)             {                 x = 12;                 y = 12;             }         System.out.print(x + \" \" + y + \" \");     }     public static void main(String args[])     {         s run = new s();         Thread t1 = new Thread(run);         Thread t2 = new Thread(run);         t1.start();         t2.start();     } }"
+    },
+    {
+      "answer": 0,
+      "options": [ "Prints 'Inside Thread Inside Thread'", "Prints 'Inside Thread Inside Runnable'", "Does not compile", "Throws exception at runtime" ],
+      "title": "What will be the output of the program?",
+      "code": "class MyThread extends Thread {     MyThread() {}     MyThread(Runnable r) {super(r); }     public void run()     {         System.out.print(\"Inside Thread \");    } } class MyRunnable implements Runnable {     public void run()     {         System.out.print(\" Inside Runnable\");     } } class Test {      public static void main(String[] args)     {         new MyThread().start();         new MyThread(new MyRunnable()).start();     } }"
+    },
+    {
+      "answer": 1,
+      "options": [ "Compilation fails", "An exception occurs at runtime.", "It prints 'Thread one. Thread two.'", "The output cannot be determined." ],
+      "title": "What will be the output of the program?",
+      "code": "class MyThread extends Thread {    public static void main(String [] args)     {        MyThread t = new MyThread();        t.start();        System.out.print(\"one. \");        t.start();        System.out.print(\"two. \");    }    public void run()     {        System.out.print(\"Thread \");    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "Thread t = new Thread(X);", "Thread t = new Thread(X); t.start();", "X run = new X(); Thread t = new Thread(run); t.start();", "Thread t = new Thread(); x.run();" ],
+      "title": "Which of the following line of code is suitable to start a thread ?",
+      "code": "class X implements Runnable {     public static void main(String args[])     {        /* Missing code? */    }     public void run() {} }"
+    },
+    {
+      "answer": 1,
+      "options": [ "It must be marked final.", "It can be marked abstract.", "It can be marked public.", "It can be marked static." ],
+      "title": "Which is true about a method-local inner class?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "The elements in the collection are ordered.", "The collection is guaranteed to be immutable.", "The elements in the collection are guaranteed to be unique.", "The elements in the collection are accessed using a unique key." ],
+      "title": "Which statement is true for the class<em>java.util.ArrayList</em>?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "finally", "exception finished", "finally exception finished", "Compilation fails" ],
+      "title": "What will be the output of the program?",
+      "code": "public class Test {      public static void aMethod() throws Exception     {        try /* Line 5 */        {            throw new Exception(); /* Line 7 */        }         finally /* Line 9 */        {            System.out.print(\"finally \"); /* Line 11 */        }     }     public static void main(String args[])     {        try         {            aMethod();          }         catch (Exception e) /* Line 20 */        {            System.out.print(\"exception \");         }         System.out.print(\"finished\"); /* Line 24 */    } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "Zero", "Twelve", "Default", "Compilation fails" ],
+      "title": "What will be the output of the program?",
+      "code": "Float f = new Float(\"12\"); switch (f) {    case 12: System.out.println(\"Twelve\");     case 0: System.out.println(\"Zero\");     default: System.out.println(\"Default\"); }"
+    },
+    {
+      "answer": 2,
+      "options": [ "If a is true and b is true then the output is 'A && B'", "If a is true and b is false then the output is 'notB'", "If a is false and b is true then the output is 'ELSE'", "If a is false and b is false then the output is 'ELSE'" ],
+      "title": "Select the correct propositions.",
+      "code": "public void foo( boolean a, boolean b){     if( a )     {        System.out.println(\"A\"); /* Line 5 */    }     else if(a && b) /* Line 7 */    {         System.out.println( \"A && B\");     }     else /* Line 11 */    {         if ( !b )         {            System.out.println( \"notB\") ;        }         else         {            System.out.println( \"ELSE\" ) ;         }     } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "1 and 4" ],
+      "title": "Which two statements are equivalent?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "count = 0", "count = 2", "count = 3", "count = 4" ],
+      "title": "What will be the output of the program?",
+      "code": "class BoolArray {    boolean [] b = new boolean[3];    int count = 0;    void set(boolean [] x, int i)     {        x[i] = true;        ++count;    }    public static void main(String [] args)     {        BoolArray ba = new BoolArray();        ba.set(ba.b, 0);        ba.set(ba.b, 2);        ba.test();    }    void test()     {        if ( b[0] && b[1] | b[2] )            count++;        if ( b[1] && b[(++count - 2)] )            count += 7;        System.out.println(\"count = \" + count);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "9 7 7 foo 7 7foo", "72 34 34 foo34 34foo", "9 7 7 foo34 34foo", "72 7 34 foo34 7foo" ],
+      "title": "What will be the output of the program?",
+      "code": "class SC2 {    public static void main(String [] args)     {        SC2 s = new SC2();        s.start();    }    void start()     {        int a = 3;        int b = 4;        System.out.print(\" \" + 7 + 2 + \" \");        System.out.print(a + b);        System.out.print(\" \" + a + b + \" \");        System.out.print(foo() + a + b + \" \");        System.out.println(a + b + foo());    }    String foo()     {        return \"foo\";    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "x = 0", "x = 1", "Compilation fails.", "An exception is thrown at runtime." ],
+      "title": "What will be the output of the program?",
+      "code": "class A {    final public int GetResult(int a, int b) { return 0; } } class B extends A {     public int GetResult(int a, int b) {return 1; } } public class Test {    public static void main(String args[])     {         B b = new B();         System.out.println(\"x = \" + b.GetResult(0, 1));      } }"
+    },
+    {
+      "answer": 2,
+      "options": [ "TreeMap", "HashMap", "LinkedHashMap", "The answer depends on the implementation of the existing instance." ],
+      "title": "Suppose that you would like to create an instance of a new<em>Map</em>that has an iteration order that is the same as the iteration order of an existing instance of a<em>Map</em>. Which concrete implementation of the<em>Map</em>interface should be used for the new instance?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "What will be the output of the program?",
+      "code": "int I = 0;    outer:    while (true)     {        I++;        inner:        for (int j = 0; j < 10; j++)         {            I += j;            if (j == 3)                continue inner;            break outer;        }        continue outer;    }System.out.println(I);"
+    },
+    {
+      "answer": 1,
+      "options": [ "0.0 < d <= 1.0", "0.0 <= d < 1.0", "Compilation fail", "Cannot say." ],
+      "title": "Which statement is true given the following?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "5 3", "8 2", "8 3", "8 5" ],
+      "title": "What will be the output of the program?",
+      "code": "class Test {    public static void main(String [] args)     {        int x= 0;        int y= 0;        for (int z = 0; z < 5; z++)         {            if (( ++x > 2 ) || (++y > 2))             {                x++;            }        }    System.out.println(x + \" \" + y);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0 1 2", "1 2 3", "0 0 0", "An exception is thrown at runtime" ],
+      "title": "What will be the output of the program?",
+      "code": "public class CommandArgsTwo {    public static void main(String [] argh)     {        int x;        x = argh.length;        for (int y = 1; y <= x; y++)         {            System.out.print(\" \" + argh[y]);        }    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "Hello", "Hello Foo91", "Hello world", "The code does not run." ],
+      "title": "What will be the output of the program, if this code is executed with the command line:",
+      "code": "public class F0091 {        public void main( String[] args )     {          System.out.println( \"Hello\" + args[0] );     } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "Line 11", "Line 12", "Line 14", "Line 22" ],
+      "title": "which line is an example of an inappropriate use of assertions?",
+      "code": "public class Test2 {    public static int x;    public static int foo(int y)     {        return y * 2;    }    public static void main(String [] args)     {        int z = 5;        assert z > 0; /* Line 11 */        assert z > 2: foo(z); /* Line 12 */        if ( z < 7 )            assert z > 4; /* Line 14 */        switch (z)         {            case 4: System.out.println(\"4 \");            case 5: System.out.println(\"5 \");            default: assert z < 10;        }        if ( z < 10 )            assert z > 4: z++; /* Line 22 */        System.out.println(z);    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "new Runnable(MyRunnable).start();", "new Thread(MyRunnable).run();", "new Thread(new MyRunnable()).start();", "new MyRunnable().start();" ],
+      "title": "which of these will create and start this thread?",
+      "code": "public class MyRunnable implements Runnable {    public void run()     {        // some code here    }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "public double methoda();", "public final double methoda();", "static void methoda(double d1);", "protected void methoda(double d1);" ],
+      "title": "Which is the valid declarations within an interface definition?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "method", "native", "subclasses", "reference", "array" ],
+      "title": "Which is a reserved word in the Java programming language?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1 only", "2 and 5", "3 and 4", "3 and 5" ],
+      "title": "which two statements, added independently at beginning of the program, allow the code to compile?",
+      "code": "/* Missing statements ? */public class NewTreeSet extends java.util.TreeSet{    public static void main(String [] args)     {        java.util.TreeSet t = new java.util.TreeSet();        t.clear();    }    public void clear()     {        TreeMap m = new TreeMap();        m.clear();    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "protected int a;", "transient int b = 3;", "private synchronized int e;", "volatile int d;" ],
+      "title": "Which of the following class level (nonlocal) variable declarations will not compile?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "after line 12", "after line 14", "after line 7, when doBar() completes", "after line 15, when main() completes" ],
+      "title": "At what point is the<em>Bar</em>object, created on line 6, eligible for garbage collection?",
+      "code": "class Bar { } class Test {      Bar doBar()     {        Bar b = new Bar(); /* Line 6 */        return b; /* Line 7 */    }     public static void main (String args[])     {         Test t = new Test();  /* Line 11 */        Bar newBar = t.doBar();  /* Line 12 */        System.out.println(\"newBar\");         newBar = new Bar(); /* Line 14 */        System.out.println(\"finishing\"); /* Line 15 */    } }"
+    },
+    {
+      "answer": 3,
+      "options": [ "wookkeewoo", "wbookkeeper", "wbookkeewoo", "Compilation fails." ],
+      "title": "What will be the output of the program?",
+      "code": "String d = \"bookkeeper\";d.substring(1,7);d = \"w\" + d;d.append(\"woo\");  /* Line 4 */System.out.println(d);"
+    },
+    {
+      "answer": 1,
+      "options": [ "foo", "MyThread foo", "MyThread bar", "foo bar" ],
+      "title": "What will be the output of the program?",
+      "code": "class MyThread extends Thread {    MyThread()     {        System.out.print(\" MyThread\");    }    public void run()     {        System.out.print(\" bar\");    }    public void run(String s)     {        System.out.println(\" baz\");    }}public class TestThreads {    public static void main (String [] args)     {        Thread t = new MyThread()         {            public void run()             {                System.out.println(\" foo\");            }        };        t.start();    }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "If assertions are compiled into a source file, and if no flags are included at runtime, assertions will execute by default.", "As of Java version 1.4, assertion statements are compiled by default.", "With the proper use of runtime arguments, it is possible to instruct the VM to disable assertions for a certain class, and to enable assertions for a certain package, at the same time.", "When evaluating command-line arguments, the VM gives -ea flags precedence over -da flags." ],
+      "title": "Which of the following statements is true?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "It can extend exactly one class and implement exactly one interface.", "It can extend exactly one class and can implement multiple interfaces.", " It can extend exactly one class or implement exactly one interface.", "It can implement multiple interfaces regardless of whether it also extends a class." ],
+      "title": "Which is true about an anonymous inner class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "You must have a reference to an instance of the enclosing class in order to instantiate it.", "It does not have access to nonstatic members of the enclosing class.", "It's variables and methods must be static.", "It must extend the enclosing class." ],
+      "title": "Which statement is true about a static nested class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1 and 2", "2 and 3", "3 and 4", "1 and 4" ],
+      "title": "Which of the following statements about the<em>hashcode()</em>method are incorrect?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "finished", "Exception", "Compilation fails.", "Arithmetic Exception" ],
+      "title": "What will be the output of the program?",
+      "code": "try {     int x = 0;     int y = 5 / x; } catch (Exception e) {    System.out.println(\"Exception\"); } catch (ArithmeticException ae) {    System.out.println(\" Arithmetic Exception\"); } System.out.println(\"finished\");"
+    },
+    {
+      "answer": 0,
+      "options": [ "Always when try block get executed, no matter exception occured or not.", "Always when a method get executed, no matter exception occured or not.", "Always when a try block get executed, if exception do not occur.", "Only when exception occurs in try block code." ],
+      "title": "When finally block gets executed?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Runtime polymorphism is a process in which a call to an overridden method is resolved at runtime rather than at compile-time.", "Runtime polymorphism is a process in which a call to an overloaded method is resolved at runtime rather than at compile-time.", "Both of the above.", "none of the precents." ],
+      "title": "What is runtime polymorphism?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Thread returns to the ready state.", "Thread returns to the waiting state.", "Thread starts running.", "none of the precents." ],
+      "title": "What happens when thread's yield() method is called?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Static binding occurs during Compile time.", "Static binding occurs during load time.", "Static binding occurs during runtime.", "none of the precents." ],
+      "title": "When static binding occurs?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "JRE is a java based GUI application.", "JRE is an application development framework.", "JRE is an implementation of the Java Virtual Machine which executes Java programs.", "none of the precents." ],
+      "title": "What is JRE?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Abstraction is a technique to define different methods of same type.", "Abstraction is the ability of an object to take on many forms.", "It refers to the ability to make a class abstract in OOP.", "none of the precents." ],
+      "title": "What is Abstraction?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Polymorphism is a technique to define different objects of same type.", "Polymorphism is the ability of an object to take on many forms.", "Polymorphism is a technique to define different methods of same type.", "none of the precents." ],
+      "title": "What is polymorphism?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "0.0", "0L", "not defined" ],
+      "title": "What is the default value of long variable?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "8 bit", "16 bit", "32 bit", "not precisely defined" ],
+      "title": "What is the size of boolean variable?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "public int main(String[] args)", "public static int main(String[] args)", "public static void main(String[] args)", "none of the precents" ],
+      "title": "What is correct syntax for main method of a java class?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "compile time error: X is not Comparable", "run time error: X is not Comparable", "compile time error: accessing private member X.x in compare()", "output: [1, 2, 3]", "output: [3, 2, 1]" ],
+      "title": "which of the following will happen?",
+      "code": "import java.util.Arrays;import java.util.Comparator;public class X {  private int x;  public X(int x) {    this.x = x;  }  public String toString() {    return Integer.toString(x);  }  public static void main(String[] args) {    X[] array = new X[3];    array[0] = new X(3);    array[1] = new X(1);    array[2] = new X(2);    Arrays.sort(array, new Comparator() {      public int compare(X x1, X x2) {        return x2.x - x1.x;      }    });    System.out.println(Arrays.toString(array));  }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "member variable can not be final", "constructor parameter cannot be final", "compareTo must take Object as parameter", "operator > is not defined for type A", "nothing is wrong with this code" ],
+      "title": "Which of the following is true?",
+      "code": "public class A implements Comparable {  final int a;  A(final int a) {    this.a = a;  }  public int compareTo(A that) {    return this.a - that.a;  }  public static void main(String[] args) {    A a1 = new A(1);    A a2 = new A(2);    System.out.println(a1 > a2);  }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "class cannot be instantiated because of non-public constructor", "class cannot be final", "class cannot be static", "class cannot be named Class because it is a reserved keyword", "nothing is wrong with this code" ],
+      "title": "Which of the following is true?",
+      "code": "public static final class Class {  static final int id = 1;  Class() {  }  static public int id() {    return id;  }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "The code will print '4'", "The code will print '1234'", "The code won't compile", "The code will fail at run time" ],
+      "title": "Which of the following is true?",
+      "code": "public class Main {  public static void main() {    System.out.println(\"1234\".length());  }}"
+    },
+    {
+      "answer": 2,
+      "options": [ "The code will print 'hello'", "The code won't compile", "The code will fail at run time" ],
+      "title": "Which of the following is true?",
+      "code": "public final class Main {  static final String s = \"hello\";  public void main(String[] args) {    System.out.println(s);  }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "The code will print 'a'", "The code will print 'b'", "The code won", "The code will fail at run time" ],
+      "title": "Which of the following is true?",
+      "code": "public class A {  public String foo() {    return \"a\";  }}public class B extends A {  public String foo() {    return \"b\";  }}public class Main {  public static void main(String[] args) {    A a = (A) new B();    System.out.println(a.foo());  }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "The code won't compile", "The code will fail at run time", "The code will print 'Base'", "The code will print 'Derived'" ],
+      "title": "Which of the following is true?",
+      "code": "public class Base {  public String toString() {    return \"Base\";  }}public class Derived extends Base {  public String toString() {    return \"Derived\";  }}public class Main {  public static void main(String[] args) {    Base b = new Derived();    System.out.println(b);  }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "class C cannot be instantiated because of private constructor", "class C cannot be instantiated because it is abstract", "method getInstance() cannot be static", "there is nothing wrong with this code" ],
+      "title": "Which of the following is true?",
+      "code": "public interface I {  public void method();}public abstract class C implements I {  private C() {  }  public static C getInstance() {    return new C();  }  public void method() {  }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "The code will not compile", "There will be a run time error", "The code will print 0", "The code will print 10" ],
+      "title": "What of following will happen?",
+      "code": "public class A {  public void main(String[] args) {    A[] array = new A[10];    System.out.println(array.length);  }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "The code won't compile", "There will be a run time error", "The code will print 'a'", "The code will print 'b'" ],
+      "title": "Which of the following is true?",
+      "code": "package a;class A {  public void foo() {     System.out.println(\"a\");  }}package b;import a.A;public class B extends A {  public void foo() {    System.out.println(\"b\");  }  public static void main(String[] args) {    new B().foo();  }}"
+    },
+    {
+      "answer": 0,
+      "options": [ "-1", "0", "1", "10", "20" ],
+      "title": "What will be printed?",
+      "code": "int a = 10;System.out.println(a + ~a);"
+    },
+    {
+      "answer": 0,
+      "options": [ "a", "b", "ab" ],
+      "title": "What will be printed?",
+      "code": "String s1 = \"a\";String s2 = s1;s1 += \"b\";System.out.println(s2);"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "String s1 = \"a\";String s2 = \"a\";System.out.println(s1 == s2);"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "4", "5", "6" ],
+      "title": "What will be printed?",
+      "code": "int a = 1;a += ++a * a;System.out.println(a);"
+    },
+    {
+      "answer": 1,
+      "options": [ "output: false true false", "output: false false", "output: true false true", "compilation error", "run time error" ],
+      "title": "What will be the result of running this code?",
+      "code": "public class Test {  static boolean printAndReturn(boolean value) {    System.out.println(value);    return value;  }  public static void main(String[] args) {    if (printAndReturn(false) && printAndReturn(true)) {      System.out.println(true);    } else {      System.out.println(false);    }  }}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "String s1 = new String(\"a\");String s2 = new String(\"a\");System.out.println(s1 == s2);"
+    },
+    {
+      "answer": 2,
+      "options": [ "'the string is null'", "'null'", "NullPointerException", "compilation error" ],
+      "title": "What will be the result of executing this code?",
+      "code": "String s = null;if ((s != null) || (!s.isEmpty())) {  System.out.println(s);} else {  System.out.println(\"the string is null\");}"
+    },
+    {
+      "answer": 3,
+      "options": [ "128", "64", "-128", "-64" ],
+      "title": "What will be printed?",
+      "code": "byte b = (byte) 128;b >>>= 1;System.out.println(b);"
+    },
+    {
+      "answer": 3,
+      "options": [ "-1", "0", "1", "2147483647", "-2147483647" ],
+      "title": "What will be printed?",
+      "code": "int a = -1;a = a >>> 1;System.out.println(a);"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "1", "-1", "2147483647", "-2147483647" ],
+      "title": "What will be printed?",
+      "code": "int a = -1;a = a >> 1;System.out.println(a);"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "boolean value =   Double.POSITIVE_INFINITY == Double.POSITIVE_INFINITY;System.out.println(value);"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "boolean value = Double.NaN == Double.NaN;System.out.println(value);"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "boolean value = -0.0 == 0.0;System.out.println(value);"
+    },
+    {
+      "answer": 0,
+      "options": [ "-0.0", "0", "0.0", "-0", "NaN" ],
+      "title": "What will be printed?",
+      "code": "double value = -0.0;System.out.println(value);"
+    },
+    {
+      "answer": 1,
+      "options": [ "255", "-1", "NaN", "-255", "-127" ],
+      "title": "What will be printed?",
+      "code": "int i = 255;byte b = (byte) i;System.out.println(b);"
+    },
+    {
+      "answer": 2,
+      "options": [ "exception is not declared", "more specific exception type must be used in catch", "potential resource leak", "return must be outside of the try block" ],
+      "title": "What is wrong with this code?",
+      "code": "public String readLine() {    try {      BufferedReader br =          new BufferedReader(new FileReader(\"file.txt\"));      String line = br.readLine();      br.close();      return line;    } catch (Exception e) {      throw new RuntimeException(e);    }}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "1", "0.0", "Type mismatch: cannot convert from double to int" ],
+      "title": "What is the outcome?",
+      "code": "int value = (int) 2.0 / 3.0;System.out.println(value);"
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "0.0", "0.6666666666666666", "1", "1.0" ],
+      "title": "What will be printed?",
+      "code": "double value = 2 / 3;System.out.println(value);"
+    }
+  ]
+
+}

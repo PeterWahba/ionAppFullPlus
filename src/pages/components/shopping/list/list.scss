@@ -1,0 +1,99 @@
+page-list {
+    ion-content, content-md {
+        background-color: #c1cdf0 !important;
+    }
+
+    ion-col {
+        padding: 5px 5px 0px 5px;
+    }
+
+    .content {
+        background-color: #ddd;
+    }
+
+    .discount {
+        text-decoration: line-through;
+        font-weight: 100;
+    }
+
+    ion-card.cardList {
+        position: relative;
+        text-align: center;
+        margin: 12px 10px 0px 0px !important;
+        width: 100% !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .ribbon {
+        z-index: 10;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform-origin: 0 100%;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+        background-color: color($colors, red);
+        color: #fff;
+        height: 25px;
+        width: 100px;
+        top: -30px;
+        transform: rotateZ(45deg);
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 30px;
+        // right:-14.644660940673px;
+        right: -34px;
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+    }
+
+    .banner-bg {
+        position: relative;
+        height: 150px;
+        // background: url(img/1.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: right !important;
+    }
+
+    .button-item-text {
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .item-button-left {
+        background-color: #e2dede;
+        margin-right: 1px;
+    }
+
+    .item-button-right {
+        background-color: #e2dede;
+        margin-left: 1px;
+    }
+
+    .item-title {
+        background-color: #e2dede;
+        margin-bottom: 1px;
+    }
+
+    button {
+        ion-badge {
+            position: absolute;
+            top: -0.6rem;
+            right: -0.1rem;
+            opacity: 0.9;
+
+            & ~ ion-icon {
+                margin-right: 1.2rem;
+            }
+        }
+    }
+}

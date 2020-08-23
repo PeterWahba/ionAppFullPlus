@@ -1,0 +1,139 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="scannedCode">
+    <ion-item>
+      <ion-icon color="pink" style="font-size:5rem" name="{{result.icon}}" item-start></ion-icon>
+      <p text-capitalize style="font-size:3rem;font-weight:bold;color:black!important;">{{result.type}}</p>
+      <p>{{result.date}}</p>
+    </ion-item>
+
+     <!-- Upc or text -->
+      <div margin-top *ngIf="result.type == 'upc' || result.type == 'text'">
+        
+        <div style="font-size:3rem;" padding>{{result.text }}</div>
+
+        <ion-row margin>
+          <ion-col>
+            <ion-icon color="special-blue" style="font-size:3.5rem" name="md-share" (click)="share(result)"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </div>
+    <!-- End Upc or text -->
+
+     <!-- weblink -->
+      <div margin-top *ngIf="result.type == 'weblink'">
+
+        <div style="font-size:3rem;" padding>{{result.data.link}}</div>
+
+        <ion-row margin>
+          <ion-col *ngIf="!!result.data.link">
+            <ion-icon color="special-blue" style="font-size:3.5rem" name="md-link" (click)="openLink(result.data.link)"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon color="special-blue" style="font-size:3.5rem" name="md-share" (click)="share(result)"></ion-icon>
+          </ion-col>
+          <ion-col>
+              
+           </ion-col>
+           <ion-col>
+              
+           </ion-col>
+        </ion-row>
+      </div>
+     <!-- End weblink -->
+
+      <!-- geo -->
+        <div margin-top *ngIf="result.type == 'geo'">
+        <div style="font-size:3rem;" padding>
+          <div>Latitude: {{result.data.lat}}</div>
+          <div>Longitude: {{result.data.lon}}</div>
+        </div>
+          <ion-row margin>
+            <ion-col *ngIf="!!result.data">
+              <ion-icon color="special-blue" style="font-size:3.5rem" name="md-pin" (click)="launchGeo(result.data)"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-icon color="special-blue" style="font-size:3.5rem" name="md-share" (click)="share(result)"></ion-icon>
+            </ion-col>
+            <ion-col>
+                
+             </ion-col>
+             <ion-col>
+                
+             </ion-col>
+          </ion-row>
+        </div>
+      <!-- geo -->
+
+    <!-- WIFI -->
+      <div margin-top *ngIf="result.type == 'wifi'">
+      <div style="font-size:3rem;" padding>
+        <div>SSID: {{result.data.ssid}}</div>
+        <div>PASS: {{result.data.pass}}</div>
+      </div>
+
+        <ion-row margin>
+          <ion-col *ngIf="!!result.data.ssid && !!result.data.pass">
+            <ion-icon color="special-blue" style="font-size:3.5rem" name="ios-wifi" (click)="connectToWifi(result.data.ssid, result.data.pass)"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon color="special-blue" style="font-size:3.5rem" name="md-share" (click)="share(result)"></ion-icon>
+          </ion-col>
+          <ion-col>
+               
+            </ion-col>
+            <ion-col>
+                
+             </ion-col>
+        </ion-row>
+      </div>
+    <!-- End Wifi -->
+
+
+
+
+    <!-- Contacts -->
+      <div margin-top *ngIf="result.type == 'contact'">
+        <div style="font-weight: bold;">{{result.data.name}}</div>
+        <div>{{result.data.addr}}</div>
+        <div>{{result.data.telf}}</div>
+        <div>{{result.data.email}}</div>
+        <div>{{result.data.note}}</div>
+
+        <ion-row margin>
+          <ion-col *ngIf="!!result.data.name && !!result.data.telf">
+            <ion-icon style="font-size:3.5rem" name="md-person-add" (click)="addContact(result.data)"></ion-icon>
+          </ion-col>
+          <ion-col *ngIf="!!result.data.addr">
+            <ion-icon style="font-size:3.5rem" name="md-pin" (click)="launchNavigation(result.data.addr)"></ion-icon>
+          </ion-col>
+          <ion-col *ngIf="!!result.data.telf">
+            <ion-icon style="font-size:3.5rem" name="md-call" (click)="makeCall(result.data.telf)"></ion-icon>
+          </ion-col>
+          <ion-col *ngIf="!!result.data.email">
+            <ion-icon style="font-size:3.5rem" name="md-mail" (click)="sendEmail(result.data.email)"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon style="font-size:3.5rem" name="md-share" (click)="share(result)"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </div>
+    <!-- End contacts -->
+
+  </div>
+
+</ion-content>

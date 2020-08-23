@@ -1,0 +1,94 @@
+page-login-pwa {
+
+    .submit-box {
+        margin-top: 10vw;
+        text-align: center;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .login-container {
+        padding-top: 15vw;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .error-message .item-inner {
+        border-bottom-color: transparent !important;
+        box-shadow: inset 0 -1px 0 0 transparent !important;
+    }
+
+    .error-message p {
+        text-align: right;
+    }
+
+    ion-item {
+        padding-left: 0px !important;
+        background-color: transparent !important;
+        font-size: 0.9em;
+    }
+
+    .item-inner {
+        border-bottom: 1px solid white !important;
+        box-shadow: inset 0 -1px 0 transparent;
+    }
+
+    ion-button {
+        opacity: 0.8;
+    }
+
+    ion-content {
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-color: transparent;
+    }
+
+    .scroll-content {
+        margin-top: 0 !important;
+    }
+    /*vegas-timer*/
+    div.v-slide .vegas-timer-running {
+        display: none !important;
+    }
+
+    .link-btn a {
+        font-size: 2rem;
+        color: white !important;
+        font-weight: bold;
+    }
+
+    ion-input {
+        color: white !important;
+        font-weight: bolder;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white !important;
+        font-weight: bolder;
+        border-color: white;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        font-weight: bolder;
+    }
+
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+        font-weight: bolder;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: white !important;
+        font-weight: bolder;
+    }
+
+    ion-label p {
+        color: white !important;
+        font-weight: bold;
+    }
+}

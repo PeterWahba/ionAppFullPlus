@@ -1,0 +1,432 @@
+﻿{
+  "id": "6",
+  "language": "php",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic Php questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "Php",  
+  "level": "1",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1484219953&asins=1484219953&linkId=a8eda65fa7384d0f7d04d14bf993a127&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=144936375X&asins=144936375X&linkId=9f69ad398d1a13c87dd88a7aebed05bc&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0538745843&asins=0538745843&linkId=ce44fee622909400030aee0d8b2fbba8&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"    
+  ],
+  "questions": [
+    {
+      "answer": 1,
+      "options": [ "==", "===", "=", "!=" ],
+      "title": "Which operator is used to check if two values are equal and of same data type?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "The if statement is used to execute some code only if a specified condition is true",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "$cars = array('Volvo', 'BMW', 'Toyota');", "$cars = 'Volvo', 'BMW', 'Toyota';", "$cars = array['Volvo', 'BMW', 'Toyota'];" ],
+      "title": "How do you create an array in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "In PHP, the only way to output text is with echo.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "The setcookie() function must appear BEFORE the <html> tag.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "$myVar", "$my-Var", "$my_Var" ],
+      "title": "Which one of these variables has an illegal name?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "The die() and exit() functions do the exact same thing.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "PHP can be run on Microsoft Windows IIS(Internet Information Server):",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "<!--...-->", "*\\...\\*", "<comment>...</comment>", "/*...*/" ],
+      "title": "What is a correct way to add a comment in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "$count++;", "++count", "count++;", "$count =+1" ],
+      "title": "What is the correct way to add 1 to the $count variable?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "$_SERVER", "$_GET", "$_SESSION", "$_GLOBALS" ],
+      "title": "Which superglobal variable holds information about headers, paths, and script locations?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "PHP allows you to send emails directly from a script",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "fopen('time.txt','r');", "fopen('time.txt','r+');", "open('time.txt');", "open('time.txt','read');" ],
+      "title": "What is the correct way to open the file 'time.txt' as readable?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "create myFunction()", "function myFunction()", "new_function myFunction()" ],
+      "title": "What is the correct way to create a function in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "<?php include 'time.inc'; ?>", "<?php include:'time.inc'; ?>", "<!-- include file='time.inc' -->", "<?php include file='time.inc'; ?>" ],
+      "title": "What is the correct way to include the file 'time.inc' ?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Include files must have the file extension '.inc'",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "In PHP you can use both single quotes ( ' ' ) and double quotes ( ' ' ) for strings:",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "When using the POST method, variables are displayed in the URL:",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Request.Form;", "Request.QueryString;", "$_GET[];" ],
+      "title": "How do you get information from a form that is submitted using the 'get' method?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Perl and C", "VBScript", "JavaScript" ],
+      "title": "The PHP syntax is most similar to:",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "</php>", ";", "New line", "." ],
+      "title": "What is the correct way to end a PHP statement?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "$", "!", "&" ],
+      "title": "All variables in PHP start with which symbol?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "'Hello World';", "echo 'Hello World';", "Document.Write('Hello World');" ],
+      "title": "How do you write 'Hello World' in PHP",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "<&>...</&>", "<?php...?>", "<?php>...</?>", "<script>...</script>" ],
+      "title": "PHP server scripts are surrounded by delimiters, which?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "the code is perfectly fine", "classes can not be empty", "class C can not extend both A and B", "qualifiers 'public' or 'private' are missing in class definitions" ],
+      "title": "Which statement about the code below is correct?",
+      "code": "class A {}class B {}class C extends A, B {}"
+    },
+    {
+      "answer": 2,
+      "options": [ "ab(newline)", "a\\b(newline)", "a\\b\\n", "a\\b(newline)", "a\\b\\n" ],
+      "title": "What gets printed?",
+      "code": "$str = 'a\\b\\n';   echo $str;"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2" ],
+      "title": "What will be printed by the below code?",
+      "code": "$a = 1;{  $a = 2;} echo $a, \"\n\";"
+    },
+    {
+      "answer": 0,
+      "options": [ "0", "1", "2", "this code won't work" ],
+      "title": "What will be printed?",
+      "code": "$a = array();if ($a[1]) null;echo count($a), \"\n\";"
+    },
+    {
+      "answer": 0,
+      "options": [ "Caught Exception", "Caught MyException" ],
+      "title": "What gets printed?",
+      "code": "class MyException extends Exception {}try {  throw new MyException('Oops!');} catch (Exception $e) {  echo \"Caught Exception\n\";} catch (MyException $e) {  echo \"Caught MyException\n\";}"
+    },
+    {
+      "answer": 1,
+      "options": [ "2", "3", "4", "5", "6" ],
+      "title": "What will be printed?",
+      "code": "$a = array(  null => 'a',  true => 'b',  false => 'c',  0 => 'd',  1 => 'e',  '' => 'f');echo count($a), \"\n\";"
+    },
+    {
+      "answer": 2,
+      "options": [ "aa", "bb", "ab" ],
+      "title": "What will be printed?",
+      "code": "$var = 'a';$VAR = 'b';echo \"$var$VAR\";"
+    },
+    {
+      "answer": 2,
+      "options": [ "!=", ">=", "&&&", "<>", "===" ],
+      "title": "Which of the following is NOT a valid PHP comparison operator?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "if ('2' == '02') {     echo 'true';} else {  echo 'false';}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "3" ],
+      "title": "What will be the value of $var below?",
+      "code": "$var = true ? '1' : false ? '2' : '3';"
+    },
+    {
+      "answer": 3,
+      "options": [ "11", "22", "33", "37", "39" ],
+      "title": "What gets printed?",
+      "code": "<?php$RESULT = 11 + 011 + 0x11;echo \"$RESULT\";?>"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false", "there is a syntax error" ],
+      "title": "What will be printed?",
+      "code": "if (null === false) {  echo 'true';} else {  echo 'false';}"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "$a = array();if ($a == null) {   echo 'true';} else {  echo 'false';}"
+    },
+    {
+      "answer": 2,
+      "options": [ "__LINE__", "__FILE__", "__DATE__", "__CLASS__", "__METHOD__" ],
+      "title": "Which of the following is NOT a magic predefined constant?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "$a[0]", "$a[1]", "$a[2]", "$a[3]", "$a[4]" ],
+      "title": "How do we access the value of 'd' later?",
+      "code": "$a = array(    'a',    3 => 'b',    1 => 'c',    'd');"
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "0.5", "1" ],
+      "title": "What will be the value of $var?",
+      "code": "$var = 1 / 2;"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "What will be printed?",
+      "code": "$var = '0';if ($var) {    echo 'true';} else {    echo 'false';}"
+    },
+    {
+      "answer": 2,
+      "options": [ "const", "constant", "define", "#pragma", "def" ],
+      "title": "Which of the following is used to declare a constant?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "What gets printed?",
+      "code": "$var = 'false';if ($var) {    echo 'true';} else {    echo 'false';}"
+    },
+    {
+      "answer": 1,
+      "options": [ "undef", "null", "None", "There is no such concept in PHP" ],
+      "title": "A value that has no defined value is expressed in PHP with the following keyword:",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "// commented code to end of line", "/* commented code here */", "# commented code to end of line", "All of the precents" ],
+      "title": "Which of the following is the way to create comments in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "HELLO WORLD!", "nothing", "its a compiler error, the code won't run", "hello world!" ],
+      "title": "What will be printed by the code below?",
+      "code": "<?php    FUNCTION TEST()    {        ECHO \"HELLO WORLD!\n\";    }    test();?>"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "no value" ],
+      "title": "What value is printed for 'a' below?",
+      "code": "<?php    $a = 1;    function Test()    {        echo \"a = $a\";    }    Test();?>"
+    },
+    {
+      "answer": 0,
+      "options": [ "$_REQUEST", "$REQUEST", "$REQUEST_PAGE", "none of the precents." ],
+      "title": "Which of the following can be used to get information sent via get/post method in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "_METHOD_", "_FILE_", "_FUNCTION_", "_CLASS_" ],
+      "title": "Which of the following magic constant of PHP returns class method name?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "getMessage()", "getCode()", "getTrace()", "getTraceAsString()" ],
+      "title": "Which of the following method of Exception class returns array of the backtrace?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "$_FILES['file']['tmp_name']", "$_FILES['file']['name']", "$_FILES['file']['size']", "$_FILES['file']['type']" ],
+      "title": "Which of the following provides the size of the uploaded file in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "session_start() function", "$_SESSION[]", "isset() function", "session_destroy() function" ],
+      "title": "Which of the following is used to access session variables in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "srand()", "rand()", "random()", "none of the precents." ],
+      "title": "Which of the following variable is used to generate random numbers using PHP?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "break", "continue" ],
+      "title": "Which of the following keyword causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "If the value is an array, it is false if it contains no other values, and it is true otherwise. For an object, containing a value means having a member variable that has been assigned a value.", "Valid resources are true (although some functions that return resources when they are successful will return FALSE when unsuccessful).", "Don't use double as Booleans.", "All of the precents." ],
+      "title": "Which of the following is correct about determine the 'truth' of any value not already of the Boolean type?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Strings", "Arrays", "Objects", "Resources" ],
+      "title": "Which of the following type of variables are sequences of characters, like 'PHP supports string operations.'?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "Is PHP whitespace sensitive?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "mysql_connect()", "mysql_query()", "mysql_close()", "none of the precents" ],
+      "title": "Which of the following method can be used to create a MySql database using PHP?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "The preg_match() function searches a string specified by string for a string specified by pattern, returning true if the pattern is found, and false otherwise.", "The preg_match() function searches throughout a string specified by pattern for a string specified by string. The search is not case sensitive.", "The preg_match() function searches string for pattern, returning true if pattern exists, and false otherwise.", "none of the precents" ],
+      "title": "Which of the following is correct about preg_match() function?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "$GLOBALS", "$_SERVER", "$_COOKIE", "$_SESSION" ],
+      "title": "Which of the following is an associative array of variables passed to the current script via HTTP cookies?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "fopen()", "fread()", "filesize()", "file_exist()" ],
+      "title": "Which of the following function is used to check if a file exists or not?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "Doubly quoted strings are treated almost literally, whereas singly quoted strings replace variables with their values as well as specially interpreting certain character sequences.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "array()", "array_change_key_case()", "array_chunk()", "array_count_values()" ],
+      "title": "Which of the following function creates an array?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Numeric Array", "Associative Array", "Multidimentional Array", "none of the precents." ],
+      "title": "Which of the following array represents an array containing one or more arrays?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "If the value is an array, it is false if it contains no other values, and it is true otherwise. For an object, containing a value means having a member variable that has been assigned a value.", "Valid resources are true (although some functions that return resources when they are successful will return FALSE when unsuccessful).", "Don't use double as Booleans.", "All of the precents." ],
+      "title": "Which of the following is correct about determine the 'truth' of any value not already of the Boolean type?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "If the value is a number, it is false if exactly equal to zero and true otherwise.", "If the value is a string, it is false if the string is empty (has zero characters) or is the string '0', and is true otherwise.", "Values of type NULL are always false.", "All of the precents." ],
+      "title": "Which of the following is correct about determine the 'truth' of any value not already of the Boolean type?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "The PHP configuration file, php.ini, is the final and most immediate way to affect PHP's functionality.", "The php.ini file is read each time PHP is initialized.", "Both of the above." ],
+      "title": "Which of the following is true about php.ini file?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "A single-quoted string does not have variables within it interpreted. A double-quoted string does.", "Also, a double-quoted string can contain apostrophes without backslashes, while a single-quoted string can contain unescaped quotation marks.", "The single-quoted strings are faster at runtime because they do not need to be parsed.", "All of above are true" ],
+      "title": "What is the difference between single-quoted and double-quoted strings in PHP?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Hypertext Preprocessor", "Private Home Page", "Personal Hypertext Processor" ],
+      "title": "What does PHP stand for?",
+      "code": ""
+    }
+  ]
+
+}

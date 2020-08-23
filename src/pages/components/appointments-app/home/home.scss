@@ -1,0 +1,18 @@
+page-home {
+    ion-content{
+        background-color: #efefef!important;
+    }
+    
+    div.v-slide .vegas-timer-running {
+        display: none!important;
+      }
+
+    #installer{
+        display: none;
+    }
+        
+    #installer.available{
+        display: block;
+    }
+
+}

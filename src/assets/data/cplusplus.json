@@ -1,0 +1,1764 @@
+﻿{
+  "id": "9",
+  "language": "c",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic C++ questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "C++", 
+  "level": "2",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0321563840&asins=0321563840&linkId=302c7bfff800b1f763e2d8263b04d8f1&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0789757745&asins=0789757745&linkId=3091363886c2b07e8a72331e0ebd2954&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1285852745&asins=1285852745&linkId=603cf69d90dfe2d767e63ee28c885572&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+  ],
+  "questions": [
+    {
+      "answer": 2,
+      "options": [ "2 3", "6 9", "2 15", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void Sum(int a, int b, int & c)    {        a = b + c;        b = a + c;        c = a + b;    }    int main()    {        int x = 2, y =3;        Sum(x, y, y);        cout << x << \" \" << y;        return 0;     }"
+    },
+    {
+      "answer": 0,
+      "options": [ "It will not return value to its caller", "It will return value to its caller", "both a & b are correct", "none of the mentioned" ],
+      "title": "What will happen when we use void in argument passing?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "11", "12", "13", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int add(int a, int b);    int main()    {        int i = 5, j = 6;        cout << add(i, j) << endl;        return 0;    }    int add(int a, int b )    {        int sum = a + b;        a = 7;        return a + b;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "100", "compile time error", "144", "110" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void square (int *x)    { *x = (*x + 1) * (*x);    }    int main ( )    { int num = 10;        square(&num);        cout << num;         return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "6", "24", "segmentation fault", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    long factorial (long a)    {        if (a > 1)            return (a * factorial (a + 1));        else            return (1);    }    int main ()    {        long num = 3;        cout << num << \"! = \" << factorial ( num );        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "10", "20", "15", "none of the mentioned" ],
+      "title": "What is the new value of x?",
+      "code": "    #include <iostream>    using namespace std;    void fun(int &x)    {        x = 20;    }    int main()    {         int x = 10;         fun(x);         cout << \"New value of x is \" << x;         return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "2 5 10", "2 4 5", "2 6 14", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void copy (int& a, int& b, int& c)    {        a *= 2;        b *= 2;        c *= 2;    }    int main ()    {        int x = 1, y = 3, z = 7;        copy (x, y, z);        cout << \"x =\" << x << \", y =\" << y << \", z =\" << z;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "call by value", "call by reference", "call by pointer", "none of the mentioned" ],
+      "title": "By default how the value are passed in c++?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "static", "const", "absolute", "none of the mentioned" ],
+      "title": "Which is used to keep the call by reference value as intact?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "How many ways of passing a parameter are there in c++?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "1", "2", "3" ],
+      "title": "How many minimum number of functions are need to be presented in c++?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "whole program", "only inside the {} block", "both a and b", "none of the mentioned" ],
+      "title": "What is the scope of the variable declared in the user definied function?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "10", "20", "compile time error", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void fun(int x, int y)    {        x = 20;        y = 10;    }    int main()    {        int x = 10;        fun(x, x);        cout << x;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "hai", "haihai", "compile time error", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void mani()    void mani()    {        cout<<\"hai\";    }    int main()    {        mani();        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "call by value", "call by reference", "call by pointer", "none of the mentioned" ],
+      "title": "Which is more effective while calling the functions?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "99", "90", "102", "127" ],
+      "title": "How many max number of arguments can present in function in c99 compiler?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ ")", ";", "none of the mentioned" ],
+      "title": "which of the following is used to terminate the function declaration?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "return type,function name", "return type,function name,parameters", "both a and b", "none of the mentioned" ],
+      "title": "What are mandatory parts in function declaration?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "user-defined function", "main function", "void function", "none of the mentioned" ],
+      "title": "Where does the execution of the program starts?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "2 3", "6 9", "2 15", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void Sum(int a, int b, int & c)    {        a = b + c;        b = a + c;        c = a + b;    }    int main()    {        int x = 2, y =3;        Sum(x, y, y);        cout << x << \" \" << y;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "It will not return value to its caller", "It will return value to its caller", "both a & b are correct", "none of the mentioned" ],
+      "title": "What will happen when we use void in argument passing?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "11", "12", "13", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int add(int a, int b);    int main()    {        int i = 5, j = 6;        cout << add(i, j) << endl;        return 0;    }    int add(int a, int b )    {        int sum = a + b;        a = 7;        return a + b;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "100", "compile time error", "144", "110" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void square (int *x)    { *x = (*x + 1) * (*x);    }    int main ( )    { int num = 10;        square(&num); cout << num; return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "6", "24", "segmentation fault", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    long factorial (long a)    {        if (a > 1)            return (a * factorial (a + 1));        else            return (1);    }    int main ()    {        long num = 3;        cout << num << \"! = \" << factorial ( num );        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "distinguishes between comments and code", "r distinguishes between comments and outer data", "both a and b", "none of the mentioned" ],
+      "title": "What is the use of the indentation in c++?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "/* …. */", "/$ …. $/", "//", "none of the mentioned" ],
+      "title": "What is used to write multi line comment in c++?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "hello world", "hello", "compile time error", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        /* this is comment*        cout << \"hello world\";        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "single line", "multi line", "single line and multi line", "none of the mentioned" ],
+      "title": "What type of comments does c++ support?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "comments are parts of the source code disregarded by the compiler", "comments are executed by compiler to find the meaning of the comment", "comments are executable", "none of the mentioned" ],
+      "title": "What is a comment in c++?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "How many types of comments are there in c++?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "for", "while", "do-while", "all looping processes require that the iterations be known" ],
+      "title": "Which looping process is best used when the number of iterations is known?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "4", "2", "3", "1" ],
+      "title": "How many types of loops are there?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "0123456789", "10", "012345678910", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int i;        for (i = 0; i < 10; i++);        {            cout << i;        }        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "error", "15", "infinite times of printing n", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int n = 15;        for ( ; ;)        cout << n;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1010", "10", "infinitely print 10", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 10;        if (a < 15)        {            time:            cout << a;            goto time;        }        break;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "543", "54", "5432", "53" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main ()    {        int n;        for (n = 5; n > 0; n--)        {            cout << n;            if (n == 3)                break;        }        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "$", "@", "*", ":"],
+      "title": "The destination statement for the goto label is identified by what label?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "choosing structure", "selective structure", "certain structure", "none of the mentioned" ],
+      "title": "The switch statement is also called as?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Bitwise operator", "Conditional operator", "Multiplicative operator", "none of the mentioned" ],
+      "title": "The if..else statement can be replaced by which operator?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "4", "3", "5", "6" ],
+      "title": "How many sequence of statements are present in c++?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "20 10", "10 21", "21 10", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    main()    {        double a = 21.09399;        float b = 10.20;        int c ,d;        c = (int) a;        d = (int) b;        cout << c <<' '<< d;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "6", "5", "4", "7" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 5, b = 6, c;        c = (a > b) ? a : b;        cout << c;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "749736", "736749", "367497", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main ()    {        int x, y;        x = 5;        y = ++x * ++x;        cout << x << y;        x = 5;        y = x++ * ++x;        cout << x << y;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "1000", "11", "1010", "1001" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int i, j;        j = 10;        i = (j++, j + 100, 999 + j);        cout << i;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "5 6", "6 5", "6 7", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 5, b = 6, c, d;        c = a, b;        d = (a, b);        cout << c << ' ' << d;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "it converts virtual base class to derived class", "it converts virtual base object to derived objeccts", "it will convert the operator based on precedence", "None of the mentioned" ],
+      "title": "What is the use of dynamic_cast operator?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "35", "20", "25", "30" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a;        a = 5 + 3 * 5;        cout << a;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "conditional", "relational", "casting operator", "none of the mentioned" ],
+      "title": "What is this operator called ?: ?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "postfix", "unary", "shift", "equality" ],
+      "title": "Which operator is having the highest precedence?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Array subscripting", "Function call", "Addition and subtraction", "Type cast" ],
+      "title": "Which operator is having right to left associativity in the following?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "b->var;", "b.var;", "b-var;", "b>var;" ],
+      "title": "Which of the following accesses a variable in structure *b?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "struct {int a;}", "struct a_struct {int a;}", "struct a_struct int a;", "struct a_struct {int a;};" ],
+      "title": "Which of the following is a properly defined structure?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "252", "253", "254", "262" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    struct sec {        int a;        char b;    };    int main()    {        struct sec s ={25,50};        struct sec *ps =(struct sec *)&s;        cout << ps->a << ps->b;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "Adidas $ 9.99Adidas $ 1.11", "Adidas $ 9.99Adidas $ 9.11", "Adidas $ 9.99Adidas $ 11.11", "none of the mentioned" ],
+      "title": "What will be the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        struct ShoeType {           string style;           double price;        };         ShoeType shoe1, shoe2;         shoe1.style = \"Adidas\";         shoe1.price = 9.99;         cout << shoe1.style << \" $ \"<< shoe1.price;         shoe2 = shoe1;         shoe2.price = shoe2.price / 9;         cout << shoe2.style << \" $ \"<< shoe2.price;         return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "19845", "20000", "15000", "19844" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    struct Time {        int hours;        int minutes;        int seconds;    };    int toSeconds(Time now);    int main()    {        Time t;        t.hours = 5;        t.minutes = 30;        t.seconds = 45;        cout << \"Total seconds: \" << toSeconds(t) << endl;        return 0;    }    int toSeconds(Time now)    {        return 3600 * now.hours + 60 * now.minutes + now.seconds;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "123john", "johnjohn", "compile time error", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    #include <string.h>    using namespace std;    int main()    {        struct student {            int num;            char name[25];        };        student stu;        stu.num = 123;        strcpy(stu.name, \"John\");        cout << stu.num << endl;        cout << stu.name << endl;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "sructure creator", "structure signifier", "structure specifier", "none of the mentioned" ],
+      "title": "The declaration of structure is also called as?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "it will not allocate any memory", "it will allocate the memory", "it will be declared and initialized", "none of the mentioned" ],
+      "title": "What will happen when the structure is declared?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "}", ";", ";;" ],
+      "title": "What will be used when terminating a structure?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "objects", "members", "datas", "none of the mentioned" ],
+      "title": "The data elements in structure are also known as what?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "pointer arithemetic", "pointer functions", "both of the mentioned", "none of the mentioned" ],
+      "title": "What we can’t do on a void pointer?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "8, memory address", "8.14", "memory address", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 5, c;        void *p = &a;        double b = 3.14;        p = &b;        c = a + b;        cout << c << '' << p;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "5", "6", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int n = 5;        void *p = &n;        int *pi = static_cast<int*>(p);        cout << *pi << endl;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "2d", "two memory addresses", "both of the mentioned", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int i;        char c;        void *data;        i = 2;        c = 'd';        data = &i;        cout << \"the data points to the integer value\" << data;        data = &c;        cout << \"the data now points to the character\" << data;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "equal", "no output", "compile error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int *p;        void *vp;        if (vp == p);            cout << \"equal\";        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "abcdefghij", "address of string “abcdefghij”", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int func(void *Ptr);    int main()    {        char *Str = \"abcdefghij\";        func(Str);        return 0;    }    int func(void *Ptr)    {        cout << Ptr;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "methods in c++", "class member in c++", "all of the mentioned", "none of the mentioned" ],
+      "title": "A void pointer cannot point to which of these?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "const", "volatile", "both a & b", "static" ],
+      "title": "The pointer can point to any variable that is not declared with which of these?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "when it doesn’t point to any value", "when it cast to another type of object", "using delete keyword", "none of the mentioned" ],
+      "title": "When does the void pointer can be dereferenced?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "int", "float", "double", "all of the mentioned" ],
+      "title": "Void pointer can point to which type of objects?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "we can not create the array of reference.", "we can create the Array of reference.", "we can use reference to reference.", "none of the mentioned" ],
+      "title": "Identify the correct sentence regarding inequality between reference and pointer.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Hello world", "Hello", "world", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void print (char * a)    {        cout << a << endl;    }    int main ()    {        const char * a = \"Hello world\";        print(const_cast<char *> (a) );        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "9", "10", "error", "11" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 9;        int & aref = a;        a++;        cout << \"The value of a is \" << aref;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "Alternate name for the class", "Alternate name for the variable", "Alternate name for the pointer", "none of the mentioned" ],
+      "title": "What does a reference provide?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "In swap 105 In main 105", "In swap 105 In main 510", "In swap 510 In main 105", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void swap(int &a, int &b);    int main()    {        int a = 5, b = 10;        swap(a, b);        cout << \"In main \" << a << b;        return 0;    }    void swap(int &a, int &b)    {        int temp;        temp = a;        a = b;        b = temp;        cout << \"In swap \" << a << b;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "&", "$", "#", "none of the mentioned" ],
+      "title": "Which reference modifier is used to define reference variable?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "reference is the alternate name of the object", "A reference value once defined can be reassigned", "A reference value once defined cannot be reassigned", "none of the mentioned" ],
+      "title": "Identify the incorrect statement",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "integer", "floating", "unsigned", "null" ],
+      "title": "Which value we cannot assign to reference?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "L prefix", "l prefix", "W prefix", "none of the mentioned" ],
+      "title": "How to declare a wide character in string literal?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "The first one refers to a variable whose identifier is x and the second one refers to the character constant x", "The first one is a character constant x and second one is the string literal x", "Both are same", "None of the mentioned" ],
+      "title": "The difference between x and ‘x’ is",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Declares a variable a with 100 as its initial value", "Declares a construction a with 100 as its initial value", "Declares a constant a whose value will be 100", "Constructs an integer type variable with a as identifier and 100 as value" ],
+      "title": "Regarding following statement which of the statements is true?<br>const int a = 100;",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "These are lines read and processed by the preprocessor", "They do not produce any code by themselves", "These must be written on their own line", "They end with a semicolon" ],
+      "title": "Which of the following statement is not true about preprocessor directives?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "12.5664", "13.5664", "10", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    #define PI 3.14159    int main ()    {        float r = 2;        float circle;        circle = 2 * PI * r;        cout << circle;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "5", "6", "Error", "None of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int  const  p = 5;        cout << ++p;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "const keyword", "#define preprocessor", "both a and b", "None of the mentioned" ],
+      "title": "How the constants are declared?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "integer numerals", "floating-point numerals", "strings and boolean values", "all of the mentioned" ],
+      "title": "What are the parts of the literal constants?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "const", "preprocessor", "literals", "none of the mentioned" ],
+      "title": "The constants are also called as",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "12", "5", "13", "error" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main()   {        int arr[] = {4, 5, 6, 7};        int *p = (arr + 1);        cout << *arr + 9;        return 0;   }"
+    },
+    {
+      "answer": 0,
+      "options": [ "10,20,30,40,50,", "1020304050", "compile error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main ()   {       int numbers[5];       int * p;       p = numbers;  *p = 10;       p++;  *p = 20;       p = &numbers[2];  *p = 30;       p = numbers + 3;  *p = 40;       p = numbers;  *(p + 4) = 50;       for (int n = 0; n < 5; n++)           cout << numbers[n] << \",\";       return 0;   }"
+    },
+    {
+      "answer": 2,
+      "options": [ "4", "5", "address of arr", "7" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main()   {       int arr[] = {4, 5, 6, 7};       int *p = (arr + 1);       cout << arr;       return 0;   }"
+    },
+    {
+      "answer": 1,
+      "options": [ "4", "5", "6", "7" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main()   {       int arr[] = {4, 5, 6, 7};       int *p = (arr + 1);       cout << *p;       return 0;   }"
+    },
+    {
+      "answer": 0,
+      "options": [ "ava", "java", "c++", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main()   {       int i;       char *arr[] = {\"C\", \"C++\", \"Java\", \"VBA\"};       char *(*ptr)[4] = &arr;       cout << ++(*ptr)[2];       return 0;   }"
+    },
+    {
+      "answer": 1,
+      "options": [ "15 18 21", "21 21 21", "24 24 24", "Compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "   #include <iostream>   using namespace std;   int main()   {       int a[2][4] = {3, 6, 9, 12, 15, 18, 21, 24};       cout << *(a[1] + 2) << *(*(a + 1) + 2) << 2[1[a]];       return 0;   }"
+    },
+    {
+      "answer": 1,
+      "options": [ "2", "4", "8", "0" ],
+      "title": "What is size of generic pointer in C++ (in 32-bit platform) ?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "p is pointer to function.", "p is array of pointer to function.", "p is pointer to such function which return type is array.", "p is pointer to array of function." ],
+      "title": "What is meaning of following declaration?<br>int(*p[5])();",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "-15", "-30", "compile time error", "garbage value" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <stdio.h>    using namespace std;    int main()    {        int array[] = {10, 20, 30};        cout << -2[array];        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "ABC", "ABCD", "AB", "None of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <stdio.h>    using namespace std;    int main()    {        char str[5] = \"ABC\";        cout << str[3];        cout << str;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "15", "18", "garbage value", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <stdio.h>    using namespace std;    int main()    {        int a = 5, b = 10, c = 15;        int arr[3] = {&a, &b, &c};        cout << *arr[*arr[1] - 8];        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "25", "26", "27", "None of the mentioned" ],
+      "title": "What will be the output of the this program?",
+      "code": "    #include <stdio.h>    using namespace std;    int main ()    {        int array[] = {0, 2, 4, 6, 7, 5, 3};        int n, result = 0;        for (n = 0; n < 8; n++) {            result += array[n];        }        cout << result;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "6553", "6533", "6522", "12200" ],
+      "title": "What will be the output of this program?",
+      "code": "    #include <stdio.h>    using namespace std;    int array1[] = {1200, 200, 2300, 1230, 1543};    int array2[] = {12, 14, 16, 18, 20};    int temp, result = 0;    int main()    {        for (temp = 0; temp < 5; temp++) {            result += array1[temp];        }        for (temp = 0; temp < 4; temp++) {            result += array2[temp];        }        cout << result;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "array[0];", "array[1];", "array(2);", "array;" ],
+      "title": "Which of the following gives the memory address of the first element in array?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "array[6];", "array[7];", "array(7);", "array;" ],
+      "title": "Which of the following accesses the seventh element stored in array?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "An array is a series of elements of the same type in contiguous memory locations", "An array is a series of element", "An array is a series of elements of the same type placed in non-contiguous memory locations", "None of the mentioned" ],
+      "title": "What is a array?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "9", "8", "0", "Programmer-defined" ],
+      "title": "What is the index number of the last element of an array with 9 elements?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "int array[10];", "int array;", "array{10};", "array array[10];" ],
+      "title": "Which of the following correctly declares an array?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "fg", "cdef", "defg", "abcd" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        char *ptr;        char Str[] = \"abcdefg\";        ptr = Str;        ptr += 5;        cout << ptr;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "ABCDEFGHIJ", "AAAAAAAAAA", "JJJJJJJJ", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        char arr[20];        int i;        for(i = 0; i < 10; i++)            *(arr + i) = 65 + i;        *(arr + i) = '\\0';        cout << arr;        return(0);    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "int **fun(float**, char**)", "int *fun(float*, char*)", "int ***fun(float*, char**)", "int ***fun(*float, **char)" ],
+      "title": "The correct statement for a function that takes pointer to a float, a pointer to a pointer to a char and returns a pointer to a pointer to a integer is",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "5", "10", "15", "it will return some random number" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 5, b = 10, c = 15;        int *arr[ ] = {&a, &b, &c};        cout << arr[1];        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "b is assigned to a", "p now points to b", "a is assigned to b", "q now points to a" ],
+      "title": "What will happen in this code?<br>int a = 100, b = 200;<br>int *p = &amp;a, *q = &amp;b;<br>p = q;",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "int *ip;", "string s, *sp = 0;", "int i; double* dp = &i;", "int *pi = 0;" ],
+      "title": "Which of the following is illegal?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "hold the address of the specific object", "point one past the end of an object", "zero", "point to a tye" ],
+      "title": "Which one of the following is not a possible state for a pointer.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "x is a pointer to a string, y is a string", "y is a pointer to a string, x is a string", "both x and y are pointer to string types", "none of the mentioned" ],
+      "title": "Choose the right option",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "*", "&", "->", "–>>" ],
+      "title": "The operator used for dereferencing or indirection is ____",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "pointer to a pointer", "pointer to an array of chars", "pointer to function taking a char* argument and returns an int", "function taking a char* argument and returning a pointer to int" ],
+      "title": "What does the following statement mean?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "char*", "char", "CHAR", "unknown" ],
+      "title": "Identify the type of the variables.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Statement 1 and 2 are wrong", "Statement 2 and 3 are wrong", "Statement 1 and 3 are wrong", "All the three are wrong" ],
+      "title": "Identify the incorrect statements.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "0123456789", "123456789", "0", "error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 10;        if (a < 10) {            for (i = 0; i < 10; i++)               cout << i;        }        else {            cout << i;        }        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "234", "111", "123", "235" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    void addprint()    {        static int s = 1;        s++;        cout << s;    }    int main()    {        addprint();        addprint();        addprint();        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "No", "Yes", "Yes, but not a very efficient way to write programs.", "No, it gives a runtime error." ],
+      "title": "Can two functions declare variables(non static) with the same name.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "2035655065", "2035655035", "2035635065", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int g = 100;    int main()    {        int a;        {            int b;            b = 20;            a = 35;            g = 65;           cout << b << a << g;        }        a = 50;        cout << a << g;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "Statement 1 is true, Statement 2 is false.", "Statement 2 is true, Statement 1 is false.", "Both are false.", "Both are true." ],
+      "title": "Pick the right option",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "3 and 4 only", "2 and 3 only", "only 4", "2, 3 and 4" ],
+      "title": "Which of the given statements are false.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Statement 1 is true, Statement 2 is false.", "Statement 2 is true, Statement 1 is false.", "Both are false.", "Both are true." ],
+      "title": "Pick the right option",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "both 1 and 2 declare i", "1 declares the variable i and 2 defines i", "1 declares and defines i, 2 declares i", "1 declares i,2 declares and defines i" ],
+      "title": "Choose the correct option.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "01234567891011", "123456789101112", "34567891011", "123456789" ],
+      "title": "What is output of the this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int i;        enum month {            JAN = 1, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC        };        for (i = MAR; i <= NOV; i++)            cout << i;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "012", "123", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        enum channel {star, sony, zee};        enum symbol {hash, star};        int i = 0;        for (i = star; i <= zee; i++) {            printf(\"%d \", i);        }        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "012345", "123456", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    enum colour {        green, red, blue, white, yellow, pink    };    int main()    {        cout << green<< red<< blue<< white<< yellow<< pink;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "323334", "323232", "323130", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    enum test {        A = 32, B, C    };    int main()    {        cout << A << B<< C;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "If you were cat, you would be 5", "If you were cat, you would be 2", "If you were cat, you would be 7", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    enum  cat {        temp = 7    };    int main()    {        int age = 14;        age /= temp;        cout << \"If you were cat, you would be \" << age << endl;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "int variable", "float variable", "string variable", "none of the mentioned" ],
+      "title": "Which variable does equals in size with enum variable?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "it will not allocate memory", "it will allocate memory", "it will not allocate memory to its variables", "none of the mentioned" ],
+      "title": "What will happen when defining the enumerated type?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "integer", "negative", "enumerator", "all of the mentioned" ],
+      "title": "To which of these enumerators can be assigned?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "string", "integer", "float", "none of the mentioned" ],
+      "title": "In which type does the enumerators are stored by the compiler?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "enumerators are constants", "enumerators are user defined types", "enumerators are same as macros", "enumerator values start from 0 by default" ],
+      "title": "Identify the incorrect option.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "20", "compile time error", "runtime error", "none of the mentioned" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        void a = 10, b = 10;        int c;        c = a + b;        cout << c;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "void is used when the function does not return a value.", "void is also used when the value of a pointer is null.", "void is used as the base type for pointers to objects of unknown type.", "void is a special fundamental type." ],
+      "title": "Choose the incorrect option",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "variable a is of type void", "a is an object of type void", "declares a variable with value a", "flags an error" ],
+      "title": "What does the following statement mean?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "all functions", "constructors", "destructors", "none of the mentioned" ],
+      "title": "____ have the return type void?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "null", "void", "empty", "free" ],
+      "title": "Which of the following will not return a value?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "1 4 4", "1 4 8", "1 8 8", "none of the mentioned" ],
+      "title": "What would be the output of the following program (in 32-bit systems)?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        cout << sizeof(char);        cout << sizeof(int);        cout << sizeof(float);        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "2 6", "4 6", "2 5", "4 5" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 5;        float b;        cout << sizeof(++a + b);        cout << a;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "2", "4", "8", "garbage" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int num1 = 10;        float num2 = 20;        cout << sizeof(num1 + num2);        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "4", "2", "8", "garbage" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main ( )    {        static double i;        i = 20;        cout << sizeof(i);        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "4", "Depends on compiler.", "garbage" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int num = 0x20 + 020 + 20;        cout << sizeof(num)<<'';        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 <= sizeof(bool) <= sizeof(long)", "sizeof(float) <= sizeof(double) <= sizeof(long double)", "sizeof(char) <= sizeof(long) <=sizeof(wchar_t)", "sizeof(N) = sizeof(signed N) = sizeof(unsigned N) " ],
+      "title": "Identify the incorrect option.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "char, 1", "int, 1", "float, 8", "char, 4" ],
+      "title": "Size of C++ objects are expressed in terms of multiples of the size of a ____ and the size of a char is ____.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "<implementation>", "<limits>", "<limit>", "<numeric>" ],
+      "title": "Implementation dependent aspects about an implementation can be found in ____",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "int, float", "char, int", "bool, char", "char, short" ],
+      "title": "It is guaranteed that a ____ has atleast 8bits and a ____ has atleast 16 bits.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "malloc", "sizeof", "malloc", "calloc" ],
+      "title": "The size of an object or a type can be determined using which operator?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "char > int < float", "int < char > float", "char < int < float", "char < int < double" ],
+      "title": "Which is correct with respect to size of the datatypes?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "equal", "not equal", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        float f1 = 0.5;        double f2 = 0.5;        if (f1 == 0.5f)            cout << \"equal\";        else            cout << \"not equal\";        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "F or f", "L or l", "either a or b", "neither a or b" ],
+      "title": "Which is used to indicate single precision value?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "123.00", "1.23", "123", "compile time error" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        float i = 123.0f;        cout << i << endl;        return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "0.11", "0.10000000000000001", "0.100001", "compile time error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iomanip>    #include <iostream>    using namespace std;    int main()    {        cout << setprecision(17);        double d = 0.1;        cout << d << endl;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "harvard", "stanford", "compile time error", "runtime error" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        float num1 = 1.1;        double num2 = 1.1;        if (num1 == num2)           cout << \"stanford\";        else           cout << \"harvard\";        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "float", "double", "long double", "extended float" ],
+      "title": "Which of three sizes of floating point types should be used when extended precision is required?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "-3.4E+38 to +3.4E+38", "-3.4E+38 to +3.4E+34", "-3.4E+38 to +3.4E+36", "-3.4E+38 to +3.4E+32" ],
+      "title": "What is the range of the floating point numbers?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "f287.333", "F287.333", "287.e2", "287.3.e2" ],
+      "title": "Which of the following is a valid floating point literal?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "short float", "float", "long double", "double" ],
+      "title": "Which of the following is not one of the sizes of the floating point types?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "1", "Compiler error may be possible", "Runtime error may be possible" ],
+      "title": "What will be output of this function?",
+      "code": "    int main()    {        register int i = 1;        int *ptr = &i;        cout << *ptr; return 0;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "compile time error", "-1 1", "1 -1", "implementation defined" ],
+      "title": "What will be output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int i = 3;        int l = i / -2;        int k = i % -2;        cout << l << k;        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "ANDing integer ‘a’ with ‘true’ :8", "ANDing integer ‘a’ with ‘true’ :0", "ANDing integer ‘a’ with ‘true’ :1", "None of the mentioned" ],
+      "title": "What will be the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int a = 8;        cout << \"ANDing integer 'a' with 'true' :\" << a && true;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "decimal, character,octal, hexadecimal", "octal, hexadecimal, character, decimal", "hexadecimal, octal, decimal, character", "octal, decimal, character, hexadecimal" ],
+      "title": "0946, 786427373824, ‘x’ and 0X2f are _____, _____, ____ and _____ literals respectively",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "x = x & (~x)", "x = x ^ (~x)", "x = x & (-x)", "x = x ^ (-x)" ],
+      "title": "Which of these expressions will isolate the rightmost set bit?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "x = x | (x-1)", "x = x & (x-1)", "x = x | (x+1)", "x = x & (x+1)" ],
+      "title": "Which of these expressions will make the rightmost set bit zero in an input integer x?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "-1", "127", "Implementation defined" ],
+      "title": "What is the value of the following 8-bit integer after all statements are executed?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "(v | (v + 1)) == 0;", "(~v & (v – 1)) == 0;", "(v | (v – 1)) == 0;", "(v & (v – 1)) == 0;" ],
+      "title": "Which of these expressions will return true if the input integer v is a power of two?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "x is greater", "y is greater", "Implementation defined", "Arbitrary" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {     int x = -1;        unsigned int y = 2;         if(x > y) {         cout << \"x is greater\";     } else {      cout << \"y is greater\";     }    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "Unsigned integer of at least 64 bits", "Signed integer of at least 16 bits", "Unsigned integer of at least 16 bits", "Signed integer of at least 64 bits" ],
+      "title": "The size_t integer type in C++ is?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "CHAR_SIZE", "SIZE_CHAR", "BIT_CHAR", "CHAR_BIT" ],
+      "title": "What constant defined in <climits> header returns the number of bits in a char?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "4", "1", "Implementation dependent", "Machine dependent" ],
+      "title": "Suppose in a hypothetical machine, the size of char is 32 bits. What would sizeof(char) return?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Implementation defined", "Can’t say", "Yes, they are different", "No, they are not different" ],
+      "title": "Is the size of character literals different in C and C++?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Signed", "Unsigned", "Implementation dependent", "None of these" ],
+      "title": "In C++, what is the sign of character data type by default?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Compiler error", "12", "10", "Empty" ],
+      "title": "What is the output of this program?",
+      "code": "    #include <stdio.h>    int main()    {        char a = '\\012';         printf(\"%d\", a);        return 0;    }"
+    },
+    {
+      "answer": 0,
+      "options": [ "L’a’", "l’a’", "L[a] d) la" ],
+      "title": "How do we represent a wide character of the form wchar_t?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "A", "N", "J", "I" ],
+      "title": "What will be the output of this program?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        char c = 74;        cout << c;        return 0;    }"
+    },
+    {
+      "answer": 3,
+      "options": [ "char", "wchar_t", "only a", "both a and b" ],
+      "title": "Which of the following belongs to the set of character types?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "1 is true but 2 is false", "1 is false and 2 is true", "both 1 and 2 are true", "both 1 and 2 are false" ],
+      "title": "Select the right option.<br>Given the variables p, q are of char type and r, s, t are of int type<br>1. t = (r * s) / (r + s);<br>2. t = (p * q) / (r + s);",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "64", "128", "256", "none of the mentioned" ],
+      "title": "How many characters are specified in the ASCII scheme?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "1", "false", "none of the mentioned" ],
+      "title": "Evaluate the following",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "16", "12", "2" ],
+      "title": "What is the value of p?",
+      "code": "    #include <iostream>    using namespace std;    int main()    {        int p;        bool a = true;        bool b = false;        int x = 10;        int y = 5;        p = ((x | y) + (a + b));        cout << p;        return 0;    }"
+    },
+    {
+      "answer": 2,
+      "options": [ "55", "62", "52", "none of the mentioned" ],
+      "title": "What is the output of the following program?",
+      "code": "    #include <iostream>    using namespace std;    int f(int p, int q)    {        if (p > q)            return p;        else            return q;    }    main()    {        int a = 5, b = 10;        int k;        bool x = true;        bool y = f(a, b);        k =((a * b) + (x + y));        cout << k;    }"
+    },
+    {
+      "answer": 1,
+      "options": [ "None", "++", "—", "Both" ],
+      "title": "Which of the two operators ++ and — work for the bool datatype in C++?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "0 and all negative values", "0 and -1", "0", "0, all negative values, all positive values except 1" ],
+      "title": "For what values of the expression is an if-statement block not executed?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "bool can have two values and can be used to express logical expressions.", "bool cannot be used as the type of the result of the function.", "bool can be converted into integers implicitly", "a bool value can be used in arithemetic expressions." ],
+      "title": "Which of the following statements are false?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "An error is flagged", "bool value evaluates to true", "bool value evaluates to false", "the statement is ignored" ],
+      "title": "What happens when a null pointer is converted into bool?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False", "1", "none of the mentioned" ],
+      "title": "What is the value of the bool?",
+      "code": "bool is_int(789.54)"
+    },
+    {
+      "answer": 3,
+      "options": [ "std::vector<int>", "std::vector<short>", "std::vector<long>", "std::vector<bool>" ],
+      "title": "Find the odd one out:",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No, it is a typedef of unsigned char", "No, it is an enum of {false,true}", "No, it is expanded from macros" ],
+      "title": "Is bool a fundamental datatype in C++?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "integer, character, boolean, floating", "enumeration, classes", "integer, enum, void", "arrays, pointer, classes" ],
+      "title": "Pick the odd one out.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "overloaded", "extensible", "encapsulated", "reprehensible" ],
+      "title": "When a language has the capability to produce new data type mean, it can be called as",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "double", "void", "int", "bool" ],
+      "title": "The value 132.54 can represented using which data type?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "f is a function taking an argument of type int and retruning a floating point number", "f is a function taking an argument of type float and returning a integer.", "f is a function of type float", "none of the mentioned" ],
+      "title": "Which of the following statements are true?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "enumeration", "classes", "both a and b", "int" ],
+      "title": "Identify the user-defined types from the following?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "integer", "boolean", "character", "all of the mentioned" ],
+      "title": "Which type is best suited to represent the logical values?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "alert", "backslash", "tab", "form feed" ],
+      "title": "What does a escape code represent?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "int", "short", "void", "float" ],
+      "title": "Which datatype is used to represent the absence of parameters?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "array type", "character type", "boolean type", "integer type" ],
+      "title": "Pick the odd one out",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "2", "4", "2 or 4", "based on the number of bits in the system" ],
+      "title": "What is the size of wchar_t in C++?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "A", "B", "AB", "Compiler error on line 24", "Undefined behavior" ],
+      "title": "What gets printed by the code below?",
+      "code": "01 #include <iostream>0203 class A04 {05 public:06    void foo() const { std::cout << \"A\"; }07 };0809 class B11 {12 public:13    void foo() const { std::cout << \"B\"; }14 };1516 class C : public A, public B17 {18    using A::foo;19 };2021 int main()22 {23    C c;24    c.foo();25    return 0;26 }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1, 6, 9", "3, 4, 5, 7", "1, 4, 8", "3, 7, 9", "3, 6" ],
+      "title": "According to the C++ standard which of the following declarations for the 'main' function are valid?",
+      "code": "1 int main(int argc, char** argv)2 int main(char** argv, int argc)3 int main()4 inline int main(int argc, char* argv[])5 int main(char* argv[], int argc)6 void main()7 int main(int argc, char* argv[])8 static int main()9 int main(int argc, char* argv[], char* options[])"
+    },
+    {
+      "answer": 3,
+      "options": [ "0.1.2.", "01.2.D.", "011.2.D", "0112.D.", "Compiler error on line 10" ],
+      "title": "What gets printed?",
+      "code": "01 #include <iostream>0203 int main()04 {05    for (int i = 0; i < 4; ++i)06    {07       switch (i)08       {09          case 0  : std::cout << \"0\";10          case 1  : std::cout << \"1\"; continue;11          case 2  : std::cout << \"2\"; break;12          default : std::cout << \"D\"; break;13       }14       std::cout << \".\";15    }16    return 0;17 }"
+    },
+    {
+      "answer": 4,
+      "options": [ "1 2 3 4", "0 1 2 3", "4 3 2 1", "Compiler Error", "Undefined behavior" ],
+      "title": "Given the code below what will be the output to stdout?",
+      "code": "#include <cstdio>00 void foo(int v1, int v2, int v3, int v4)01 {02    printf(\"%d %d %d %d\",v1,v2,v3,v4);03 }0405 int main()06 {07    int lut[] = { 1, 2, 3, 4 };08    int idx = 0;09    foo(lut[idx++],lut[idx++],lut[idx++],lut[idx++]);10    return 0;11 }"
+    },
+    {
+      "answer": 1,
+      "options": [ "A", "B", "C", "D", "none of them will work" ],
+      "title": "Which of the following implementations of the reset function is best for initializing the array to all zero.",
+      "code": "class foo{public:    foo(){        reset();    }private:    void reset(){    // A // memset(x, 0, 50);    // B // memset(x, 0, sizeof(x));    // C // memset(x, 0, 50 * 4);    // D // memset(x, 0, 50 * sizeof(x));    }    long x[50];};"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "4", "undefined" ],
+      "title": "What should get printed in the program below?",
+      "code": "#include <iostream>using namespace std;class foo{public:    foo() : z(x+1), y(2), x(3)    {        cout << \"z: \" << z << endl;    }private:    int x;    int y;    int z;};int main(int argc, char** argv){    foo f;    return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "Use the realloc function from libc", "Delete the existing array, then allocate a new array and copy the data from the old array to the new array", "Allocate a new array, copy the data from old array to the new array and then delete the old array", "It is not possible to do such an operation in C++" ],
+      "title": "If you have an array of characters allocated with new. Which of the following is the best way to modify the size of the array?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "2", "6", "7", "8", "code is ill-formed" ],
+      "title": "What gets printed?",
+      "code": "#include <iostream>struct mybase{  int x;    template <int RANGE>  virtual void print()  {    std::cout << RANGE + x + 1 << std::endl;  }};struct myderived : public mybase{  template <int RANGE>   void print()  {    std::cout << RANGE + x + 2 << std::endl;  }};int main(int argc, char** argv){  mybase* b = new myderived;  b->x = 1;  b->print<5>();  return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "20", "30", "38", "40", "The code is ill-formed" ],
+      "title": "What gets printed?",
+      "code": "#include <iostream>int foo(int i){  return 2;}double foo(double d){  return 4.0;}struct Computer{  int foo(int i)  {    return 8;   }};struct Gateway : public Computer{  double foo(double d)  {    return 16.0;   }};int main(int argc, char** argv){  Gateway g;  std::cout << foo(1) + foo(1.0) + g.foo(1) + g.foo(1.0) << std::endl;  return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "14", "16", "18", "14, 16", "16, 18" ],
+      "title": "Which lines below are ill-formed?",
+      "code": "1 #include <iostream>23 struct A4 {5   A(int& var) : r(var) {}67   int &r;8 };910 int main(int argc, char** argv)11 {12   int x = 23;1314   A a1(x);1516   A a2 = a1;1718   a2 = a1;1920   return 0;21 }"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "5", "10", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed?",
+      "code": "#include <iostream>struct A{  A() : val() {}  A(int v) : val(v) {}  A(A a) : val(a.val) {}   int val;};int main(int argc, char** argv){  A a1(5);  A a2(a1);  std::cout << a1.val + a2.val << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "5", "10", "code is ill-formed", "undefined" ],
+      "title": "What gets printed?",
+      "code": "#include <iostream>struct A{  A() : val(0) {}  A(int v) : val(v) {}  A(A& a) : val(a.val) {}   int val;};int main(int argc, char** argv){  const A a1;  const A a2(5);  const A a3 = a2;  std::cout << a1.val + a2.val + a3.val << std::endl;  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "0", "1", "2", "implementation specified", "undefined" ],
+      "title": "What is the maximum number of implicitly defined constructors that this struct will have?",
+      "code": "struct A{  A(A& a) { }  A(double d) {}  int val;};"
+    },
+    {
+      "answer": 0,
+      "options": [ "20000", "22000", "30000", "33000", "code is ill-formed" ],
+      "title": "What gets printed?",
+      "code": "#include <iostream>struct Car{  Car() : price(20000) {}  Car(double b) : price(b*1.1) {}  double price;};struct Toyota : public virtual Car{  Toyota(double b) : Car(b) {}};struct Prius : public Toyota{  Prius(double b) : Toyota(b)  {}};int main(int argc, char** argv){  Prius p(30000);  std::cout << p.price << std::endl;  return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "3", "4", "5", "code is ill-formed", "undefined" ],
+      "title": "What gets printed for the value of z?",
+      "code": "#include <iostream>struct Foo{  Foo(int n) : x(n++), y(n++), z(n++) {}  int x;  int y;  int z;};int main(int argc, char** argv){  Foo f(3);  std::cout << \"x: \" << f.x << std::endl;  std::cout << \"y: \" << f.y << std::endl;  std::cout << \"z: \" << f.z << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "1 and 3", "2 and 3" ],
+      "title": "Which of the following statements are true?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "none", "9", "10", "11", "9 and 10 and 11" ],
+      "title": "Which lines below should not compile?",
+      "code": "1 struct A2 {3    A(int x) : n(x) {}4    int n;5 };67 int main(int argc, char** argv)8 {9    A a1;10   A a2(2);11   A a3(a2);12   return 0;13 }"
+    },
+    {
+      "answer": 1,
+      "options": [ "none", "17", "18", "19", "20" ],
+      "title": "Which lines below should not compile?",
+      "code": "1 #include <iostream>23 class Bar4 {5 protected:6   static int x;7   int y;8 };910 int  Bar::x = 33;1112 class Barrel : public Bar13 {14 public:15   void foo(Bar* b, Barrel* d)16   {17     b->y = 0;18     d->y = 0;19     Bar::x = 0;20     Barrel::x = 0;21   }22 };2324 int main(int argc, char** argv)25 {26   Barrel b;27   b.foo(&b, &b);28   return 0;29 }"
+    },
+    {
+      "answer": 3,
+      "options": [ "SHAPE", "BOX", "undefined", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  virtual void print()  {    std::cout << \"SHAPE\" << std::endl;  }  virtual ~Shape() {}};struct Box : private Shape{  virtual void print()  {    std::cout << \"BOX\" << std::endl;  }};int main(int argc, char** argv) {   Shape* s = new Box;  s->print();  delete s;  return 0; }"
+    },
+    {
+      "answer": 3,
+      "options": [ "SHAPE", "BOX", "undefined", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  virtual Shape* duplicate()  {    return new Shape;  }  virtual void print()  {    std::cout << \"SHAPE\" << std::endl;  }  virtual ~Shape() {}};struct Box : public Shape{  virtual Box* duplicate()  {    return new Box;  }  virtual void print()  {    std::cout << \"BOX\" << std::endl;  }};int main(int argc, char** argv) {   Shape* s1 = new Box;  Box* b1 = s1->duplicate();  b1->print();  delete s1;  delete b1;  return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "SHAPE", "BOX", "undefined", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  virtual Shape* duplicate()  {    std::cout << \"SHAPE\" << std::endl;    return new Shape;  }  virtual ~Shape() {}};struct Box : public Shape{  virtual Box* duplicate()  {    std::cout << \"BOX\" << std::endl;    return new Box;  }};int main(int argc, char** argv) {   Shape* s1 = new Box;  Shape* s2 = s1->duplicate();  delete s1;  delete s2;  return 0; }"
+    },
+    {
+      "answer": 0,
+      "options": [ "SHAPE", "BOX", "undefined", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  virtual void print()  {    std::cout << \"SHAPE\" << std::endl;  }  virtual ~Shape() {}};struct Box : public Shape{  virtual void print(int i)  {    std::cout << \"BOX\" << std::endl;  }};int main(int argc, char** argv) {   Shape* s = new Box;  s->print();  delete s;  return 0; }"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "3", "4", "undefined", "code is ill-formed" ],
+      "title": "How many times is Hello World printed by this program?",
+      "code": "#include <iostream>struct BS{  BS()  {    std::cout << \"Hello World\" << std::endl;  }};struct mid1 : public BS { };struct mid2 : public BS { };struct mid3 : public BS { };struct mid4 : public BS { };struct DR : public virtual mid1, public virtual mid2, public virtual mid3, public mid4 { };int main(int argc, char** argv) {   DR d;  return 0; }"
+    },
+    {
+      "answer": 4,
+      "options": [ "SHAPE", "BOX", "SPHERE", "undefined", "code is ill-formed" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  virtual void print()  {    std::cout << \"SHAPE\" << std::endl;  }  virtual ~Shape() {}};struct Box : public virtual Shape{  void print()  {    std::cout << \"BOX\" << std::endl;  }};struct Sphere : public virtual Shape{  void print()  {    std::cout << \"SPHERE\" << std::endl;  }};struct GeoDisc : public Box, public Sphere{};int main(int argc, char** argv){  Shape* s = new GeoDisc;  s->print();  delete s;  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "SHAPE", "BOX", "code is ill-formed", "unspecified" ],
+      "title": "What gets printed by this program?",
+      "code": "#include <iostream>struct Shape{  void print()  {    std::cout << \"SHAPE\" << std::endl;  }};struct Box : public Shape{  void print()  {    std::cout << \"BOX\" << std::endl;  }};int main(int argc, char** argv){  Shape* s1 = new Box;  s1->print();  return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "3", "code is ill-formed", "undefined" ],
+      "title": "How many times is Hello World printed by this program?",
+      "code": "#include <iostream>struct BS{  BS()  {    std::cout << \"Hello World\" << std::endl;  }  unsigned int color;};struct mid1 : virtual public BS { };struct mid2 : virtual public BS { };struct mid3 : public BS { };struct mid4 : public BS { };struct DR : public mid1, public mid2,             public mid3, public mid4 { };int main(int argc, char** argv) {   DR d;  return 0; }"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "3", "ill-formed", "undefined", "unspecified" ],
+      "title": "What is the output of the program?",
+      "code": "#include <iostream>struct BS{  unsigned int color;};struct car : public BS{};struct truck : public BS{};struct city : public car, public truck{};int main(int argc, char** argv) {   city c;  c.color = 3;  std::cout << c.color << std::endl;  return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "Static member functions of classes can be virtual. True or false?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "3", "0x822222222", "ill-formed", "undefined" ],
+      "title": "What is the output of the program?",
+      "code": "#include <iostream>int main(int argc, char** argv) {   // assume address of x is 0x822222222  int x = 3;  int*& rpx = &x;  std::cout << rpx << std::endl;    return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "72", "75.14", "ill-formed", "undefined" ],
+      "title": "What is the output of the program?",
+      "code": "#include <iostream>class Foo{public:  char c;  static double sd;  double d;  int i;};int main(int argc, char** argv) {   Foo f = { 72, 3.14 };  std::cout << f.c + f.d + f.i << std::endl;  return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "10", "15", "20", "30", "ill-formed" ],
+      "title": "What is the output of the program?",
+      "code": "#include <iostream>struct A {   virtual int foo(int x = 5)   {     return x * 2;   } }; struct B : public A {   int foo(int x = 10)   {     return x * 3;   } }; int main(int argc, char** argv) {   A* a = new B;   std::cout << a->foo() << std::endl;   return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "a", "b", "c", "a and b", "none" ],
+      "title": "Which, if any, of the member function definitions below are ill-formed?",
+      "code": "#include <iostream>int g_x = 44; struct Foo {   int m_x;   static int s_x;   Foo(int x) : m_x(x) {}   int a(int x = g_x)   {     return x + 1;   }   int b(int x = m_x)   {     return x + 1;   }   int c(int x = s_x)   {     return x + 1;   } }; int Foo::s_x = 22; int main(int argc, char** argv) {   Foo f(6);   std::cout << f.a() << std::endl;   std::cout << f.b() << std::endl;   std::cout << f.c() << std::endl;   return 0; }"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "3", "5", "ill-formed", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int foo(int x, int y = x) {   return x+y+1; } int main(int argc, char** argv) {   std::cout << foo(2) << std::endl;   return 0; }"
+    },
+    {
+      "answer": 1,
+      "options": [ "3", "4", "9", "ill-formed", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int foo(int y);int foo(int x){  return x+1;}int main(int argc, char** argv){  int x = 3;  int y = 6;  std::cout << foo(x) << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "3", "8", "11", "ill-formed", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int foo(int x, int y){  return x+y;}double foo(double x, double y){  return x+y;}int main(int argc, char** argv){  double (*ptr)(int, int);  ptr = foo;  std::cout << ptr(3,8) << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "3", "5", "6", "ill-formed", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int foo(int x, int y){  return x+y;}int foo(const int x, const int y){  return x+y+1;}int main(int argc, char** argv){  const int x = 3;  const int y = 2;  std::cout << foo(x,y) << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "9", "15", "21", "ill-formed", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int main() {   int sum = 0;  int array[3][] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};  for (int i = 0; i < 3 ; ++i)  {    for (int j = 2; j < 3 ; j++)    {      sum += array[i][j];    }  }  std::cout << sum << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "&&", "||", "?", "=", "," ],
+      "title": "Which of the following operators does NOT indicate a sequence point in the code?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "The code below would declare an array of references, if we had properly initalized the references. True or false?",
+      "code": "int main() {   int& x[50];  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "The code below is legal. True or false?",
+      "code": "#include <iostream>const char* Foo(){  return \"Hello World\";}int main() {   const char* str = Foo();  std::cout << str << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "3", "3.14", "nothing, its ill-formed", "implementation-defined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>struct Foo{  Foo(int d) : x(d) {}  int x;};int main() {   double x = 3.14;  Foo f( int(x) );  std::cout << f.x << std::endl;  return 0;}"
+    },
+    {
+      "answer": 4,
+      "options": [ "0", "1", "2", "3", "nothing, it is ill-formed" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int main() {   int x = 3;  switch(x)  {    case 0:      int x = 1;      std::cout << x << std::endl;    break;    case 3:      std::cout << x << std::endl;    break;    default:      x = 2;      std::cout << x << std::endl;  }  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "6", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int main(int argc, char** argv){  int x;  x = 1, 2, 3;  std::cout << x << std::endl;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "3", "11", "21", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>struct Foo{  int x;  operator int()  {    return 21;  }};int main(int argc, char** argv){  Foo f;  f.x = 11;  std::cout << (0?3:f) << std::endl;  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "4", "undefined" ],
+      "title": "What value gets printed by the program?",
+      "code": "#include <iostream>int main(int argc, char** argv){  int x = 0;  int y = 0;  if (x++ && y++)  {    y += 2;  }  std::cout << x + y << std::endl;  return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "True or False, the program below will print NOT EQUAL",
+      "code": "#include <iostream>struct Foo{};struct Bar {};int main(int argc, char** argv){  Foo* f = new Foo;  Bar* b = new Bar;  if ( f == b )    std::cout << \"EQUAL\" << std::endl;  else    std::cout << \"NOT EQUAL\" << std::endl;  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "yes", "no", "implementation defined", "unspecified", "undefined" ],
+      "title": "Will 'Hello World' be printed by the program below?",
+      "code": "struct Foo{  int x;  int y;};int main(int argc, char** argv){  Foo f;  if ( &f.x < &f.y )  {    std::cout << \"Hello World\" << std::endl;  }  return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "yes", "no", "implementation defined", "unspecified", "undefined" ],
+      "title": "Will 'Hello World' be printed by the program below?",
+      "code": "int main(int argc, char** argv){  int array[33];  if ( &array[4] < &array[23] )  {    std::cout << \"Hello World\" << std::endl;  }  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "0x00000000", "0xFFFFFFFF", "implementation defined", "undefined" ],
+      "title": "<strong>Given the assumptions in the comments, what values is printed for x?</strong>",
+      "code": "int main(int argc, char** argv){  // assume result printed is 4  std::cout << sizeof(int) << std::endl;  int x = 0x1000;  x = x << 32;    std::cout << std::hex << x << std::endl;  return 0;}"
+    },
+    {
+      "answer": 4,
+      "options": [ "0x60000000", "0x60000003", "0x6000000C", "implementation defined", "undefined" ],
+      "title": "<strong>If assumptions in the code below are true what value would be the final value printed by this program?</strong>",
+      "code": "int main(int argc, char** argv){  // assume result printed is 4  std::cout << sizeof(int) << std::endl;  int *x = new int;    // assume result printed is 0x60000000  std::cout << x << std::endl;  std::cout << x + 3 << std::endl;  return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "-1", "implementation defined", "undefined", "compiler error" ],
+      "title": "<strong>What is the value of x at the end of main?</strong>",
+      "code": "int main(int argc, char** argv){  int x = 50 % -7;  return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "none", "13", "15", "18", "20" ],
+      "title": "<strong>Which lines of code below should cause the program to be undefined?</strong>",
+      "code": " 1 struct Foo 2 { 3   virtual ~Foo() {} 4 }; 5 6 struct Bar : public Foo 7 { 8 }; 910 int main(int argc, char** argv)11 {12   Foo* f = new Bar;13   delete f;14   f = 0;15   delete f;1617   Foo* fa = new Bar[10];18   delete [] fa;19   fa = 0;20   delete fa;2122   return 0;23 }"
+    },
+    {
+      "answer": 2,
+      "options": [ "static_cast", "dynamic_cast", "reinterpret_cast", "static_cast or dynamic_cast", "none of the precents" ],
+      "title": "In addition to c-style, which casts can be used to cast an int to a pointer or a pointer to an int?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "static_cast", "dynamic_cast", "reinterpret_cast", "static_cast or reinterpret_cast", "none of the precents" ],
+      "title": "In addition to c-style, which casts can be used to cast an int into an enum?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "static_cast", "dynamic_cast", "reinterpret_cast", "none of the precents" ],
+      "title": "<strong>In addition to const_cast, which cast can be used to cast away constness?</strong>",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "14", "14,15,18", "14,17,18", "14,15,16,18" ],
+      "title": "Which lines of code below should not compile?",
+      "code": "1  struct Foo2  {3  };4 5  struct Bar6  {7  };8 9 10 int main()11 {12     Foo* f = new Foo;13 14     Bar* b1 = f;15     Bar* b2 = static_cast<Bar*>(f);16     Bar* b3 = dynamic_cast<Bar*>(f);17     Bar* b4 = reinterpret_cast<Bar*>(f);18     Bar* b5 = const_cast<Bar*>(f);19 20     return 0;21 }"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "3", "undefined", "won't compile" ],
+      "title": "What value should be printed for x?",
+      "code": "#include <iostream>int main(){    int x = int() = 3;    std::cout << x << std::endl;    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "<strong>A function call is always an rvalue. True or false?</strong>",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "7 and 9", "7", "9", "none" ],
+      "title": "<strong>Which of the following lines should NOT compile?</strong>",
+      "code": "1 int main()2 {3     int a = 2;4 5     int* b = &a;6 7     int const* c = b;8 9     b = c;10 11    return 0;12 } "
+    },
+    {
+      "answer": 2,
+      "options": [ "8, 10, 12, 14", "8, 12", "12, 14", "none" ],
+      "title": "<strong>Which of the following lines should NOT compile?</strong>",
+      "code": "1 2 int main()3 {4     int a[54] = {};5 6     int b[54] = {};7 8     int* x = a;9 10    int* const y = a;11 12    b = x;13 14    b = y;15 16    return 0;17 } "
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "<strong>True or false? Every expression is an lvalue or an rvalue?</strong>",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "undefined", "zero" ],
+      "title": "<strong>What value is printed out for the variable x?</strong>",
+      "code": "#include <iostream>int x;int main(){    int y;    std::cout << x << std::endl;    std::cout << y << std::endl;    return 0;} "
+    },
+    {
+      "answer": 2,
+      "options": [ "w, x, y and z", "w, y and z", "w and z", "y and z", "none" ],
+      "title": "<strong>Of the variable definitions below, which ones have external linkage and can be accessed from another translation unit?</strong>",
+      "code": "int w = 1;static int x = 2;const int y = 3;extern const int z = 4;int main(int argc, char** argv){    return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "foo", "bar", "foo and bar", "neither" ],
+      "title": "<strong>Which of the following functions are found when called in main during name lookup?</strong>",
+      "code": "#include <iostream>namespace standards{    struct datastructure    {    };    void foo(const datastructure& ds)    {    }    void bar()    {    }}int main(int argc, char** argv){    standards::datastructure ds;    foo(ds);    bar();    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "12", "13", "undefined" ],
+      "title": "<strong>What value for y gets printed in the program below?</strong>",
+      "code": "#include <iostream>const int x = 12;int main(int argc, char** argv){    enum dog    {        x = x,        y    };    std::cout << y << std::endl;    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "<strong>In namespace foo, the function bar can access the variable x also declared in namespace foo?</strong>",
+      "code": "#include <iostream>namespace foo{    void bar()    {        x++;    }    int x;}int main(int argc, char** argv){    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "5", "3", "undefined" ],
+      "title": "<strong>What value does foo print out?</strong>",
+      "code": "#include <iostream>const int SIZE = 5;struct tester{    void foo()    {        std::cout << SIZE << std::endl;    }    enum     {        SIZE = 3    };};int main(int argc, char** argv){    tester t;    t.foo();    return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "5", "3", "undefined" ],
+      "title": "<strong>What value does size print out?</strong>",
+      "code": "#include <iostream>const int SIZE = 5;struct tester{    int array[SIZE];    enum     {        SIZE = 3    };    void size()    {        std::cout << sizeof(array) / sizeof(int);    }};int main(int argc, char** argv){    tester t;    t.size();    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "a, b, c, d", "a, b, c", "b, c", "b, c, d" ],
+      "title": "<strong>From line 6 in the code below which labels can you access using a goto statement?</strong>",
+      "code": "123  void foo(int x)4  {5  pointa:6     7  pointb:8         9  pointc:10     printf(\"end of function\");11 }   12     13 int main(int argc, char** argv)14 {   15     foo(5);16     17 pointd:18 19     return 0;20 }"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "<strong>The variable x is accesible in the else clause of this program?</strong>",
+      "code": "int main(int argc, char** argv){    if ( argc > 2 )    {        int x = 5;    }    else    {      }    return 0;}"
+    },
+    {
+      "answer": 3,
+      "options": [ "lines 4-15", "lines 4-17", "lines 8-11", "lines 8-15", "lines 8-17" ],
+      "title": "<strong>Given the code below, the variable y can be accessed in which blocks of code?</strong>",
+      "code": "1  int main(int argc, char** argv)2  {34   if ( argc > 10 )5   {67   }8   else if (int y = argc - 1 )9   {1011  }12  else13  {1415  }1617  return 0;18  }"
+    },
+    {
+      "answer": 1,
+      "options": [ "x and y and e", "x and e", "y and e", "e" ],
+      "title": "<strong>Which of the following variables can be accessed in foo's function try block handler?</strong>",
+      "code": "void foo(int x) try{    int y = 2;    throw 1;}catch(int e){}int main(int argc, char** argv){    foo(3);    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "<strong>The code below is legal?</strong>",
+      "code": "int x = 5;template <typename T>class x{    T member;};int main(int argc, char** argv){    class x<int> y;    return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "<strong>The below is legal</strong>",
+      "code": "int x = 5;class x{};int main(int argc, char** argv){    class x y;    return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "0", "5", "20", "undefined" ],
+      "title": "<strong>What is the value of y at the end of main?</strong>",
+      "code": "const int x = 5;int main(int argc, char** argv){    int x[x];    int y = sizeof(x) / sizeof(int);    return 0;}"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "5", "undefined" ],
+      "title": "<strong>What is the value of the local variable x at the end of main?</strong>",
+      "code": "int x = 5;int main(int argc, char** argv){    int x = x;    return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "true", "false" ],
+      "title": "<strong>non-const static member variables must be defined outside of the class for them to be used</strong>",
+      "code": "struct test{    static int x;};int test::x;"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "<strong>The code below declares and defines variable x</strong>",
+      "code": "extern int x;"
+    },
+    {
+      "answer": 0,
+      "options": [ "Polymorphism", "Structure", "Inheritance", "Cascading" ],
+      "title": "The process of building new classes from existing one is called ______",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "abc", "a b c" ],
+      "title": "What is the output of the following code<br><br>",
+      "code": "char symbol[3]={a,b,c};for (int index=0; index < 3; index++)cout << symbol [index];"
+    },
+    {
+      "answer": 2,
+      "options": [ "public", "protected", "private", "mandatory to specify" ],
+      "title": "The members of a class, by default, are",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Almost in every class", "Class for which two or more than two objects will be created", "Class for which copy constructor is defined", "Class whose objects will be created dynamically" ],
+      "title": "In which case is it mandatory to provide a destructor in a class?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "first letter", "entire string", "it is a syntax error", "last letter" ],
+      "title": "Consider the following statements",
+      "code": "char *ptr;ptr = hello;cout << *ptr;"
+    },
+    {
+      "answer": 1,
+      "options": [ "for the object.", "for the pointer.", "both for the object and the pointer", "none of these." ],
+      "title": "Declaration of a pointer reserves memory space",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Program is undefined", "Compilation error", "Program output something" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include <iostream>extern \"C\" int x;extern \"C\" { int y; }int main() { std::cout << x << y; return 0;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "12", "21" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include <iostream> typedef long long ll;void foo(unsigned ll) {    std::cout << \"1\";}void foo(unsigned long long) {    std::cout << \"2\";}int main() {    foo(2ull);}"
+    },
+    {
+      "answer": 0,
+      "options": [ "12", "21" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include <iostream>void f(float) { std::cout << 1; }void f(double) { std::cout << 2; }int main() {  f(2.5);  f(2.5f);}"
+    },
+    {
+      "answer": 0,
+      "options": [ "Compilation error", "-2", "-3" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include void f(int) { std::cout << 1; }void f(unsigned) { std::cout << 2; }int main() {  f(-2.5);}"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include <iostream>int main() {    int i=1;    do {        std::cout << i;        i++;        if(i < 3) continue;    } while(false);    return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "121", "121", "1221", "122" ],
+      "title": "According to the C++11 standard, what is the output of this program?",
+      "code": "#include <iostream>struct A {  A() { foo(); }  virtual ~A() { foo(); }  virtual void foo() { std::cout << \"1\"; }  void bar() { foo(); }};struct B : public A {  virtual void foo() { std::cout << \"2\"; }};int main() {  B b;  b.bar();}"
+    },
+    {
+      "answer": 0,
+      "options": [ " ...............10 ^^^^^^^^^^^^^^120", " .............10 ^^^^^^^^^^^^120", " ...............10 ^^^^^^^^^^^^^^^^120", " .................10 ^^^^^^^^^^^^^^120" ],
+      "title": "What is the output:",
+      "code": "#include <iostream>int main() {    char s[51];    std::cout << dot::leader(s) <<  10 << std::endl;    std::cout << hat::leader(s) << 120 << std::endl;}"
+    }
+  ]
+
+}

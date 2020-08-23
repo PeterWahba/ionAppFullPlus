@@ -1,0 +1,8 @@
+Instructions to import this component on your ionic app
+
+Plugins and dependencies needed:
+ionic cordova plugin add cordova-plugin-streaming-media
+npm install --save @ionic-native/streaming-media
+
+
+Also if you want to keep the colors, you should import the them/variables.scss file which contain the colors

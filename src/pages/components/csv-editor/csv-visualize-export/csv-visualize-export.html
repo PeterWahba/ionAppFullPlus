@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      CSV Data Editor
+    </ion-title>
+  
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-scroll scrollX="true" scrollY="true" class="data-scroll">
+    <table border="1" class="data-table">
+      <tr>
+        <td color="twitter" *ngFor="let header of headerRow" text-center padding><b>{{ header }}</b></td>
+      </tr>
+      <tr *ngFor="let row of csvData; let i = index">
+        <td *ngFor="let data of row; let j = index; trackBy: trackByFn" (click)="setActive($event, i, j)" style="padding: 0.4rem">
+          <!-- <ion-input type="text" [(ngModel)]="csvData[i][j]"></ion-input> -->
+          {{csvData[i][j]}}
+        </td>
+      </tr>
+    </table>
+  </ion-scroll>
+
+  <ion-fab right bottom>
+    <button ion-fab color="ios-orange"><ion-icon name="md-add"></ion-icon></button>
+    <ion-fab-list side="left">
+        <button ion-fab color="ios-orange" (click)="downloadCSV()">
+            <ion-icon name="download"></ion-icon>
+          </button>
+      <button ion-fab color="ios-orange" (click)="share()"><ion-icon name="md-share"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <div class="blocker" *ngIf="showEditng">
+    
+  </div>
+  <div class="edit-center" *ngIf="showEditng">
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="inputEditingData"></ion-input>
+      </ion-item>
+      <div padding text-center>
+          <button color="orange" ion-button icon-left  (click)="saveData()"><ion-icon name="md-download"></ion-icon>Save</button>
+          <button color="orange" ion-button icon-left  (click)="closeEditing()"><ion-icon name="md-close"></ion-icon>Close</button>
+        </div>
+    </div>
+</ion-content>

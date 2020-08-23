@@ -1,0 +1,63 @@
+<ion-header no-border transparent>
+ 
+</ion-header>
+
+<ion-content padding>
+
+  <div class="login-container">
+    <!--*********** Form ***********-->
+    <form [formGroup]="loginForm" (submit)="login()" novalidate>
+      <ion-item class="border-bottom">
+        <ion-input tappable color="light" #email type="email" placeholder="Email" formControlName="email" [class.invalid]="!loginForm.controls.email.valid &&loginForm.controls.email.dirty">
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="border-bottom">
+        <ion-input tappable #password type="password" placeholder="password" formControlName="password" [class.invalid]="!loginForm.controls.password.valid &&loginForm.controls.password.dirty">
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="error-message" *ngIf="(!loginForm.controls.email.valid  &&
+                loginForm.controls.email.dirty) || (!loginForm.controls.password.valid  &&
+                loginForm.controls.password.dirty)">
+        <p>*Please enter a valid email.</p>
+        <p>*Password needs more than 6 characters.</p>
+      </ion-item>
+
+      <div class="submit-box">
+        <button ion-button block type="submit" color="light">Log in</button>
+        <br/>
+        <div margin-top class="link-btn">
+          <a color="light" (click)="createAccount()">
+            Create new account
+          </a>
+        </div>
+        <br/>
+        <div margin-top class="link-btn">
+          <a color="light" (click)="recover()">
+            Forgot your password?
+          </a>
+        </div>
+        <br/>
+      </div>
+    </form>
+
+    <div padding>
+      <button ion-button block color="danger" (click)="loginWithGooglePlus()">
+        <ion-icon name="logo-googleplus"> </ion-icon>
+        &nbsp;Login with google plus
+      </button>
+      <p></p>
+    </div>
+  </div>
+  <div class="v-slide" style="position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1"></div>
+</ion-content>
+<ion-footer>
+</ion-footer>

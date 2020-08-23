@@ -1,0 +1,1020 @@
+﻿{
+  "id": "10",
+  "language": "java",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic Android questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "Android", 
+  "level": "2",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0134706056&asins=0134706056&linkId=7fed121b5f3b5842daca2f1c28052cca&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff "
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449374433&asins=1449374433&linkId=42afef90bab1671b8178e35ea0b07f57&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=B01891X7TC&asins=B01891X7TC&linkId=9e88cdc571bd839391fa95305647162f&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+  ],
+  "questions": [
+    {
+      "answer": 2,
+      "options": [ "an information", "a time", "an activity", "a thing" ],
+      "title": "A fragment is a part or portion of",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Is there a case wherein other qualifiers in multiple resources take precedence over locale?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "PHP", "VB.Net", "Java", "C++" ],
+      "title": "Language which is supported by Android for application development?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Content providers", "Resource externalization", "Applications", "Notifications" ],
+      "title": "Component which is NOT under the Android application.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Is list data type supported by AIDL?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Android Interface Definition Language", "Android Intermediate Definition Language", "Android Interface Description Language", "Android Internal Definition Language" ],
+      "title": "What is AIDL?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Backword activity", "Foreground activity", "Background activity", "Visible activity" ],
+      "title": "Select invalid state for a process",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Visible lifetime", "Background lifetime", "Entire lifetime", "Foreground lifetime" ],
+      "title": "What is NOT used in monitoring an activity.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Application Not Responding", "Application Not Required", "Application Not Removing", "Application Not Recording" ],
+      "title": "What is ANR?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "If the activity is at the background and still visible", "If the activity is not visible", "If the activity is at the foreground and visible", "If the activity is at the foreground" ],
+      "title": "Paused is used",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Active", "Paused", "Stopped", "Stored" ],
+      "title": "Which is NOT state of an activity?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Android Drive Bridge.", "Android Debug Bridge.", "Android Destroy Bridge.", "Android Delete Bridge." ],
+      "title": "Adb stands for",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "build/", "build", "bin", "bin/" ],
+      "title": "Required folder when Android project is created.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Android Asset Processing Tool.", "Android Asset Providing Tool.", "Android Asset Packaging Tool.", "Android Asset Packaging Technique." ],
+      "title": "What is AAPT?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Android Framework", "Libraries", "Linux Kernel", "Android Document" ],
+      "title": "Select a component which is NOT part of Android architecture.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Java EE", "JAX-WS", "Java SE", "Java ME" ],
+      "title": "The DalvikVM core libraries are a subset of which of the following?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "onltemSelected", "onltemClicked", "onOptionsItemSelected", "onOptionsItemClicked" ],
+      "title": "Which of the following Activity methods is invoked when the user clicks on an options menu item?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "onCreate > onStart > onResume > onPause > onStop > onRestart", "onCreate > onStart > onResume > onPause > onStop > onDestroy", "onCreate > onStart > onResume > onPause > onStop > onResume", "onCreate > onStart > onResume > onPause > onStop > OnCreate" ],
+      "title": "Which of the following is a valid sequence of invokes to Activity lifecycle methods? (Select Two)",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Activity", "Content Provider", "Layout", "Service" ],
+      "title": "Which of the following is not an Android component (i.e. a point from which the system can enter your application)?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "It adjusts the window orientation", "It adjusts how the main window of the activity interacts with keyboard", "It adjusts how the window should be launched", "It specifies whether the window is in full screen or not" ],
+      "title": "Which of the following is true about attribute android:windowSoftInputMode of the <activity> tag in file AndroidManifest.xml?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "res/raw", "res/anim", "res/files", "res/values" ],
+      "title": "When including a text file in your application to read from as a resource, what is the recommended location of such file?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "In an Eclipse project using the ADT plugin, the XML layout file is found in the /res/layout directory.", "In order to display a UI defined in the XML layout file 'main.xml', call the setContentView method of the Activity with the parameter string 'main.xml'.", "There is no distinction between implementation of the layout definition by code, or by XML layout file.", "Layout information written in the XML layout file will be converted into code by the Android platform when the screen is displayed." ],
+      "title": "Which of the following is correct about XML layoutfiles?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "ProgressDialog inherits from the AlertDialog class.", "ProgressDialog can be freely configured to use a Drawable class to display as its progress bar.", "ProgressDialog can be set as 2 types of style:STYLE_HORIZONTAL and STYLE_SPINNER.", "ProgressDialog is able to apply a custom XML-defined layout by using the setContentView.(...) method." ],
+      "title": "Which of the following is incorrect about ProgressDialog?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "False", "True" ],
+      "title": "An AsyncTask can be cancelled anytime from any thread.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "It is client-server format.", "It is possible to create and access a database by using SQLOpenHelper.", "It is an object database.", "It can be accessed by other applications through ContentProvider." ],
+      "title": "Which of the following statements is correct about SQLite?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Javascript is enabled by default in a WebView",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "setEnabled(true)", "SetItemsEnabled(true)", "setClickable(true)", "setVisibility(View.Visible)" ],
+      "title": "Which of the following makes a ListView Clickable?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "startSubActivity(Intent intent)", "startService(Intent intent)", "startActivityForResult(Intent intent)", "startActivity(Intent intent)" ],
+      "title": "Which method should you use to start a sub-activity?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Foreground", "Background", "Non-Visible", "Visible" ],
+      "title": "Which of these is not defined as a process state?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Starts a sub-activity", "Starts an activity using an implicit intent", "Starts a service", "Sends results to another activity" ],
+      "title": "What does this code do?",
+      "code": "Intent intent = new Intent();intent.setAction(Intent.ACTION_VIEW);intent.setData(android.net.Uri.parse(\"http://www.androidatc.com\"));startActivity(intent);"
+    },
+    {
+      "answer": 0,
+      "options": [ "Logcat", "DDMS", "ADB", "Console" ],
+      "title": "Which of the following tools dumps system log messages including stack traces when the device or emulator throws an error?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "A file that contains all application permission information", "A file used to draw the content of an Activity", "A layout PNG image file", "A file that contains a single activity widget" ],
+      "title": "What is a correct statement about an XML layout file?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "onPause", "onDestroy", "onStop", "onHide" ],
+      "title": "Which of the following Activity life-cycle methods is called once the activity is no longer visible?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "onStart()", "onPause()", "onResume()", "onCreate()" ],
+      "title": "in which Activity life-cycle method you should do all of your normal static set up such as: creating views and bind data to lists?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "onMeasure().", "onDraw().", "onsizechanged().", "onKeyUp()." ],
+      "title": "Which of the following are layout-related methods called by the framework on views, and you can override them when customizing a view? (Choose two)",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "onPause()", "onStop()", "onDestroy()", "onCreate()" ],
+      "title": "Which of the following Activity life-cycle methods is invoked when a dialog is shown?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "A Toast can only created by an Activity class", "There is no need to close or hide a Toast, since it closes automatically.", "You cannot set a custom layout for a Toast.", "A Toast is displayed for only one of the following periods: Toast.LENGHT_SHORT or Toast.LENGTH_LONG" ],
+      "title": "Which of following is incorrect about the Toast class?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "/system/data/<package name>/files", "/data/data/<package name>/files", "/data/app/<package name>/files", "/system/app/<package name>/files" ],
+      "title": "When creating a file using android.content.Context.openFileOutput('test.txt', 0), where is the file created?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Displays graphically the call stack.", "Displays graphically a memory acquisition and release log.", "Displays a graphical task execution log.", "Displays graphically the Ul state hierarchy." ],
+      "title": "Which of these is the correct function of Traceview?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "False", "True" ],
+      "title": "Can create a custom view by extending class Activity?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "When overriding this method, a developer must call setMeasuredDimension().", "It is invoked by measure().", "It measures the view and its contents to determine the measured width and height.", "It takes three parameters: the height, width, and the depth of the view." ],
+      "title": "Which of the following is NOT true about onMeasure() method of class View?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Extend class android.widget.ListView or any of its descendants, then override method getView()", "Extend class android.widget.AbsAdapter or any of its descendants, then override method getView()", "Extend class android.widget.Adapter or any of its descendants then override method getView()", "Extend class android.widget.Adapter or any of its descendants, then override method getAdapterView()" ],
+      "title": "To create a customized Adapter for a compound list item layout, you should:",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Modifications to preferences saved should go through class SharedPreferences.Editor", "It only saves primitive data in key-value pairs.", "The data it saves is persistent even if application is killed.", "It can save any data type in key-value pairs." ],
+      "title": "Which of the following is NOT true about the SharedPreferences interface?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "onCreateOptionsMenu, onOptionsltemSelected", "onCreateOptionsMenu, onContextItemSelected", "onCreateOptionsMenu, onCreateContextMenu", "onCreateContextMenu, onContextItemSelected" ],
+      "title": "What two methods you have to override when implementing Android option menus?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Any EditText behind the dialog will be disabled.", "When dialog is displayed the activity behind it will be dimmed.", "When dialog is displayed the activity behind it will be blurred.", "When the dialog is displayed, the edges of the dialog will be blurred." ],
+      "title": "What does the following code do?",
+      "code": "dialog.getWindow().setFlags(LayoutParams.FLAG_BLUR_BEHIND, LayoutParams.FLAG_BLUR_BEHIND);"
+    },
+    {
+      "answer": 2,
+      "options": [ "retrieveResourceByld(int id)", "findViewByReference(int id)", "findViewById(int id)", "findViewByld(String id)" ],
+      "title": "What Activity method you use to retrieve a reference to an Android view by using the id attribute of a resource XML?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "An edit text to the right of a text view and a button beneath them", "An edit text to the right of a text view and a button to the right of the text view", "A text view, an edit text beneath it and the button beneath the edit text", "An edit text to the left of a text view and a button beneath it" ],
+      "title": "Which UI does the following code builds?",
+      "code": "<?xml version=\"1.0\" encoding=\"utf-8\"?><LinearLayout xmins:android=http://schemas.android.com/apk/res/android android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\">    <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:orientation=\"horizontal\">        <TextView android:id=\"@+id/textView1\" android:layout_width=\"wrap_content\" android:layout_height=\"wrap_content\" android:text=\"Name:\"/>        <EditText android:id=\"@+id/editText1\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_weight=\"1\" android:ems=\"10\"/>    </LinearLayout>    <Button android:id=\"@+id/button1\" android:layout_width=\"wrap_content\" android:layout_height=\"wrap_content\" android:text=\"Post\" /></LinearLayout>"
+    },
+    {
+      "answer": 2,
+      "options": [ "onStart", "onPause", "onBackPressed", "onCreate" ],
+      "title": "Which of the following is not an Activity lifecycle call-back method?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "JavaScript is always enabled in WebView", "myWebView.getSettings().setJavaScriptEnabled(true);", "myWebView.SetJavaScriptEnabled(true);", "myWebView.getJavaScriptSettings.setFinabled(true);" ],
+      "title": "How to enable JavaScript in WebView?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "READ_PHONE_STATE", "READ_ADDRESS_DATA", "READ_CONTACTS", "READ_PHONE_CONTACTS" ],
+      "title": "Which manifest file permission you should add to allow your application to read the device's address book?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Intent intent = new intent(this,Activity2.class);startActivity(intent);", "Intent intent = new Intent(new Activity2());startActivity(intent);", "intent intent = new Intent (Activity1.class, Activity2.class);startActivity(intent);", "Intent intent = new intent(this, new Activity2());startActivity(intent);" ],
+      "title": "Which of the following lines of code starts activity Activity2 from a current activity Activity1?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "onStart()", "onCreate()", "onRestore()", "onStop()" ],
+      "title": "During an Activity life-cycle, what is the first callback method invoked by the system?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Add a <uses-permission> tag as a child tag of the <application> tag in AndroidManifest.xml.", "Add a <add-permission> tag as a child tag of the <manifest> tag in AndroidManifest.xml.", "Add a <uses-permission> tag as a child tag of the <manifest> tag in AndroidManifest.xml.", "Add a <permission> tag as a child tag of the <application> tag in AndroidManifest.xml." ],
+      "title": "Which of the following is the correct way to add access permission to your application?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "setContentView(R.layout.webview);", "WebView webview = new WebView(this);Webview.setAsWindow;", "setContentView(“http://www.androidatc.com”);", "WebView webview = new WebView(this);setContentView(webview);" ],
+      "title": "Which of the following sets the entire Activity window as a WebView?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "The content of file created by application cannot be accessed by any other application.", "Generally, files are handled as dedicated resources per each application", "You can only access a file from within an Activity.", "Files created by an application can be directly accessed by any application." ],
+      "title": "Which of the following is correct about file access in the Android system?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "It declares the views used within the application", "It declares hardware and software features used within the application", "It declares application components", "It declares user permissions the application requires" ],
+      "title": "What is not true about the AndroidManifest.xml file?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "They can be used to start a service", "They can be used to start a dialog-themed activity.", "They can be used to start an Activity", "They can be used to start database insertion" ],
+      "title": "Which of the following is incorrect about intents?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "You can use it to acquire screenshots of a terminal.", "You can forcibly execute garbage collection and check the present heap usage status.", "You can do simulations of network zone speed and bandwidth limitations.", "You can display a list of currently running threads and select one to check its stack trace." ],
+      "title": "Which of the following statements about DDMS is incorrect?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Android Development Tools", "Android Software Development Kit", "J2EE", "Web Development Tools" ],
+      "title": "What Eclipse plugin is required to develop Android application?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Both methods are asynchronous.", "Both methods throw an exception.", "Both methods are defined by overloading.", "Both methods are able to broadcast an Intent." ],
+      "title": "Which of these is the correct explanation regarding the following methods?<br>(1)android.content.Context.sendBroadcast<br>(2)android.content.Context.startActivity",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Save in the hash table file using the Dictionary class.", "Save in the database using SQLite.", "Extend PreferencesActivity and save in an XML file.", "Save as a file in the local file system." ],
+      "title": "Which of these is the incorrect method for an Application to save local data?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "keytool", "certgen", "logcat", "adb" ],
+      "title": "Which of the following tools creates certificates for signing Android applications?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "ViewGroup", "Context", "Activity", "View" ],
+      "title": "Which of the following classes should be extended to create a custom view?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Activate a Service", "Activate a Broadcast receiver", "Activate an Activity", "Activate a SQLite DB Connection" ],
+      "title": "Which of the following is NOT a valid usage for Intents?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "onCreateOptionsMenu, onContextItemSelected", "onCreateOptionsMenu, onOptionsltemSelected", "onCreateOptionsMenu, onCreateContextMenu", "onCreateContextMenu, onContextItemSelected" ],
+      "title": "What two methods you have to override when implementing Android context menus?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "The system will perform an intent resolution to start the proper activity.", "The system will not dial the number without adding permission CALL_PHONE.", "The code will not compile.", "This is an explicit intent that start the system's dialer." ],
+      "title": "Which of the following is true about this code snippet? (Choose two)",
+      "code": "Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(\"tel: 555-1234\"));startActivity(intent);"
+    },
+    {
+      "answer": 3,
+      "options": [ "You can retrieve WebSettings with getSettings(), then enable/disable JavaScript", "You use loadData to load HTML", "You use loadURL to load a webpage", "You need to add permission 'android.permission.ACCESS_NETWORK_STATE'" ],
+      "title": "Which of the following is not true about using a WebView in your application?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "android.widget.View", "android.content.Context", "android.widget.LinearLayout", "android.view.View" ],
+      "title": "You can create a custom view by extending class:",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "bin", "res", "gen", "src" ],
+      "title": "What is the name of the folder that contains the R.java file?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "stop()", "finish()", "destroy()", "close()" ],
+      "title": "Which method is used to close an activity?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "screenOrientation='landscape'", "android:ScreenOrientation='landscape'", "screenorientation = landscape", "android:ScreenOrientation='landscape'" ],
+      "title": "Which of the following attributes is used to set an activity screen to landscape orientation?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "They must contain extra information saved in a Bundle object.", "They have components specified to run an exact class.", "They do not have a component specified", "They must include information that allows Android system to choose the best component to run." ],
+      "title": "Which of the following is true about implicit intents? (Choose two)",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "This method handles clicks and assign actions to menu items.", "This function inflates an XML file in the res/menu folder into menu items.", "The code is auto generated and should not be edited.", "This method inflates an XML file in the res/layout folder into layout." ],
+      "title": "Consider the following the code:",
+      "code": "public boolean onCreateOptionsMenu(Menu menu) {    MenuInflater inflater = getMenuInflater();    inflater.inflate(R.menu.game_menu, menu);    return true;}"
+    },
+    {
+      "answer": 1,
+      "options": [ "Layout", "View", "Widget", "ViewGroup" ],
+      "title": "What is the parent class of all Activity widgets?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Menultem can set a checkbox.", "Menultem can decide the Intent issued when clicking menu components.", "The Menultem instance will be returned by the Menu class add(...) method.", "Menultem can display either an icon or text." ],
+      "title": "Which of the following is NOT true about the Menultem interface?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "The telephone log", "The Contacts list", "The bookmarks", "The application list" ],
+      "title": "Which of the following is not a ContentProvider provided natively by Android?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Declares a single hardware or software feature that is used by the application.", "Contained in <application> tag.", "Declares an activity that implements part of the application's visual user interface", "Has an attribute that specifies the name of the Activity sub-class that implements the activity." ],
+      "title": "Which of the following is not true about <activity> tag in AndroidManifest file?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "It must be created on the UI thread.", "It uses three generic types.", "It must be used by sub-classing it.", "Its sub-class override at least two methods: doInbackground, onPostExecute." ],
+      "title": "Which of the following is NOT true about class Asynctask?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "public boolean onDraw(Canvas)", "public Canvas onDraw()", "public void onDraw(Color)", "public void onDraw(Canvas)" ],
+      "title": "Method onDraw() of class android.view.View has the following signature:",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "The package name must be the same and the .apk must be signed with the same private key.", "The package name must be the same, but the .apk may be signed with a different private key.", "The package name does not have to be the same and the .apk can be signed with a different private key.", "The package name does not have to be the same, but the .apk must be signed with the same private key." ],
+      "title": "When publishing an update to your application to the market, the following must be taken into consideration:",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Each log message has a tag", "You can create a log in your application using Log.v(String, String)", "Only one of your application can create log entries, and it should be component class (Activity, Service,...etc)", "A LogCat view is available as part of the ADT plugin of Eclipse" ],
+      "title": "Which of the following is incorrect about the LogCat tool?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "The UI thread must never be blocked.", "Each UI thread must not create more than one Worker thread.", "The Android Ul must not be accessed from outside the UI thread.", "A Worker thread must not be created from inside the UI thread." ],
+      "title": "Which of the following is a rule that developers must always follow when writing multi-threaded Android applications? (Choose two)",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "OnTapListener", "OnClickDetector", "OnClickListener", "Detector" ],
+      "title": "Which of the following is a Java call-back method invoked when a view is clicked?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "PendingIntent", "Bundle", "Extras", "Parcelables" ],
+      "title": "Which of the following classes is used by Intent to transfer data between different android component",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "ViewGroup", "Layout", "View", "ListView" ],
+      "title": "Which of the following is the base class of all UI components?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "It supports HTTPS.", "It is only supported on Android versions 2.2 and older.", "It supports streaming uploads and downloads.", "It is Andriod's default implementation of an HTTP client." ],
+      "title": "Which of the following is NOT true about class DefaultHttpClient?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "onMenuCreated()", "onCreateContextMenu()", "onCreateMenu()", "onCreateOptionsMenu()" ],
+      "title": "What method you should override to use Android menu system?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Java source Code files", "The application manifest file", "XML resource files", "Image and icon files" ],
+      "title": "What does the Src folder Contain?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "onDestroy()", "onPause()", "onExit()", "onStop()" ],
+      "title": "Which of the following methods is called in an Activity when another activity gets into the foreground?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "It manages database creation and updates.", "It has two abstract methods: oncreate() and onUpgrade().", "It manages database Versions using ContentProvider.", "It is used to perform database querying." ],
+      "title": "Which of the following is NOT true about SQLiteOpenHelper class? (Choose two)",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "ArrayAdapter (Context context, int resourse)", "ArrayAdapter (Context context, int resource, List<T> items)", "ArrayAdapter (Context context, int resource, int textViewResourceld)", "ArrayAdapter (Context context)" ],
+      "title": "Which of the following is NOT a correct constructer for ArrayAdapter?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "It facilitates access to Android's SQLite databases.", "It manages access to structured data.", "It cannot be used from inside an Activity.", "To access data in it, method getContentResolver() of the application's Context is used." ],
+      "title": "Which of the following is NOT true about a content provider?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "org.apache.http", "android.location", "java.net", "android.net" ],
+      "title": "Which package of the following does not have classes needed for Android network connections?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "The toast will show the text message on top-right corner of the toast box.", "The toast will appear on the top-right corner", "The toast will appear at the center of the screen at position(0,0), but aligned to the top-right corner.", "The toast will have it Ul components place on the top-right corner." ],
+      "title": "What does the following line of code do?",
+      "code": "Toast toast = Toast.makeText(this,\"Android ATC\", Toast.LENGTH_LONG);toast.setGravity(Gravity.TOP|Gravity.RIGH, 0, 0);"
+    },
+    {
+      "answer": 2,
+      "options": [ "A", "B", "C", "D" ],
+      "title": "What best explains the code above?",
+      "code": "Intent i = new Intent(this, MainActivity.class);i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);startActivity(i);"
+    },
+    {
+      "answer": 0,
+      "options": [ "res/values/strings.xml", "res/Text.xml", "AndroidManifest.xml", "res/layout/Main.xml" ],
+      "title": "Which of these files contains text values that you can use in your application?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Intent transition", "Intent resolution", "Intent overloading", "Intent declaration" ],
+      "title": "When using an implicit intent, what process does the system use to know what to do with it?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "onItemClicked", "onItemClickListener", "onListItemClickListener", "onClickListener" ],
+      "title": "Which of the following add a click listener to items in a listView?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "myLayout.xml", "my_layout.xml", "mylayout1.xml", "mylayout.xml" ],
+      "title": "Which of the following is not a valid Android resource file name?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "ListView has a function to display a list of uniquely defined Views other than TextView.", "You cannot use a ListView when there is no information to be displayed.", "When displaying a list of Strings using an ArrayAdapter class in ListView, you must save the value in an ArrayList.", "It is necessary to use ListView as a set with ListActivity." ],
+      "title": "Which is the correct explanation of ListView?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "The 'android' command can be used if '<SDK install folder>/tools' is added to the command path.", "The development tools that can be downloaded from Android SDK and AVD Manager are SDK Android platform, NDK-platform, emulator images, and USBdrivers for handsets.", "You can create and startup AVD, and on startup you can delete user data up to that point.", "They are provided from version 1.6 of the SDK. Up to Version 1.5, there was an AVD Manager but it lacked SDK management functions." ],
+      "title": "Which of these is the incorrect explanation of the Android SDK and AVD Manager?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "NotificationManager", "DialerManager", "PackageManager", "WindowManager" ],
+      "title": "Which is not included in the Android application framework?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Create by extending already existing View classes such as Button or TextView.", "Create by extending the android.view.View class.", "Create by combining multiple Views.", "Create by copying the source of an already existing View class such as Button or TextView" ],
+      "title": "Which of these is NOT recommended in the Android Developer's Guide as a method of creating an individual View?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "onCreateOptionsMenu", "onCreate", "onOptionsItemSelected", "onCreateMenu" ],
+      "title": "Which of the following is a call-back method that inflates an options menu from file res/menu/menu.xml?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Starts an activity service", "Starts a sub-activity", "Starts a browser activity", "Sends results to another activity" ],
+      "title": "What does the following code achieve?",
+      "code": "Intent intent = new Intent(FirstActivity.this, SecondActivity.class);startActivityForResult(intent);"
+    },
+    {
+      "answer": 1,
+      "options": [ "<uses-permission android:name='android.Internet'></uses-permission>", "<uses-permission android:name='android.permission.Internet”/>", "<uses-permission android:name='android.Internet'/>", "<uses-permission android:name='android.permission.Internet'>" ],
+      "title": "Which of the following is a correct Android Manifest statement?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "loadData", "loadCustomData", "loadHTML", "loadCustomHTML" ],
+      "title": "Which of the following WebView methods allows you to manually load custom HTML markup?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Create a new activity Java sub-class.", "Add the activity to the AndroidManifest", "Rename your activity", "Create the activity layout" ],
+      "title": "If your application is throwing exception android.content.ActivityNotFoundException, how to fix it?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Java source file", "Layout file", "Manifest file", "Property file" ],
+      "title": "Which configuration file holds the permission to use the internet?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "It creates four views for listView.", "It creates Buttons for each String in array items.", "It replaces the layout of the activity with three consecutive TextView items.", "It creates a TextView for each String in array items." ],
+      "title": "Which of the following is true about object arrayAdapter declared in the code below?",
+      "code": "String[] items = {\"Item 1\",\"Item 2\",\"Item 3\");ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);listView.setAdapter(arrayAdapter);"
+    },
+    {
+      "answer": 3,
+      "options": [ "Intent i = new intent(this,newActivity);i.putValue('test');startActivity(i); ", "Intent i = new intent(this,newActivity);i.addExtra('test');startActivity(i); ", "Intent i = new intent(this,newActivity);i.putValue('value1','test');startActivity(i); ", "Intent i = new intent(this,newActivity);i.putExtra('value1','test');startActivity(i);  " ],
+      "title": "Which of the following lines of code is used to pass a value to the next activity?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "R.java", "AndroidManifest.xml", "strings.xml", "main.xml" ],
+      "title": "Which file specifies the minimum required Android SDK version your application supports?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "The application's minimum SDK version required.", "The handset model compatible with your application.", "The permissions required by the application.", "The activities contained in the application." ],
+      "title": "Which of the following information is not included in the Manifest file?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "if (cursor.moveToFirst()) { do{  System.out.println(cursor.getString(1)); } while (cursor.moveToNext());}  ", "if (cursor != null) { do {  System.out.println(cursor.getString(1)); } while (cursor.isNull());} ", "if (cursor != null) { do {  System.out.println(cursor.getString(1));  } while (cursor.isNull());} ", "if (cursor.moveToFirst()) { do {  System.out.println(cursor.getString(0));  } while (cursor.moveToNext());} ", "do { System.out.println(cursor.getString(0));} while (cursor.moveToNext()); " ],
+      "title": "Consider the following code snippet:",
+      "code": "String[] result columns = new String[] {KEY ID, COL1, COL2};Cursor allRows = myDatabase.query(true, DATABASE_TABLE, result_columns, null, null, null, null, null, null);"
+    },
+    {
+      "answer": 1,
+      "options": [ "Java source code", "Resource files", "Jawa Activity classes", "Libraries" ],
+      "title": "What does the Android project folder 'res/' contain?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "It will not compile without adding the INTERNET permission the Manifest file.", "It starts any activity in the application that has a WebView in its layout.", "It sends a result to a new Activity in a Bundle.", "When it is executed, the system starts an intent resolution process to start the right Activity." ],
+      "title": "Consider the following code:",
+      "code": "Intent intent = new Intent();intent.setAction(Intent.ACTION_VIEW);intent.setData(android.net.Uri.parse(\"http://www.androidatc.com\"));startActivity(intent);"
+    },
+    {
+      "answer": 3,
+      "options": [ "Create layout resource only.", "Create a Java class that extends View, set a layout, and add an Activity tag in AndroidManifest.xml", "Add an Activity tag to AndroidManifest.xml, and add ACTIVITY permission", "Create a Java class that extends Activity, add an Activity tag in AndroidManifest.xml, and Create a layout for the activity." ],
+      "title": "To add a new Activity to your application, you need to perform the following steps:",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Create an explicit intent", "Creates an implicit intent", "Create a visible intent", "Creates a hidden intent" ],
+      "title": "What does the following line of code achieve?",
+      "code": "Intent intent = new intent(FirstActivity.this, SecondActivity.class);"
+    },
+    {
+      "answer": 0,
+      "options": [ "Bundle", "DataStore", "Extra", "Parcelable" ],
+      "title": "What is the name of the class used by Intent to store additional information?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "onCreate", "onCreateMenu", "onCreateOptionsMenu", "onOptionsItemSelected" ],
+      "title": "Which of following is a callback method that inflates and options menu from file res/menu/menu.xml?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Bundle", "Extra", "Parcelable", "DataStore" ],
+      "title": "What is the name of class used by Intent to store additional information?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Each log message has a tag", "You can create log in application using Log.v(string,string)", "Only component class (Activity,Service..etc) can create log entries", "LogCat view is availabe as part of ADT plugin of Eclipse" ],
+      "title": "Which of following is incorrect about LogCat tool?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "The 'android' command can be use if '<SDK install folder>/tools' is added to the command path", "They are provided from version 1.6 of the SDK. Up to version 1.5 there was an AVD manager but it lacked of SDK management functions", "You can create and startup AVD, and on startup you can delete user data up to that point", "The development tools can be downloaded from Android SDK and AVD manager are SDK android platform, NDK platform, emulators image and USB drivers for handsets" ],
+      "title": "Which of these is incorrect explanation of android SDK and AVD manager?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "In constructor", "In onPreExecute", "On onProgressUpdate", "All of above" ],
+      "title": "In order to access member fields in <strong>doInbackground </strong>method where should we set them ?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "An exception will be thrown", "The task will be run as normal from the beginning ", "The execution will be ignored" ],
+      "title": "What will happen if a task is executed the second time?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Just one", "Multiple times" ],
+      "title": "How many time can a task run?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Can we create an instance of AsyncTask from a service's process?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "doInBackground", "onProgressUpdate", "onPostExecute", "All of above" ],
+      "title": "What method must be overriden for usingAsyncTask ?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Can we create an instance of AsyncTask class directly?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "No", "Yes" ],
+      "title": "By using AsyncTask, do we need to add any custom handler to publish the result to UI thread?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "FutureTask", "ThreadPoolExecutor", "Executor", "AsyncTask" ],
+      "title": "Which of following are good solutions for threads that need to run in long periods of time (up to minutes)",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Can we declare both software and hardware requirements for an app?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "Identifies any user permissions the app requires, such as Internet access or read-access to the user's contacts.", "Declares the minimum API Level required by the app, based on which APIs the app uses", "Declares hardware and software features used or required by the app, such as a camera, bluetooth services, or a multitouch screen.", "Declares API libraries the app needs to be linked against (other than the Android framework APIs), such as the Google Maps library", "All of above" ],
+      "title": "What does the manifest do in addition to declaring the app's components?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Allbroadcast receivers must be regisered in the manifestfile",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "To inform the system about the app's components", "To declare the needed permissions to android OS" ],
+      "title": "What is the primary task of the manifest file?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Read the manifest  file", "It will be checked at runtime" ],
+      "title": "How does system know that acomponent exists?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Using JobScheduler class", "Using Schelduler class", "Using JobQueue class" ],
+      "title": "From android 5.0 how do you schedule actions?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Event", "Intent", "Object" ],
+      "title": "A broadcast receiver is implemented as a subclass of<code>BroadcastReceiver</code>and each broadcast is delivered as an <font face='monospace'>_______</font>object",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Deliver events to the app outside", "Respond to system-wide broadcast announcements", "Both of them" ],
+      "title": "What canBroadcast receivers do?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "A service in android application will run on it's own process",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "A", "B", "A&B", "C", "All of above" ],
+      "title": "Select all true statements:",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "Activities", "Services", "Content providers", "Broadcast receivers", "All of them" ],
+      "title": "Which of following are valid types of app components?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "It's possible to arrange for two apps to share the same Linux user ID, in which case they are able to access each other's files. The apps must also be signed with the same certificate", "There is no way to do this" ],
+      "title": "How can an app share data with other apps?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "The Android operating system is a multi-user Linux system in which each app is a different user.", "By default, the system assigns each app a unique Linux user ID", "Each process has its own virtual machine (VM), so an app's code runs in isolation from other apps.", "By default, every app runs in its own Linux process.", "All of above" ],
+      "title": "Which of the following are Android security features?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "onPreExecute()", "doInBackground(Params...)", "onProgressUpdate(Progress...)", "onPostExecute(Result)", "onComplete(Result)" ],
+      "title": "Which step below is NOT a valid step whenan asynchronous task is executed",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "services", "simulator", "Emulator", "none of these" ],
+      "title": "Which of the following don’t have any UI component and run as a background process?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Android Debug Bridge", "Application Debug Bridge", "Android data bridge", "Application data bridge" ],
+      "title": "ADB stands for",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "commitUpdates()", "updates()", "commit()", "None of these" ],
+      "title": "To update contents of content provider using curser and commit you need to call",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Is Android hack proof?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "C", "C++", "VC++", "JAVA" ],
+      "title": "Android is based on which language.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Is Android available in ROM?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Linux kernel", "Windows kernel", "MAC kernel", "Hybrid Kernel" ],
+      "title": "Android is based on which kernel?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Chrome", "Firefox", "Open-source Webkit", "Opera" ],
+      "title": "Web browser available in android is based on",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "ACCESS_FINE and ACCESS_COARSE", "GPRS permission", "Internet permission", "WIFI permission." ],
+      "title": "Which permissions are required to get a location in android?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "START_STICKY", "START_NOT_STICKY", "START_REDELIVER_INTENT", "All of the precents", "none of the precents" ],
+      "title": "What are the return values of onStartCommand() in android services?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "onCreate()−>onStartCommand()−>onDestory()", "onRecieve()", "final()", "Service life cycle is same as activity life cycle." ],
+      "title": "What is the life cycle of services in android?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Android is a stack of software's for mobility", "Google mobile device name", "Virtual machine", "none of the precents" ],
+      "title": "What is Android?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Same as services", "Background activity", "Broadcast Receiver", "Independent dis-patchable unit is called a thread" ],
+      "title": "What is a thread in android?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Permanent data", "Secure data", "Temporary data", "Logical data" ],
+      "title": "What is transient data in android?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "count()", "sum()", "add()", "length()" ],
+      "title": "How to find the JSON element length in android JSON?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "httprequest(get/post) and returns response from the server", "Cookies management", "Authentication management", "none of the precents" ],
+      "title": "What is an HTTP client class in android?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "DDMS", "Breaking point", "Memory profiling", "All of the precents." ],
+      "title": "What are the debugging techniques available in android?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Interface class", "A class that does not have a name but have functionalities in it", "Java class", "Manifest file" ],
+      "title": "What is an anonymous class in android?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Shared Preferences", "Cursor", "SQlite database", "Not possible" ],
+      "title": "How to store heavy structured data in android?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "A- Binder is responsible to manage the thread while using aidl in android", "B- Binder is responsible for marshalling and un-marshalling of the data", "A&B", "Binder is a kind of interface", "none of the precents" ],
+      "title": "What are the functionalities of Binder services in android?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "Linear Layout", "Frame Layout", "Table Layout", "Relative Layout", "All of above" ],
+      "title": "What are the layouts available in android?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "A - finish()", "B - finishActivity(int requestCode)", "C - kill()", "D - none of the precents", "E - A and B" ],
+      "title": "How to kill an activity in Android?",
+      "code": ""
+    }
+  ]
+
+}

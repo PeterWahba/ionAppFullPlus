@@ -1,0 +1,35 @@
+Instructions to import this component on your ionic app
+
+dependencies:
+    npm install -g typings
+    npm install wp-api-angular --save
+
+You'll need to copy the /providers/wordpressProvider
+
+Config your app.module.ts
+
+import { Http } from '@angular/http';
+import { WordpressProvider } from '../providers/wordpress/wordpress';
+import { 
+  WpApiModule,
+  WpApiLoader,
+  WpApiStaticLoader
+} from 'wp-api-angular'
+ 
+export function WpApiLoaderFactory(http) {
+  return new WpApiStaticLoader(http, 'https://jomendez.com/wp-json/');
+}
+
+
+@NgModule({
+  
+  imports: [
+    WpApiModule.forRoot({
+      provide: WpApiLoader,
+      useFactory: (WpApiLoaderFactory),
+      deps: [Http]
+    }),
+    ....
+
+
+    You'll also need to copy src/config/config.ts file to your project

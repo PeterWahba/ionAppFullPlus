@@ -1,0 +1,55 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created, Install the components dependencies (see what is imported on the ts files on this component)
+
+Cordova plugins:
+    ionic cordova plugin add phonegap-plugin-barcodescanner
+    npm install --save @ionic-native/barcode-scanner
+    
+    ionic cordova plugin add call-number
+    npm install --save @ionic-native/call-number
+  
+    ionic cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
+    npm install --save @ionic-native/launch-navigator
+
+    ionic cordova plugin add cordova-plugin-contacts
+    npm install --save @ionic-native/contacts
+
+    ionic cordova plugin add cordova-plugin-hotspot
+    npm install --save @ionic-native/hotspot
+
+    ionic cordova plugin add cordova-plugin-x-socialsharing
+    npm install --save @ionic-native/social-sharing
+
+    ionic cordova plugin add uk.co.workingedge.cordova.plugin.sqliteporter
+    npm install --save @ionic-native/sqlite-porter
+
+    ionic cordova plugin add cordova-sqlite-storage
+    npm install --save @ionic-native/sqlite
+
+    ionic cordova plugin add cordova-plugin-camera
+    npm install --save @ionic-native/camera
+    
+Other dependencies:
+    npm install --save ngx-qrcode2
+    npm install --save tesseract.js
+
+Providers:
+    providers/database-sqlite/database
+    providers/text-processor/text-processor
+
+Assets:
+    data.sql
+
+
+Possible issue when integrated with facebook SDK:
+https://github.com/jeduan/cordova-plugin-facebook4/issues/550
+    

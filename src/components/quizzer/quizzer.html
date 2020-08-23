@@ -1,0 +1,33 @@
+<div class="quizzer">
+  <ion-row>
+    <ion-col col-10> </ion-col>
+    <ion-col col-2 class="done-vs-total">
+      {{index}}/{{questions.length}}
+    </ion-col>
+  </ion-row>
+  <div class="quiz-area" *ngIf="inProgress">
+    
+    <div padding>
+      <div style="overflow-y:scroll; margin:0 auto;font-size:1.6rem" [innerHtml]="title"></div>
+    </div>
+
+    <div *ngIf="!!code">
+      <pre class="language-all">
+      <code [innerHtml]="code">
+        </code>
+     </pre>
+    </div>
+
+    <ion-list class="dark-theme" radio-group [(ngModel)]="ans" (ionChange)="checkAnswer()" inset>
+      <ion-list-header class="green-contrast">
+        Options
+      </ion-list-header>
+      <ion-item *ngFor="let option of options; let i = index" class="dark-theme">
+        <ion-label [attr.right]="isRight(option) ? '' : null" [attr.wrong]="isWrong(option) ? '' : null">{{option}}</ion-label>
+        <ion-radio value="{{i}}"
+                   [attr.right]="isRight(option) ? '' : null" [attr.wrong]="isWrong(option) ? '' : null"
+                   [disabled]="!answerMode"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+</div>

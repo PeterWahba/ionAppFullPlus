@@ -1,0 +1,27 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created:
+-Install the cordoba plugin and ionic native wrapper:
+
+$ ionic cordova plugin add cordova-plugin-apprate
+$ npm install --save @ionic-native/app-rate
+
+more info here: https://ionicframework.com/docs/native/app-rate/
+
+-Go to your app.modules.ts and import and register the plugin provider withing the providers array, also import /providers/rate-service/rate-service providerto your app
+ 
+ providers: [
+    ...
+	]
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+

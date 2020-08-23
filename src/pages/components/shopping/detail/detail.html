@@ -1,0 +1,115 @@
+
+<ion-header no-border class="shrinking-header" >
+    <ion-navbar color="indigo"  > 
+        <ion-title color="light">Detail</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="buyNow()">
+                <ion-badge *ngIf="totalItemsInCart" color="pink">{{ totalItemsInCart }}</ion-badge>
+                <ion-icon name="md-cart"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content  no-padding  class="content" >
+
+    <div class="product-header">
+        <div class="product-header slide-up" [ngStyle]="{'background-image': 'url(' + item?.imgSmall + ')'}" (click)="fullscreenImage(item?.imgSmall)"> </div>
+           
+            <ion-fab bottom right edge class="hello pop-in" (click)="addToFav()">
+                <button ion-fab color="light" *ngIf="!favorite"><ion-icon name="heart-outline"></ion-icon></button>
+                <button ion-fab color="light" *ngIf="favorite"><ion-icon name="heart"></ion-icon></button>
+            </ion-fab>   
+    </div>
+
+    <div text-center>
+        <ion-row padding-top>
+            <ion-col col-4>
+                <div *ngIf="!item?.discount" ion-text color="special-blue" class="price-text">Price: ${{item?.price}}</div>
+                <div ion-text color="special-blue" *ngIf="item?.discount" class="discount price-text">Price: ${{item?.price}}</div>
+            </ion-col>
+            <ion-col col-4>
+                <div *ngIf="item?.discount" ion-text color="red" class="price-text">Price: ${{item?.discountPrice}}</div>
+            </ion-col>
+            <ion-col col-4>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <div ion-text class="text-name"> {{item?.name}}</div>
+            </ion-col>
+        </ion-row>
+        
+    </div>
+  
+    <div>
+        <div>
+
+            <ion-card>
+                <ion-card-header>
+                    <strong>Description</strong>
+                </ion-card-header>
+                <ion-card-content>
+                    <div class="description" padding>
+                        <div [innerHTML]="item?.description"></div>
+                        <!--<p>{{item?.description}}</p> -->
+                    </div>
+                </ion-card-content>
+                </ion-card>
+
+
+                    <ion-card>
+                        <ion-card-header>
+                            <strong>Details</strong>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-list no-lines margin-top>
+                                <ion-item>
+                                    <ion-label>Color</ion-label>
+                                    <ion-select [(ngModel)]="color">
+                                        <ion-option value="Red" selected="true">Red</ion-option>
+                                        <ion-option value="Black">Black</ion-option>
+                                        <ion-option value="Blue">Blue</ion-option>
+                                    </ion-select>
+                                </ion-item>
+                            </ion-list>
+                            <ion-list no-lines>
+                                <ion-item>
+                                    <ion-label>Size</ion-label>
+                                    <ion-select [(ngModel)]="size">
+                                        <ion-option value="nes" selected="true">Small</ion-option>
+                                        <ion-option value="n64">Middle</ion-option>
+                                        <ion-option value="ps">Large</ion-option>
+                                        <ion-option value="genesis">Extra large</ion-option>
+                                    </ion-select>
+                                </ion-item>
+                            </ion-list>
+                        </ion-card-content>
+                    </ion-card>
+                    <br><br>
+                </div>
+            </div>
+
+           
+</ion-content>
+
+<ion-footer no-border  no-padding>
+    <ion-toolbar color="grey"  no-padding>
+        <ion-row no-padding>
+            <ion-col style="border-right: 1px solid #ccc;" no-padding text-center>
+                <button ion-button clear icon-left (click)="addToCart('bottom')" color="black" style="background-color:white; border:1px solid #ccc">
+                    <ion-icon name="ios-cart"></ion-icon>
+                    Add to cart
+                </button>
+                </ion-col>
+            <ion-col no-padding text-center>
+                <button ion-button clear icon-left (click)="buyNow('bottom')" color="white" style="background-color:#ff9100">
+                    <ion-icon name="ios-card"></ion-icon>
+                    Go to Cart
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>
+

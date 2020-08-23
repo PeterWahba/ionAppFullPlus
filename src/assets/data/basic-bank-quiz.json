@@ -1,0 +1,1663 @@
+﻿[
+  {
+    "description": "Here goes the description for the category.",
+    "excerpt": "Generic C# questions going from simple to complex, with code examples.",
+    "id": "1",
+    "image": "",
+    "language": "csharp",
+    "name": "C#",
+    "level": "2",
+    "membership": "1",
+    "books": [
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1787129551&asins=1787129551&linkId=2e3e38c4787fd6da07ef1a4bed9c54fc&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1484203984&asins=1484203984&linkId=a3defe09d60a715f0f95535f24bd0703&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1484213335&asins=1484213335&linkId=b2aeedbf2629e9ad399d7ac695bc7bd2&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491988533&asins=1491988533&linkId=dcaf9da5d0ca7c1f8e4a95f63bd77b41&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1787129551&asins=1787129551&linkId=44ca41c765baaad3c2aa0771fcf107ec&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491987650&asins=1491987650&linkId=5b33387ed0c11d95f643e41a1a2ce78c&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1787286274&asins=1787286274&linkId=f3384a0375288c50e349cc40bbe96c62&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ],
+    "questions": [
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Manually raise the events by using GetInvocationList.", "Wrap the raising of the event in a try/catch.", "Nothing. This is the default behavior.", "Let subscribers return true or false instead of throwing an exception." ],
+        "title": "You are using a multicast delegate with multiple subscribers. You want to make sure that all subscribers are notifed, even if an exception is thrown. What do you do?",
+        "reference": "https://stackoverflow.com/questions/20094818/delegate-method-calls-with-multiple-subscribers"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Make the event public.", "Add a public method to your class that raises the event.", "Use a public delegate instead of an event.", "Use a custom event accessor to give access to outside users." ],
+        "title": "You have declared an event on your class, and you want outside users of your class to raise this event. What do you do?",
+        "reference": "https://stackoverflow.com/a/4378417/4320602"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Make the method public.", "Use an event so outside users can be notifed when the method is executed.", "Use a method that returns a delegate to authorized callers.", "Declare the private method as a lambda." ],
+        "title": "You have a private method in your class and you want to make invocation of the method possible by certain callers. What do you do?",
+        "reference": "https://stackoverflow.com/a/33301886/4320602"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "You can customize events by adding a custom event accessor and by directly using the underlying delegate type.",
+        "reference": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-implement-custom-event-accessors"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Events can be raised only from the declaring class. Users of events can only remove and add methods the invocation list.",
+        "reference": "http://csharpindepth.com/Articles/Chapter2/Events.aspx?printable=true"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Events are a layer of syntactic sugar on top of delegates to easily implement the publish-subscribe pattern.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Lambda expressions, also known as anonymous methods, use the = operator and form a compact way of creating inline methods.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Delegates can be instantiated, passed around, and invoked.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Delegates are a type that defnes a method signature and can contain a reference to a method.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Volatile.Write(ref currentState)", "Interlocked.CompareExchange(ref currentState, ref newState, expectedState)", "Interlocked.Exchange(ref currentState, newState)", "Interlocked.Decrement(ref newState)" ],
+        "title": "You are implementing a state machine in a multithreaded class. You need to check what the current state is and change it to the new one on each step. Which method do you use?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "CancellationTokenSource", "CancellationToken", "Boolean isCancelled variable", "Volatile" ],
+        "title": "You need to implement cancellation for a long running task. Which object do you pass to the task?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "You can cancel tasks by using the CancellationTokenSource class with a CancellationToken.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "You can use the Interlocked class to execute simple atomic operations.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Use the lock statement on a private object to synchronize access to a piece of code.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "When accessing shared data in a multithreaded environment, you do not need to synchronize access to avoid errors or corrupted data.<br>",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "No, both operations depend on external factors. You need to wait before they are fnished. ", "No, in a server application you don’t have to use async/await. It’s only for responsiveness on the client.", "Yes, this will free your thread to serve other requests while waiting for the I/O tocomplete.", "Yes, this put your thread to sleep while waiting for I/O so that it doesn’t use anyCPU" ],
+        "title": "You are working on an ASP.NET application that retrieves some data from another web server and then writes the response to the database. Should you use async/await?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "AsParallel", "AsSequential", "AsOrdered", "WithDegreeOfParallelism" ],
+        "title": "You are creating a complex query that doesn’t require any particular order and you want to run it in parallel. Which method should you use?<br>",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "You create a Task for each item and then wait until all tasks are fnished.", "You use Parallel. For to process all items concurrently", "You use async/await to process all items concurrently.", "You add all items to a BlockingCollection and process them on a thread created bythe Thread class." ],
+        "title": "You have a lot of items that need to be processed. For each item, you need to perform a complex calculation. Which technique should you use?<br>",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Concurrent collections can be used to safely work with data in a multithreaded (concurrent access) environment.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "The new async and await operators can be used to write asynchronous code more easily.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "PLINQ is an extension to LINQ to run queries in parallel.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "The Parallel class can not be used to run code in parallel.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "A Task object encapsulates a job that needs to be executed. Tasks are the recommended way to create multithreaded code.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "The Thread class can be used if you want to create your own threads explicitly. Otherwise, you can use the ThreadPool to queue work and let the runtime handle things.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Using multiple threads can neither improve responsiveness, nor enable you to make use of multiple processors",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "A thread can be seen as a virtualized CPU",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "int integerNumber;integerNumber = 17843;Console.WriteLine(integerNumber.ToString(\"F\",CultureInfo.InvariantCulture));",
+        "options": [ "17843", "17843.0", "17843.00", "17843.000" ],
+        "title": "What is the ouput?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "double value = 12345.6789;Console.WriteLine(value.ToString(\"E10\", CultureInfo.InvariantCulture));",
+        "options": [ "1.2345678900E+004", "1.2345678900E004", "1.23456789E+004" ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "double value = 12345.6789;Console.WriteLine(value.ToString(\"E\", CultureInfo.InvariantCulture));",
+        "options": [ "1.234568E004", "1.234568E+004", "1234.568E+004" ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "int value;       value = 12345;Console.WriteLine(value.ToString(\"D\"));",
+        "options": [ "12,345", "12.345", "12345", "Invalid formatting" ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "decimal value = 123.456m;Console.WriteLine(\"Your account balance is {0:C2}.\", value);",
+        "options": [ "Your account balance is $123.46.", "Your account balance is 123.46$.", "Your account balance is 123.46.", "Your account balance is USD 123.46." ],
+        "title": "What is the result?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "DateTime dat = new DateTime(2017, 1, 17, 9, 30, 0); string city = \"Chicago\";int temp = -16;string output = String.Format(\"At {0} in {1}, the temperature was {2} degrees.\",                              dat, city, temp);Console.WriteLine(output);",
+        "options": [ "At 17/01/2017 9:30:00 AM in Chicago, the temperature was -16 degrees.", "At 01/17/2017 9:30:00 AM in Chicago, the temperature was -16 degrees.", "At 1/17/2017 9:30:00 AM in Chicago, the temperature was -16 degrees.", "At 01/17/2017 9:30:00 AM in Chicago, the temperature was -16 degrees." ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "int[] years = { 2013, 2014, 2015 };int[] population = { 1025632, 1105967, 1148203 };String s = String.Format(\"{0,-10} {1,-10}\n\n\", \"Year\", \"Population\");for(int index = 0; index < years.Length; index++)   s += String.Format(\"{0,-10} {1,-10:N0}\n\",                      years[index], population[index]);",
+        "options": [ "Year       Population2013       1,025,6322014       1,148,2032015       1,105,967 ", "Year       Population2013       1,148,2032014       1,105,9672015       1,025,632 ", "Year       Population2013       1,025,6322014       1,105,9672015       1,148,203  ", "Invalid formatting" ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "string s = String.Format(\"It is now {0:d} at {0:t}\", DateTime.Now);",
+        "options": [ "It is now 4/10/2016 at 10:04 AM GMT", "It is now 4/10/2016 at 10:04 AM UTC", "It is now 4/10/2016 at 10:04 AM" ],
+        "title": "What is the valid result of s?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "Decimal pricePerOunce = 17.36m;String s = String.Format(\"The current price is {0:C2} per ounce.\",pricePerOunce);",
+        "options": [ "The current price is 17.36 per ounce.", "The current price is $17.36 per ounce.", "The current price is $17.36m per ounce." ],
+        "title": "What is the result?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "Decimal pricePerOunce = 17.36m;String s = String.Format(\"The current price is {0} per ounce.\",pricePerOunce);",
+        "options": [ "The current price is 17.36 per ounce.", "The current price is 17.36m per ounce.", "Exception thown" ],
+        "title": "What is the result?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "@{    var outsideTemp = 79;    var weatherMessage = \"Hello, it is \" + outsideTemp + \" degrees.\";}",
+        "options": [ "Today's weather: Hello, it is 79 degrees.", "Today's weather: 79 degrees.", "Error" ],
+        "title": "What is the output?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "Select valid code statements and code blocks",
+        "options": [ "@{ var myMessage = 'Hello World'; }", "The value of myMessage is: @myMessage", "@{    var greeting = 'Welcome to our site!';    var weekDay = DateTime.Now.DayOfWeek;    var greetingMessage = greeting + ' Today is: ' + weekDay;}" ],
+        "title": "",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "A Physical File is Found that Matches the URL Pattern", "Routing Is Explicitly Disabled for a URL Pattern", "This never happen" ],
+        "title": "Under which circumstances, ASP.NET routing does not handle a request even when is enabled for the Web site?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "A ThreadAbortException is thrown in a thread pool thread, because Abort was called.", "An AppDomainUnloadedException is thrown in a thread pool thread, because the application domain is being unloaded.", "The common language runtime or a host process terminates the thread." ],
+        "title": "Unhandled exceptions on thread pool threads will terminate the process",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Set each of them as a property of a master model", "Bind via array", "Both of them" ],
+        "title": "How to bind more than one models to view in MVC framework?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "It allows multiple time declaration of a variable.", "It allows compile time type checking", "It escapes compile time type checking", "None of the presents." ],
+        "title": "Which of the following is true for dynamic type in C#?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Runtime", "Compile time", "CLR time", "Application Initialization time." ],
+        "title": "Data type of a variable declared using var will be assigned at _______.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Language Integrated Query", "Local Integration Query", "Language Included Query", "Lazy Integrated Query" ],
+        "title": "LINQ stands for ________.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Implementation of single class in multiple .cs files.", "Declaration of multiple classes in a single .cs file.", "Implementation of multiple interfaces to single class.", "Multiple class inheritance." ],
+        "title": "A partial class allows ________",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Integer", "String", "Boolean", "Void" ],
+        "title": "Return type of Predicate <T>() is always a ______.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Utility function", "Delegate", "Event", "Generic class" ],
+        "title": "Func and Action are the types of ______.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "A finally block may not execute every time", "A finally block cannot include return or break keyword.", "A finally block can come before catch block.", "Multiple finally block is possible." ],
+        "title": "Which of the following statement is true?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "try block must be followed by catch and finally block both.", "try block must be followed by catch or finally block or both.", "try block cannot include another try block.", "All of the presents." ],
+        "title": "Which of the following statement is true?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Value will be assigned at runtime.", "Value will be assigned at compile time.", "Value will be assigned when it accessed first time", "None of the presents" ],
+        "title": "Which of the following is true for ReadOnly variables?",
+        "reference": ""
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Int[] intArray = new int[];", "Int intArray[] = new int[5];", "Int[] intArray = new int[5];", "Int[] intArray = new int[]{1, 2, 3, 4, 5};" ],
+        "title": "Which of the following is right way of declaring an array?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "One", "Zero", "-1", "None of the presents" ],
+        "title": "An array in C# starts with _____ index.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Mutable", "Immutable", "Static", "Value type" ],
+        "title": "String data type is ______.",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "It allows an instance of a class to be indexed like an array", "It allows enumerator with class", "It creates index for instances of a class.", "None of the presents." ],
+        "title": "What is indexer?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Int", "String", "Boolean", "All of the presents" ],
+        "title": "Which of the following datatype can be used with enum?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Ternary operator", "Conditional operator", "Greater than operator", "Inverse operator" ],
+        "title": "10 > 9 ? “10 is greater than 9” : “9 is greater than 10” is an example of _______",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Reference type", "Value type", "Class type", "String type" ],
+        "title": "Struct is a _____.",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "It allows assignment of null to reference type.", "It allows assignment of null to value type.", "It allows assignment of null to static class.", "None of the presents." ],
+        "title": "What is Nullable type?",
+        "reference": ""
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "String", "Long", "Boolean", "None of the presents" ],
+        "title": "Which of the following is a reference type in C#?",
+        "reference": ""
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Int32", "Double", "Decimal", "All of the presents" ],
+        "title": "Which of the followings are value types in C#?",
+        "reference": ""
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Class", "Interface", "Abstract class", "Static class" ],
+        "title": "C# class can inherit multiple ________",
+        "reference": ""
+      }
+    ]
+  },
+  {
+    "description": "Here goes the description for the category.",
+    "excerpt": "Generic AngularJs questions going from simple to complex, with code examples.",
+    "id": "2",
+    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/280h/GFIZG3CMEB.jpg",
+    "language": "javascript",
+    "name": "AngularJs",
+    "level": "1",
+    "membership": "1",
+    "books": [
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491901942&asins=1491901942&linkId=68831a48ad8ac4bd3a9fe4cae7fef64c&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=B00HX4PJ9I&asins=B00HX4PJ9I&linkId=0a70a70820cd1f1f37baaa57a3d6be8d&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=099134460X&asins=099134460X&linkId=c6ae7249848c7ced0ac201dbfa23b6cc&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ],
+    "questions": [
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "'ng-', 'data-ng-', 'ng:'", "'ng-'", "'ng-', 'data-ng-', 'ng:', 'x-ng-'", "'ng-', 'data-ng-','x-ng-'" ],
+        "title": "<strong>What are various possible prefixes such as 'ng-' using which Angular directives (for example, ng-app) can be defined?</strong>"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "ng-valid", "ng-invalid", "ng-pristine", "All of the presents" ],
+        "title": "Which of the following is validation css class in AngularJS"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "ng-required", "ng-minlength", "ng-pattern", "All of the presents" ],
+        "title": "Which of the followings are validation directives?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "$routeProvider", "$url", "$rulesProvider", "None of the presents" ],
+        "title": "Which of the following provider can be used to configure routes?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "angular.js", "angular-route.js", "angularRouting.js", "route.js" ],
+        "title": "Which of the following module is required for routing?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "$errorHandler", "$exception", "$log", "$exceptionHandler" ],
+        "title": "Which of the following service is used to handle uncaught exceptions in AngularJS?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "$http", "$XMLHttpRequest", "$window", "$get" ],
+        "title": "Which of the following service is used to retrieve or submit data to the remote server?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "AngularJS controller maintains application data & behaviour using $scope", "AngularJS controller can be created in separate JS file", "AngularJS controller can be added into module", "All of the presents" ],
+        "title": "Which of the following statements are true?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "angular.module();", "var myModule = new module();", "module.create();", "angular.create();" ],
+        "title": "AngularJS module can be created using ________."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Format the data without changing original data", "Filter the data to display on UI", "Fetch the data from remote server", "Cache the subset of data on the browser" ],
+        "title": "AngularJS filters ___________."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Service is reusable UI component.", "Service is a reusable JavaScript function.", "Service is data provider", "None of the presents" ],
+        "title": "What is service in AngularJS?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "ng-include", "ng-form", "ng-bind", "ng-attach" ],
+        "title": "Which of the following directive allows us to use form?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False", "Sometimes", "None of the presents" ],
+        "title": "The ng-change directive must be used with ng-model directives."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "It transfers data between a controller and view", "It transfers data between model and controller", "It is a global scope in AngularJS.", "None of the presents" ],
+        "title": "What is $scope?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Data to model", "View to controller", "Model to HTML element", "Model to $scope" ],
+        "title": "The ng-bind directive binds ____________."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "One-way data binding", "Two-way data binding", "Binding view to controller", "None of the presents" ],
+        "title": "The ng-model directive is used for __________."
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Tag", "Attribute", "Class name", "All of the presents" ],
+        "title": "AngularJS directives can be written in HTML element as:"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Expression cannot contain condition, loop or RegEx", "Expression cannot declare a function", "Expression cannot contain comma, void or return keyword", "All of the presents" ],
+        "title": "Which of the following statements are true?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "{{ 2 + 2 }}", "{ 2 + 2 }", "(( 2 + 2 ))", "{ (2 + 2) }" ],
+        "title": "Which of the following is a valid AngularJS expression?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "ng-init", "ng-app", "ng-controller", "ng-bootstrap" ],
+        "title": "Which of the following directive bootstraps AngularJS framework?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Model", "View", "Controller", "Module" ],
+        "title": "AngularJS directives are used in ________."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Is AngularJS code unit testable?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "config phase is the phase during which AngularJS bootstraps itself."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Embed HTML pages within a HTML page using ng-include directive", "Embed JS files within a HTML page using ng-include directive", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about ng-include directive?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Currency filter formats text in a currency format.", "Currency filter is a function which takes text as input.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about currency filter?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Deep linking allows you to encode the state of application in the URL so that it can be bookmarked.", "Deep linking is a SEO based technique.", "Deep linking refers to linking various views to a central page.", "None of the presents." ],
+        "title": "What is deep linking in AngularJS?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Services are JavaScript functions.", "Services are responsible to do specific tasks only", "Inbuilt services are always prefixed with $ symbol.", "All of the presents." ],
+        "title": "Which of the following is true about AngularJS service?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "$routeProvider is the key service which set the configuration of urls.", "$routeProvider maps Urls with the corresponding html page or ng-template.", "$routeProvider attaches a controller with the view.", "All of the presents." ],
+        "title": "Which of the following is true about $routeProvider?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Lowercase filter converts a text to lower case text.", "Lowercase filter is a function which takes text as input.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about lowercase filter?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Use novalidate with a form declaration to disable any browser specific validation."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "$dirty flag states that value has been changed.", "$dirty flag states that form has invalid data.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about $dirty flag?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "In AngularJS, Scope contains the model data."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "AngularJS Expressions are written inside double braces like {{ expression}}."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "AngularJS provides capability to create Single Page Application in a very clean and maintainable way."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "AngularJS supports inbuilt internationalization for three types of filters currency, date and numbers."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "factory method is used to define a factory which can later be used to create services as and when required."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Model available in $rootScope can be overridden by its all child scopes."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "ng-click directive represents a AngularJS click event."
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "ng-controller directive tells AngularJS what controller to use with this view.", "AngularJS application mainly relies on controllers to control the flow of data in the application.", "A controller is a JavaScript object containing attributes/properties and functions.", "All of the presents." ],
+        "title": "Which of the following is true about ng-controller directive?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "novalidate with a form declaration disables any browser specific validation."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Each controller accepts $scope as a parameter which refers to the application/module that controller is to control."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Templates can be a single file (like index.html) or multiple views in one page."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "Services are singleton objects which are instantiated only once in app."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Child controller inherits the scope of its parent controller."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "$rootScope is the parent of all of the scope variables."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "orderby filter orders the array based on provided criteria.", "orderby filter is used to filter the array to a subset of it based on provided criteria.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about orderby filter?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Model represents server side data.", "Model represents data stored in database.", "Model is the lowest level of the pattern responsible for maintaining data.", "None of the presents." ],
+        "title": "What is Model in MVC?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Deep linking allows you to encode the state of application in the URL so that it can be bookmarked.", "Deep linking is a SEO based technique.", "Deep linking refers to linking various views to a central page.", "None of the presents." ],
+        "title": "What is deep linking in AngularJS?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "In controllers, model data is accessed via $scope object."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Each controller accepts $scope as a parameter which refers to the application/module that controller is to control."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Being JavaScript only framework, application written in AngularJS are not safe and secure."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "Is AngularJS extensible?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "factory method is used to define a factory which can later be used to create services as and when required."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Model available in $rootScope can be overridden by its all child scopes."
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "ng-disabled directive can enable a given control.", "ng-disabled directive can disable a given control.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about ng-disabled directive?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Model View Control", "Model View Controller", "Main View Controller", "Main View Control" ],
+        "title": "What MVC stands for?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "Do AngularJS provide reusable components?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "In controllers, model data is accessed via $scope object."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "AngularJS Expressions are written inside double braces like {{ expression}}."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "Templates can be a single file (like index.html) or multiple views in one page."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "false", "true" ],
+        "title": "Is AngularJS extensible?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false" ],
+        "title": "service method is used to create a service whose purpose is to do some defined task."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "$error states that form has invalid data.", "$error states the exact error.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about $error?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "filter filter is a function which takes text as input.", "filter filter is used to filter the array to a subset of it based on provided criteria.", "Both of the options.", "None of the presents." ],
+        "title": "Which of the following is true about filter filter?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "double braces like {{ expression}}", "single braces like {expression}", "small bracket like (expression)", "capital bracket like [expression]" ],
+        "title": "AngularJS expressions are written using."
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "ng-bind directive binds the AngularJS Application data to HTML tags.", "ng-bind updates the model created by ng-model directive to be displayed in the html tag.", "ng-bind updates html control data when controller changes the model.", "All of the presents." ],
+        "title": "Which of the following is true about ng-bind directive?"
+      }
+    ]
+  },
+  {
+    "description": "Here goes the description for the category.",
+    "excerpt": "Generic JavaScript questions going from simple to complex, with code examples.",
+    "id": "3",
+    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/280h/GFIZG3CMEB.jpg",
+    "language": "javascript",
+    "name": "JavaScript",
+    "level": "1",
+    "membership": "1",
+    "books": [
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449365035&asins=1449365035&linkId=6fdae4e71bc93c9dc27edcc9138b5bd2&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1497408180&asins=1497408180&linkId=d24ea83b5d33f2da779760ada963941d&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491904240&asins=1491904240&linkId=03369b71b793bb61cdd34be253cd0789&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1617292850&asins=1617292850&linkId=1a6ebde51ede706fd863a1164a2e6661&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0321812182&asins=0321812182&linkId=08583ff74cebe28d65db2901f2e3a508&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0596806752&asins=0596806752&linkId=4b08a06945194e748a9e7da0e3a6c39e&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1593275404&asins=1593275404&linkId=8f65e6f3ed32a126285502098afae5d4&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1593275846&asins=1593275846&linkId=b5704fe1c6a2903483e59f1db5ee8455&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ],
+    "questions": [
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Is it valid to pass an anonymous function as an argument to another function?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "JavaScript is a lightweight, interpreted programming language.", "All", "JavaScript is designed for creating network-centric applications.", "JavaScript is complementary to and integrated with Java." ],
+        "title": "Which of the following statements is valid for the features of JavaScript?"
+      },
+      {
+        "answer": 1,
+        "code": "function first() {    window.a = 3;}function second() {    alert(a);}",
+        "options": [ "0", "3", "null", "undefined" ],
+        "title": "What is the result of the below JavaScript code when the functions get called in the order as mentioned?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "link()", "sup()", "small()", "sub()" ],
+        "title": "Which of the following function of String object produces an HTML hypertext link for requesting another URL?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "search()", "match()", "replace()", "concat()" ],
+        "title": "Which of the following function of String object would compare a regular expression with a string?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "Its value is a string indicating the data type of the operand.", "The typeof is a unary operator. It should occur before the single operand, which can be of any type.", "Both of the options.", "None" ],
+        "title": "Which is the use of typeof operator in JavaScript?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "concat()", "pop()", "push()", "some()" ],
+        "title": "Select a function of Array object which returns a new array comprised of the current array /or its value(s)?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "big()", "blink()", "italics()", "anchor()" ],
+        "title": "Select a String function that creates a string and display in a big font as if it were in a <big>tag?</big>"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "var holder = new Object();", "var holder = Object();", "var holder = new OBJECT();", "var holder = new holder();" ],
+        "title": "Which of the following JavaScript code snippet would create an object?"
+      },
+      {
+        "answer": 4,
+        "code": "var a = 5;function first() {    a = 6;}function second() {    alert(a);}",
+        "options": [ "0", "5", "null", "undefined", "6" ],
+        "title": "What is the result of the below JavaScript code when the functions get called in the order as mentioned?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "toSource()", "toString()", "valueOf()", "None" ],
+        "title": "Which of the following method of Boolean object returns a string depending upon the value of the object?"
+      },
+      {
+        "answer": 1,
+        "code": "function() {    var a = 10;    if(a > 5) {        a = 7;    }    alert(a);}",
+        "options": [ "null", "7", "undefined", "10" ],
+        "title": "What is the output of the following JavaScript snippet?"
+      },
+      {
+        "answer": 1,
+        "code": "  var x = [typeof x, typeof y][1];  typeof typeof x;",
+        "options": [ "'number'", "'string'", "'undefined'", "'object'" ],
+        "title": "Which of the following is the output of the below JavaScript code?"
+      },
+      {
+        "answer": 1,
+        "code": "function() {    if(true) {        var a = 5;    }    alert(a);}",
+        "options": [ "undefined", "5", "null", "0" ],
+        "title": "Which of the following is the output of the below JavaScript code?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "using getType function", "using typeof operator", "Both of the options.", "None" ],
+        "title": "Which of the following will return the type of the arguments passed to a function?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "toLocaleUpperCase()", "substring()", "toUpperCase()", "toString()" ],
+        "title": "Which of the following function of String object returns the capitalized string while respecting the current locale?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "toSource()", "sort()", "unshift()", "splice()" ],
+        "title": "What is the function of Array object that adds and/or removes elements from an array?"
+      },
+      {
+        "answer": 3,
+        "code": "var a = 6;function test() {    var a = 7;    function again() {        var a = 8;        alert(a);   }    again();    alert(a);  }test();alert(a); ",
+        "options": [ "8; 6; 7", "7; 6; 8", "6; 7; 8", "8; 7; 6" ],
+        "title": "When executed, the below JavaScript code will pop up three alerts. Identify the corret answer?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "pop()", "get()", "last()", "None" ],
+        "title": "Which of the following methods removes the last element from an array and returns that element?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "concat()", "forEach()", "every()", "filter()" ],
+        "title": "What is the function of Array object that runs through each element of the array?"
+      },
+      {
+        "answer": 4,
+        "code": "function getFunc() {    var a = 7;    return function(b) {        alert(a+b);    }}var f = getFunc();f(5);",
+        "options": [ "5", "7", "null", "undefined", "12" ],
+        "title": "Which of the following is the output of the below JavaScript code?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "toFixed()", "toExponential()", "toPrecision()", "toLocaleString()" ],
+        "title": "Which of the following functions of Number object would display output in exponential format?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "All except None.", "None", "Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.", "A callback is a plain JavaScript function passed to some method as an argument or option." ],
+        "title": "Which of the following is a true statement for JavaScript callbacks?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "toExponential()", "toFixed()", "toLocaleString()", "toString()" ],
+        "title": "Which of the following functions of Number object would return a string version of the number that may change according to the browser’s locale settings?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "match()", "concat()", "replace()", "search()" ],
+        "title": "Select a String function that finds the match between a regular expression and a string, and to replace the matched substring with a new substring?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "true", "false", "NaN" ],
+        "title": "What will the following code return: Boolean(10 > 9)"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "browser.name", "navigator.appName", "client.navName" ],
+        "title": "How can you detect the client's browser name?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<!--This comment hasmore than one line-->", "/*This comment hasmore than one line*/", "//This comment hasmore than one line//" ],
+        "title": "How to insert a comment that has more than one line?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "No", "Yes" ],
+        "title": "Is JavaScript case-sensitive?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "x", "-", "=", "*" ],
+        "title": "Which operator is used to assign a value to a variable?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "v carName;", "variable carName;", "var carName;" ],
+        "title": "How do you declare a JavaScript variable?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "onmouseclick", "onmouseover", "onclick", "onchange" ],
+        "title": "Which event occurs when the user clicks on an HTML element?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "False", "True" ],
+        "title": "JavaScript is the same as Java."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "w2 = window.open('http://www.w3schools.com');", "w2 = window.new('http://www.w3schools.com');" ],
+        "title": "What is the correct JavaScript syntax for opening a new window called 'w2' ?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Math.ceil(x, y)", "top(x, y)", "ceil(x, y)", "Math.max(x, y)" ],
+        "title": "How do you find the number with the highest value of x and y?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "rnd(7.25)", "Math.rnd(7.25)", "Math.round(7.25)", "round(7.25)" ],
+        "title": "How do you round the number 7.25, to the nearest integer?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "var colors = ['red', 'green', 'blue']", "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')", "var colors = (1:'red', 2:'green', 3:'blue')", "var colors = 'red', 'green', 'blue'" ],
+        "title": "What is the correct way to write a JavaScript array?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "'This is a comment", "<!--This is a comment-->", "//This is a comment" ],
+        "title": "How can you add a comment in a JavaScript?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "for (i = 0; i <= 5)", "for (i <= 5; i++)", "for (i = 0; i <= 5; i++)", "for i = 1 to 5" ],
+        "title": "How does a FOR loop start?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "while (i <= 10)", "while (i <= 10; i++)", "while i = 1 to 10" ],
+        "title": "How does a WHILE loop start?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "if i <> 5", "if (i != 5)", "if (i <> 5)", "if i =! 5 then" ],
+        "title": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "if (i == 5)", "if i = 5 then", "if i = 5", "if i == 5 then" ],
+        "title": "How to write an IF statement in JavaScript?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "call myFunction()", "call function myFunction()", "myFunction()" ],
+        "title": "How do you call a function named 'myFunction'?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "function myFunction()", "function:myFunction()", "function = myFunction()" ],
+        "title": "How do you create a function in JavaScript?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "msg('Hello World');", "alertBox('Hello World');", "msgBox('Hello World');", "alert('Hello World');" ],
+        "title": "How do you write 'Hello World' in an alert box?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "The external JavaScript file must contain the <script> tag."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<script name='xxx.js'>", "<script src='xxx.js'>", "<script href='xxx.js'>" ],
+        "title": "What is the correct syntax for referring to an external script called 'xxx.js'?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "The <head> section", "Both the <head> section and the <body> section are correct", "The <body> section" ],
+        "title": "Where is the correct place to insert a JavaScript?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "#demo.innerHTML = 'Hello World!';", "document.getElement('p').innerHTML = 'Hello World!';", "document.getElementById('demo').innerHTML = 'Hello World!';", "document.getElementByName('p').innerHTML = 'Hello World!';" ],
+        "title": "What is the correct JavaScript syntax to change the content of the HTML element below?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<scripting>", "<script>", "<javascript>", "<js>" ],
+        "title": "Inside which HTML element do we put the JavaScript?"
+      },
+      {
+        "answer": 1,
+        "code": "\"1\" - - \"1\";",
+        "options": [ "0", "2", "11", "'11'" ],
+        "title": "What is the result?"
+      },
+      {
+        "answer": 1,
+        "code": "function bar() {    return foo;    foo = 10;    function foo() {}    var foo = '11';}alert(typeof bar());",
+        "options": [ "number", "function", "undefined", "string", "error" ],
+        "title": "What is alerted?"
+      },
+      {
+        "answer": 1,
+        "code": "(true + false) > 2 + true;",
+        "options": [ "true", "false", "NaN", "TypeError" ],
+        "title": "What is the result?"
+      },
+      {
+        "answer": 0,
+        "code": "Number(\"1\") - 1 == 0;",
+        "options": [ "True", "False", "TypeError" ],
+        "title": "What is the result?"
+      },
+      {
+        "answer": 3,
+        "code": "function aaa() {    return    {        test: 1    };}alert(typeof aaa());",
+        "options": [ "function", "number", "object", "undefined" ],
+        "title": "What will be alerted?"
+      },
+      {
+        "answer": 0,
+        "code": "var foo = function foo() {    console.log(foo === foo);  };foo();",
+        "options": [ "true", "false", "Reference error" ],
+        "title": "What is printed in the console?"
+      }
+    ]
+  },
+  {
+    "description": "Here goes the description for the category.",
+    "excerpt": "Generic HTML questions going from simple to complex.",
+    "id": "4",
+    "image": "https://snap-photos.s3.amazonaws.com/img-thumbs/280h/GFIZG3CMEB.jpg",
+    "language": "html",
+    "name": "HTML",
+    "level": "1",
+    "membership": "1",
+    "books": [
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1118008189&asins=1118008189&linkId=f8e09aef7dfa6149e4045f2aa6cd6402&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449319270&asins=1449319270&linkId=c3425385c2a41fd7454df418c4fe6b96&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449363261&asins=1449363261&linkId=1d290a22c0ac19243690aa9374ca4a22&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=154292331X&asins=154292331X&linkId=8a3d47fe6da48484e7cf562b0fc12939&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=0596527403&asins=0596527403&linkId=e7a82abb697f2d911036570d416ed3b3&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1118871650&asins=1118871650&linkId=e27fe17e3186e91b38c6282724c67a14&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=007179431X&asins=007179431X&linkId=4793f09600bb061bf523de4c6efd2ecb&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+      "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1118016181&asins=1118016181&linkId=e35a6351d01d69bec0786985102b8238&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ],
+    "questions": [
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "II", "Italic", "I", "It", "None" ],
+        "title": "Select the correct HTML tag to make a text italic?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "None", "Ol", "Dl", "Ul", "List" ],
+        "title": "Select the option to make a list that lists the items with bullets?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "A>http://www.techbeamers.com", "A url='http://www.techbeamers.com'>techbeamers.com", "<A href='http://www.techbeamers.com'>techbeamers</A>", "A name='http://www.techbeamers.com'>techbeamers.com", "None" ],
+        "title": "Select the correct HTML for creating a hyperlink?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "lb", "brbr", "break", "br", "None" ],
+        "title": "Select the appropriate HTML tag for inserting a line break?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "H1", "Heading", "H6", "Head", "None" ],
+        "title": "Select the option to make a list that lists the items with numbers?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Ul", "Dl", "None", "Ol", "List" ],
+        "title": "Select the option to make a list that lists the items with numbers?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "A href='url' target='_blank'", "A href='url' new", "A href='url' target=_window'", "None", "A href='url' target='new'" ],
+        "title": "Select the correct option to open a link in a new browser window?"
+      },
+      {
+        "answer": 4,
+        "code": "",
+        "options": [ "Mail>xxx@yyy.com/mail", "Mail href='xxx@yyy.com'", "None", "A href='xxx@yyy.com'", "A href=mailto:xxx@yyy.com" ],
+        "title": "Select the correct option to create an e-mail link?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "b", "bold", "bb", "bo", "None" ],
+        "title": "Select the correct HTML tag to make a text bold."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "opening new document", "  selecting previous document", "deleting frame", "none of these" ],
+        "title": "What does <strong>target='_blank'</strong> attribute do?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "showLocation()", " showPosition()", "both a and b", "showStatus()" ],
+        "title": "_________ Function displays the latitude or Longitude in geoLocation in HTML5."
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Authenticate the user", " result of a calculation", "pre-defines value", "none of these" ],
+        "title": "<output>; element represent?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "\"\"", " ,", "=", ";" ],
+        "title": "Attributes consist of a name and a value separated by ________ sign ?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "terminate everything", " terminate all method", "terminate a web worker", "terminate program" ],
+        "title": "terminate() method in HTML5 is used for ____________."
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "iframe", " jframe", "inline frame", "outline frame" ],
+        "title": "Height attribute specifies the height of which frame?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "in forground", " in background", "both a and b", "can't determinte" ],
+        "title": "Where does web worker(s) script run?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "  Nothing", "  Brings up a note pad with the HTML code already used for the site", "Opens a new website" ],
+        "title": "What does View Source do?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "  Page 4", "  Homepage", "Table of contents" ],
+        "title": "What is always a welcome page, and explains the purpose or topic of the site?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "  Adds a link to google on the page", "Adds a search engine to the page", "Nothing" ],
+        "title": "What does < a h r e f = ”h t t p : / / w w w . g o o g l e . c o m“t i t l e = ” L i n k t o G o o g l e ” t a r g e t = ” _ b l a n k ” > G o o g l e < / a > do?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "In the same folder", "Where ever is fine", "In different folders" ],
+        "title": "Where do all items for the same web site need to be saved?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "  Quotation marks", "Commas", "Parenthesis" ],
+        "title": "What should values always be enclosed in?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "< img / >", "< img > < / img >", "< / img>" ],
+        "title": "Which of the following is an example of an empty element?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "  Tag", "  Empty element", "Closed element" ],
+        "title": "What is an element that does not having a closing tag called?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "The last page", "The home page", "The second page" ],
+        "title": "where is the meta tag only found?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "  Opening", "  Closing" ],
+        "title": "< / body ><br>Is this an opening tag or a closing tag?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "  Opening", "Closing" ],
+        "title": "< body ><br>Is this an opening tag or a closing tag?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Break tag", "A broken one", "An opening tag" ],
+        "title": "< br/><br>What type of tag is this?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "Opening tag has a / in front", "Closing tag has a / in front", "There is no difference" ],
+        "title": "what is the difference in an opening tag and a closing tag?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "2", "1", "3" ],
+        "title": "How many tags are in a regular element?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Specify whether the content of an element should be editable or not", "Specifies a context menu for an element. The menu appears when a user right-clicks on the element", "Return the position of the first found occurrence of content inside a string", "Update content from the server" ],
+        "title": "The HTML global attribute, 'contenteditable' is used to:"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<head>", "<header>", "<top>", "<section>" ],
+        "title": "Which HTML element is used to specify a header for a document or section?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "A navigation list to be shown at the left side of the page", "The ASCII character-set; to send information between computers on the Internet", "Content aside from the page content" ],
+        "title": "In HTML, what does the <aside> element define?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<navigate>", "<navigation>", "<nav>" ],
+        "title": "Which HTML element defines navigation links?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<meter>", "<range>", "<measure>", "<gauge>" ],
+        "title": "Which HTML element is used to display a scalar measurement within a range?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "search", "slider", "range", "controls" ],
+        "title": "Which input type defines a slider control?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "validate", "placeholder", "formvalidate", "required" ],
+        "title": "In HTML, which attribute is used to specify that an input field must be filled out?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "create draggable elements", "display database records", "draw graphics", "manipulate data in MySQL" ],
+        "title": "The HTML <canvas> element is used to:"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "HTML", "XML", "CSS" ],
+        "title": "Graphics defined by SVG is in which format?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Event attributes", "HTML elements", "Style attributes" ],
+        "title": "In HTML, onblur and onfocus are:"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<mp3>", "<audio>", "<sound>" ],
+        "title": "What is the correct HTML element for playing audio files?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<media>", "<movie>", "<video>" ],
+        "title": "What is the correct HTML element for playing video files?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "In HTML, you can embed SVG elements directly into an HTML page."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<footer>", "<bottom>", "<section>" ],
+        "title": "Which HTML element is used to specify a footer for a document or section?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 5.0//EN' 'http://www.w3.org/TR/html5/strict.dtd'>", "<!DOCTYPE html>", "<!DOCTYPE HTML5>" ],
+        "title": "Which doctype is correct for HTML5?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "alt", "longdesc", "title", "src" ],
+        "title": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<head>", "<title>", "<meta>" ],
+        "title": "Which HTML element defines the title of a document?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Block elements are normally displayed without starting a new line."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "HTML comments start with <!-- and end with -->"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "There is no such thing as an <iframe>", "False", "True" ],
+        "title": "An <iframe> is used to display a web page within a web page."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<body style='background-image:url(background.gif)'>", "<background img='background.gif'>", "<body bg='background.gif'>" ],
+        "title": "What is the correct HTML for inserting a background image?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<img alt='MyImage'>image.gif</img>", "<image src='image.gif' alt='MyImage'>", "<img src='image.gif' alt='MyImage'>", "<img href='image.gif' alt='MyImage'>" ],
+        "title": "What is the correct HTML for inserting an image?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<input type='textarea'>", "<input type='textbox'>", "<textarea>" ],
+        "title": "What is the correct HTML for making a text area?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<list>", "<select>", "<input type='list'>", "<input type='dropdown'>" ],
+        "title": "What is the correct HTML for making a drop-down list?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<input type='textfield'>", "<textfield>", "<input type='text'>", "<textinput type='text'>" ],
+        "title": "What is the correct HTML for making a text input field?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "<checkbox>", "<input type='check'>", "<check>", "<input type='checkbox'>" ],
+        "title": "What is the correct HTML for making a checkbox?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<ul>", "<list>", "<dl>", "<ol>" ],
+        "title": "How can you make a bulleted list?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<ul>", "<list>", "<ol>", "<dl>" ],
+        "title": "How can you make a numbered list?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "True", "False" ],
+        "title": "Inline elements are normally displayed without starting a new line."
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<table><tr><td>", "<table><tr><tt>", "<thead><body><tr>", "<table><head><tfoot>" ],
+        "title": "Which of these elements are all <table> elements?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<a href='url' target='_blank'>", "<a href='url' new>", "<a href='url' target='new'>" ],
+        "title": "How can you open a link in a new tab/browser window?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "*", "^", "<", "/" ],
+        "title": "Which character is used to indicate an end tag?"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "<a name='http://www.w3schools.com'>W3Schools.com</a>", "<a>http://www.w3schools.com</a>", "<a url='http://www.w3schools.com'>W3Schools.com</a>", "<a href='http://www.w3schools.com'>W3Schools</a>" ],
+        "title": "What is the correct HTML for creating a hyperlink?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<em>", "<italic>", "<i>" ],
+        "title": "Choose the correct HTML element to define emphasized text"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<important>", "<strong>", "<b>", "<i>" ],
+        "title": "Choose the correct HTML element to define important text"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "<body style='background-color:yellow;'>", "<body bg='yellow'>", "<background>yellow</background>" ],
+        "title": "What is the correct HTML for adding a background color?"
+      },
+      {
+        "answer": 2,
+        "code": "",
+        "options": [ "<lb>", "<break>", "<br>" ],
+        "title": "What is the correct HTML element for inserting a line break?"
+      },
+      {
+        "answer": 1,
+        "code": "",
+        "options": [ "<head>", "<h1>", "<heading>", "<h6>" ],
+        "title": "Choose the correct HTML element for the largest heading:"
+      },
+      {
+        "answer": 3,
+        "code": "",
+        "options": [ "Google", "Microsoft", "Mozilla", "The World Wide Web Consortium" ],
+        "title": "Who is making the Web standards?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language" ],
+        "title": "What does HTML stand for?"
+      },
+      {
+        "answer": 0,
+        "code": "",
+        "options": [ "What You See Is What You Get", "When You Start Is When You Go", "What You See Is What You Gain" ],
+        "title": "WYSIWYG stands for ?"
+      }
+    ]
+  }
+]

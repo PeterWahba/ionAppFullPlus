@@ -1,0 +1,56 @@
+page-chart {
+    .scroll-content {
+        /*background-color: map-get($colors, light);*/
+    }
+
+    ion-card-header {
+        font-weight: bold;
+    }
+
+    ion-card-content {
+        height: 100%;
+        min-height: 400px;
+    }
+
+    ion-segement {
+        width: 95%;
+    }
+
+    .primary {
+        background-color: #1565c0;
+    }
+
+    .p-light {
+        background-color: #5e92f3;
+    }
+
+    .p-dark {
+        background-color: #ececec;
+    }
+
+    .light-font {
+        color: black;
+    }
+
+    .banner-bg:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-bg {
+        position: relative;
+        height: 200px;
+        // background: url(img/1.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: right !important;
+    }
+}

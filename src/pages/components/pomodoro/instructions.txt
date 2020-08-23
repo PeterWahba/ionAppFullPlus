@@ -1,0 +1,4 @@
+Instructions to import this component into your ionic app application:
+
+dependencies:
+    npm install angular-progress-bar@latest --save

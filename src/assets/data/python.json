@@ -1,0 +1,1824 @@
+﻿{
+  "id": "5",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic Phyton questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "Python",    
+  "language": "python",
+  "level": "2",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1593276036&asins=1593276036&linkId=78c8ad76f295313f3cd456e3ba167236&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=B00DDZPC9S&asins=B00DDZPC9S&linkId=517c34a2e9b6a8cb01df1282eac2ed90&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449340377&asins=1449340377&linkId=dcf1114cb793665b76e7d46396ec7cdf&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"    
+  ],
+  "questions": [
+    {
+      "answer": 1,
+      "options": [ "defines a set and initializes it.", "defines a function, which does nothing.", "defines an empty class.", "defines a method, which passes its parameters through." ],
+      "title": "What does the below code intended to do?",
+      "code": "def a(b, c, d):   pass"
+    },
+    {
+      "answer": 3,
+      "options": [ "list.pop(obj=list[-1])", "list.remove(obj)", "list.sort([func])", "list.reverse()" ],
+      "title": "Whichfunction does in-place reversalof objects in alist?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "4", "2", "3" ],
+      "title": "What gets printed as the output of the below code?",
+      "code": "x = Truey = Falsez = Falseif not x or y:    print 1elif not x or not y and z:    print 2elif not x or y or not y and x:    print 3else:    print 4"
+    },
+    {
+      "answer": 1,
+      "options": [ "(123, 'techbeamers') * 2", "(123, 'techbeamers', 123, 'techbeamers')", "none of the precents", "Error" ],
+      "title": "What is the output of thefollowing Python code?",
+      "code": "tinytuple = (123, 'techbeamers')print tinytuple * 2"
+    },
+    {
+      "answer": 1,
+      "options": [ "0.6", "0", "6/10", "none of the precents" ],
+      "title": "What would be the result of the following expression in Python?",
+      "code": "print 3/5"
+    },
+    {
+      "answer": 1,
+      "options": [ "5", "6", "4", "syntax error" ],
+      "title": "Whatis the output of the below Python code?",
+      "code": "a = [1,2,3,None,(),[],]print len(a)"
+    },
+    {
+      "answer": 2,
+      "options": [ "=abc", "'abc'", "NameError: name 'abc' is not defined", "abc" ],
+      "title": "If the following statement is run inPython, what willbethe result?",
+      "code": "print abc"
+    },
+    {
+      "answer": 2,
+      "options": [ "<type 'function'>", "<type 'type'>", "<type 'NoneType'>", "<type 'tuple'>" ],
+      "title": "What is the output of thefollowing code?",
+      "code": "def f(): passprint type(f())"
+    },
+    {
+      "answer": 1,
+      "options": [ "[ 'Tech', 404, 3.03, 'Beamers', 33.3 ]", "[404, 3.03]", "['Tech', 'Beamers']", "none of the precents" ],
+      "title": "What is the output of following code?",
+      "code": "list = [ 'Tech', 404, 3.03, 'Beamers', 33.3 ]print list[1:3]"
+    },
+    {
+      "answer": 3,
+      "options": [ "333", "27", "9", "TypeError: can't multiply sequence by non-int of type 'str'" ],
+      "title": "If the following code is run in Python, what would be the result?",
+      "code": "num = '5'*'5'"
+    },
+    {
+      "answer": 1,
+      "options": [ "console.log", "print", "output", "echo" ],
+      "title": "Which of the following functions print the output to the console?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Is the following statement correct?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "(‘Learn’, ‘Programming’)", "(Learn, Python, Programming)", "Learn Python Programming", "‘Learn Python Programming’" ],
+      "title": "What is the output of the following code?",
+      "code": "import resentence = 'Learn Python Programming'test = re.match(r'(.*) (.*?) (.*)', sentence)print(test.group())"
+    },
+    {
+      "answer": 1,
+      "options": [ "matches a pattern at any position in the string", "matches a pattern at the start of the string", "such a function does not exist", "none of the precents" ],
+      "title": "What does the function re.match do?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "pyregex", "regex", "re", "None" ],
+      "title": "Which module in Python supports regular expressions?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "<type 'dict'>", "<type 'float'>", "<type 'unicode'>", "<type 'complex'>" ],
+      "title": "what should the below code print?",
+      "code": "print type(1J)"
+    },
+    {
+      "answer": 3,
+      "options": [ "orange", "indigo", "blue", "yellow" ],
+      "title": "What is the value of colors[2]?",
+      "code": "colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "Is the following statementcorrect?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "isupper()", "ljust(width[, fillchar])", "len(string)", "join(seq)" ],
+      "title": "Which of the following function checks that all characters ofa string are in upper case?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "PYTHONSTARTUP", "PYTHONCASEOK", "PYTHONPATH", "PYTHONHOME" ],
+      "title": "Which of the following environment variable for Python is an alternative module search path?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Unlocked", "Locked", "Owning thread", "Recursion level" ],
+      "title": "What are the states/featuressupported bya Lock object?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "By Thread.run()", "By Thread.create()", "None", "By Thread.start()" ],
+      "title": "How does run() method is invoked?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Lock", "RLock", "Condition", "Semaphore" ],
+      "title": "Which one is reentrant lock type?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Lock is owned by a thread while RLock is owned by many.", "Lock is owned by none while RLock is owned by many.", "Lock and RLock both primitives are owned by many.", "Lock and RLock both primitives are owned by a single thread." ],
+      "title": "What is the difference between<em>threading.Lock</em>and<em>threading.RLock</em>?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Lock object", "Semaphore", "RLock object", "None" ],
+      "title": "What are the lock types a Condition object can associate with?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "None", "thread.stop()", "thread.stop() & thread.wait()", "thread.terminate()" ],
+      "title": "How to terminate a blocking thread?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Lock", "Condition", "Event", "Semaphore" ],
+      "title": "Which synchronization method is used to guard the resources with limited capacity, e.g. a database server?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "notify()", "notifyAll()", "release()", "releaseAll()" ],
+      "title": "What is the method that wakes up all thread waiting for the condition?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Increase throughput", "Degrade performance", "Improve performance", "Reduce execution time" ],
+      "title": "What would be the impact of multithreading on a uni-processor system?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "isDaemon()", "isAlive()", "isActive()", "None" ],
+      "title": "How to detect the status of a python thread?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "if another thread owns the lock, acquire() will block until the lock is unlocked.", "If a thread already owns the lock, acquire() will increment the recursion level by one, and return immediately.", "If a thread already owns the lock, acquire() will block until the lock is unlocked.", "if another thread owns the lock, acquire() will increment the recursion level by one, and return immediately." ],
+      "title": "Which statements aretrue for RLock objects?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "thread", "_threading", "threading", "None" ],
+      "title": "What are the libraries in Python that support threads?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "threading", "None", "thread", "_threading" ],
+      "title": "Which Python library runs a function as thread?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "None", "waitforthread()", "wait()", "join()" ],
+      "title": "Which thread method is used to wait until it terminates?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "ReferenceError", "SystemError", "RuntimeError", "LookupError" ],
+      "title": "What is the exception raised for an error that doesn’t fall in any of the categories?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "getList()", "getThreads()", "threads()", "enumerate()" ],
+      "title": "What is the method to retrieve the list of all active threads?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Semaphore holds a counter for the number of release() calls minus the number of acquire() calls, plus an initial value but bounded semaphore doesn't.", "A bounded semaphore makes sure its current value doesn’t exceed its initial value while semaphore doesn't.", "Bounded semaphore holds a counter for the number of release() calls minus the number of acquire() calls, plus an initial value but semaphore doesn't.", "A semaphore makes sure its current value doesn’t exceed its initial value while bounded semaphore doesn't." ],
+      "title": "What is the difference between a s<em>emaphore</em>and<em>bounded semaphore</em>?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "None", "via Mutex", "via GIL (Global Interpreter Lock)", "via Locking" ],
+      "title": "How does global value mutation used for thread-safety?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Recursion level", "Unlocked", "Locked", "Owning thread" ],
+      "title": "What are the states/features supported by a RLock object?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "get_ident()", "getThread()", "None", "getName()" ],
+      "title": "Which methodis used to identify a thread?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "It'll not modify the list. This function is just a placeholder and yet to be implemented.", "shuffle the elements of the list in-place.", "return a list where elements 10, 20 and 30 would be at random positions.", "shuffle the elements for the no. of times equal to the size of the list." ],
+      "title": "Which of the following statements best describes the behavior of the random.shuffle(mylist) as being used in the below code fragment?",
+      "code": "import randommylist = [10, 20, 30]random.shuffle(mylist)print(mylist)"
+    },
+    {
+      "answer": 2,
+      "options": [ "Null", "Error", "None", "None of the mentioned", "3" ],
+      "title": "Which of the following is the output of the below piece of code?",
+      "code": "import randomprint(random.seed(3))"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "4", "5", "7" ],
+      "title": "Which of the following is the output of the below Python code snippet?",
+      "code": "ints = set([1,1,2,3,3,3,4])print(len(ints))"
+    },
+    {
+      "answer": 3,
+      "options": [ "16", "5", "1", "15", "63", "None of the mentioned" ],
+      "title": "Which of the following is the output of the instructions given below?",
+      "code": "mylist=[1, 5, 9, int('0')]print(sum(mylist))"
+    },
+    {
+      "answer": 3,
+      "options": [ "aaaaaabbb", "[a, aa, aaa, b, bb]", "['a', 'aa', 'aaa', 'b', 'bb', 'bbb']", "['a', 'aa', 'aaa', 'b', 'bb']", "None of the mentioned", "Error" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "mylist=['a', 'aa', 'aaa', 'b', 'bb', 'bbb']print(mylist[:-1])"
+    },
+    {
+      "answer": 2,
+      "options": [ "for i in range(1, 6): print(i, i, i, i, i)", "for i in range(1, 5): print(str(i) * 5)", "for i in range(1, 6): print(str(i) * 5)", "for i in range(0, 5): print(str(i) * 5)" ],
+      "title": "Which of the following for loops would yield the below number pattern?<br>Note: Python 2.7",
+      "code": "1111122222333334444455555"
+    },
+    {
+      "answer": 1,
+      "options": [ "abcde", "efg", "abc", "cde", "'abcde'", "'abcde'" ],
+      "title": "Which of the following is the output of the code given below?",
+      "code": "mylist=['abc','cde','abcde','efg']print(max(mylist))"
+    },
+    {
+      "answer": 1,
+      "options": [ "2.5", "2.0", "22.5", "2.25", "20.0" ],
+      "title": "Which of the following is the output of the Python code fragment given below?",
+      "code": "var1 = 4.5var2 = 2print(var1//var2)"
+    },
+    {
+      "answer": 2,
+      "options": [ "firstError has occured", "firstError has not occured", "TypeError occurs", "ValueError occurs" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "try: if '1' != 1:  raise \"firstError\" else:  print(\"firstError has not occured\")except \"firstError\": print(\"firstError has occured\")"
+    },
+    {
+      "answer": 4,
+      "options": [ "b", "'bbb'", "bbb", "aaa", "a", "None of the mentioned" ],
+      "title": "Which of the following is the output of the below Python code?<br>[Note: Python 2.7.5 and above]",
+      "code": "mylist=['a', 'aa', 'aaa', 'b', 'bb', 'bbb']print(mylist[int(-1/2)])"
+    },
+    {
+      "answer": 2,
+      "options": [ "12", "36", "24", "7", "48" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "var1 = lambda var: var * 2ret = lambda var: var * 3result = 2result = var1(result)result = ret(result)result = var1(result)print(result)"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "Which of the following is the output of the lines of code specified below?",
+      "code": "x = 1print(++++x)"
+    },
+    {
+      "answer": 3,
+      "options": [ "result is the smallest number in the list.", "result is the average of all the number in the list.", "result is the sum of all the number in the list.", "result is the largest number in the list.", "None of these" ],
+      "title": "Which of the following correctly describes the output of the below Python code?",
+      "code": "testArr = [11, 22, 33, 22, 11] result = testArr[0] for iter in testArr:  if iter > result:   result = iterprint(result)"
+    },
+    {
+      "answer": 1,
+      "options": [ "Tuesday", "Monday Tuesday", "undefined exception", "Monday", "None of these", "Tuesday Monday" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def myfunc(): try:  print('Monday') finally:  print('Tuesday')myfunc()"
+    },
+    {
+      "answer": 0,
+      "options": [ "['h', 'e', 'l', 'l', 'o']", "[h,e,l,l,o]", "hello", "['h' 'e' 'l' 'l' 'o']", "None of these" ],
+      "title": "Which of the following is the correct output of the call to below line of code?",
+      "code": "print(list(\"hello\"))"
+    },
+    {
+      "answer": 2,
+      "options": [ "False", "Compile time error", "True", "Runtime error", "None of these" ],
+      "title": "Determine the output of the below Python code fragment?",
+      "code": "var1 = Truevar2 = Falsevar3 = Falseif var1 or var2 and var3: print(\"True\")else: print(\"False\")"
+    },
+    {
+      "answer": 3,
+      "options": [ "3", "5", "Compile time error", "14" ],
+      "title": "Which of the following is the output of the instructions mentioned below?",
+      "code": "def test1(param): return str(param)def test2(param): return str(2 * param)result = test1(1) + test2(2)print(result)"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "6", "3", "8" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def test1(param): return paramdef test2(param): return param * 2def test3(param): return param + 3result = test1(test2(test3(1)))print(result)"
+    },
+    {
+      "answer": 2,
+      "options": [ "Runtime error.", "1", "2", "Compile error, there is more than one return statement in a single try-finally block.", "None of these" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def test(): try:  return 1 finally:  return 2result = test()print(result)"
+    },
+    {
+      "answer": 1,
+      "options": [ "Ubuntu = Ubuntu('server', 2000)", "Ubuntu = Ubuntu(2000)", "Ubuntu = Ubuntu('client', 2000)", "Ubuntu = Ubuntu()", "None of these" ],
+      "title": "Which of the following statements would create an instance of Ubuntu class correctly?",
+      "code": "class Ubuntu: def __init__(self, ramsize):  self.ram = ramsize  self.type = 'server'"
+    },
+    {
+      "answer": 0,
+      "options": [ "1", "4", "0", "2", "3" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "test_list = [1, 5, 5, 5, 5, 1]max = test_list[0]indexOfMax = 0for i in range(1, len(test_list)):    if test_list[i] > max:        max = test_list[i]        indexOfMax = iprint(indexOfMax)"
+    },
+    {
+      "answer": 4,
+      "options": [ "<type 'tuple'>", "<type 'complex'>", "<type 'int'>", "<type 'set'>", "<type 'list'>" ],
+      "title": "What is the output of the following code snippet?",
+      "code": "print type([1,2])"
+    },
+    {
+      "answer": 3,
+      "options": [ "<type 'type'>", "<type 'function'>", "<type 'tuple'>", "<type 'NoneType'>", "<type 'str'>" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def f(): passprint(type(f()))"
+    },
+    {
+      "answer": 0,
+      "options": [ "2030", "20", "30", "3020", "None" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def Test():    try:        print(20)    finally:        print(30)Test()"
+    },
+    {
+      "answer": 3,
+      "options": [ "<type 'type'>", "<type 'tuple'>", "<type 'NoneType'>", "<type 'function'>", "<type 'bool'>" ],
+      "title": "Which of the following is the output of the following Python code?",
+      "code": "print(type(lambda:None))"
+    },
+    {
+      "answer": 2,
+      "options": [ "[1, 3, 3, 4, 5, 5, 20, 25]", "[3, 4, 5, 20, 5, 25, 1, 3]", "[3, 5, 20, 5, 25, 1, 3]", "[3, 1, 25, 5, 20, 5, 4]", "[1, 3, 4, 5, 20, 5, 25]" ],
+      "title": "Say test_list is [3, 4, 5, 20, 5, 25, 1, 3] then what would be the value of test_list after test_list.pop(1)?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "X % 1 == 2", "X % 2 == 1", "X % x == 0", "X % 'even' == True", "X % 2 == 0" ],
+      "title": "The x % y operator can be used to check for even or odd numbers.",
+      "code": "if _______:   print(\"x is an even number\")"
+    },
+    {
+      "answer": 3,
+      "options": [ "finallythrow", "finallyexcept", "exceptfinally", "throwfinally", "Syntax error" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "try:    print(\"throw\")except:    print(\"except\")finally:    print(\"finally\")"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "None", "1", "-1" ],
+      "title": "Fill in the missing part of the code to print the following patterns:",
+      "code": "for i in range(5, 0, ____ ):   print(str(i) * 5)"
+    },
+    {
+      "answer": 2,
+      "options": [ "defines a list and initializes it.", "None of these.", "defines a function, which does nothing.", "defines a function, which passes its parameters through.", "defines an empty class." ],
+      "title": "What does the following code do?",
+      "code": "def a(b, c, d): pass"
+    },
+    {
+      "answer": 3,
+      "options": [ "<type 'number'>", "<type 'double'>", "<type 'tuple'>", "<type 'int'>", "<type 'float'>" ],
+      "title": "What is the output of the below code fragment?<br>[Python version 2.x]",
+      "code": "print type(1/2)"
+    },
+    {
+      "answer": 4,
+      "options": [ "Function_1", "Function1", "Func_1_tion", "_function1", "1function" ],
+      "title": "Which of the following literals is not valid to be a function name?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "36", "24", "12", "7", "48" ],
+      "title": "Which of the following is the output of the below Python code fragment?",
+      "code": "d = lambda p: p * 2t = lambda p: p * 3x = 2x = d(x)x = t(x)x = d(x)print(x)"
+    },
+    {
+      "answer": 1,
+      "options": [ "print (strtext[0])", "strtext[1]= ‘r’", "print (strtext.lower())", "None of these", "print(strtext.strip())" ],
+      "title": "Given a string strtext = “Welcome”, which of the following statement would yield TypeError?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "str(n)", "1", "2", "n", "-1" ],
+      "title": "Fill out the missing part of the code to print the following patterns:",
+      "code": "for n in range(1, 6, 1):    print(____ * 5)"
+    },
+    {
+      "answer": 1,
+      "options": [ "test_list.pop(1) test_list.pop(3) test_list.pop(4) test_list.pop(6)", "test_list.pop(5) test_list.remove(19) test_list.remove(55) test_list.remove(55)", "test_list.remove(5) test_list.remove(19) test_list.remove(55)", "test_list.pop(5) test_list.pop(19) test_list.pop(55)", "None" ],
+      "title": "A list is given below:",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "3 1", "1 44", "1 1", "3 44", "None" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "def f(value, values):    v = 1    values[0] = 44t = 3v = [1, 2, 3]f(t, v)print(t, v[0])"
+    },
+    {
+      "answer": 2,
+      "options": [ "None", "1 2", "1, 2", "'1 2'" ],
+      "title": "The following code fragment reads two numbers. Which of the following is the valid input for the code in Python 3?",
+      "code": "num1, num2 = eval(input(\"Enter two numbers: \"))"
+    },
+    {
+      "answer": 4,
+      "options": [ "The program has an error because '__b' is private and can't be accessed outside of the class.", "The program runs fine and will print 1.", "The program has an error because 'a' is private and can't be accessed outside of the class.", "The program has an error because you can't name a variable using '__b'.", "The program runs fine and will print 45." ],
+      "title": "Which of the following statments is correct regarding the below Python code?",
+      "code": "class A:    def __init__(self):        self.a = 1        self.__b = 1     def getY(self):        return self.__bobj = A()obj.a = 45print(obj.a)"
+    },
+    {
+      "answer": 0,
+      "options": [ "6", "5", "4", "7", "syntax error" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "test_list = [1,2,3,None,(),[],]print(len(test_list))"
+    },
+    {
+      "answer": 3,
+      "options": [ "The program runs fine and prints 1.", "The program has an error because x is private and cannot be access outside of the class.", "The program has an error because y is private and cannot be access outside of the class.", "The program runs fine and prints 45.", "The program has an error because you cannot name a variable using __y." ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "class A:    def __init__(self):        self.x = 1        self.__y = 1     def getY(self):        return self.__ya = A()a.x = 45print(a.x)"
+    },
+    {
+      "answer": 0,
+      "options": [ "the current time in seconds since the epoch.", "the current time.", "the current time in milliseconds.", "the current time in milliseconds since midnight, January 1, 1970.", "the current time in milliseconds since midnight, January 1, 1970 GMT (the Unix time)." ],
+      "title": "Which of the following is true for the below statement?",
+      "code": "The time.time() returns ........."
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "None", "4", "7", "3" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "counter = 1 def doLotsOfStuff():        global counter    for i in (1, 2, 3):         counter += 1doLotsOfStuff()print (counter)"
+    },
+    {
+      "answer": 3,
+      "options": [ "<pre>3 4</pre>", "None", "3 4", "3, 4", "3,4," ],
+      "title": "The following code reads two numbers. Which of the following is the correct input for the code?",
+      "code": "x, y = eval(input(\"Enter two numbers: \"))print(x)print(y)"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "4", "5", "7" ],
+      "title": "Which of the following is the output of the following Python code?",
+      "code": "Nums = set ([1,1,2,3,3,3,4])print (len(Nums))"
+    },
+    {
+      "answer": 2,
+      "options": [ "C C C", "A B C", "A A A", "B B B", "None" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "class A:    def __str__(self):        return\"A\"class B(A):    def __init__(self):        super().__init__()class C(B):    def __init__(self):        super().__init__()def main():    b = B()    a = A()    c = C()    print(a, b, c)main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "sys.halt()", "sys.exit()", "sys.terminate()", "None", "sys.stop()" ],
+      "title": "Which of the following functions immediately terminates the program?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "execute python", "run python", "python", "go python" ],
+      "title": "Which of the following commands would you use to start Python from the command prompt?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "Invoking factorial(0) returns 0.", "Invoking factorial(2) returns 2.", "Invoking factorial(3) returns 6.", "Invoking factorial(1) returns 1.", "The function runs infinitely and causes a StackOverflowError." ],
+      "title": "What is your view on the following recursive function?",
+      "code": "def factorial(n):      return n * factorial(n - 1)"
+    },
+    {
+      "answer": 2,
+      "options": [ "A only", "A and D", "A, B and D", "A, B and C", "A, B, C and D" ],
+      "title": "If PYTHONPATH is set in the environment, which directories are searched for modules?",
+      "code": "A) PYTHONPATH directoryB) Current directoryC) Home directoryD) Installation dependent default path"
+    },
+    {
+      "answer": 2,
+      "options": [ "('python':40, 'developer':45)", "('python', 'developer')", "['python', 'developer']", "['python':40, 'developer':45]" ],
+      "title": "Which of the following is the output of the following Python code?",
+      "code": "d = {\"python\":40, \"developer\":45}print(list(d.keys()))"
+    },
+    {
+      "answer": 2,
+      "options": [ "1 3", "3 2", "3 3", "The program has a runtime error because x and y are not defined.", "2 3" ],
+      "title": "Which of the following is the output of the below Python code fragment?",
+      "code": "def f1(x = 1, y = 2):    x = x + y    y += 1    print(x, y)f1(y = 2, x = 1)"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "4", "1", "2", "3" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "myList = [1, 5, 5, 5, 5, 1]max = myList[0]indexOfMax = 0for i in range(1, len(myList)):    if myList[i] > max:        max = myList[i]        indexOfMax = iprint(indexOfMax)"
+    },
+    {
+      "answer": 2,
+      "options": [ "False", "2", "True", "1", "None" ],
+      "title": "Which of the following is the output of the following code?",
+      "code": "class A:    def __init__(self, i = 2, j = 3):        self.i = i        self.j = j    def __str__(self):        return\"A\"    def __eq__(self, other):        return self.i * self.j == other.i * other.jdef main():    x = A(1, 2)    y = A(2, 1)    print(x == y)main()"
+    },
+    {
+      "answer": 3,
+      "options": [ "Code3 has a syntax error because you attempt to assign a number to 'even'.", "Code2 has a syntax error because you cannot have True and False literals in the conditional expression.", "All three are correct, but Code1 is preferred.", "All three are correct, but Code3 is preferred.", "All three are correct, but Code2 is preferred." ],
+      "title": "Analyze the following code fragments that assign a boolean value to the variable even?",
+      "code": "number = 202#Code1 if number % 2 == 0:    even = Trueelse:     even = Falseprint (\"Code1: even := {}\".format(even))#Code2even = True if number % 2 == 0 else Falseprint (\"Code2: even := {}\".format(even))#Code3even = number % 2 == 0print (\"Code3: even := {}\".format(even))"
+    },
+    {
+      "answer": 3,
+      "options": [ "x is 2.", "x is 1.", "x is 3.", "x is 4.", "None" ],
+      "title": "What is the value of x after the following statements?",
+      "code": "x = 2y = 1x *= y + 1print(x)"
+    },
+    {
+      "answer": 2,
+      "options": [ "10", "i is not accessible from b.", "2", "1" ],
+      "title": "Which of the following is the output of the below Python code fragment?",
+      "code": "class A:    def __init__(self):        self.i = 1    def m(self):        self.i = 10class B(A):    def m(self):        self.i += 1        return self.idef main():    b = B()    print(b.m())main()"
+    },
+    {
+      "answer": 3,
+      "options": [ "2", "None", "1", "3", "4" ],
+      "title": "Which is the output of the following Python code fragment?",
+      "code": "x = Truey=Falsez= Falseif not x or y:      print (1)elif not x or not y and z:      print (2)elif not x or y or not y and x:      print (3)else:      print (4)"
+    },
+    {
+      "answer": 3,
+      "options": [ "11 None", "None None", "11 11", "AttributeError: 'child' object has no attribute 'v1'", "None 11" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "class parent:    def __init__(self, param):        self.v1 = paramclass child(parent):    def __init__(self, param):        self.v2 = paramobj = child(11)print (\"%d %d\" % (obj.v1, obj.v2))"
+    },
+    {
+      "answer": 0,
+      "options": [ "[4, 3]", "[1, 3]", "[1, 4]", "[1, 3, 4]" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "list1 = [1, 3]list2 = list1list1[0] = 4print(list2)"
+    },
+    {
+      "answer": 2,
+      "options": [ "'RTech' then 'Beamers' in a New line", "'Tech' then 'Beamers' in a New line", "Tech\nBeamers", "Tech Beamers" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "print (R'Tech\nBeamers')"
+    },
+    {
+      "answer": 2,
+      "options": [ "Beamers", "Tech", "TechBeamers", "Tech Beamers" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "print ('Tech' + 'Beamers')"
+    },
+    {
+      "answer": 2,
+      "options": [ "Tech Beamers", "Tech-Beamers", "TypeError", "Tec- Beamers" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='Tech Beamers'str[4]='-'print (str)"
+    },
+    {
+      "answer": 3,
+      "options": [ "Henno Wornd", "Hello World", "Helno World", "Henno World" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='Hello World'print  (str.replace('l','n',2))"
+    },
+    {
+      "answer": 1,
+      "options": [ "Beamer", "Beam", "Beamers", "Beame" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='Tech Beamers'print (str[4:9])"
+    },
+    {
+      "answer": 1,
+      "options": [ "m", "example", "Error will be generated", "*example*" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='example'print  (str.center(2,'*'))"
+    },
+    {
+      "answer": 1,
+      "options": [ "Tech Beamers", "TechBeamers", "Tech", "Beamers" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "print ('Tech'  'Beamers')"
+    },
+    {
+      "answer": 3,
+      "options": [ "TrueTrue", "FalseFalse", "TrueFalse", "FalseTrue" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "class  Assign:    def __init__(self, value= 0):       self.__value =value obj1 = Assign(2)obj2 = Assign(2)print(id(obj1) == id(obj2))str1='Good'str2='Good'print(id(str1) == id(str2))"
+    },
+    {
+      "answer": 2,
+      "options": [ "7", "2", "4", "4, 7" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='Hello World'print (str.find('o'))"
+    },
+    {
+      "answer": 2,
+      "options": [ "5", "2", "6", "4" ],
+      "title": "What is the output when following code will be executed?",
+      "code": "str='Recurssion'print  (str.rfind('s'))"
+    },
+    {
+      "answer": 1,
+      "options": [ "str._len_()", "len(str)", "size(str)", "str.size()" ],
+      "title": "Which of the following statements can be used to return the length of the given String, str?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "a, b, c, d", "a, b", "a, b, d", "a, b, c" ],
+      "title": "Which of the following operators can be used with Strings?",
+      "code": "a) +b) *c) -d) in"
+    },
+    {
+      "answer": 2,
+      "options": [ "Tech", "Tech Beamers", "sremaeB hceT", "Beamers" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='Tech Beamers'print (str[::-1])"
+    },
+    {
+      "answer": 1,
+      "options": [ "GOOD-BYE", "Good-bye", "GOOD-bye", "Good-Bye" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "str='good-BYE'print  (str.capitalize())"
+    },
+    {
+      "answer": 0,
+      "options": [ "str='C:\\\\Common\\TestString.doc'print  (str)", "str='C:\\Common\\TestStri\\ng.doc'print  (str)", "str='C:\\\\Commo\\TestSt\\ring.doc'print  (str)", "str='''C:\\\\Common\\testString.doc'''print  (str)" ],
+      "title": "Which of the answers would print the output as given below?",
+      "code": "C:\\Common\\TestString.doc"
+    },
+    {
+      "answer": 0,
+      "options": [ "000am", "00am0", "0am00", "am000" ],
+      "title": "Which of the following is the output of the following Python instruction?",
+      "code": "print  ('am'.zfill(5))"
+    },
+    {
+      "answer": 3,
+      "options": [ "['PYTHON', '\nString', '\nConcepts']", "['PYTHON\n', 'String\n', 'Concepts']", "['PYTHON\n', 'String\n', 'Concepts\n']", "['PYTHON', 'String', 'Concepts']" ],
+      "title": "Which of the following is the output of the below Python code snippet?",
+      "code": "str='PYTHON\nString\nConcepts'print  (str.splitlines())"
+    },
+    {
+      "answer": 0,
+      "options": [ "2", "3", "5", "4" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='abbabadaadbbaccabc'print  (str.count('ab',2))"
+    },
+    {
+      "answer": 3,
+      "options": [ "print (identity.join('\n') )", "print (identity.concatenate('\n') )", "print (identity.join('%s\n', names))", "print ('\n'.join(identity))" ],
+      "title": "Which of the following print statements will print all the names in the list on a separate line?",
+      "code": "identity = ['Python', 'Python quiz', 'Python String', 'Python Interview', 'Python questions']"
+    },
+    {
+      "answer": 2,
+      "options": [ "['ab','ef','yz']", "['ab','efcdyzcd']", "['ab','ef','yzcd']", "['abcdef','yzcd']" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='abcdefcdyzcd'print  (str.split('cd',2))"
+    },
+    {
+      "answer": 2,
+      "options": [ "00+55", "+++55", "+0055", "00055" ],
+      "title": "What is the output when the following instruction is executed?",
+      "code": "print  ('+55'.zfill(5))"
+    },
+    {
+      "answer": 3,
+      "options": [ "True", "Error will be generated.", "None", "False" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "print  (u'2.15'.isnumeric())"
+    },
+    {
+      "answer": 3,
+      "options": [ "PYTHON STRING CONCEPTS", "None", "PYTHON String Concepts", "Python String Concepts" ],
+      "title": "Which of the following is the output of the following Python code?",
+      "code": "str='PYTHON string concepts'print  (str.title())"
+    },
+    {
+      "answer": 0,
+      "options": [ "utf-8", "qwerty", "utf-16", "ascii" ],
+      "title": "What is the default value of encoding in the string function encode()?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "hello@John!!", "None", "hellojohn", "hello@john!!" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "str='Hello@John!!'print  (str.lower())"
+    },
+    {
+      "answer": 1,
+      "options": [ "********python*******", "*****python****", "****python*****", "********python*******" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='python'print  (str.center(15,'*'))"
+    },
+    {
+      "answer": 2,
+      "options": [ "('ab','cd','ef','cd','yz')", "('ab','ef','yz')", "('ab','cd','efcdyz')", "('abcdef','cd','yz')" ],
+      "title": "What is the output when following statement is executed?",
+      "code": "str='abcdefcdyz'print  (str.partition('cd'))"
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "4", "3", "5" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='abababadaadbbaccabc'print  (str.count('ab',-17,-1))"
+    },
+    {
+      "answer": 2,
+      "options": [ "*****example*****", "**example*", "*example**", "*example *" ],
+      "title": "Which of the following is the output of the below Python code?",
+      "code": "str='example'print  (str.center(10,'*'))"
+    },
+    {
+      "answer": 0,
+      "options": [ "A’s getInfo is called A’s getInfo is called ", "A’s getInfo is called B’s getInfo is called ", "B’s getInfo is called A’s getInfo is called ", "B’s getInfo is called B’s getInfo is called" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __getInfo(self):        return \"A's getInfo is called\"      def printInfo(self):        print(self.__getInfo(), end = ' ') class B(A):    def __getInfo(self):        return \"B's getInfo is called\" def main():    A().printInfo()    B().printInfo() main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "A’s getInfo is called A’s getInfo is called ", "A’s getInfo is called B’s getInfo is called ", "B’s getInfo is called A’s getInfo is called ", "B’s getInfo is called B’s getInfo is called" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def getInfo(self):        return \"A's getInfo is called\"      def printInfo(self):        print(self.getInfo(), end = ' ') class B(A):    def getInfo(self):        return \"B's getInfo is called\" def main():    A().printInfo()    B().printInfo() main()"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False", "2", "1" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self, x = 2, y = 3):        self.x = x        self.y = y     def __str__(self):        return \"A\"     def __eq__(self, num ):        return self.x * self.y == num.x * num.y def main():    a = A(1, 2)    b = A(2, 1)    print(a == b) main()"
+    },
+    {
+      "answer": 3,
+      "options": [ "B B B", "A B C", "C B A", "A A A" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __str__(self):        return \"A\" class B(A):    def __init__(self):        super().__init__() class C(B):    def __init__(self):        super().__init__() def main():    b = B()    a = A()    c = C()    print(a, b, c) main()"
+    },
+    {
+      "answer": 2,
+      "options": [ "A C B", "A B C", "C B A", "B B B" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __str__(self):        return \"A\" class B(A):    def __str__(self):        return \"B\" class C(B):    def __str__(self):        return \"C\" def main():    b = B()    a = A()    c = C()    print(c, b, a) main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "10", "x is not accessible from the object of classB." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self):        self.x = 1     def func(self):        self.x = 10 class B(A):    def func(self):        self.x += 1        return self.x def main():    b = B()    print(b.func()) main()"
+    },
+    {
+      "answer": 4,
+      "options": [ "None None", "None 11", "11 None", "11 11", "AttributeError: ‘B’ object has no attribute ‘x’" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self, num):        self.x = num class B(A):    def __init__(self, num):        self.y = num obj = B(11)print (\"%d %d\" % (obj.x, obj.y))"
+    },
+    {
+      "answer": 2,
+      "options": [ "B’s __new__() invoked A’s __init__() invoked ", "B’s __new__() invoked A’s __new__() invoked ", "B’s __new__() invoked A’s __init__() invoked A’s __new__() invoked ", "A’s __init__() invoked A’s __new__() invoked" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __new__(self):        self.__init__(self)        print(\"A's __new__() invoked\")     def __init__(self):        print(\"A's __init__() invoked\") class B(A):    def __new__(self):        print(\"B's __new__() invoked\")     def __init__(self):        print(\"B's __init__() invoked\") def main():    b = B()    a = A() main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "2 0", "3 1", "4 0", "3 0", "4 1" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self, x = 0):        self.x = x     def func1(self):        self.x += 1 class B(A):    def __init__(self, y = 0):       A.__init__(self, 3)        self.y = y     def func1(self):        self.y += 1 def main():    b = B()    b.func1()    print(b.x, b.y) main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 10", "1 20", "2 10", "2 20" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:     def __init__(self):         self.__x = 1         self.y = 10      def print(self):         print(self.__x, self.y) class B(A):     def __init__(self):         super().__init__()         self.__x = 2         self.y = 20         c = B()c.print()"
+    },
+    {
+      "answer": 2,
+      "options": [ "0 0", "0 1", "1 2", "0 2", "2 1" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self, x = 1):        self.x = x class B(A):    def __init__(self, y = 2):        super().__init__()        self.y = y def main():    b = B()    print(b.x, b.y) main()"
+    },
+    {
+      "answer": 3,
+      "options": [ "super().__init__(self) ", "super().__init__() ", "A.__init__() ", "A.__init__(self)" ],
+      "title": "What Code Can We Put At The Third Line Of The Definition Of Class B To Invoke Its Superclass’s Constructor?",
+      "code": "class A:    def __init__(self, i = 1):        self.i = i class B(A):    def __init__(self, j = 2):        ___________________        self.j = j def main():    b = B()    print(b.i, b.j) main()"
+    },
+    {
+      "answer": 1,
+      "options": [ "counter is 101 , number of times is 0", "counter is 100, number of times is 0", "counter is 100, number of times is 100", "counter is 101, number of times is 101" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "def main():    myCounter = Counter()    num = 0     for i in range(0, 100):        increment(myCounter, num)     print(\"myCounter.counter =\", myCounter.counter, \", number of times =\", num) def increment(c, num):    c.counter += 1    num += 1 class Counter:    def __init__(self):        self.counter = 0    main()"
+    },
+    {
+      "answer": 0,
+      "options": [ "The program has an error because y is private and should not access it from outside the class.", "The program has an error because you cannot name a variable using __y.", "The code runs fine and prints 1.", "The code executes successfully and prints 45." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Test:     def __init__(self):         self.x = 1         self.__y = 1      def getY(self):         return self.__y val= Test()val.__y = 45print(val.getY())"
+    },
+    {
+      "answer": 1,
+      "options": [ "__a", "__b", "__c__", "__d__" ],
+      "title": "Which Of The Following Is A Private Data Field In The Given Code Snippet?",
+      "code": "class Test:     def __init__(self):     __a = 1     self.__b = 1     self.__c__ = 1     __d__ = 1"
+    },
+    {
+      "answer": 3,
+      "options": [ "The program has an error because x is private and should not access it from outside the class.", "The program has an error because you cannot name a variable using __y.", "The program runs fine and prints 1.", "The program runs fine and prints 45." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Test:     def __init__(self):         self.x = 1         self.__y = 1      def getY(self):         return self.__y  val = Test() val.x = 45 print(val.x)"
+    },
+    {
+      "answer": 0,
+      "options": [ "The program has an error because y is private and should not access it from outside the class.", "The program has an error because you cannot name a variable using __y.", "The program runs fine and prints 1.", "The program runs fine and prints nothing." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Test:    def __init__(self):        self.x = 1        self.__y = 1     def getY(self):        return self.__y val = Test()print(val.__y)"
+    },
+    {
+      "answer": 2,
+      "options": [ "The program has an error because x is private and cannot be accessed outside of the class.", "The program has an error because you cannot name a variable using .", "The program runs fine and prints 1.", "The program runs fine and prints nothing." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Test:    def __init__(self):        self.x = 1        self.__y = 1     def getY(self):        return self.__y val = Test()print(val.x)"
+    },
+    {
+      "answer": 4,
+      "options": [ "The program has an error because the constructor is not present in class Test. ", "The above code produces an error because the definition of print(s) does not contain.", "It executes successfully but prints nothing.", "The program has an error because of the constructor call is made without an argument. ", "The program executes successfully and prints Welcome." ],
+      "title": "What Will Be The Output Of The Following Code?",
+      "code": "class Test:     def __init__(self, s = \"Welcome\"):         self.s = s      def print(self):         print(self.s) msg = Test()msg.print()"
+    },
+    {
+      "answer": 3,
+      "options": [ "The program has an error because class Test does not have a constructor. ", "The above code produces an error because the definition of print(s) does not include . ", "It executes successfully but prints nothing. ", "The program has an error because of the constructor call is made without an argument." ],
+      "title": "What Will Be The Output Of The Following Code?",
+      "code": "class Test:     def __init__(self, s):         self.s = s      def print(self):         print(self.s) msg = Test()msg.print()"
+    },
+    {
+      "answer": 3,
+      "options": [ "The program gives an error because there is no constructor for class Test. ", "Signature for the print method is incorrect, so an error is thrown. ", "The correct output is.", "The above code will execute correctly on changing print(s) to print(self.s)." ],
+      "title": "What Will Be The Output Of The Following Code?",
+      "code": "class Test:     def __init__(self, s):         self.s = s      def print(self):         print(s) a = Test(\"Python Class\")a.print()"
+    },
+    {
+      "answer": 2,
+      "options": [ "association", "composition", "inheritance", "All of the precents" ],
+      "title": "What Relationship Is Appropriate For Fruit And Papaya?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "association", "composition", "inheritance", "All of the precents" ],
+      "title": "What Relationship Is Best Suited For House And Door?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "association", "composition", "inheritance", "none of the precents" ],
+      "title": "What Relationship Is Best Suited For Employee And Person?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "association", "composition", "inheritance", "none of the precents" ],
+      "title": "What Relationship Is Suited For Course And Faculty?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "association", "composition", "inheritance", "All of the precents" ],
+      "title": "What Relationship Correctly Fits For University And Professor?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "obj.isinstance(A)", "A.isinstance(obj)", "isinstance(obj, A)", "isinstance(A, obj)" ],
+      "title": "Which Of The Following Statements Can Be Used To Check, Whether An Object “Obj” Is An Instance Of Class A Or Not?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "The __init__ method of only class B gets invoked.", "The __init__ method of class A gets invoked and it displays “i from B is 0”.", "The __init__ method of class A gets invoked and it displays “i from B is 60”.", "The __init__ method of class A gets invoked and it displays “i from B is 90”." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self):        self.calcI(30)            def calcI(self, i):        self.i = 2 * i; class B(A):    def __init__(self):        super().__init__()        print(\"i from B is\", self.i)            def calcI(self, i):        self.i = 3 * i; b = B()"
+    },
+    {
+      "answer": 3,
+      "options": [ "The __init__ method of only class B gets invoked.", "The __init__ method of class A gets invoked and it displays “i from A is 0”.", "The __init__ method of class A gets invoked and it displays “i from A is 60”.", "The __init__ method of class A gets invoked and it displays “i from A is 90”." ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class A:    def __init__(self):        self.calcI(30)        print(\"i from A is\", self.i)     def calcI(self, i):        self.i = 2 * i; class B(A):    def __init__(self):        super().__init__()            def calcI(self, i):        self.i = 3 * i; b = B()"
+    },
+    {
+      "answer": 4,
+      "options": [ "By default, the __new__() method invokes the __init__ method.", "The __new__() method is defined in the object class.", "The __init__() method is defined in the object class.", "The __str__() method is defined in the object class.", "The __eq__(other) method is defined in the object class." ],
+      "title": "Which Of The Following Statements Is True?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Class B inherits A, but the data field “i” in A is not inherited.", "Class B inherits A, thus automatically inherits all data fields in A.", "When you create an object of B, you have to pass an argument such as B(5).", "The data field “j” cannot be accessed by object b." ],
+      "title": "Which Of The Following Statements Are Correct About The Given Code Snippet?",
+      "code": "class A:    def __init__(self, i = 0):        self.i = i class B(A):    def __init__(self, j = 0):        self.j = j def main():    b = B()    print(b.i)    print(b.j) main()"
+    },
+    {
+      "answer": 3,
+      "options": [ "super().__init__()", "super().__init__(self)", "B.__init__()", "B.__init__(self)" ],
+      "title": "Which Of The Following Can Be Used To Invoke The __init__ Method In B From A, Where A Is A Subclass Of B?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "1", "2", "49", "50", "51" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Person:    def __init__(self, id):        self.id = id sam = Person(100) sam.__dict__['age'] = 49 print (sam.age + len(sam.__dict__))"
+    },
+    {
+      "answer": 3,
+      "options": [ "\t\tWelcome\n", "Welcome\n", "\t\tWELCOME", "Welcome" ],
+      "title": "What Will Be The Output Of The Following?",
+      "code": "s = \"\t\tWelcome\n\"print(s.strip())"
+    },
+    {
+      "answer": 3,
+      "options": [ "A reference variable is an object.", "A reference variable refers to an object.", "An object may contain other objects.", "An object can contain the references to other objects." ],
+      "title": "Which Of The Following Statements Are Correct?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "SyntaxError, this program will not run", "100", "123", "none of the precents" ],
+      "title": "What Will Be The Output Of The Following Code Snippet?",
+      "code": "class Sales:    def __init__(self, id):        self.id = id        id = 100 val = Sales(123)print (val.id)"
+    },
+    {
+      "answer": 2,
+      "options": [ "x contains an int value.", "x contains an object of the Circle type.", "x contains a reference to a Circle object.", "You can assign an int value to x." ],
+      "title": "Which Of The Following Statements Is Most Accurate For The Declaration X = Circle()?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "A constructor", "A class", "A value-returning method", "A None method" ],
+      "title": "Which Of The Following Is Required To Create A New Instance Of The Class?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "def", "return", "class", "All of the precents." ],
+      "title": "Which Of The Following Keywords Mark The Beginning Of The Class Definition?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "A class", "An object", "A method", "A data field" ],
+      "title": "Which Of The Following Represents A Template, Blueprint, Or Contract That Defines Objects Of The Same Type?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "A class", "An object", "A method", "A data field" ],
+      "title": "Which Of The Following Represents A Distinctly Identifiable Entity In The Real World?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "5", "4", "8", "25", "1" ],
+      "title": "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3]",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "5", "6", "7", "8" ],
+      "title": "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3]",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "A. ['a', 'b', 'c', 'd']", "B. ['ab']", "C. ['cd']", "D. ['abcd']" ],
+      "title": "What is list('abcd')?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ "A. list1 = list()", "B. list1 = []", "C. list1 = list([12, 4, 4])", "D. list1 = [12, 4, 4]", "E. list1 = [1, '3', 'red']" ],
+      "title": "__________ creates a list.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "dict = {['Name']: 'Sean', 'Age': 8}", "dict = {'Name': 'Sean', 'Age': 8}", "dict = {1: 'Sean', 'Age': 8}" ],
+      "title": "Which of following are valid dictionary declarations?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Jill", "Bill", "Exception" ],
+      "title": "What is the ouput?",
+      "code": "dict = {'Name': 'Jill', 'Age': 17, 'Name': 'Bill'}print \"dict['Name']: \", dict['Name']"
+    },
+    {
+      "answer": 2,
+      "options": [ "$", "%", "**", "*" ],
+      "title": "Which of the following is the exponent operator?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "  The value of x is the average of all the number in the list.", "The value of x is the smallest number in the list.", "  The value of x is the largest number in the list.", "The value of x is the sum of all the number in the list." ],
+      "title": "Study the code given below, and choose the most appropriate answer:",
+      "code": "a = [1, 4, 20, 2, 5] x = a[0] for i in a:     if i > x:         x = i print x"
+    },
+    {
+      "answer": 2,
+      "options": [ "3", "4", "5", "0" ],
+      "title": "What is the value of x after executing the code shown below?",
+      "code": "i = 0x = 0while i < 10:    if i % 2 == 0:        x += 1    i += 1x = _____."
+    },
+    {
+      "answer": 0,
+      "options": [ "3 Good", "2 Good", "Good Morning", "3 Morning" ],
+      "title": "What will be the output of the program (sample.c) given below if it is executed from the command line (turbo c under DOS)?<br>cmd><em>sample Good Morning</em>",
+      "code": "/* sample.c */#include<stdio.h>int main(int argc, char *argv[]){    printf(\"%d %s\", argc, argv[1]);    return 0;}"
+    },
+    {
+      "answer": 0,
+      "options": [ "('newItem', 400)('otherItem', 20)('someItem', 2)", "('newItem', 402)('otherItem', 20)('someItem', 2)", "('newItem', 400)('otherItem', 20)('someItem', 22)", "('newItem', 400)('otherItem', 22)('someItem', 2)" ],
+      "title": "What is the output",
+      "code": "myExample = {'someItem': 2, 'otherItem': 20,'newItem':400}for a in myExample:    print (a, myExample[a])"
+    },
+    {
+      "answer": 2,
+      "options": [ "Some random invalid code", "Valid code in python 2", "A way to execute python bytecode" ],
+      "title": "What is this:",
+      "code": "exec((lambda x:x).func_code.__class__(0,0,0,0,\"\\x91\\x03\\x30d\\x37\\x13\",(),(),(),\"\",\"\",0,\"\"))"
+    },
+    {
+      "answer": 1,
+      "options": [ "[[2, 1], [1, 1]]", "[[2, 1], [2, 1]]", "[[2, 2], [2, 2]]" ],
+      "title": "a = ?",
+      "code": "a = [[1] * 2] * 2a[0][0]=2"
+    },
+    {
+      "answer": 2,
+      "options": [ "It is impossible", "a.__b_", "a._a__b_" ],
+      "title": "How to get access to __b_ in outside of class a",
+      "code": "class a: __b_=\"hello\""
+    },
+    {
+      "answer": 1,
+      "options": [ "It is impossible", "a.__b__", "a._a__b__" ],
+      "title": "How to get access to __b__ in outside of class a",
+      "code": "class a: __b__=\"hello\""
+    },
+    {
+      "answer": 2,
+      "options": [ "10,10", "10,10,20", "10,None,20", "10,None,None" ],
+      "title": "What will be printed?",
+      "code": "def f(value): while True:  value = (yield value)a=f(10)print(next(a))print(next(a))print(a.send(20))"
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Will 'f()' be printed?",
+      "code": "def f(): print(\"f()\") yield 1f()"
+    },
+    {
+      "answer": 3,
+      "options": [ "True", "False", "'bay'", "'cat'" ],
+      "title": "a = ?",
+      "code": "a = ( 'bay' and 'cat' )"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False", "It causes TypeError" ],
+      "title": "a = ?",
+      "code": "a = {1:'a',2:'b'}=={2:'b',1:'a'}"
+    },
+    {
+      "answer": 2,
+      "options": [ "True", "False", "It causes TypeError" ],
+      "title": "a = ?<br>",
+      "code": "a = {1:2,2:3,3:4}<{2:5,3:6,4:7,5:8}"
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False", "It causes TypeError" ],
+      "title": "a = ?",
+      "code": "a = {1,2,3}<{2,3,4,5}"
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False", "It causes TypeError" ],
+      "title": "a = ?",
+      "code": "a = [1,2,3]>(2,3)"
+    },
+    {
+      "answer": 2,
+      "options": [ "One", "Two", "Three", "Four" ],
+      "title": "How many times f() will be printed?",
+      "code": "def f(): print(\"f()\") return 1a = 0<f()<2a = 0<f() and f()<2"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False", "It causes SyntaxError" ],
+      "title": "a = ?",
+      "code": "a = 1 < 2 == 2 > 1 in [1,2,3] < [2,3,4,5] != 1"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False", "It causes SyntaxError" ],
+      "title": "a = ?",
+      "code": "a = 3 < 5 < 7"
+    },
+    {
+      "answer": 2,
+      "options": [ "([1], [1])", "([1], [1,1])", "([1,1], [1,1])" ],
+      "title": "a = ?",
+      "code": "def f(a=[]): a.append(1) return aa=(f(),f())"
+    },
+    {
+      "answer": 0,
+      "options": [ "(1, 2)", "(2, 1)", "It causes TypeError: f() got an unexpected keyword argument" ],
+      "title": "What does this function return?",
+      "code": "def f(a,b): return a,bf(**{'b':2,'a':1})"
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No, it causes SyntaxError: Generator expression must be parenthesized" ],
+      "title": "Is this syntax valid?",
+      "code": "def f(a): passf(a for a in [1,2])"
+    },
+    {
+      "answer": 0,
+      "options": [ "2 1", "1 2", "This code causes TypeError" ],
+      "title": "What will be printed:",
+      "code": "def f(a, b): print(a, b)f(b=1, *(2,))"
+    },
+    {
+      "answer": 2,
+      "options": [ "It causes a SyntaxError", "{0: 9}", "{0: 10, 1: 11, 2: 12, 3: 13, 4: 14, 5: 15, 6: 16, 7: 17, 8: 18, 9: 19}" ],
+      "title": "a = ?",
+      "code": "a = { b : b+10 for b in range(10) }"
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "Is this syntax valid?",
+      "code": "a = { i,j for i in range(0,10,2) for j in range(1,10,2)}"
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Is this syntax valid?",
+      "code": "a = { i for i in range(0,10,2) }"
+    },
+    {
+      "answer": 0,
+      "options": [ "2.0", "3.0", "-2.0", "-3.0" ],
+      "title": "a = ?",
+      "code": "a = -4 // 1.5"
+    },
+    {
+      "answer": 0,
+      "options": [ "0.5", "1.0", "-0.5", "-1.0" ],
+      "title": "What is the result of <strong>a</strong>",
+      "code": "a = -4 % 1.5"
+    },
+    {
+      "answer": 1,
+      "options": [ ".. have same priority", ".. not have same priority" ],
+      "title": "The operations |, ^ and &amp; ..",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "-1", "1" ],
+      "title": "What the will be in a?",
+      "code": "a = -1 ** 2"
+    },
+    {
+      "answer": 1,
+      "options": [ "tuple", "generator" ],
+      "title": "What is the type of a?",
+      "code": "a = (b for b in [1,2])"
+    },
+    {
+      "answer": 0,
+      "options": [ "dict", "set" ],
+      "title": "What is the type of a?",
+      "code": "a = {}"
+    },
+    {
+      "answer": 2,
+      "options": [ "dict", "set", "It causes SyntaxError" ],
+      "title": "What is the type of a?",
+      "code": "a = {1,2:3}"
+    },
+    {
+      "answer": 0,
+      "options": [ "float", "int" ],
+      "title": "What is the type of a?",
+      "code": "a = 10.0//5"
+    },
+    {
+      "answer": 0,
+      "options": [ "float", "int" ],
+      "title": "What is the type of a(Python 3)?",
+      "code": "a = 10/5"
+    },
+    {
+      "answer": 1,
+      "options": [ "float", "complex", "int", "str" ],
+      "title": "What is the type of b(Python 3)?",
+      "code": "a = -1b = a ** 0.5"
+    },
+    {
+      "answer": 3,
+      "options": [ "chr", "ord", "int", "str" ],
+      "title": "What is the type of b?",
+      "code": "a = \"bay\"b = a[0]"
+    },
+    {
+      "answer": 3,
+      "options": [ "SyntaxError", "ValueError", "[3, 2]", "[4, 3]", "[4, 3, 2]" ],
+      "title": "What is the result of this code?",
+      "code": "a=[1,2,3,4,5]a[3:1:-1]"
+    },
+    {
+      "answer": 1,
+      "options": [ "SyntaxError", "ValueError", "[10, 2, 20, 4, 30, 6, 40, 8, 50, 9, 60]" ],
+      "title": "What is the result of this code?",
+      "code": "a=[1,2,3,4,5,6,7,8,9]a[::2]=10,20,30,40,50,60"
+    },
+    {
+      "answer": 3,
+      "options": [ "[1,2]", "[1,3]", "[8,9]", "[1,3,5,7,9]", "SyntaxError" ],
+      "title": "What is the result of this code?",
+      "code": "a=[1,2,3,4,5,6,7,8,9]a[::2]"
+    },
+    {
+      "answer": 2,
+      "options": [ "IndexError", "TypeError", "[10, 20, 30, 40, 3]", "[10, 20, 30, 40, 2, 3]", "[10, 20, 30, 40]", "[[10, 20, 30, 40],3]" ],
+      "title": "What will be placed in a?",
+      "code": "a = [1,2,3]a[-3:-1] = 10,20,30,40"
+    },
+    {
+      "answer": 4,
+      "options": [ "It causes SyntaxError", "{'a': 1,'b': 2, 'a': 3}", "The behavior is undefined", "{'a': 1,'b': 2}", "{'a': 3,'b': 2}" ],
+      "title": "What will be placed in a?",
+      "code": "a = {'a': 1,'b':2, 'a':3}"
+    },
+    {
+      "answer": 1,
+      "options": [ "KeyError", "1" ],
+      "title": "What is the result of this code?",
+      "code": "a = {(1,2):1,(2,3):2}a[1,2]"
+    },
+    {
+      "answer": 0,
+      "options": [ "KeyError", "[1,2]", "{'a':1,'b':2}" ],
+      "title": "What is the result of this code?",
+      "code": "a = {'a':1,'b':2,'c':3}a['a','b']"
+    },
+    {
+      "answer": 1,
+      "options": [ "a = 1", "a = (1,)", "a = (1)", "a = tuple(1)" ],
+      "title": "How to assign a tuple of length 1 to a?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "3", "(2,3)" ],
+      "title": "What will be placed in a?",
+      "code": "a = 2,3"
+    },
+    {
+      "answer": 1,
+      "options": [ "f", "foo", "Not a number", "An exception is thrown" ],
+      "title": "What gets printed (with python version 3.X) assuming the user enters 'foo' at the prompt?",
+      "code": "a = input(\"#: \")print (a)"
+    },
+    {
+      "answer": 1,
+      "options": [ "15", "51", "150", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "kvps = { '1' : 1, '2' : 2 , '3' : 3, '4' : 4, '5' : 5}newData = { '1' : 10, '3' : 30 }kvps.update(newData)x = sum(kvps.values())print x"
+    },
+    {
+      "answer": 2,
+      "options": [ "0", "2", "6", "9", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "kvps = { '1' : 1, '2' : 2 }theCopy = dict(kvps)kvps['1'] = 5sum = kvps['1'] + theCopy['1']print sum"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "6", "10", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "import copyaList = [1,2]bList = [3,4]kvps = { '1' : aList, '2' : bList }theCopy = copy.deepcopy(kvps)kvps['1'][0] = 5sum = kvps['1'][0] + theCopy['1'][0]print sum"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "6", "10", "An exception is thrown" ],
+      "title": "What gets printed<br>",
+      "code": "aList = [1,2]bList = [3,4]kvps = { '1' : aList, '2' : bList }theCopy = kvps.copy()kvps['1'][0] = 5sum = kvps['1'][0] + theCopy['1'][0]print sum"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "6", "10", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "kvps = { '1' : 1, '2' : 2 }theCopy = kvps.copy()kvps['1'] = 5sum = kvps['1'] + theCopy['1']print sum"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "7", "10", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "kvps = { '1' : 1, '2' : 2 }theCopy = kvpskvps['1'] = 5sum = kvps['1'] + theCopy['1']print sum"
+    },
+    {
+      "answer": 1,
+      "options": [ "valid", "invalid", "An exception is thrown" ],
+      "title": "If the user types '0' at the prompt what gets printed?",
+      "code": "def getinput():    print \"0: start\"    print \"1: stop\"    print \"2: reset\"    x = raw_input(\"selection: \")    try:        num = int(x)        if num > 2 or num < 0:            return None        return num    except:        return Nonenum = getinput()if not num:    print \"invalid\"else:    print \"valid\""
+    },
+    {
+      "answer": 2,
+      "options": [ "4", "5", "10", "15", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "x = sum(range(5))print x"
+    },
+    {
+      "answer": 3,
+      "options": [ "f", "foo", "#: foo", "An exception is thrown" ],
+      "title": "What gets printed (with python version 2.X) assuming the user enters the following at the prompt?<br>#: foo",
+      "code": "a = input(\"#: \")print a"
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "3", "4", "6", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "x = 1y = \"2\"z = 3sum = 0for i in (x,y,z):    if isinstance(i, int):        sum += iprint sum"
+    },
+    {
+      "answer": 0,
+      "options": [ "a", "b", "c" ],
+      "title": "Assuming python 2.x, what gets printed?",
+      "code": "x = 0y = 1a = cmp(x,y)if a < x:    print \"a\"elif a == x:    print \"b\"else:    print \"c\""
+    },
+    {
+      "answer": 0,
+      "options": [ "hi", "h", "None", "104105", "104" ],
+      "title": "What gets printed?",
+      "code": "one = chr(104)two = chr(105)print \"%s%s\" % (one, two)"
+    },
+    {
+      "answer": 4,
+      "options": [ "2", "4", "6", "8", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "class NumFactory:    def __init__(self, n):        self.val = n    def timesTwo(self):        self.val *= 2    def plusTwo(self):        self.val += 2f = NumFactory(2)for m in dir(f):    mthd = getattr(f,m)    if callable(mthd):        mthd()print f.val"
+    },
+    {
+      "answer": 4,
+      "options": [ "1", "2", "3", "6", "7" ],
+      "title": "What gets printed?",
+      "code": "class A:    def __init__(self, a, b, c):        self.x = a + b + ca = A(1,2,3)b = getattr(a, 'x')setattr(a, 'x', b+1)print a.x"
+    },
+    {
+      "answer": 2,
+      "options": [ "Declare the myparser package in mytools.py", "Create an __init__.py in the home dir", "Inside the mytools dir create a __init__.py and myparser.py", "Create a myparser.py directory inside the mytools directory", "This can not be done" ],
+      "title": "Asume Python 2<br>How do you create a package so that the following reference will work?",
+      "code": "p = mytools.myparser.MyParser()"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "3", "6", "10", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "def myfunc(x, y, z, a):    print x + ynums = [1, 2, 3, 4]myfunc(*nums)"
+    },
+    {
+      "answer": 4,
+      "options": [ "in", "str", "tuple", "list", "dict" ],
+      "title": "What gets printed?",
+      "code": "def dostuff(param1, **param2):   print type(param2)dostuff('capitals', Arizona='Phoenix',California='Sacramento', Texas='Austin')"
+    },
+    {
+      "answer": 2,
+      "options": [ "str", "int", "tuple", "list", "dict" ],
+      "title": "What gets printed?",
+      "code": "def dostuff(param1, *param2):   print type(param2)dostuff('apples', 'bananas', 'cherry', 'dates')"
+    },
+    {
+      "answer": 0,
+      "options": [ "+++1 some info+++", "+++%s+++", "1", "1", "some info" ],
+      "title": "What gets printed?",
+      "code": "def print_header(str):    print \"+++%s+++\" % strprint_header.category = print_header.text = \"some info\"print_header(\"%d %s\" %  (print_header.category, print_header.text))"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 2", "2 1", "An exception is thrown", "This program has undefined behavior" ],
+      "title": "What gets printed?",
+      "code": "a = 1b = 2a,b = b,aprint \"%d %d\" % (a,b)"
+    },
+    {
+      "answer": 4,
+      "options": [ "1", "2", "5", "7", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "my_tuple = (1, 2, 3, 4)my_tuple.append( (5, 6, 7) )print len(my_tuple)"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "4", "5", "8", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "def addItem(listParam):    listParam += [1]mylist = [1, 2, 3, 4]addItem(mylist)print len(mylist)"
+    },
+    {
+      "answer": 3,
+      "options": [ "2", "4", "5", "8", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "list1 = [1, 2, 3, 4]list2 = [5, 6, 7, 8]print len(list1 + list2)"
+    },
+    {
+      "answer": 3,
+      "options": [ "list", "set", "dictionary", "All of the precents", "none of the precents" ],
+      "title": "Which of the following data structures can be used with the 'in' operator to check if an item is in the data structure?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "4", "5", "8", "12", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "numbers = [1, 2, 3, 4]numbers.append([5,6,7,8])print len(numbers)"
+    },
+    {
+      "answer": 2,
+      "options": [ "i", "a", "c", "C", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "names1 = ['Amir', 'Barry', 'Chales', 'Dao']names2 = [name.lower() for name in names1]print names2[2][0]"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "names1 = ['Amir', 'Barry', 'Chales', 'Dao']if 'amir' in names1:    print 1else:    print 2"
+    },
+    {
+      "answer": 4,
+      "options": [ "-1", "0", "4", "Edward", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "names1 = ['Amir', 'Barry', 'Chales', 'Dao']loc = names1.index(\"Edward\")print loc"
+    },
+    {
+      "answer": 1,
+      "options": [ "11", "12", "21", "22", "33" ],
+      "title": "What gets printed?",
+      "code": "names1 = ['Amir', 'Barry', 'Chales', 'Dao']names2 = names1names3 = names1[:]names2[0] = 'Alice'names3[1] = 'Bob'sum = 0for ls in (names1, names2, names3):    if ls[0] == 'Alice':        sum += 1    if ls[1] == 'Bob':        sum += 10print sum"
+    },
+    {
+      "answer": 4,
+      "options": [ "A", "r", "Amir", "Dao", "o" ],
+      "title": "What gets printed?",
+      "code": "names = ['Amir', 'Barry', 'Chales', 'Dao']print names[-1][-1]"
+    },
+    {
+      "answer": 1,
+      "options": [ "1", "2", "3", "4", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "foo = {1:'1', 2:'2', 3:'3'}del foo[1]foo[1] = '10'del foo[2]print len(foo)"
+    },
+    {
+      "answer": 0,
+      "options": [ "0", "1", "2", "3", "An exception is thrown" ],
+      "title": "",
+      "code": "foo = {1:'1', 2:'2', 3:'3'}foo = {}print len(foo)"
+    },
+    {
+      "answer": 4,
+      "options": [ "8", "12", "24", "30", "33" ],
+      "title": "What gets printed?",
+      "code": "numberGames = {}numberGames[(1,2,4)] = 8numberGames[(4,2,1)] = 10numberGames[(1,2)] = 12sum = 0for k in numberGames:    sum += numberGames[k]print len(numberGames) + sum"
+    },
+    {
+      "answer": 4,
+      "options": [ "1", "2", "4", "7", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "boxes = {}jars = {}crates = {}boxes['cereal'] = 1boxes['candy'] = 2jars['honey'] = 4crates['boxes'] = boxescrates['jars'] = jarsprint len(crates[boxes])"
+    },
+    {
+      "answer": 2,
+      "options": [ "2", "4", "6", "7", "An exception is thrown" ],
+      "title": "What gets printed?",
+      "code": "confusion = {}confusion[1] = 1confusion['1'] = 2confusion[1.0] = 4sum = 0for k in confusion:    sum += confusion[k]print sum"
+    },
+    {
+      "answer": 3,
+      "options": [ "1", "2", "3", "4", "5" ],
+      "title": "What gets printed?",
+      "code": "confusion = {}confusion[1] = 1confusion['1'] = 2confusion[1] += 1sum = 0for k in confusion:    sum += confusion[k]print sum"
+    },
+    {
+      "answer": 3,
+      "options": [ "0", "1", "2", "3", "4" ],
+      "title": "What gets printed?",
+      "code": "country_counter = {}def addone(country):    if country in country_counter:        country_counter[country] += 1    else:        country_counter[country] = 1addone('China')addone('Japan')addone('china')print len(country_counter)"
+    },
+    {
+      "answer": 2,
+      "options": [ "int", "list", "tuple", "dict", "set" ],
+      "title": "What gets printed?",
+      "code": "foo = (3, 4, 5)print type(foo)"
+    },
+    {
+      "answer": 1,
+      "options": [ "set", "dict", "list", "tuple", "object" ],
+      "title": "What gets printed",
+      "code": "foo = {}print type(foo)"
+    },
+    {
+      "answer": 3,
+      "options": [ "Person", "getAge", "usr.lib.python.person", "__main__", "An exception is thrown" ],
+      "title": "Assuming the filename for the code below is /usr/lib/python/person.py<br>and the program is run as:",
+      "code": "python /usr/lib/python/person.py "
+    },
+    {
+      "answer": 1,
+      "options": [ "True", "False" ],
+      "title": "Code indentation must be 4 spaces when creating a code block?",
+      "code": "if error:    # four spaces of indent are used to create the block    print \"%s\" % msg"
+    },
+    {
+      "answer": 0,
+      "options": [ "print '\n'.join(names)", "print names.join('\n')", "print names.concatenate('\n')", "print names.append('\n')", "print names.join('%s\n', names)" ],
+      "title": "Which of the following print statements will print all the names in the list on a seperate line",
+      "code": "names = ['Ramesh', 'Rajesh', 'Roger', 'Ivan', 'Nico']"
+    },
+    {
+      "answer": 2,
+      "options": [ "3", "7", "13", "14", "15" ],
+      "title": "What gets printed?",
+      "code": "import resum = 0pattern = 'back'if re.match(pattern, 'backup.txt'):    sum += 1if re.match(pattern, 'text.back'):    sum += 2if re.search(pattern, 'backup.txt'):    sum += 4if re.search(pattern, 'text.back'):    sum += 8print sum"
+    },
+    {
+      "answer": 2,
+      "options": [ "Changes the location that the python executable is run from", "Changes the current working directory", "Adds a new directory to seach for python modules that are imported", "Removes all directories for mods", "Changes the location where sub-processes are searched for after they are launched" ],
+      "title": "What does the code below do?",
+      "code": "sys.path.append('/root/mods')"
+    },
+    {
+      "answer": 4,
+      "options": [ "simpleFunction", "simple", "func", "funtion", "cool" ],
+      "title": "What gets printed?",
+      "code": "def simpleFunction():    \"This is a cool simple function that returns 1\"    return 1print simpleFunction.__doc__[10:14]"
+    },
+    {
+      "answer": 4,
+      "options": [ "1", "2", "49", "50", "51" ],
+      "title": "What gets printed by the code below?",
+      "code": "class Person:    def __init__(self, id):        self.id = idobama = Person(100)obama.__dict__['age'] = 49print obama.age + len(obama.__dict__)"
+    },
+    {
+      "answer": 0,
+      "options": [ "5.0", "5.4", "5.6", "6" ],
+      "title": "What gets printed by the code snippet below?",
+      "code": "import mathprint math.floor(5.5)"
+    },
+    {
+      "answer": 2,
+      "options": [ "500 300", "500 500", "600 400", "600 600", "300 500" ],
+      "title": "What numbers get printed",
+      "code": "import pickleclass account: def __init__(self, id, balance):  self.id = id  self.balance = balance def deposit(self, amount):  self.balance += amount def withdraw(self, amount):  self.balance -= amountmyac = account('123', 100)myac.deposit(800)myac.withdraw(500)fd = open( \"archive\", \"w\" ) pickle.dump( myac, fd)fd.close()myac.deposit(200)print myac.balancefd = open( \"archive\", \"r\" ) myac = pickle.load( fd )fd.close()print myac.balance"
+    },
+    {
+      "answer": 4,
+      "options": [ "2 3 2 4", "4 6 4 8", "1 1.5 1 2", "1 1 1 2", "4 9 4 16" ],
+      "title": "What sequence of numbers is printed?",
+      "code": "values = [2, 3, 2, 4]def my_transformation(num):    return num ** 2for i in  map(my_transformation, values):    print i"
+    },
+    {
+      "answer": 1,
+      "options": [ "1 2 3", "1 2 1 3", "1 2 1 3 1 2 1 3", "1 1 1 1 2 2 3 3", "Syntax Error" ],
+      "title": "What sequence of numbers is printed?",
+      "code": "values = [1, 2, 1, 3]nums = set(values)def checkit(num):    if num in nums:        return True    else:        return Falsefor i in  filter(checkit, values):    print i"
+    },
+    {
+      "answer": 2,
+      "options": [ "2, 4, 6", "0, 1, 2, 4, 5, 6", "0, 1, 4, 5", "0, 1, 4, 5, 6, 7, 8, 9", "1, 2, 4, 5, 6" ],
+      "title": "Which numbers are printed?",
+      "code": "for i in  range(2):    print ifor i in range(4,6):    print i"
+    },
+    {
+      "answer": 3,
+      "options": [ "snow storm", "snowXstorm", "snow Xtorm", "ERROR, this code will not run" ],
+      "title": "What gets printed?",
+      "code": "name = \"snow storm\"name[5] = 'X'print name"
+    },
+    {
+      "answer": 2,
+      "options": [ "st", "sto", "to", "tor", "Syntax Error" ],
+      "title": "What gets printed?",
+      "code": "name = \"snow storm\"print \"%s\" % name[6:8]"
+    },
+    {
+      "answer": 1,
+      "options": [ "None", "123", "666", "SyntaxError, this program will not run" ],
+      "title": "What gets printed?",
+      "code": "class Account:    def __init__(self, id):        self.id = id        id = 666 acc = Account(123)print acc.id"
+    },
+    {
+      "answer": 4,
+      "options": [ "user", "bill", "password", "hillary", "Nothing. Python syntax error" ],
+      "title": "What gets printed?",
+      "code": "kvps  = {\"user\",\"bill\", \"password\",\"hillary\"}print kvps['password']"
+    },
+    {
+      "answer": 4,
+      "options": [ "None None", "None 11", "11 None", "11 11", "Error is generated by program" ],
+      "title": "What gets printed?",
+      "code": "class parent:    def __init__(self, param):        self.v1 = paramclass child(parent):    def __init__(self, param):        self.v2 = paramobj = child(11)print \"%d %d\" % (obj.v1, obj.v2)"
+    },
+    {
+      "answer": 3,
+      "options": [ "0xA + 0xa", "0xA 0xa", "14", "20", "0x20" ],
+      "title": "What gets printed?",
+      "code": "print 0xA + 0xa"
+    },
+    {
+      "answer": 4,
+      "options": [ "\\x48\\x49!", "4849", "4849!", "      48      49!", "HI!" ],
+      "title": "What gets printed?",
+      "code": "print \"\\x48\\x49!\""
+    },
+    {
+      "answer": 1,
+      "options": [ "on one line the text: hello world", "on one line the text: helloworld", "hello on one line and world on the next line", "syntax error, this python program will not run" ],
+      "title": "What gets printed?",
+      "code": "print \"hello\" 'world'"
+    },
+    {
+      "answer": 2,
+      "options": [ "new line then the string: woow", "the text exactly like this: r'\nwoow'", "the text like exactly like this: \nwoow", "the letter r and then newline then the text: woow", "the letter r then the text like this: nwoow" ],
+      "title": "What gets printed?",
+      "code": "print r\"\nwoow\""
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "3", "4", "7", "None of them" ],
+      "title": "What gets printed?",
+      "code": "counter = 1 def doLotsOfStuff():        global counter    for i in (1, 2, 3):         counter += 1doLotsOfStuff()print counter"
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False", "None" ],
+      "title": "Assuming python 2.6 what gets printed?",
+      "code": "f = Nonefor i in range (5):    with open(\"data.txt\", \"w\") as f:        if i > 2:            breakprint f.closed"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "The following code will successfully print the days and then the months",
+      "code": "daysOfWeek = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']months =['Jan','Feb','Mar', Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']print \"DAYS: %s, MONTHS %s\" %     (daysOfWeek, months)"
+    },
+    {
+      "answer": 1,
+      "options": [ "true", "false" ],
+      "title": "In python 2.6 or earlier, the code will print error type 1 if accessSecureSystem raises an exception of either AccessError type or SecurityError type",
+      "code": "try:  accessSecureSystem()except AccessError, SecurityError:  print \"error type 1\"continueWork()"
+    },
+    {
+      "answer": 3,
+      "options": [ "A only", "A and D", "A, B, and C", "A, B, and D", "A, B, C, and D" ],
+      "title": "If PYTHONPATH is set in the environment, which directories are searched for modules?",
+      "code": "A) PYTHONPATH directoryB) current directoryC) home directoryD) installation dependent default path"
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "3", "4" ],
+      "title": "What gets printed?",
+      "code": "x = Truey = Falsez = Falseif not x or y:    print 1elif not x or not y and z:    print 2elif not x or y or not y and x:    print 3else:    print 4"
+    },
+    {
+      "answer": 0,
+      "options": [ "yes", "no", "No compile" ],
+      "title": "What gets printed?",
+      "code": "x = Truey = Falsez = Falseif x or y and z:    print \"yes\"else:    print \"no\""
+    },
+    {
+      "answer": 2,
+      "options": [ "1", "2", "4", "5", "7" ],
+      "title": "What gets printed?",
+      "code": "nums = set([1,1,2,3,3,3,4])print len(nums)"
+    },
+    {
+      "answer": 0,
+      "options": [ "2.0", "2.25", "9.0", "20.25", "21" ],
+      "title": "What gets printed?",
+      "code": "x = 4.5y = 2print x//y"
+    },
+    {
+      "answer": 2,
+      "options": [ "7", "12", "24", "36", "48" ],
+      "title": "What gets printed?",
+      "code": "d = lambda p: p * 2t = lambda p: p * 3x = 2x = d(x)x = t(x)x = d(x)print x"
+    },
+    {
+      "answer": 2,
+      "options": [ "<class 'int'>", "<class 'number'>", "<class 'float'>", "<class 'double'>", "<class 'tuple'>" ],
+      "title": "what gets printed? Assuming python version 3.x",
+      "code": "print (type(1/2))"
+    },
+    {
+      "answer": 3,
+      "options": [ "syntax error", "4", "5", "6", "7" ],
+      "title": "what is the output of the below program?",
+      "code": "a = [1,2,3,None,(),[],]print len(a)"
+    },
+    {
+      "answer": 3,
+      "options": [ "<type 'NoneType'>", "<type 'tuple'>", "<type 'type'>", "<type 'function'>", "<type 'bool'>" ],
+      "title": "what is the output of the following code?",
+      "code": "print type(lambda:None)"
+    },
+    {
+      "answer": 0,
+      "options": [ "<type 'complex'>", "<type 'unicode'>", "<type 'int'>", "<type 'float'>", "<type 'dict'>" ],
+      "title": "what should the below code print?",
+      "code": "print type(1J)"
+    },
+    {
+      "answer": 2,
+      "options": [ "<type 'function'>", "<type 'tuple'>", "<type 'NoneType'>", "<type 'str'>", "<type 'type'>" ],
+      "title": "what gets printed?",
+      "code": "def f(): passprint type(f())"
+    },
+    {
+      "answer": 4,
+      "options": [ "<type 'tuple'>", "<type 'int'>", "<type 'set'>", "<type 'complex'>", "<type 'list'>" ],
+      "title": "what is the output of the following code?",
+      "code": "print type([1,2])"
+    },
+    {
+      "answer": 0,
+      "options": [ "<type 'int'>", "<type 'number'>", "<type 'float'>", "<type 'double'>", "<type 'tuple'>" ],
+      "title": "what gets printed? Assuming python version 2.x",
+      "code": "print type(1/2)"
+    },
+    {
+      "answer": 1,
+      "options": [ "defines a list and initializes it", "defines a function, which does nothing", "defines a function, which passes its parameters through", "defines an empty class" ],
+      "title": "What does the following code do?",
+      "code": "def a(b, c, d): pass"
+    }
+  ]
+
+}

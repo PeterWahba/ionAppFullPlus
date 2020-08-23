@@ -1,0 +1,62 @@
+
+<ion-header>
+    <ion-navbar color="cyan">
+        <button ion-button menuToggle >
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            {{name}}
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="showMap()">
+                <ion-icon name="map"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-row>
+        <ion-col>
+            <img [src]="parent.imgBg" />
+
+            <!--***********  Segement tab ***********-->
+            <ion-segment mode="md" [(ngModel)]="segmentView" color="blue2">
+                <ion-segment-button value="one">
+                    To best
+                </ion-segment-button>
+                <ion-segment-button value="two">
+                    Historical
+                </ion-segment-button>
+                <ion-segment-button value="three">
+                    Relax
+                </ion-segment-button>
+            </ion-segment>
+
+        </ion-col>
+    </ion-row>
+    <ion-row wrap>
+        <ion-col col-6 tappable *ngFor="let item of items; let i = index" (click)="goToDetail(item)" padding>
+            <div padding style="border:1px solid #ccc; background-color:white">
+                <ion-thumbnail item-left style="overflow-y:hidden;">
+                    <img [src]="item.imgSmall">
+                </ion-thumbnail>
+
+                <p style="white-space:normal">{{item.name}}</p>
+
+                <rating [ngModel]="item.rate"
+                        readOnly="true"
+                        max="5"
+                        emptyStarIconName="star-outline"
+                        halfStarIconName="star-half"
+                        starIconName="star"
+                        nullable="false"
+                        (ngModelChange)="onModelChange($event)">
+                    <!--use it when you need to do something when user clicks on a star. in case you only need to change ngModel property, this property can be ommited.-->
+                </rating>
+            </div>
+            </ion-col>
+        </ion-row>
+
+</ion-content>

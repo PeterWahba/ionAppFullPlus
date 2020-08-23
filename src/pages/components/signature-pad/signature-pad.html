@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar color="ios-lightblue">
+    <ion-title>
+      Signature Pad
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding>
+    <ion-segment [(ngModel)]="tab">
+      <ion-segment-button value="pad">
+        Pad
+      </ion-segment-button>
+      <ion-segment-button value="stored">
+        Stored signatures
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div *ngIf="tab == 'pad'">
+    <div class="title">Please draw your Signature</div>
+    <ion-row [ngClass]="{'drawing-active': isDrawing}">
+      <ion-col></ion-col>
+      <ion-col>
+        <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+      </ion-col>
+      <ion-col></ion-col>
+
+    </ion-row>
+
+    <ion-row margin>
+      <ion-col><button ion-button full color="secondary" (click)="savePad()">Save</button></ion-col>
+      <ion-col><button ion-button full color="danger" (click)="clearPad()">Clear</button></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col width-80 text-center>
+        <div>Last signature</div>
+        <img [src]="signature" onerror="this.src='./assets/no-image-found.jpg'" />
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+
+
+
+  <!-- Second tab -->
+  <div *ngIf="tab == 'stored'">
+    <ion-card *ngFor="let file of files | async">
+      <ion-card-header>
+        {{ file.created | date:'medium' }}
+      </ion-card-header>
+
+      <ion-card-content>
+        <img [src]="file.url" onerror="this.src='./assets/no-image-found.jpg'" />
+        <ion-icon padding class="icon" name="md-share" (click)="share(file.url)"></ion-icon>
+        <ion-icon padding class="icon" name="trash" color="danger" (click)="deleteFile(file)"></ion-icon>
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+  <!-- End Second tab -->
+
+</ion-content>

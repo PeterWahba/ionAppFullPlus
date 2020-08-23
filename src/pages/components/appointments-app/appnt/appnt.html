@@ -1,0 +1,27 @@
+<ion-header no-border class="appnt-header">
+
+  <ion-navbar color="white" style="background: none; border-bottom: none">
+    <ion-title>Appointments</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="indigo">
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding fullscreen="" no-padding shrink-header [headerToHide]="'appnt-header'">
+  <!-- <button ion-button (click)="selectNextAvailable()" full >Next Available</button> -->
+
+
+  <ion-list>
+    <ion-item (click)="apptDetails(e)" *ngFor="let e of items">
+      <ion-avatar item-start>
+        <img [src]="e.photoURL" onerror="this.src='./assets/imgs/avatar.png'">
+      </ion-avatar>
+      <h2>{{e.displayName}}</h2>
+      <!-- <h3>Don't Know What To Do!</h3> -->
+      <p>{{e.description}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

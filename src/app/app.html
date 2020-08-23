@@ -1,0 +1,65 @@
+
+<ion-menu [content]="content">
+  <ion-content>
+
+      <ion-card>
+          <ion-card-header>
+              About this App
+          </ion-card-header>
+          <ion-card-content>
+              <p>
+                  This app can serve as a starter for developers with brilliant ideas to develop hybrid multi-platform mobile applications
+              </p>
+          </ion-card-content>
+      </ion-card>
+      <p>&nbsp;</p>
+   
+      <!--***********  Social sharing  ***********-->
+<ion-list>
+    <div ion-item>
+        <ion-row>
+            <ion-col>
+                <button ion-fab mini (click)="whatsappShare()">
+                    <ion-icon name="logo-whatsapp" role="img"></ion-icon>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-fab mini (click)="twitterShare()">
+                    <ion-icon name="logo-twitter" role="img"></ion-icon>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-fab mini (click)="facebookShare()">
+                    <ion-icon name="logo-facebook" role="img"></ion-icon>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-fab mini (click)="otherShare()">
+                    <ion-icon name="share" role="img"></ion-icon>
+                </button>
+            </ion-col>
+
+        </ion-row>
+
+    </div>
+
+</ion-list>
+
+
+      <ion-list no-lines>
+          <div>
+              <ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+                  <ion-icon [name]="p.icon" color="gray" item-left></ion-icon>
+                  {{p.title}}
+              </ion-item>
+          </div>
+
+      </ion-list>
+
+  </ion-content>
+
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

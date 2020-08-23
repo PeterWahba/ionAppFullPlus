@@ -1,0 +1,29 @@
+page-pomodoro-home {
+    .timer-text{
+        font-size: 4rem;
+        font-weight: bold;
+        color: white;
+    }
+    progress-bar .progress-outer div{
+        color:#673ab7!important;
+    }
+
+    div#bg::after {
+        //background: url(http://i0.wp.com/www.bryanthankins.com/wp-content/uploads/2010/09/pomodorotimer.png) no-repeat;
+        background-size: 100% 80%;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+        content: ""; 
+      }
+     
+      ion-grid {
+        height: 100%;
+        justify-content: center;
+    }
+
+}

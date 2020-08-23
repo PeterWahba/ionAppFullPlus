@@ -1,0 +1,177 @@
+
+@import "prismjs.scss";
+
+.primary-bg-dark {
+    background: #384252!important;//color($colors, grey) !important;
+    color: white !important;
+        
+    .dark-theme{
+        background:  color($colors, quizzbtndark) !important;
+        color: white !important;
+    }
+  
+    p {
+      /*padding: 0 40px;*/
+      font-size: 14px;
+      line-height: 1.5;
+      color: white;
+  
+      a {
+        color: white !important;
+      }
+    }
+  
+    p.stats-date {
+      color: #b1b1b1 !important;
+    }
+  
+    h1 {
+      color: white !important;
+    }
+  
+    .done-vs-total {
+      color: white !important;
+    }
+  
+    ion-list {
+      ion-list-header {
+        background: rgba(73, 85, 103, 0.93) !important;
+        color: #acd372 !important;
+      }
+  
+      ion-item {
+        background: color($colors, primary) !important;
+        color: white !important;
+      }
+    }
+  
+    .mode-number-of-questions {
+      .item-radio-checked {
+        ion-label {
+          color: white !important;
+        }
+      }
+  
+      ion-radio {
+        .radio-checked {
+          border-color: #787878 !important;
+  
+          .radio-inner {
+            background-color: white !important;
+          }
+        }
+      }
+    }
+  
+    ion-segment {
+      ion-segment-button{
+        background: rgba(131, 135, 142, 0.93) !important;
+        color: #bad09a !important;
+      }
+      .segment-activated {
+        background: rgba(73, 85, 103, 0.93) !important;
+        color: #acd372 !important;
+     
+      }
+    }
+
+    
+.pass-status{
+    padding: 10px 40px;
+    text-align: center;
+}
+
+
+h1 {
+  color: #fff;
+  font-family: serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding: 20px 40px;
+  text-align: center;
+
+  &:after {
+    color: color($colors, light);
+    content: "_";
+    display: block;
+    font-size: 4.2rem;
+    line-height: 2rem;
+  }
+}
+
+ion-list-header, ion-item-divider {
+  text-align: center;
+}
+
+.button-font-color {
+  color: #384252 !important;
+  margin-top:1rem!important;
+}
+
+.regular-h1 {
+  &:after {
+    color: color($colors, light);
+    content: "";
+    display: block;
+    font-size: 4.2rem;
+    line-height: 2rem;
+  }
+}
+
+
+.toolbar-left {
+  float: left;
+  margin-left: 16px;
+}
+
+.toolbar-right {
+  float: right;
+  margin-right: 16px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+ion-card.large-thumbnail {
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+
+  .item {
+    padding-left: 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .item-inner {
+    background: rgba(73, 85, 103, 0.93);
+    padding-right: 0;
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  ion-label {
+    margin: 18px 8px;
+    text-overflow: inherit;
+    white-space: inherit;
+  }
+
+  h2, p {
+    color: #FFF;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+  }
+  
+  .secundary-bg-dark {
+    background: rgba(73, 85, 103, 0.93) !important;
+    color: #acd372 !important;
+  }
+}

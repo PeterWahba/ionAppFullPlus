@@ -1,0 +1,18 @@
+Instructions to import this component into your ionic app:
+
+For this component to work you'll need the providers/theme-manager/theme-manager.ts provider
+
+If you want this dynamic theming to be appied to the entier app, you'll need to call getActiveTheme() in your src/app/app.component.ts constructor from the provider, like this:
+
+this.themeManager.getActiveTheme().subscribe(val => this.selectedTheme = val);
+
+then go to src/app/app.html add [class]="selectedTheme", like this:
+<ion-nav [root]="rootPage" [class]="selectedTheme"></ion-nav>
+
+
+To modify the styles:
+Go to src/theme and modify the dark.theme.scss and light.theme.scss files. Copy them into your application's theme folder
+
+Also import these files into your src/theme/variables.scss file, like this:
+@import "light.theme";
+@import "dark.theme";

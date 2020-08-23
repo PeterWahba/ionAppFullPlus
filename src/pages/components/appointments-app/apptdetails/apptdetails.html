@@ -1,0 +1,68 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title item-end>
+      <img item-start [src]="emp.photoURL" style="border-radius: 100%; width: 3rem;"  onerror="this.src='./assets/imgs/avatar.png'" />
+      <span margin-left text-capitalize style="position: relative;top: -1rem;"> {{emp.displayName}}</span>
+
+    </ion-title>
+
+    <ion-buttons end only-icon>
+          <a href="tel:{{ emp.phone }}">
+      <button ion-button icon-only>
+          <ion-icon name="call" color="primary"></ion-icon>
+      </button>
+          </a>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+<!-- <div  *ngIf="employeeIsLoggedUser">
+    <ion-item>
+        <ion-label>Show all hours</ion-label>
+        <ion-checkbox name="show" (ionChange)="showAllHours($event)" [ngModel]="show" value="show"></ion-checkbox>
+      </ion-item>
+</div> -->
+<div text-center style="padding:0.3rem">
+    <small>Today's date:</small>
+  </div>
+  <div text-center style="margin-bottom:1.3rem">
+    <span style="font-size:2rem; font-weight: bold;">{{ date }}</span>
+  </div>
+
+  <div text-center  style="padding:0.3rem">
+    <small>Current time:</small>
+  </div>
+  <div text-center style="margin-bottom:2rem">
+    <span style="font-size:3rem; font-weight: bold;">{{ time }}</span>
+  </div>
+
+  <div padding *ngIf="!hoursRange || hoursRange.length === 0">
+    <h4>Closed or out of business hours</h4>
+    <button full ion-button (click)="goToContact()">Check business hours</button>
+  </div>
+
+  <ion-list *ngIf="hoursRange && hoursRange.length > 0">
+    <ion-scroll scrollY="true" style="min-height:50rem">
+
+      <ion-item *ngFor="let o of hoursRange">
+        <h2>{{o.ampm}}</h2>
+        <button ion-button item-right [disabled]="o.off" (click)="setAppointment(o.twentyFour)" *ngIf="!o.isScheduled">Schedule</button>
+        <span *ngIf="o.isScheduled" item-right>
+          <span style="position: relative;top: -1rem;font-size:1.5rem">{{o.name}}</span>&nbsp;
+        <img [src]="o.userPic" (click)="openFullImage(o.userPic)"  onerror="this.src='./assets/imgs/avatar.png'"
+          style="width:3rem; border-radius:100%" />
+        <span *ngIf="shouldShowNotes(o)" style="position: relative; top: -0.3rem; left: 0.8rem; font-size:2.5rem">
+            <a *ngIf="o.phone" href="tel:{{o.phone}}"><ion-icon icon-only color="success" name="call" ></ion-icon></a>
+            <ion-icon icon-only color="secondary" name="clipboard" (click)="showNotes(o.notes)"></ion-icon>
+            <ion-icon icon-only color="danger" name="trash" (click)="removeAppt(emp.uid, o.id)"></ion-icon>
+        </span>
+        </span>
+      </ion-item>
+    </ion-scroll>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,79 @@
+
+<ion-header>
+  <ion-navbar color="white" class="white-text">
+     <button ion-button menuToggle class="TopLMenu">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title >Profile</ion-title>
+  
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="profile1-info" class="test-class" padding>
+
+    <img id="profile1-image" class="pop-in" src="{{profile?.img}}"/>
+    <h3 id="profile1-name">{{profile?.name}}</h3>
+   
+    <p class="profile1-description">{{profile?.position}} of {{profile?.company}}</p>
+    <button ion-button *ngIf="!following"  block color="green" (click)="follow()">Follow</button>
+    <button ion-button icon-left *ngIf="following"  block color="gray" (click)="follow()">
+      <ion-icon name="checkmark"></ion-icon>
+      Following
+    </button>
+
+    <ion-grid >
+      <ion-row class="profile1-numbers">
+
+        <ion-col width-33>
+          <span>{{profile?.follower}}</span>
+          <p>Followers</p>
+        </ion-col>
+
+        <ion-col width-33>      
+          <span>{{profile?.following}}</span>
+          <p>Following</p>
+        </ion-col>
+
+        <ion-col width-33>   
+          <span>{{profile?.following}}</span>
+          <p>Following</p>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <ion-list no-lines text-wrap>
+      <ion-list-header>
+        <h2> About</h2>
+      </ion-list-header>
+      <ion-item>
+        <p >{{profile?.aboutMe}}</p>
+      </ion-item>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      <h2>Contact</h2>
+    </ion-list-header>
+    <ion-item>
+        <ion-icon name="ios-mail" item-left></ion-icon>
+        <h2>{{profile?.email}}</h2>
+        <p>email</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-call" item-left></ion-icon>
+      <h2>{{profile?.phone}}</h2>
+      <p>phone</p>
+    </ion-item>
+     <ion-item>
+      <ion-icon name="logo-linkedin" item-left></ion-icon>
+      <h2>{{profile?.linkedin}}</h2>
+      <p>linkedin</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

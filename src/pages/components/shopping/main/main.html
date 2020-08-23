@@ -1,0 +1,49 @@
+<!--*********** Header ***********-->
+<ion-header no-border>
+    <ion-navbar color="indigo">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>e-commerce Shopping</ion-title>
+
+    </ion-navbar>
+    <ion-toolbar color="indigo">
+        <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div margin>
+        <rate-component></rate-component>
+    </div>
+    <ion-card tappable *ngFor="let category of items" (click)="openList(category)" class="card-shadow">
+        <ion-row>
+            <ion-col no-padding>
+                <div class="banner-bg" [ngStyle]="{'background-image': 'url(' + category.imgBg+ ')'}"></div>
+            </ion-col>
+            <ion-col>
+                <ion-row align-items-center padding-top>
+                    <ion-col text-center>
+                        <div color="red" class="banner-title"> {{category.name}}</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row align-items-center>
+                    <ion-col text-center>
+                        <small class="banner-description"> {{category.description}}</small>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-card>
+
+    <ion-fab right bottom>
+        <button ion-fab color="ios-orange"><ion-icon name="chatbubbles"></ion-icon></button>
+        <ion-fab-list side="left">
+            <button ion-fab (click)="MakeCall()"><ion-icon name="call"></ion-icon></button>
+            <button ion-fab (click)="sendSMS()"><ion-icon name="chatboxes"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+
+</ion-content>

@@ -1,0 +1,87 @@
+﻿<ion-header>
+  <ion-navbar primary>
+    <ion-row>
+      <ion-col col-1>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-10>
+        <ion-title>
+          <ion-row>
+            <ion-col col-2>
+              <img src="{{currentuser?.pic}}" width="24" height="24" onerror="this.src= './assets/imgs/avatar.png'" style="border-radius: 100%" />
+            </ion-col>
+            <ion-col col-10>
+              <span> &nbsp; Hi, {{currentuser?.name}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-title>
+      </ion-col>
+      <ion-col col-1>
+        <ion-buttons class="exit-button" end >
+          <button (click)="logout()">
+            <ion-icon name="exit" style="font-size:2rem"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+  <ion-toolbar>
+      <ion-row>
+          <ion-col>
+            <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="search"></ion-searchbar>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4></ion-col>
+          <ion-col col-4></ion-col>
+          <ion-col col-4>
+            <span>Total: {{totalPts? totalPts: 0}} Pts</span>
+          </ion-col>
+        </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="home primary-bg-dark">
+
+  <ion-card class="large-thumbnail" *ngFor="let category of items">
+    <ion-item>
+
+      <ion-row>
+        <ion-col col-3><button ion-button small color="quizzbtndark" *ngIf="!globalWeb" style="color: #acd372;" (click)="archiveCategorie(category)"><ion-icon style="font-size:1.8em;" name="ios-archive"></ion-icon></button></ion-col>
+        <ion-col col-3></ion-col>
+        <ion-col col-3></ion-col>
+        <ion-col col-3><button ion-button small color="quizzbtndark" *ngIf="!globalWeb" style="color: #acd372;" (click)="addRemoveFavorite(category)"><ion-icon style="font-size:1.8em;" name="{{isFavorite(category)}}"></ion-icon></button></ion-col>
+      </ion-row>
+
+      <ion-row class="row" no-padding>
+
+        <ion-col class="col" text-center (click)="chooseMode(category.id)">
+          <h1 style="color:white!important">{{category.name}}</h1>
+          <p style="margin:15px">{{category.excerpt}}</p>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4>
+          <p [style.color]="scoreColor(category.highScore)">
+            <ion-icon name="trophy"></ion-icon> {{category.highScore? category.highScore: '0'}}%</p>
+        </ion-col>
+        <ion-col col-4>
+          <p>{{category.pts? category.pts: 0 }} Pts</p>
+        </ion-col>
+        <ion-col col-4>
+          <p style="color: #acd372;">{{category.questions.length}} questions</p>
+        </ion-col>
+      </ion-row>
+
+    </ion-item>
+  </ion-card>
+  <ion-row>
+    <ion-col center text-center>
+      <button color="quizzbtn" ion-button small padding (click)="clearPushNotificationFilter()" *ngIf="!!params.filter">Got it</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

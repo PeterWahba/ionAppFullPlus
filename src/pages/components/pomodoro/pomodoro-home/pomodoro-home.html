@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar color="red">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding [ngStyle]="{ 'background-color': background }">
+
+            <div padding class="no-bottom-border item">
+                <div text-center class="timer-text">{{timer.displayTime}}</div>
+              </div>
+      
+              <progress-bar [progress]="progress" [color]="'#673ab7'">
+                </progress-bar>
+      
+      <ion-fab bottom left *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
+          <button ion-fab color="blue2" (click)="pauseTimer()">
+        <ion-icon name="pause"></ion-icon>
+        </button>
+        </ion-fab>
+        <ion-fab bottom left *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
+          <button ion-fab color="blue2" (click)="resumeTimer()">
+      <ion-icon name="play"></ion-icon>
+      </button>
+        </ion-fab>
+        <ion-fab bottom left *ngIf="!timer.hasStarted">
+          <button ion-fab color="blue2" (click)="startTimer()" item-right>
+      <ion-icon name="play"></ion-icon>
+      </button>
+        </ion-fab>
+      
+        <ion-fab bottom right *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
+          <button ion-fab color="brown" (click)="startTimer()" item-left>
+            <ion-icon name="refresh"></ion-icon>
+          </button>
+        </ion-fab>
+</ion-content>

@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar color="teal">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Photos Gallery</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+
+    <!--***********  1 columns  ***********-->
+    <ion-grid *ngIf="photosView==='one'">
+        <ion-row wrap color="gray">
+            <ion-col col-12 *ngFor="let image of imgPhotosArray , let i = index" (press)="openContextual(image, $event)" >
+                <ion-card>
+                    <img tappable class="expanded-image " src={{image.url}} (click)="fullscreenImage(i)" />
+                    <ion-card-content>
+                        <ion-card-title>
+                            {{image.name}}
+                        </ion-card-title>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+<!--***********  2 columns  ***********-->
+    <ion-grid *ngIf="photosView==='two'">
+        <ion-row wrap color="gray">
+            <ion-col col-6 *ngFor="let image of imgPhotosArray , let i = index" (press)="openContextual(image, $event)" >
+                <ion-card>
+                    <img tappable class="expanded-image " src={{image.url}} (click)="fullscreenImage(i)" />
+                    <p padding>
+                        {{image.name}}
+                    </p>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+<!--***********  3 columns  ***********-->
+<ion-grid *ngIf="photosView==='three'">
+    <ion-row wrap color="gray">
+      <ion-col col-4 *ngFor="let image of imgPhotosArray , let i = index" (press)="openContextual(image, $event)" >
+        <img tappable class="expanded-image"  [src]="image.url"   (click)="fullscreenImage(i)" />
+      
+      </ion-col>
+    </ion-row>
+</ion-grid>
+
+
+<!--***********  4 columns  ***********-->
+<ion-grid *ngIf="photosView==='four'">
+    <ion-row wrap color="gray">
+      <ion-col  col-3 *ngFor="let image of imgPhotosArray  ,let i = index" (press)="openContextual(image, $event)" >
+      <img  tappable class="expanded-image"  [src]="image.url"  (click)="fullscreenImage(i)"/>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+
+
+<ion-fab bottom right>
+    <button ion-fab color="teal" (click)="gotoUpload()">
+  <ion-icon name="cloud-upload"></ion-icon>
+  </button>
+  </ion-fab>
+</ion-content>

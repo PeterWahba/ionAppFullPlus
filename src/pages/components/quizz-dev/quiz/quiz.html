@@ -1,0 +1,28 @@
+﻿<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{category?.name}}
+      <div>
+        {{timer}}
+      </div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="quiz primary-bg-dark">
+  <quizzer *ngIf="!!questions && questions.length && inProgress" [questions]="questions" [language]="category.language" [timed]="timed"
+    (onScoreChanges)="scoreChanged($event)" (onTimerChanges)="updateTimer($event)" (onFinish)="onFinish($event)"></quizzer>
+
+
+  <div *ngIf="!inProgress" padding>
+    <p *ngIf="globalWeb">To get access to the full {{total}} questions, please download the mobile version</p>
+    <h2 style="text-align: center;color:#FF9800;">+{{pts}} pts</h2>
+    <h1>Score: {{score}}%</h1>
+    <h2 class="pass-status" [style.color]="scoreColor()">{{score > 69? 'successfully passed': 'Need to be improved'}}</h2>
+    <p style="text-align:center;">{{correctQuestions + '/' + questions.length}}</p>
+    <button class="button-font-color" color="quizzbtn" ion-button block (click)="tryAgain()">Try again</button>
+    <button class="button-font-color" color="quizzbtn" ion-button block (click)="newMatch()">Start new match</button>
+    <button class="button-font-color" color="quizzbtn" ion-button block (click)="goToStats(params.id)">Stats</button>
+    <button class="button-font-color" color="quizzbtn" ion-button block (click)="goToLeaders()">Leaders Board</button>
+  </div>
+
+</ion-content>

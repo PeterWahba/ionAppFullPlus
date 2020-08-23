@@ -1,0 +1,264 @@
+﻿{
+  "id": "7",
+  "language": "node",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic NodeJs questions going from simple to complex, with code examples.",
+  "image": "",
+  "name": "NodeJs",  
+  "level": "1",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491943122&asins=1491943122&linkId=faa024d5d2effc8711b6a8ed123ce4c0&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1785881507&asins=1785881507&linkId=e1eaf1f5d73695fa35350a98e000c280&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1430265957&asins=1430265957&linkId=13f186be82bd1777e370b7321a656da4&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"    
+  ],
+  "questions": [
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "Fs module provides both synchronous as well as asynchronous methods.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Using app.route()", "Using app.router()", "Using app.routing()" ],
+      "title": "How can wecreate chainable route handlers for a route path in ExpressJS app?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "will be left hanging", "will get an internal server error (500)", "will get an service unavailable error (503)" ],
+      "title": "The methods on the response object (<code>res</code>) in the following table can send a response to the client, and terminate the request-response cycle. If none of these methods are called from a route handler, the client request__________",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Is the code below valid?",
+      "code": "var cb0 = function (req, res, next) {  console.log('CB0')  next()}var cb1 = function (req, res, next) {  console.log('CB1')  next()}app.get('/example/d', [cb0, cb1], function (req, res, next) {  console.log('the response will be sent by the next function ...')  next()}, function (req, res) {  res.send('Hello from D!')})"
+    },
+    {
+      "answer": 0,
+      "options": [ "Yes", "No" ],
+      "title": "Is the below code valid?",
+      "code": "var cb0 = function (req, res, next) {  console.log('CB0')  next()}var cb1 = function (req, res, next) {  console.log('CB1')  next()}var cb2 = function (req, res) {  res.send('Hello from C!')}app.get('/example/c', [cb0, cb1, cb2])"
+    },
+    {
+      "answer": 1,
+      "options": [ "Just one", "Unlimited" ],
+      "title": "How many number of callback functions can be attached to handlea request?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "/users/:userId/books/:bookId", "/flights/:from-:to", "/books/!:from-:to" ],
+      "title": "Select all valid rout parameterformats",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "req.params object", "app.locals object", "req.data object", "None of above" ],
+      "title": "Where is captured values are populated regarding route parameters?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "strings", "string patterns", "regular expressions", "All of above" ],
+      "title": "Route paths, in combination with a request method, define the endpoints at which requests can be made.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Use gzip compression", "Don’t use synchronous functions", "Do logging correctly", "Handle exceptions properly" ],
+      "title": "Whatshould you do in your code to improve yourapplication’s performance?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "In ExpressJS, the method app.all(path, callback [, callback ...]) can accept all HTTP methods",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Ussing app.locals", "Using app.storage", "Using database", "Config file" ],
+      "title": "How to store local variables that can be accesswithin the application?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "continues", "exits" ],
+      "title": "If an<code>EventEmitter</code>does<em>not</em>have at least one listener registered for the<code>'error'</code>event, and an<code>'error'</code>event is emitted, the error is thrown, a stack trace is printed, and the Node.js process ____.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "eventEmitter.on()", "eventEmitter.once()", "Another one" ],
+      "title": "Which method can be used to handle an event just only one time?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Unlimited", "10" ],
+      "title": "How many listenners can be attached to an event in NodeJS?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "10", "20", "30", "100" ],
+      "title": "By default EventEmitters will print a warning if more than<code>______</code>listeners are added for a particular event",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "setImmediate()", "process.nextTick()", "Both of them" ],
+      "title": "Which methods can be use to switchlistener functions asynchronous mode:",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "synchronously", "asynchronously" ],
+      "title": "When the<code>EventEmitter</code>object emits an event, all of the functions attached to that specific event are called _______. Any values returned by the called listeners are<em>ignored</em>and will be discarded.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "True", "False" ],
+      "title": "All objects that emit events are instances of the<code>EventEmitter</code>class",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Event-driven,", "Non-blocking I/O", "Both of them" ],
+      "title": "What are Nodejs characteristics?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "NoSQL databases", "Relational databases", "All of the precents", "none of the precents" ],
+      "title": "Node.js application can access which of the following databases?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "JavaScript", "Java", "C++", "C#" ],
+      "title": "Which of the followings are valid languages for Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Express.js", "GruntJS", "NPM", "none of the precents" ],
+      "title": "Which of the following tool automates various tasks of Node.js application?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Jade", "Vash", "Handlebars", "All of the precents" ],
+      "title": "Which of the following template engines can be used with Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "node-static", "http", "node-resource", "static" ],
+      "title": "Which module is used to serve static resources in Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Web Application", "Chat Application", "RESTful Service", "All of the precents" ],
+      "title": "Which of the following types of application can be built using Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Express.js", "Geddy", "Locomotive", "All of the precents." ],
+      "title": "Which of the followings are web application frameworks for Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "EventEmitter", "Events", "NodeEvent", "none of the precents" ],
+      "title": "Which of the following class is used to create and consume custom events in Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Core node debugger", "Console", "REPL", "Node Inspector" ],
+      "title": "Which of the following is a GUI-based debugging tool for Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Using require() function.", "Using module.import", "Using include() function", "Using app.use() function" ],
+      "title": "How to import module in Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "fs", "url", "connect", "http" ],
+      "title": "Which of the following core module is used to create a web server in Node.js?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Node Package Manager", "Node.exe", "Module.exports", "REPL" ],
+      "title": "Third-party packages can be install/update/delete using ________.",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "module.expose", "module", "module.exports", "All of the precents" ],
+      "title": "The Node.js modules can be exposed using _________.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Module", "Library", "Package", "Function" ],
+      "title": "Simple or complex functionality organized in a single or multiple JavaScript files which can be reused throughout your Node.js application is called ________.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Multiple threads", "Single thread", "Multiple Processes", "Single Process" ],
+      "title": "Node.js application runs on __________.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Global", "Local", "Global Function", "Local to object" ],
+      "title": "What is the default scope in Node.js application.",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "testing node.js/JavaScript expressions", "executing browser’s JavaScript expressions.", "the preview of node.js application.", "none of the precents" ],
+      "title": "Node.js terminal (REPL) is used for _________.",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Windows", "Macintosh", "Unix/Linux", "All of the precents" ],
+      "title": "Node.js supports which of the following platform?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "Synchronous", "Multi-threaded", "Asynchronous", "none of the precents" ],
+      "title": "Node.js is ________ by default.",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Client", "Server", "Both, server and client", "none of the precents" ],
+      "title": "Node.js runs on __________",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Noteworthy Programming Masterpiece", "Node Package Manager", "Nuclear Power Manager", "Nerd Play Mate" ],
+      "title": "What npm stands for?",
+      "code": ""
+    }
+  ]
+
+}

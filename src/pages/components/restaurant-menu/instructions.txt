@@ -1,0 +1,46 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created:
+-Install the cordoba plugin and ionic native wrapper:
+
+$ ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="To locate you"
+$ npm install --save @ionic-native/geolocation
+
+more info here: https://ionicframework.com/docs/native/geolocation/
+
+
+For Call number:
+$ ionic cordova plugin add call-number
+$ npm install --save @ionic-native/call-number
+
+more info here: https://ionicframework.com/docs/native/call-number/
+
+
+-Go to your app.modules.ts and import and register providers withing the providers array, 
+
+ providers: [
+    ...
+]
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+
+
+See instruction to instal image gallery: http://jomendez.com/ionAppFullPlus-documentation/#!/image_gallery
+See documentation to configure firebase: http://jomendez.com/ionAppFullPlus-documentation/#!/firebase_configuration
+
+
+This component needs the login component to work, see instruction.txt on the login folder for instructions to import
+This component needs the Cart component to work, see instruction.txt on the Cart folder for instructions to import
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.

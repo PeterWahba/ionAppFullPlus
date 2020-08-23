@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create Options</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div padding>
+        <button color="yellow" ion-button full icon-left  (click)="gotoWifi()"><ion-icon name="ios-wifi"></ion-icon>Create Wifi code</button>
+      </div>
+    
+      <div padding>
+        <button color="amber" ion-button full icon-left  (click)="gotoGeo()"><ion-icon name="ios-pin"></ion-icon>Create Geo code</button>
+      </div>
+    
+      <div padding>
+        <button color="orange" ion-button full icon-left  (click)="gotoWeblink()"><ion-icon name="ios-link"></ion-icon>Create web link code</button>
+      </div>
+
+      <div padding>
+          <button color="deeporange" ion-button full icon-left  (click)="gotoText()"><ion-icon name="ios-text"></ion-icon>Create regular text code</button>
+        </div>
+</ion-content>

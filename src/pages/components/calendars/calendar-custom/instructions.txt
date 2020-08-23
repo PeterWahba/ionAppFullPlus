@@ -1,0 +1,18 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component)
+
+
+Plugins and dependencies:
+npm install ionic2-calendar moment intl@1.2.5 --save
+ionic cordova plugin add cordova-sqlite-storage
+
+

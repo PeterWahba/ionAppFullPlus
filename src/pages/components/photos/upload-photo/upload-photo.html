@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar color="teal">
+      <ion-title>
+        Image Upload
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding>
+    <img src="{{captureDataUrl}}" style="width: 100%" [hidden]="captureDataUrl === null">
+    <h3 [hidden]="captureDataUrl !== null">Please Select Image!</h3>
+  </ion-content>
+   
+  <ion-footer>
+    <ion-toolbar color="teal">
+      <ion-buttons>
+        <button ion-button icon-left (click)="presentActionSheet()" style="margin-right: 2.3rem">
+          <ion-icon name="camera"></ion-icon>Select Image
+        </button>
+        <button ion-button icon-left (click)="editImage()" [disabled]="captureDataUrl === null" style="margin-right: 2.3rem">
+          <ion-icon name="build"></ion-icon>Edit
+        </button>
+        <button ion-button icon-left (click)="uploadImage()" [disabled]="captureDataUrl === null">
+          <ion-icon name="cloud-upload"></ion-icon>Upload
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,46 @@
+<!--
+  Generated template for the NativeLoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar colo="lightblue">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Social Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div style="text-align:center">
+        <img class="logo" src="./assets/medium_150.70391061453px_1202562_easyicon.net.png" style="width:15rem" />
+    </div>
+  <div padding>
+    <button ion-button block color="red" (click)="loginWithGooglePlus()">
+        <ion-icon name="logo-googleplus"> </ion-icon>
+        &nbsp;Login with google plus
+      </button>
+      <p></p>
+      <button ion-button block color="blue" (click)="loginWithFb()">
+          <ion-icon name="logo-facebook"> </ion-icon>
+          &nbsp;Login with Facebook
+        </button>
+    </div>
+    
+    <div *ngIf="!!dataFb">
+        <h2 padding>Your Data </h2>
+        <button ion-button color="darkblue" (click)="logoutFb()">Logout</button>
+       <p>{{dataFb | json}}</p>
+      </div>
+    
+    <div *ngIf="!!data">
+      <h2 padding>Your Data </h2>
+      <button ion-button color="darkblue" (click)="logout()">Logout</button>
+     <p>{{data | json}}</p>
+    </div>
+</ion-content>

@@ -1,0 +1,26 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component)
+
+
+Plugins and dependencies:
+Copy ./config/copy.config.js into your project 
+Copy ./providers/auth-pwa/auth.service into your project
+Copy the login-workflow component into your project
+Copy ./assets/vendor/vegas to your project, to handle the animation in the home page
+
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Config your firebase application to support authentication as explained in the documentation included with this starter.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.
+Also this feature need the user to be logged in, we recomend to use the login component included in this starter.
+

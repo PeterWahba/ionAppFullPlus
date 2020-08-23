@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let video of videos | async" (click)="openVideo(video)" detail-none  text-wrap>
+      <ion-thumbnail item-start>
+      <img onerror="this.src = './assets/no-image-found.jpg'" [src]="getImgUrl(video)">
+    </ion-thumbnail>
+    <h2>{{ video.title }}</h2>
+    <p>{{ video.snippet.description }}</p>
+    </button>
+  </ion-list>
+</ion-content>

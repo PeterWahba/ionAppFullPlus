@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="weather-dark">
+    <ion-title>
+      Ionic Canvas
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="gotoImgs()" end>images</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding no-bounce>
+  
+  <div #fixedContainer ion-fixed >
+    <ion-row>
+      <ion-col *ngFor="let color of colors" [style.background]="color" class="color-block" tappable (click)="selectColor(color)"></ion-col>
+    </ion-row>
+
+    <ion-row radio-group [(ngModel)]="selectedColor">
+      <ion-col *ngFor="let color of colors" text-center>
+        <ion-radio [value]="color"></ion-radio>
+      </ion-col>
+    </ion-row>
+
+    <canvas #imageCanvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"></canvas>
+
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar id="bottomToolbar" #bottomToolbar>
+    <ion-buttons left>
+      <button color="green" ion-button icon-only (click)="saveCanvasImage()"><ion-icon name="md-checkmark-circle"></ion-icon></button>
+      <button color="pink" ion-button icon-only (click)="presentActionSheet()"><ion-icon name="image"></ion-icon></button>
+      <button color="danger" ion-button icon-only (click)="clearCanvas()"><ion-icon name="trash"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button color="dark" ion-button icon-only (click)="changeSize(5)"><ion-icon style="font-size: 1em;" name="radio-button-on"></ion-icon></button>
+      <button color="dark" ion-button icon-only (click)="changeSize(10)"><ion-icon style="font-size: 1.5em;" name="radio-button-on"></ion-icon></button>
+      <button color="dark" ion-button icon-only (click)="changeSize(15)"><ion-icon style="font-size: 2em;" name="radio-button-on"></ion-icon></button>
+      <button color="dark" ion-button icon-only (click)="changeSize(30)"><ion-icon style="font-size: 2.5em;" name="radio-button-on"></ion-icon></button>
+      <button color="dark" ion-button icon-only (click)="changeSize(50)"><ion-icon style="font-size: 3em;" name="radio-button-on"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

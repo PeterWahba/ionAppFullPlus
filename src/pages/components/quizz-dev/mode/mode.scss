@@ -1,0 +1,23 @@
+.mode {
+  
+  .toolbar-background {
+    background: transparent;
+  }
+
+  .bar-button-default, .toolbar-title {
+    color: #384252;
+  }
+
+
+  .cover {
+    height: 200px;
+    overflow: hidden;
+    margin-top: -56px;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: url('../assets/bgx.png');
+  }
+}

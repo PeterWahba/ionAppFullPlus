@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="orange">
+    <ion-title>Recent articles</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #ccc">
+  <ion-list>
+    <ion-item *ngFor="let feed of feeds" style="background-color: #efefef">
+      <ion-row>
+        <ion-col col-10>
+          <div (click)="openFeed(feed)">
+          <div style="font-size: 2rem">{{feed.title}}</div>
+          <div style="font-size: 1.4rem">{{feed.url}}</div>
+          </div>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon color="red" name="trash" (click)="deleteFeed(feed)" style="font-size: 3rem;"></ion-icon>
+
+        </ion-col>
+      </ion-row>
+
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+      <button (click)="addFeed()" ion-fab color="lime">
+          <ion-icon name="add"></ion-icon>
+        </button>
+    </ion-fab>
+
+
+ 
+
+
+</ion-content>

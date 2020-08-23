@@ -1,0 +1,39 @@
+
+<ion-header no-border class="home-header">
+
+  <ion-navbar color="white" style="background: none; border-bottom: none">
+    <ion-title>Home</ion-title>
+    <ion-buttons end only-icon>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="ios-log-out"></ion-icon>
+    </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding fullscreen="" shrink-header [headerToHide]="'home-header'">
+<div no-padding class="v-slide" style="min-height:20rem;">
+  <!-- <img style="padding-right:0px!important; width:100%" src="https://lh5.googleusercontent.com/p/AF1QipOjORyT80BtrnDuEMDt8OMg8liqSUmTu-7N8x9i=s396-k-no" /> -->
+</div>
+  <div padding>
+    <h3>
+      INTRODUCING YORDAN BARBER SHOP
+    </h3>
+    <p>
+      The concept behind Yordan Barber Shop was to create an oasis for men where they could receive not only the best men's haircuts
+      and traditional wet shaves but also other male grooming services from highlys skilled experts. We invite men and boys
+      of all ages to come and enjoy. We look forward to seeing you at the shop.
+    </p>
+
+    <br/>
+    <div id="installer">
+    <button outline round block ion-button >Install The App</button>
+    </div>
+    <br/>
+    <button outline round block ion-button (click)="setAppointment()">Set Appointment</button>
+    <br/>
+    <button ion-button outline round block  (click)="getDirections()">Get Directions</button>
+  </div>
+</ion-content>

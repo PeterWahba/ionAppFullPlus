@@ -1,0 +1,29 @@
+﻿  <ion-header>
+    <ion-navbar >
+      <ion-title>Stats</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content class="page-stats primary-bg-dark">
+    <div padding>
+      <canvas id="statsChart"></canvas>
+    </div>
+    
+    <div>
+      <h2 style="text-align:center"><strong>Total {{totalPts? totalPts: 0}} Pts</strong></h2>
+    </div>
+
+
+    <div>
+      <ion-list>
+        <ion-list-header class="green-contrast">Practice</ion-list-header>
+
+        <ion-item *ngFor="let item of practice; let i = index" class="dark-theme">
+          <!--<strong item-left>#{{i + 1}}</strong>-->
+          <p class="stats-date">{{item.userName}} - {{item.date}}</p>
+          <h2><strong>Score: </strong><span>{{item.correct}}/{{item.questions}}</span> - <span> {{item.pts? item.pts: 0}} Pts </span> 
+            <span>{{item.score}}%</span></h2>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>

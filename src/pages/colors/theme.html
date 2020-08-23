@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar   [color]="color" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Theme</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only >
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+</ion-navbar>
+
+ 
+</ion-header>
+
+<ion-content >
+    <ion-card>
+        <ion-card-content>
+            Those are samples of colors that you can use in your source code by setting the color property, for example color='indigo' in your HTML code
+        </ion-card-content>
+    </ion-card>
+<div >
+    <ion-list radio-group [(ngModel)]="color">
+      <ion-item tappable  *ngFor="let mdColor of mdColor " >
+        <button ion-button color="{{mdColor.colorName}}" item-left >{{mdColor.colorCode}}</button>
+        <ion-label>{{mdColor.colorName}}</ion-label>
+          <ion-radio value="{{mdColor.colorName}}" ionChange="changeColor(mdColor.colorName)"></ion-radio>
+      </ion-item>
+
+      <ion-item tappable  *ngFor="let iosColor of iosColor" >
+        <button ion-button color="{{iosColor.colorName}}" item-left >{{iosColor.colorCode}}</button>
+        <ion-label>{{iosColor.colorName}}</ion-label>
+          <ion-radio value="{{iosColor.colorName}}" ionChange="changeColor(mdColor.colorName)"></ion-radio>
+      </ion-item>
+
+      <ion-item tappable *ngFor="let miscColor of miscColor">
+        <button ion-button color="{{miscColor.colorName}}" item-left >{{miscColor.colorCode}}</button>
+        <ion-label>{{miscColor.colorName}}</ion-label>
+          <ion-radio value="{{miscColor.colorName}}" ionChange="changeColor(mdColor.colorName)"></ion-radio>
+      </ion-item>
+    </ion-list>
+</div>
+
+</ion-content>
+

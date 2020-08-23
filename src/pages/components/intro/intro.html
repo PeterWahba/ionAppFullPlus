@@ -1,0 +1,41 @@
+
+<ion-content fullscreen class="tutorial-page">
+  <ion-slides pager="true">
+
+      <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background-color': slide.color} "> 
+
+          <img [src]="slide.image" class="pop-in slide-image" />
+
+            <div class="intro-box">
+                <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+                <p [innerHTML]="slide.description"></p>
+            </div>
+
+          <ion-footer no-border>
+              <ion-toolbar transparent>
+                  <ion-buttons end padding>
+                      <button ion-button clear color="light"  (click)="openPage()">Skip</button>
+                  </ion-buttons>
+              </ion-toolbar>
+          </ion-footer>
+
+      </ion-slide>
+
+      <ion-slide style="background-color:#1175d3;">
+            <ion-toolbar transparent>
+                  <ion-buttons end>
+                      <button ion-button menuToggle clear color="light"></button>                                
+                  </ion-buttons>
+            </ion-toolbar>
+          <img src="./assets/slide5.png" class="slide-image" />
+            <div class="intro-box" margin-top>
+                <br />
+                <button ion-button large outline round icon-right color="white" (click)="openPage()" margin-top><!--menuToggle-->
+                  Start
+                </button>
+            </div>
+      </ion-slide>
+
+  </ion-slides>
+  
+</ion-content>         

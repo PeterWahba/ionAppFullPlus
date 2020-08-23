@@ -1,0 +1,36 @@
+﻿<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mode</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="mode primary-bg-dark">
+  <ion-navbar></ion-navbar>
+  <ion-row>
+    <ion-col>
+      <div *ngIf="!!category">
+        <div class="cover">
+          <h1 style="color:white!important">{{category.name}}</h1>
+        </div>
+        <div class="content" padding>
+          <!--<p>{{category.description}}</p>-->
+          <p>{{description}}</p>
+
+          <button class="button-font-color" *ngIf="!isWeb" color="quizzbtn" ion-button block (click)="presentPopover($event)">Select # of questions &nbsp; 
+            <ion-badge color="quizzbtndark" item-end>{{numberOfQuestions}}</ion-badge></button>
+
+          <button class="button-font-color" color="quizzbtn" ion-button block (click)="startQuiz(params.id, false)">Start</button>
+          <button class="button-font-color" color="quizzbtn" ion-button block (click)="goToStats(params.id)">Stats</button>
+          <button class="button-font-color" color="quizzbtn" ion-button block (click)="goToArchived()">Go to archived</button>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+</ion-content>

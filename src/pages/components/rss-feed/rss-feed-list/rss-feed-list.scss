@@ -1,0 +1,39 @@
+page-rss-feed-list {
+    .feed-list {
+        background: #535A55;
+        .feed-article {
+          height: 80px;
+          background: #ffffff;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          border-top: 0px;
+          color: #000000;
+        }
+        ion-list > .item:first-child, ion-list > .item-wrapper:first-child .item {
+          border-top: 0px;
+        }
+        ion-list .item .item-inner {
+          border-bottom: 0px;
+        }
+        .article-title {
+          font-weight: bold;
+        }
+      }
+     
+      #feed-spinner {
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        height: 100px;
+      }
+
+      h3.author-date{
+        margin-bottom:1rem;
+        font-size: 1.3rem!important;
+      }
+       
+      h2{
+        font-size: 2.3rem!important;
+      }
+
+}

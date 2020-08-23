@@ -1,0 +1,58 @@
+
+<ion-header >
+  <ion-navbar no-border-bottom color="deeppurple">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+       Social Wall
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+
+ <ion-list>
+  <ion-item-group>
+      <div stlye="timelineBg" *ngFor="let item of list" >
+          <ion-item-divider sticky class="boxy">
+            <ion-label>
+              <h2>{{item.date | date: 'fullDate'}}</h2>
+            </ion-label>
+          </ion-item-divider>
+
+          <ul class="content">
+              <li *ngFor="let list of  item.lists" margin-bottom class="box-background">
+                <img tappable src="{{list.profileImage}}" alt="" class="timeline-thumb pop-in" (click)="fullscreenImage(list.profileImage)">
+                <div class="timeline-item">
+                    <ion-row>
+                        <ion-col text-left>
+                            <strong>{{list.profileName}}</strong>
+                        </ion-col>
+                        <ion-col text-right padding-right>
+                            <ion-icon name="clock"></ion-icon> {{list.createdTime}}
+                        </ion-col>
+                    </ion-row>
+
+
+                  <p>{{list.description}}</p>
+                  <img tappable *ngIf="!!list.images" data-src="{{list.images}}" class="imageTimeline" (click)="fullscreenImage(list.images)">
+                  <ion-row class="timeline-stats">
+                      <ion-col text-center col-4><ion-icon name="eye"></ion-icon> 450</ion-col>
+                      <ion-col text-center col-4><ion-icon name="heart"></ion-icon> 2,450</ion-col>
+                      <ion-col text-center col-4><ion-icon name="chatboxes"></ion-icon> 254</ion-col>
+                    
+                  </ion-row>
+                </div>
+              </li>
+          </ul>
+      </div>
+  </ion-item-group>
+</ion-list>
+
+<ion-fab right bottom>
+  <button ion-fab color="blue2" (click)="openCalendar()"><ion-icon name="md-calendar"></ion-icon></button>
+</ion-fab>
+
+</ion-content>

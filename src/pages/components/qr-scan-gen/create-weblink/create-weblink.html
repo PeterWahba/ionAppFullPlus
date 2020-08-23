@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create Weblink</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item padding>
+      <label>http://</label>
+        <ion-input type="text" placeholder="Enter web link" [(ngModel)]="link">
+        </ion-input>
+      </ion-item>
+      <button color="ios-pink" ion-button full icon-left margin-top (click)="createCode()"><ion-icon name="barcode"></ion-icon>Create Code</button>
+      <button [disabled]="!createdCode" color="lime" ion-button full icon-left margin-top (click)="save(link)"><ion-icon name="md-checkmark-circle"></ion-icon>Save to the database</button>
+    
+      <ion-card *ngIf="createdCode">
+        <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+        <ion-card-content>
+          <p>Value:</p>
+          <div>{{ createdCode }}</div>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

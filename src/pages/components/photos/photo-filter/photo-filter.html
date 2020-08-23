@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar color="teal">
+
+    <ion-title>
+      Image Filter
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <web-photo-filter [class.only-original]="!selectedFilter" [class.no-original]="selectedFilter" [src]="image" [filter]="selectedFilter"
+    [level]="level" keep="true" (filterLoad)="imageLoaded($event)"></web-photo-filter>
+
+</ion-content>
+
+<ion-footer *ngIf="image">
+  <ion-toolbar color="teal">
+    <ion-row>
+      <ion-col>
+        <ion-range color="white" min="1" max="10" step="1" [(ngModel)]="level">
+          <ion-icon color="white" small range-left name="sunny"></ion-icon>
+          <ion-icon color="white" range-right name="sunny"></ion-icon>
+        </ion-range>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('Sepia')">
+                    Sepia
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('Polaroid')">
+                    Polaroid
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('greyscale')">
+                    Grey
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('contrast')">
+                    Contrast
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('brightness', 1.7)">
+                    Bright
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('saturation')">
+                    Saturation
+                  </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter('hue', 120)">
+                    Hue
+                  </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button outline color="white" (click)="filter('technicolor', 1)">
+              Technicolor
+                        </button>
+        </ion-col>
+
+
+      <ion-col>
+          <button ion-button outline color="white" (click)="filter('bgr', 1)">
+              Bgr
+                        </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline color="white" (click)="filter('vintage', 1)">
+                Vintage
+                          </button>
+          </ion-col>
+          <ion-col>
+              <button ion-button outline color="white" (click)="filter('violen_tomato', 1)">
+                  Violent tomato
+                            </button>
+            </ion-col>
+
+
+      <ion-col>
+        <button ion-button outline color="white" (click)="filter(null, 1)">
+                        No Filter
+                      </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button block color="amber" (click)="saveImage()">
+                        Done
+                      </button>
+        </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

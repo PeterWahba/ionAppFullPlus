@@ -1,0 +1,37 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created:
+-Install the cordoba plugin and ionic native wrapper:
+
+$ ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="To locate you"
+$ npm install --save @ionic-native/geolocation
+
+
+more info here: https://ionicframework.com/docs/native/geolocation/
+
+-Go to your app.modules.ts and import Geolocation, and register it withing the providers array, 
+
+
+import { Geolocation } from '@ionic-native/geolocation';
+ 
+ providers: [
+    ...
+    Geolocation,
+	...
+	]
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+
+See documentation to configure firebase: http://jomendez.com/ionAppFullPlus-documentation/#!/firebase_configuration
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.

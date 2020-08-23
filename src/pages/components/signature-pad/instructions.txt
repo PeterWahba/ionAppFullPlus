@@ -1,0 +1,19 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Plugins and dependencies needed:
+    npm install angular2-signaturepad --save
+    npm install @ionic/storage --save
+    cordova plugin add cordova-sqlite-storage --save
+
+
+
+Note:
+This component can be used on a PWA

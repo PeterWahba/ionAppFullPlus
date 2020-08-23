@@ -1,0 +1,36 @@
+<!--
+  Generated template for the AdmobPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="red">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Admob</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+    <h3>No Ad-Sharing</h3>
+    <p>Fot this section we are using admob cordova-plugin-admob-free, Unlike some other plugins, this plugin does not share
+      your advertising revenue by randomly display developer's owned ads.
+    </p>
+    <p>See documentation <a href="https://github.com/ratson/cordova-plugin-admob-free">here</a></p>
+    <div padding>
+        <button full ion-button (click)="showInterstitial()">
+            Show interstitial
+        </button>
+        <p></p>
+        <button full ion-button (click)="showVideoReward()">
+            Show Video Reward
+        </button>
+        
+    </div>
+  </div>
+</ion-content>

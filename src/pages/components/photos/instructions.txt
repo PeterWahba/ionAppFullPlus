@@ -1,0 +1,42 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component)
+
+See instruction to instal image gallery: http://jomendez.com/ionAppFullPlus-documentation/#!/image_gallery
+
+See documentation to configure firebase: http://jomendez.com/ionAppFullPlus-documentation/#!/firebase_configuration
+
+Plugins and dependencies:
+npm install angular-cropperjs
+ionic cordova plugin add cordova-plugin-camera
+npm install --save @ionic-native/camera
+Copy ./config/copy.config.js into your project (this is to import webphotofilter)
+Add  schemas: [CUSTOM_ELEMENTS_SCHEMA] to your app.modules
+ionic cordova plugin add cordova-instagram-plugin
+npm install --save @ionic-native/instagram
+Copy ./src/providers/firestore-storage to your project, with this provider the app will storage the images into the firebase storage and firestore
+
+
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.
+Also this feature need the user to be logged in, we recomend to use the login component included in this starter
+
+
+
+Posible error installing cordova-instagram-plugin:
+Plugin dependency "cordova-universal-clipboard@0.1.0" already fetched, using that version.
+Installing "cordova-universal-clipboard" for android
+Error during processing of action! Attempting to revert...
+Failed to install 'cordova-universal-clipboard': CordovaError: Uh oh!
+
+Solution:
+Remove cordova-universal-clipboard and re-install cordova-instagram-plugin

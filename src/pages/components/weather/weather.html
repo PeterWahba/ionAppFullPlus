@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-navbar color="weather-dark">
+        <ion-title>
+            Weather
+        </ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="getDeviceLocation()">
+                    <ion-icon name="md-locate"></ion-icon>
+                </button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <ion-toolbar no-border-top color="weather-dark">
+
+        <ion-segment [(ngModel)]="weatherTaps" color="white">
+            <ion-segment-button value="info">
+                Information
+            </ion-segment-button>
+            <ion-segment-button value="maps" (click)="runMaps()">
+                Maps
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+    <ion-row class="input-city" margin>
+        <ion-col col-10>
+            <ion-input placeholder="City Name" [(ngModel)]="cityName"></ion-input>
+        </ion-col>
+        <ion-col col-2 text-center>
+            <ion-icon color="weather-dark" style="font-size: 4rem;" name="ios-send-outline" (click)="getData()"></ion-icon>
+        </ion-col>
+    </ion-row>
+    <div id="weather">
+        <div *ngIf="weatherTaps == 'info'">
+            <ion-row style="color: white">
+                <ion-col col-2>
+                </ion-col>
+                <ion-col col-8>
+                    <ion-row>
+                        <ion-col text-center style="font-size: 3rem;"><span>{{ weatherInfo.name }}</span>, <span *ngIf="weatherInfo.sys">{{ weatherInfo.sys.country }}</span></ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col text-center><span style="font-size: 2rem;" *ngIf="weatherInfo.weather && weatherInfo.weather.length > 0">{{ weatherInfo.weather[0].description }}</span></ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col text-center><span style="font-size:8rem" *ngIf="weatherInfo.main">{{ temp }} F</span></ion-col>
+                    </ion-row>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-2>
+                </ion-col>
+                <ion-col text-center style="color:white; font-size: 1.5rem">
+                    <div style="margin:0.5rem" *ngIf="weatherInfo.coord"> Coordinates: {{ weatherInfo.coord.lon}}, {{weatherInfo.coord.lat}}</div>
+                    <div style="margin:0.5rem" *ngIf="weatherInfo.main"> Pressure: {{ weatherInfo.main.pressure }} mmHg</div>
+                    <div style="margin:0.5rem" *ngIf="weatherInfo.main"> Humidity: {{ weatherInfo.main.humidity }} %</div>
+                    <div style="margin:0.5rem" *ngIf="weatherInfo.wind"> Wind Speed: {{ weatherInfo.wind.speed }} m/sec </div>
+                    <div style="margin:0.5rem" *ngIf="weatherInfo.wind"> Wind Angle: {{ weatherInfo.wind.deg }} deg</div>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div *ngIf="weatherTaps == 'maps'">
+            <div>
+
+                <ion-item color="weather-dark">
+                    <ion-label>Switch Static Map</ion-label>
+                    <ion-toggle color="white" [(ngModel)]="isStatic" (ionChange)="updateItem()"></ion-toggle>
+                </ion-item>
+
+                <div id="map" #map style='width: 100%; height: 35rem;'></div>
+
+            </div>
+        </div>
+    </div>
+</ion-content>

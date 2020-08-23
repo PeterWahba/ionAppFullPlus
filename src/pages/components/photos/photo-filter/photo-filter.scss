@@ -1,0 +1,11 @@
+page-photo-filter {
+    canvas {
+        width: 100%;
+      }
+      .no-original img.display-no-filter {
+        display: none !important;
+        }
+      .only-original canvas {
+        display: none !important;
+      }
+}

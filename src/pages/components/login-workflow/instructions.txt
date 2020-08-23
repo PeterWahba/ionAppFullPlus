@@ -1,0 +1,19 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+
+On your firebase dashboard enable the email/password methods, see documentation: http://jomendez.com/ionAppFullPlus-documentation/#!/firebase_configuration
+	
+Notes:
+For this component to work you need to setup firebase and also import the DatabaseProvider from "/providers/database/database" included on the ionAppFullPlus project.
+Also import /providers/auth-data provided from ionAppFullPlus to your app
+Also copy src/config/config.ts from this project (ionAppFullPlus) to your application, and enter your firebase information.
+For login pwa you should copy the vegasJS library on assets to your app's assets and also include jquery in the index.html

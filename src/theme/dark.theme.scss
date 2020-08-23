@@ -1,0 +1,31 @@
+.dark-theme {
+      background-color: #090f2f!important;
+      color: #fff;
+    
+    .toolbar-title {
+      color: #fff;
+    }
+
+    
+    div#theme::after {
+        background: url(http://www.pngonly.com/wp-content/uploads/2017/06/Dragon-PNG-Clipart.png) no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+        content: ""; 
+      }
+   
+    ion-navbar .toolbar-background, ion-navbar .toolbar-background-md {
+      border-color: #ff0fff!important;
+      background-color: #080E2F!important;
+    }
+
+    ion-navbar{
+        border-bottom: 1px solid #ff0fff; 
+    }
+  }  

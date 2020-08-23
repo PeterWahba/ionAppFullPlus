@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ userinfo.to.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  #content id="content">
+
+    <ion-list>
+        <ion-item *ngFor="let msg of messageList" text-wrap>
+          <ion-avatar item-end *ngIf="IamAuthor(msg)">
+            <img [src]="getAuthorAvatar(msg)" onerror="this.src='./assets/imgs/avatar.png'">
+          </ion-avatar>
+          <ion-avatar item-start *ngIf="!IamAuthor(msg)">
+              <img [src]="getAuthorAvatar(msg)" onerror="this.src='./assets/imgs/avatar.png'">
+            </ion-avatar>
+  
+
+          <h2>{{getMsgAuthorName(msg)}}</h2>
+          <div class="text-message {{IamAuthor(msg)? 'text-message-right': 'text-message-left'}}" padding  (tap)="msg.showButtons? msg.showButtons = false :msg.showButtons = true">
+          <span class="text-message-body">  {{msg.msgText}}</span>
+          <img *ngIf="msg.image" class="{{msg.image? 'image-loaded': ''}}" [src]="msg.image" width="100%" height="100%" (click)="fullscreenImage(msg.image)" (load)="onAllImagesLoad($event)" />
+          </div>
+          <small class="small-text">{{msg.sentDate | date:'MMM dd, yyyy h:mm a'}}</small>
+          <span *ngIf="msg.showButtons">
+            <button  icon-start  ion-button clear (tap)="copyMsg(msg)"><ion-icon name="copy" class="action-icon"></ion-icon></button>
+            <button  icon-end  ion-button clear (tap)="deleteMsg(msg)"><ion-icon name="trash" class="action-icon" color="danger"></ion-icon></button>
+          </span>
+        </ion-item>
+      </ion-list>
+<ion-row>
+  <ion-col>
+    <div text-right  class="{{read? 'read-color': 'unread-color'}}">
+    <ion-icon name="md-checkmark" ></ion-icon>
+    <ion-icon name="md-checkmark" ></ion-icon>
+    </div>
+  </ion-col>
+</ion-row>
+      
+</ion-content>
+<ion-footer>
+  <div class="small-text" *ngIf="showIsTyping">{{userinfo.to.name}} is Typing...</div>
+    <ion-item>
+  <button ion-button clear icon-only item-left (click)="attachImg()">
+      <ion-icon name="image"></ion-icon>
+    </button>
+  <ion-input type="text" [(ngModel)]="text" placeholder="Enter your messages" (input)="iamTyping()"></ion-input>
+      <button ion-button clear icon-only item-right (click)="sendMsg()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-item>
+</ion-footer>

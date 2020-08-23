@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="orange">
+    <ion-title>
+      Media Capture & Play
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let file of mediaFiles" tappable text-wrap>
+      <span (click)="play(file)">{{ file.name }}</span>
+      <p>{{ file.size / 1000 / 1000 | number }} MB</p>
+     <ion-icon name="trash" color="red" item-right (click)="deleteMediaFiles(file)"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+
+  <div *ngIf="openModal" id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span (click)="openModal = false" class="close">&times;</span>
+     <div style="width:100%; height: 100%;">
+        <video style="max-width: 100%; width:100%" controls autoplay #myvideo id="myvideo">
+          </video>
+     </div>
+    </div>
+  </div>
+  
+
+  <div class="audio-wave" *ngIf="audioWave">
+    <img src="./assets/sound.gif"/>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <button color="ios-yellow" ion-button full icon-left (click)="captureAudio()">
+                <ion-icon name="mic"></ion-icon> Capture Audio</button>
+      </ion-col>
+      <ion-col>
+        <button color="ios-orange" ion-button full icon-left (click)="stopRecordingAudio()">
+                <ion-icon name="mic-off"></ion-icon>Stop capturing Audio</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button color="ios-pink" ion-button full icon-left (click)="captureVideo()">
+                <ion-icon name="videocam"></ion-icon>Capture Video</button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

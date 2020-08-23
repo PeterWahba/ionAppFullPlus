@@ -1,0 +1,136 @@
+
+<!--***********  Header with segment  ***********-->
+<ion-header>
+  <ion-navbar color="blue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      {{name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="p-light">
+
+    <div *ngIf="isDataAvailable">
+    <!--*********** Bar chart  ***********-->
+        <div *ngIf="chartView==='bar'">
+
+            <!--*********** Vertical ***********-->
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(http://cdn.multichannelmerchant.com/wp-content/uploads/2017/11/160504-bitcoin-bc.jpg)"></div>
+
+                <ion-card-header class="light-font">
+                   {{name}} Bar chart (vertical)
+                </ion-card-header>
+                <ion-card-content>
+                    <canvas baseChart
+                            [data]="chartData"
+                            [labels]="chartLabels"
+                            [legend]="chartLegend"
+                            [colors]="chartColor1"
+                            [options]="lineChartOptions"
+                            chartType="bar"></canvas>
+                </ion-card-content>
+            </ion-card>
+
+            <!--*********** Horizontal  ***********-->
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(http://cdn.multichannelmerchant.com/wp-content/uploads/2017/11/160504-bitcoin-bc.jpg)"></div>
+
+                <ion-card-header class="light-font">
+                   {{name}} Bar chart (horizontal)
+                </ion-card-header>
+                <ion-card-content>
+                    <canvas baseChart
+                            [data]="chartData"
+                            [labels]="chartLabels"
+                            [legend]="chartLegend"
+                            [colors]="chartColor1"
+                            [options]="lineChartOptions"
+                            chartType="horizontalBar"></canvas>
+                </ion-card-content>
+            </ion-card>
+        </div>
+      
+    <!--*********** Pie chart  ***********-->
+
+        <div *ngIf="chartView==='pie'">
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(https://qzprod.files.wordpress.com/2017/12/bitcoin.jpg?quality=80&strip=all&w=1600)"></div>
+
+                <ion-card-header class="light-font">
+                   {{name}} Pie Chart
+                </ion-card-header>
+                <ion-card-content no-padding>
+                    <canvas baseChart
+                            [data]="chartData"
+                            [labels]="chartLabels"
+                            [colors]="chartColor1"
+                            chartType="pie"></canvas>
+                </ion-card-content>
+
+            </ion-card>
+        </div>
+
+
+    <!--*********** Line chart  ***********-->
+        <div *ngIf="chartView==='line'">
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(https://news.bitcoin.com/wp-content/uploads/2017/06/shutterstock_550971307-1.jpg)"></div>
+
+                <ion-card-header class="light-font">
+                  {{name}}  Line Chart
+                </ion-card-header>
+                <ion-card-content>
+                    <canvas baseChart
+                            [data]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [legend]="chartLegend"
+                            [colors]="chartColorForLine"
+                            [options]="lineChartOptions"
+                            chartType="line"></canvas>
+                </ion-card-content>
+            </ion-card>
+        </div>
+
+    <!--*********** More chart  ***********-->
+        <div *ngIf="chartView==='douhnut'">
+
+            <!--*********** Doughnut chart  ***********-->
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(https://99bitcoins.com/wp-content/uploads/2015/09/shutterstock_310309553-1.jpg)"></div>
+
+                <ion-card-header class="light-font">
+                  {{name}} Doughnut Chart
+                </ion-card-header>
+                <ion-card-content no-padding>
+                    <canvas baseChart
+                            [data]="chartData"
+                            [labels]="chartLabels"
+                            [colors]="chartColor1"
+                            chartType="doughnut"></canvas>
+                </ion-card-content>
+            </ion-card>
+            <ion-card class="p-dark">
+                <div class="banner-bg" style="background-image:url(https://99bitcoins.com/wp-content/uploads/2015/09/shutterstock_310309553-1.jpg)"></div>
+
+                <ion-card-header class="light-font">
+                    {{name}} Half Doughnut Chart
+                </ion-card-header>
+                <ion-card-content no-padding>
+                    <canvas baseChart
+                            [data]="chartData"
+                            [labels]="chartLabels"
+                            [colors]="chartColor1"
+                            [options]="halfDonutOption"
+                            chartType="doughnut"></canvas>
+                </ion-card-content>
+            </ion-card>
+            
+        </div>
+    </div>
+</ion-content>

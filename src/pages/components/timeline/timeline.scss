@@ -1,0 +1,98 @@
+page-timeline {
+
+
+    .boxy {
+        box-shadow: 0px 0px 0.1px 2px;
+    }
+
+    .box-background {
+        background-color: rgba(0, 54, 253, 0.27);
+        border-radius: 40px;
+    }
+
+    .leftLine {
+        //  border-left: 2px solid dashed
+        border-left-color: color($colors, ios-blue);
+        padding-left: 10px;
+        margin-left: 10px;
+        border-left-style: solid;
+        border-left-width: 2px;
+    }
+
+    .imageTimeline {
+        padding: 10px 25px 15px 0px;
+    }
+
+    .highlight {
+        color: color($colors, ios-blue);
+    }
+
+    .icon-size-lg {
+        font-size: 40px;
+    }
+
+    .pos-absolute-right {
+        position: absolute;
+        right: 8px;
+    }
+
+    .content {
+        position: relative;
+        margin: 15px 0 0 0;
+    }
+
+
+    .bar-stable {
+        background-color: #d9d9d9 !important;
+    }
+
+    .tabs {
+        background-color: #d9d9d9 !important;
+    }
+
+    .content:before {
+        width: 2px;
+        background: color($colors, ios-blue);
+        left: 44px;
+        margin-left: -10px;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .content .timeline-thumb {
+        border-radius: 500px;
+        width: 60px;
+        background-color: rgba(0, 54, 253, 0.27);
+        border: 2px solid rgba(0, 54, 253, 0.27);
+        position: absolute;
+        left: 10px;
+        z-index: 2;
+    }
+
+    .content .timeline-thumb.timeline-icon {
+        text-align: center;
+        color: white;
+        height: 50px;
+        border: 5px solid #CBD0D3;
+    }
+
+    .content .timeline-thumb.timeline-icon i {
+        margin: 6px 0;
+        font-size: 28px;
+        display: block;
+    }
+
+    .content .timeline-item {
+        margin-left: 35px;
+        padding-bottom: 16px;
+    }
+
+    .content .timeline-stats {
+        font-size: 12px;
+        position: relative;
+        color: black;
+    }
+}

@@ -1,0 +1,44 @@
+Installing "cordova-instagram-plugin" for android
+Installing "cordova-universal-clipboard" for android
+ANDROID_HOME=C:\Users\pepe\AppData\Local\Android\sdk
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
+Subproject Path: CordovaLib
++-----------------------------------------------------------------
+| cordova-android-support-gradle-release: 27.+
++-----------------------------------------------------------------
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+	at build_f3jxgmvzx27k1sjkvc9z0iw2e.run(C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\build.gradle:145)
+The JavaCompile.setDependencyCacheDir() method has been deprecated and is scheduled to be removed in Gradle 4.0.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+:clean
+:CordovaLib:clean
+
+BUILD SUCCESSFUL
+
+Total time: 8.921 secs
+Error during processing of action! Attempting to revert...
+Failed to install 'cordova-universal-clipboard': CordovaError: Uh oh!
+"C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\src\com\verso\cordova\clipboard\Clipboard.java" already exists!
+    at copyNewFile (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\lib\pluginHandlers.js:245:45)
+    at install (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\lib\pluginHandlers.js:43:17)
+    at ActionStack.process (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\ActionStack.js:56:25)
+    at PluginManager.doOperation (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\PluginManager.js:114:20)
+    at PluginManager.addPlugin (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\PluginManager.js:144:17)
+    at C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\Api.js:243:74
+    at _fulfilled (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:854:54)
+    at self.promiseDispatch.done (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:883:30)
+    at Promise.promise.promiseDispatch (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:816:13)
+    at C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:624:44
+Failed to install 'cordova-instagram-plugin': CordovaError: Uh oh!
+"C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\src\com\verso\cordova\clipboard\Clipboard.java" already exists!
+    at copyNewFile (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\lib\pluginHandlers.js:245:45)
+    at install (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\lib\pluginHandlers.js:43:17)
+    at ActionStack.process (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\ActionStack.js:56:25)
+    at PluginManager.doOperation (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\PluginManager.js:114:20)
+    at PluginManager.addPlugin (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\cordova-common\src\PluginManager.js:144:17)
+    at C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\Api.js:243:74
+    at _fulfilled (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:854:54)
+    at self.promiseDispatch.done (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:883:30)
+    at Promise.promise.promiseDispatch (C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:816:13)
+    at C:\Users\pepe\Source\Repos\ionAppFullPlus\ionAppFullPlus\platforms\android\cordova\node_modules\q\q.js:624:44

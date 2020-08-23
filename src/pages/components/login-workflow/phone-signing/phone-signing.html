@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="pink">
+    <ion-title>Phone Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="!isSignin">
+    <div id="recaptcha-container"></div>
+    <ion-item>
+      <ion-label stacked>Phone Number</ion-label>
+      <ion-input type="number" [(ngModel)]="phoneNumber"></ion-input>
+    </ion-item>
+
+    <button ion-button id="sign-in-button" (click)="signIn(phoneNumber)" color="pink"> Sign In</button>
+  </div>
+
+  <div *ngIf="isSignin">
+    <h2>You have succesfully sign in using your phone number</h2>
+    <p>Please go ahead and complete your profile information</p>
+    <button ion-button (click)="gotoProfile()" color="pink">Open Profile</button>    
+  </div>
+</ion-content>

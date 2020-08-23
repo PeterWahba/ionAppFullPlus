@@ -1,0 +1,32 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component)
+
+
+Plugins and dependencies:
+ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="To track your walks"
+ionic cordova plugin add cordova-sqlite-storage
+npm install --save @ionic-native/geolocation
+
+
+ You'll need to obtain a google map api and place the following code into src/index.html
+<script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
+
+
+For IOS user, you'll need to include the following code within the config.xml
+
+<edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+    <string>This App wants to track your location</string>
+</edit-config>
+
+
+
+

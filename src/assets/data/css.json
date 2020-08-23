@@ -1,0 +1,444 @@
+﻿{
+  "id": "8",
+  "language": "css",
+  "description": "Here goes the description for the category.",
+  "excerpt": "Generic Css questions going from simple to complex, with code examples.!",
+  "image": "",
+  "name": "Css",  
+  "level": "1",
+  "membership": "1",
+  "books": [
+    "https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=B0131MQ1NS&asins=B0131MQ1NS&linkId=34fa0eb58d1f19403c1cd56cdcf11393&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1491918055&asins=1491918055&linkId=adfa015bd23290dbf829d4c50b202e62&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    ,"https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=quiz-app-20&marketplace=amazon&region=US&placement=1449393195&asins=1449393195&linkId=ff4dfcccb36e3ae4638bdb110a3dae6c&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"
+  ],
+  "questions": [
+    {
+      "answer": 0,
+      "options": [ "background-color", "color", "None", "color:background", "background:color" ],
+      "title": "In CSS,select the property used to set the background color of an image?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "image-list:", "list-image:", "None", "list-style-image:", "list-image-src:" ],
+      "title": "In CSS, Select the property to set an image in a list instead of a standard bullet?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ ".warning { }", "#warning { }", "warning { }", "p { }", "None" ],
+      "title": "In CSS, what is the correct option to select only the paragraphs with class name “warning”?&lt;br&gt;&lt;p class=”warning”&gt;Don’t do it.&lt;/p&gt;&lt;br&gt;&lt;p&gt;Do it.&lt;/p&gt;&lt;br&gt;&lt;p class=”warning”&gt;Nooo, don’t do it.&lt;/p&gt;",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "spacing", "margin", "padding", "border", "None" ],
+      "title": "Select the property that is used to create spacing between HTML elements?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "list-style-type:upper-roman;", "list-bullet-type:roman-numerals;", "list-style:roman;", "list-type:roman;", "None" ],
+      "title": "Select the property that is used to change the list style to show roman numerals instead of normal numbers?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "#p { }", "p { }", ".p { }", "<p> { }", "None" ],
+      "title": "In CSS, what is the correct option to select all thetags on a page?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "display:inline;", "display:left;", "display:horizontal;", "None" ],
+      "title": "In CSS, Select the appropriate option to style an element so that the next element would appear right next to it not underneath it if both elements widths were collectively smaller than the container element?",
+      "code": ""
+    },
+    {
+      "answer": 4,
+      "options": [ ".mainpic { }", "img { }", "None", "mainpic { }", "#mainpic { }" ],
+      "title": "In CSS, choose the correct option to select this image by its id?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "padding", "spacing", "None", "margin", "border" ],
+      "title": "Select the property used to create space between the element’s border and inner content?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "line-height", "line-spacing", "letter-spacing", "spacing", "None" ],
+      "title": "In CSS,Select the property used to set the spacing in between lines of text?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "a:focus", "a:active", "None", "a:link", "a:visited" ],
+      "title": "For users that use the tab key to navigate websites, what property represents this way of moving from one element to another?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "marker-offset", "list-style-position", "list-style-image", "list-style" ],
+      "title": "Which of the following property specifies the distance between a marker and the text in the list?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ ":border-color", ":border-style", ":border-width", ":border-bottom-color" ],
+      "title": "Which of the following property specifies whether a border should be solid, dashed line, double line, or one of the other possible values?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "border", "height", "width", "-moz-opacity" ],
+      "title": "Which of the following property is used to set the width of an image?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "color", "direction", "letter-spacing", "word-spacing" ],
+      "title": "Which of the following property is used to add or subtract space between the letters that make up a word?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "background-attachment", "background", "background-repeat", "background-position" ],
+      "title": "Which of the following property is used as a shorthand to specify a number of other background properties?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "px", "vh", "vw", "vmin" ],
+      "title": "Which of the following uses 1vw or 1vh, whichever is smaller?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "Any inline style sheet takes highest priority. So, it will override any rule defined in tags or rules defined in any external style sheet file.", "Any rule defined in tags will override rules defined in any external style sheet file.", "Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.", "All of the precents." ],
+      "title": "Which of the following is a true about CSS style overriding?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ ":border-top-color", ":border-left-color", ":border-right-color", ":border-bottom-color" ],
+      "title": "Which of the following property changes the color of left border?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ ":border-color", ":border-style", ":border-width", ":border-bottom-color" ],
+      "title": "Which of the following property changes the color of bottom border?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "text-indent", "text-align", "text-decoration", "text-transform" ],
+      "title": "Which of the following property is used to capitalize text or convert text to uppercase or lowercase letters?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "color", "direction", "letter-spacing", "word-spacing" ],
+      "title": "Which of the following property is used to add or subtract space between the words of a sentence?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "font-family", "font-style", "font-variant", "font-weight" ],
+      "title": "Which of the following property is used to change the face of a font?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "in", "mm", "pc", "pt" ],
+      "title": "Which of the following defines a measurement in picas?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "%", "cm", "em", "ex" ],
+      "title": "Which of the following defines a relative measurement for the height of a font in em spaces?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "p[lang]", "p[lang='fr']", "p[lang~='fr']", "p[lang|='fr']" ],
+      "title": "Which of the following selector selects all paragraph elements whose lang attribute has a value of exactly 'fr'?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "padding-bottom", "padding-top", "padding-left", "padding-right" ],
+      "title": "Which of the following property specifies the left padding of an element?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "list-style-type", "list-style-position", "list-style-image", "list-style" ],
+      "title": "Which of the following property specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker of a list?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ ":border-bottom-style", ":border-top-style", ":border-left-style", ":border-right-style" ],
+      "title": "Which of the following property changes the style of bottom border?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ ":table-layout", ":border-spacing", ":caption-side", ":empty-cells" ],
+      "title": "Which of the following property of a table element allows browsers to speed up layout of a table by using the first width properties it comes across for the rest of a column rather than having to load the whole table before rendering it?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "text-indent", "text-align", "text-decoration", "text-transform" ],
+      "title": "Which of the following property is used to capitalize text or convert text to uppercase or lowercase letters?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "text-indent", "text-align", "text-decoration", "text-transform" ],
+      "title": "Which of the following property is used to underline, overline, and strikethrough text?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "background-attachment", "background", "background-repeat", "background-position" ],
+      "title": "Which of the following property is used to control the scrolling of an image in the background?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "vh", "px", "vw", "vmin" ],
+      "title": "Which of the following defines a measurement in screen pixels?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "in", "mm", "pc", "pt" ],
+      "title": "Which of the following defines a measurement in inches?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "The Type Selector", "The Universal Selector", "The Descendant Selector", "The Class Selector" ],
+      "title": "Which of the following selector matches a particular element only when it lies inside a particular element?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "padding-bottom", "padding-top", "padding-left", "padding-right" ],
+      "title": "Which of the following property specifies the right padding of an element?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ ":margin", ":margin-bottom", ":margin-top", ":margin-left" ],
+      "title": "Which of the following property specifies the left margin of an element?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ ":border-bottom-width", ":border-top-width", ":border-left-width", ":border-right-width" ],
+      "title": "Which of the following property changes the width of left border?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ ":border-collapse", ":border-spacing", ":caption-side", ":empty-cells" ],
+      "title": "Which of the following property of a table element specifies whether the border should be shown if a cell is empty?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ ":link", ":visited", ":hover", ":active" ],
+      "title": "Which of the following property of a anchor element signifies visited hyperlinks?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "color", "direction", "letter-spacing", "word-spacing" ],
+      "title": "Which of the following property is used to set the color of a text?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "background-color", "background-image", "background-repeat", "background-position" ],
+      "title": "Which of the following property is used to control the repetition of an image in the background?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "This is a shorter form of the six-digit notation.", "In this format, each digit is replicated to arrive at an equivalent six-digit value.", "Each hexadecimal code will be preceded by a pound or hash sign '#'.", "All of the precents." ],
+      "title": "Which of the following is correct about Short Hex Code format of CSS colors?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "p[lang]", "p[lang='fr']", "p[lang~='fr']", "p[lang|='fr']" ],
+      "title": "Which of the following selector selects all paragraph elements whose lang attribute contains the word 'fr'?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "The Type Selector", "The Universal Selector", "The Descendant Selector", "The Class Selector" ],
+      "title": "Which of the following selector matches all elements of a type?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "font-family", "font", "Both font-family and font can be used" ],
+      "title": "Which property is used to change the font of an element?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "relative", "static", "absolute", "fixed" ],
+      "title": "What is the default value of the position property?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "Separate each selector with a comma", "Separate each selector with a space", "Separate each selector with a plus sign" ],
+      "title": "How do you group selectors?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "div p", "div + p", "div.p" ],
+      "title": "How do you select all p elements inside a div element?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ ".test", "#test", "test", "*test" ],
+      "title": "How do you select elements with class name 'test'?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "*demo", "#demo", ".demo", "demo" ],
+      "title": "How do you select an element with id 'demo'?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "list-style-type: square;", "list: square;", "list-type: square;" ],
+      "title": "How do you make a list that lists its items with squares?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Yes", "No" ],
+      "title": "When using the padding property; are you allowed to use negative values?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "padding-left", "margin-left", "indent" ],
+      "title": "Which property is used to change the left margin of an element?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "border-width:10px 5px 20px 1px;", "border-width:5px 20px 10px 1px;", "border-width:10px 1px 5px 20px;", "border-width:10px 20px 5px 1px;" ],
+      "title": "How do you display a border like this:<br>The top border = 10 pixels<br>The bottom border = 5 pixels<br>The left border = 20 pixels<br>The right border = 1pixel?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "font:bold;", "style:bold;", "font-weight:bold;" ],
+      "title": "How do you make the text bold?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "You can't do that with CSS", "text-transform:capitalize", "text-transform:uppercase" ],
+      "title": "How do you make each word in a text start with a capital letter?",
+      "code": ""
+    },
+    {
+      "answer": 3,
+      "options": [ "a {decoration:no-underline;}", "a {text-decoration:no-underline;}", "a {underline:none;}", "a {text-decoration:none;}" ],
+      "title": "How do you display hyperlinks without an underline?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "p {font-weight:bold;}", "<p style='text-size:bold;'>", "p {text-size:bold;}", "<p style='font-size:bold;'>" ],
+      "title": "What is the correct CSS syntax for making all the <p> elements bold?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "font-size", "text-style", "text-size", "font-style" ],
+      "title": "Which CSS property controls the text size?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "fgcolor", "text-color", "color" ],
+      "title": "Which CSS property is used to change the text color of an element?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "h1.all {background-color:#FFFFFF;}", "all.h1 {background-color:#FFFFFF;}", "h1 {background-color:#FFFFFF;}" ],
+      "title": "How do you add a background color for all <h1> elements?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "color", "bgcolor", "background-color" ],
+      "title": "Which property is used to change the background color?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "/* this is a comment */", "// this is a comment //", "' this is a comment", "// this is a comment" ],
+      "title": "How do you insert a comment in a CSS file?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "body {color: black;}", "{body:color=black;}", "body:color=black;", "{body;color:black;}" ],
+      "title": "Which is the correct CSS syntax?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "styles", "style", "font", "class" ],
+      "title": "Which HTML attribute is used to define inline styles?",
+      "code": ""
+    },
+    {
+      "answer": 0,
+      "options": [ "<style>", "<css>", "<script>" ],
+      "title": "Which HTML tag is used to define an internal style sheet?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "At the end of the document", "In the <head> section", "In the <body> section" ],
+      "title": "Where in an HTML document is the correct place to refer to an external style sheet?",
+      "code": ""
+    },
+    {
+      "answer": 2,
+      "options": [ "<style src='mystyle.css'>", "<stylesheet>mystyle.css</stylesheet>", "<link rel='stylesheet' type='text/css' href='mystyle.css'>" ],
+      "title": "What is the correct HTML for referring to an external style sheet?",
+      "code": ""
+    },
+    {
+      "answer": 1,
+      "options": [ "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets", "Computer Style Sheets" ],
+      "title": "What does CSS stand for?",
+      "code": ""
+    }
+  ]
+
+}

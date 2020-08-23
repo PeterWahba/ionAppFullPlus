@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Transactions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<div >
+  <div text-center >
+    <h1>Enter transaction</h1>
+  </div>
+  <ion-row align-items-end>
+    <ion-col col-2>
+      
+      <div padding style="font-size:3rem;" (click)="transaction.expense = !transaction.expense">
+             <ion-icon [color]="transaction.expense ? 'red' : 'purple'" name="remove" *ngIf="transaction.expense"></ion-icon>
+             <ion-icon [color]="transaction.expense ? 'red' : 'purple'" name="add" *ngIf="!transaction.expense"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col col-5>
+      <ion-item >
+        <ion-label floating>Value</ion-label>
+        <ion-input type="number" [(ngModel)]="transaction.value"></ion-input>
+      </ion-item>
+
+    </ion-col>
+    <ion-col col-5>
+      <ion-item >
+        <ion-label floating>Month</ion-label>
+        <ion-select [(ngModel)]="transaction.month">
+          <ion-option [value]="month.value" *ngFor="let month of months">{{ month.name }}</ion-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <button color="pink" ion-button full (click)="addTransaction()">Add Transaction</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-card [hidden]="!chartData" >
+    <ion-card-header>
+      Analytics
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #valueBarsCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>

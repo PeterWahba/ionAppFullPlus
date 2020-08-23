@@ -1,0 +1,83 @@
+
+
+<ion-header no-border  class="feed-header" >
+    <ion-navbar color="white" style="background: none; border-bottom: none" >
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Social Feed Cards</ion-title>
+   
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen="" no-paddding shrink-header  [headerToHide]="'feed-header'">
+
+    <ion-card *ngFor="let feed of feeds | async">
+        <ion-item sticky>
+            <ion-avatar item-left>
+                <img [src]="feed.imgProfile">
+            </ion-avatar>
+            <h2>{{feed.name}}</h2>
+        </ion-item>
+        <ion-row>
+            <ion-col col-8>
+
+                <ion-card-content>
+                    <ion-card-title>
+                        {{feed.title}}
+                    </ion-card-title>
+                    <p>
+                        {{feed.description}}
+                    </p>
+                </ion-card-content>
+            </ion-col>
+            <ion-col col-4 align-self-center>
+                <ion-slides pager style="width:100px; height:100px; margin:0 auto"  (click)="openFullImage(i, feed.images)">
+                    <ion-slide *ngFor="let images of feed.images; let i = index" [ngStyle]="{'background' : 'url(' + images.url + ')'}">
+                    </ion-slide>
+                </ion-slides>
+
+            </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-left clear color="gray">
+                    <ion-icon name="md-heart"></ion-icon>
+                    <div>{{feed.like}}</div>
+                </button>
+            </ion-col>
+
+            <ion-col>
+                <button ion-button icon-left clear color="gray">
+                    <ion-icon name="md-chatboxes"></ion-icon>
+                    <div>{{feed.comment}}</div>
+                </button>
+            </ion-col>
+
+            <ion-col>
+                <button ion-button icon-left clear color="gray">
+                    <ion-icon name="time"></ion-icon>
+                    <div style="font-size:12px">{{feed.startTime}}</div>
+                </button>
+            </ion-col>
+
+            <ion-col center text-center>
+                <ion-fab middle right edge class="hello pop-in">
+                    <button ion-fab mini color="light"><ion-icon name="md-share"></ion-icon></button>
+                    <ion-fab-list side="left">
+                        <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+                        <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+                        <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+                        <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+                    </ion-fab-list>
+                </ion-fab>
+
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
+
+ 
+</ion-content>

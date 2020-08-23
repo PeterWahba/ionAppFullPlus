@@ -1,0 +1,25 @@
+.light-theme {
+    background-color: #fff!important;
+    color: black;
+
+  div#theme::after {
+    background: url(http://getdrawings.com/images/chinese-dragon-line-drawing-25.png) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    content: ""; 
+  }
+ 
+  .toolbar-background {
+    background-color: #fff;
+    color: black!important;
+    border-bottom: 1px solid brown;
+  }
+
+
+}

@@ -1,0 +1,64 @@
+.quiz-area {
+
+  .toolbar-background {
+    background: transparent;
+  }
+
+  .bar-button-default, .toolbar-title {
+    color: #384252;
+  }
+
+
+  .cover {
+    height: 200px;
+    overflow: hidden;
+    margin-top: -56px;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  p {
+    text-align: center;
+    margin: 32px;
+    color: white;
+  }
+
+
+
+  .item-radio ion-label {
+    text-overflow: initial;
+    white-space: initial;
+  }
+
+  .radio-inner {
+    background-color: #777;
+  }
+
+  .radio-disabled[wrong], .item-radio-disabled ion-label[wrong],
+  .radio-disabled[right], .item-radio-disabled ion-label[right] {
+    opacity: 1;
+  }
+  /*p {
+    color: #666;
+    font-size: 1.6rem;
+    text-align: justify;
+  }*/
+  img {
+    margin-bottom: 16px;
+  }
+
+  .item-radio-checked ion-label[right] {
+    color: color($colors, right);
+  }
+
+  .item-radio-checked ion-label[wrong] {
+    color: color($colors, wrong);
+  }
+
+  ion-radio[right] .radio-icon {
+    border-color: color($colors, right);
+  }
+}

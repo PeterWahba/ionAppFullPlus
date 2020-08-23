@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      QR Code App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div padding>
+    <button color="bluegray" ion-button full icon-left large (click)="scanCode()"><ion-icon name="qr-scanner"></ion-icon>Scan Code</button>
+  </div>
+
+  <div padding>
+    <button color="ios-pink" ion-button full icon-left large (click)="gotoCreateOptions()"><ion-icon name="barcode"></ion-icon>Create QR Code</button>
+  </div>
+
+  <div padding>
+    <button color="ios-green" ion-button full icon-left large (click)="gotoHistory()"><ion-icon name="clock"></ion-icon>History</button>
+  </div>
+
+  <div padding>
+    <button color="brown" ion-button full icon-left large (click)="gotoOcr()"><ion-icon name="ios-eye"></ion-icon>OCR Document</button>
+  </div>
+
+
+  
+
+</ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <a href="https://www.jomendez.com/ionic-boilerplate-full-app/">Get Source code</a>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer> -->

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="ios-blue">
+    <ion-title>
+      Media Streaming
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div padding>
+    <ion-segment [(ngModel)]="source">
+      <ion-segment-button value="videos">
+        Short Videos
+      </ion-segment-button>
+      <ion-segment-button value="audios">
+        Audio Podcast
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div *ngIf="source == 'videos'">
+    <ion-list>
+      <ion-item *ngFor="let url of videos" (click)="startVideo(url)">
+        <div text-wrap>{{url}}</div>
+        <ion-icon name="videocam" color="ios-lightblue" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="source == 'audios'">
+    <ion-list>
+      <ion-item *ngFor="let url of audios" (click)="startAudio(url)">
+          <div text-wrap>{{url}}</div>
+          <ion-icon name="musical-notes" color="ios-lightblue" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+  <button ion-button full *ngIf="isIos()" (click)="stopAudio()" color="amber">Stop Audio</button>
+  <!-- <button ion-button full (click)="startVideo()">Start Video</button> -->
+
+</ion-content>

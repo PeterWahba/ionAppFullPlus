@@ -1,0 +1,40 @@
+Instructions to import this component in your existing ionic app.
+
+If you don't have an ionic app created, create one, by running the following command on the command console, on the folder you want your app to be created, 
+once your app is created locate the pages folder and copy this component (folder) in the page folder:
+
+$ ionic start MyAppName blank
+
+for more info go to the ionic official documentation.
+
+
+Once you have your app created Install the components dependencies (see what is imported on the ts files on this component):
+ionic cordova plugin add cordova-plugin-tts
+npm install --save @ionic-native/text-to-speech
+ionic cordova plugin add cordova-plugin-apiai
+
+
+
+Also if you want to keep the colors, you should import the them/variables.scss file which contain the colors
+
+You'll need to copy src/config/config.ts file into your project
+Initialize apiAi, place this code on the platform ready in your app.component constructor
+
+    window["ApiAIPlugin"].init(
+        {
+            clientAccessToken: ApiAIPlugin, // insert your client access key here 
+            lang: "en" // set lang tag from list of supported languages 
+        },
+        function (result) { 
+            alert(result)
+            },
+        function (error) { 
+            alert(error)
+            });
+
+
+
+Tutorials on how to set up dialogflow agent, intent, etc.: 
+https://www.youtube.com/watch?v=HqfN9qjNj9A
+https://chatbotslife.com/api-ai-lets-create-a-movie-chatbot-in-minutes-f68d8bb568f9
+Search on google for more

@@ -1,0 +1,72 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen="true" no-padding>
+
+
+  <div id="profile1-info" class="test-class" padding>
+
+    <img id="profile1-image" class="pop-in" [src]="profile?.pic" onerror="this.src='./assets/imgs/avatar.png'" />
+    <h3 id="profile1-name">{{profile?.name}}</h3>
+
+    <button ion-button block color="danger" icon-right (click)="logout()">
+      Logout
+      <ion-icon name="log-out"></ion-icon>
+    </button>
+
+  </div>
+
+
+  <!--***********  About  ***********-->
+
+  <ion-list no-lines text-wrap>
+    <ion-list-header>
+      <h2> About</h2>
+
+      <ion-icon *ngIf="!isEditing" item-end color="pink" name="create" (click)="isEditing=true"></ion-icon>
+      <ion-icon *ngIf="isEditing" item-end color="secondary" name="ios-archive" (click)="saveProfileInfo()"></ion-icon>
+    </ion-list-header>
+
+      <ion-item *ngIf="!isEditing">
+        <p>{{profile?.aboutMe}}</p>
+      </ion-item>
+      <ion-item *ngIf="isEditing">
+        <ion-label floating>About Me</ion-label>
+        <ion-input tappable type="text" [(ngModel)]="profile.aboutMe"></ion-input>
+      </ion-item>
+  </ion-list>
+
+  <!--***********  Contact  ***********-->
+  <ion-list no-lines>
+    <ion-list-header>
+      <h2>Contact</h2>
+    </ion-list-header>
+
+    <ion-item *ngIf="isEditing">
+      <ion-label floating>Name</ion-label>
+      <ion-input tappable type="text" [(ngModel)]="profile.name"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!isEditing">
+      <ion-icon name="ios-mail" item-left></ion-icon>
+      <h2>{{profile?.email}}</h2>
+      <p>work email</p>
+    </ion-item>
+    <ion-item *ngIf="!isEditing">
+      <ion-icon name="ios-call" item-left></ion-icon>
+      <h2>{{profile?.phone}}</h2>
+      <p>mobile phone</p>
+    </ion-item>
+    <ion-item *ngIf="isEditing">
+      <ion-label floating>Mobile phone</ion-label>
+      <ion-input tappable type="text" [(ngModel)]="profile.phone"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="isEditing">
+      <ion-label floating>Profile picture (url)</ion-label>
+      <ion-input tappable type="text" [(ngModel)]="profile.pic"></ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

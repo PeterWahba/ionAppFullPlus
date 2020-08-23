@@ -1,0 +1,77 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="indigo">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Checkout</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only (click)="getDataFromLoggedUser()">
+                <ion-icon name="md-information-circle" color="amber"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="saveCheckoutProfile(checkoutForm.value)">
+        <ion-list>
+            
+            <ion-item>
+                <ion-label floating>Full Name :</ion-label>
+                <ion-input type="text" [(ngModel)]="name" [formControl]="checkoutForm.controls['fullname']" ></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Address :</ion-label>
+                <ion-input type="text" [(ngModel)]="address" [formControl]="checkoutForm.controls['address']" ></ion-input>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-label floating>Email :</ion-label>
+                <ion-input type="text" [(ngModel)]="email" [formControl]="checkoutForm.controls['email']" ></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Phone # :</ion-label>
+                <ion-input type="text" [(ngModel)]="phone" [formControl]="checkoutForm.controls['phone']" ></ion-input>
+            </ion-item>
+
+        </ion-list>
+
+        <div margin>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['fullname'].hasError('required') && checkoutForm.controls['fullname'].touched">* FullName is required!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['fullname'].hasError('minlength') && checkoutForm.controls['fullname'].touched">* Minimum FullName length is 5!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['fullname'].hasError('maxlength') && checkoutForm.controls['fullname'].touched">* Maximum FullName length is 10!</div>
+                            
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['address'].hasError('required') && checkoutForm.controls['address'].touched">* Address is required!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['address'].hasError('minlength') && checkoutForm.controls['address'].touched">* Minimum Address length is 5!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['address'].hasError('maxlength') && checkoutForm.controls['address'].touched">* Maximum Address length is 10!</div>
+                              
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['email'].hasError('required') &&  checkoutForm.controls['email'].touched">* Email is required!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['email'].hasError('minlength') && checkoutForm.controls['email'].touched">* Minimum Email length is 5!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['email'].hasError('maxlength') && checkoutForm.controls['email'].touched">* Maximum Email length is 10!</div>
+                              
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['phone'].hasError('required') &&  checkoutForm.controls['phone'].touched">* Phone is required!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['phone'].hasError('minlength') && checkoutForm.controls['phone'].touched">* Minimum Phone length is 5!</div>
+            <div style="color:red;" class="error-box" *ngIf="checkoutForm.controls['phone'].hasError('maxlength') && checkoutForm.controls['phone'].touched">* Maximum Phone length is 10!</div>
+        </div>
+        <div padding>
+            <ion-label>Total: ${{total}}</ion-label>
+        </div>
+        <div padding>
+            <button type="button" ion-button full [disabled]="!showPaymentMethod || !total" (click)="selectPaymentMethod()">Select Payment Method</button>
+        </div>
+        <ion-footer>
+            <div padding>
+                <button type="submit" color="orange" [disabled]="!checkoutForm.valid" ion-button full>Save</button>
+            </div>
+        </ion-footer>
+    </form>
+</ion-content>

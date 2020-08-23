@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="ios-gray">
+      <ion-title *ngIf="!selectedFeed">Newest Articles</ion-title>
+      <ion-title>{{selectedFeed?.title}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content class="feed-list" padding>
+    <ion-spinner *ngIf="loading" id="feed-spinner"></ion-spinner>
+    <div *ngIf="selectedFeed" class="spinner">
+      <ion-card padding *ngFor="let item of articles" class="">
+          <h2 class="article-title">{{item.title}}</h2>
+          <h3 class="author-date">{{item.author}} - {{item.pubdate | date:'medium'}}</h3>
+        <p [innerHtml]="item.description"></p>
+        <div text-right>
+        <ion-icon style="font-size: 2.5rem; margin:0.8rem" color="purple" name="md-share" (click)="share(item.link)"></ion-icon>
+        <ion-icon style="font-size: 2.5rem; margin:0.8rem" color="deeporange" name="logo-chrome" (click)="openArticle(item.link)"></ion-icon>
+        </div>
+      </ion-card>
+    </div>
+    <ion-row *ngIf="!selectedFeed">
+      <ion-col text-center>
+        Please select a feed!
+      </ion-col>
+    </ion-row>
+  </ion-content>

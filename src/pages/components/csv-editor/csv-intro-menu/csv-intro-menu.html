@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CSV Menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+    <button color="bluegray" ion-button full icon-left large (click)="loadDummyData()"><ion-icon name="stats"></ion-icon>Load dummy data</button>
+  </div>
+
+  <div padding>
+    <button color="teal" ion-button full icon-left large (click)="showUrlInput = true"><ion-icon name="cloud-upload"></ion-icon>Load from url</button>
+  </div>
+<div padding *ngIf="showUrlInput == true">
+  <ion-item>
+    <ion-input placeholder="Enter URL" type="text" [(ngModel)]="url"></ion-input>
+  </ion-item>
+  <button margin-top color="ios-pink" ion-button (click)="loadFromUrl()">Load</button>
+</div>
+</ion-content>

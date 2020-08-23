@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="teal">
+    <ion-title>Crop Image</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button full (click)="captureImage()" *ngIf="!myImage">Capture Image</button>
+
+  <angular-cropper style="width:100%; max-height: 100rem" #angularCropper [cropperOptions]="cropperOptions" [imageUrl]="myImage"
+    *ngIf="myImage"></angular-cropper>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="teal">
+    <ion-row *ngIf="myImage">
+      <ion-col col-4>
+        <button ion-button outline icon-left color="white" (click)="zoom(true)">
+              <ion-icon name="add"></ion-icon> Zoom
+            </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button outline icon-left color="white" (click)="zoom(false)">
+              <ion-icon name="remove"></ion-icon> Zoom
+            </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button outline icon-left color="white" (click)="rotate()">
+              <ion-icon name="refresh"></ion-icon> 90 deg
+            </button>
+      </ion-col>
+
+      <ion-col col-2>
+        <button ion-button clear color="white" (click)="scaleX()">
+              Flip X
+            </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button clear color="white" (click)="scaleY()">
+              Flip Y
+            </button>
+      </ion-col>
+
+      <ion-col col-2>
+        <button ion-button clear icon-only color="white" (click)="move(0, -10)">
+              <ion-icon name="arrow-round-up"></ion-icon>
+            </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button clear icon-only color="white" (click)="move(0, 10)">
+              <ion-icon name="arrow-round-down"></ion-icon>
+            </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button clear icon-only color="white" (click)="move(-10, 0)">
+              <ion-icon name="arrow-round-back"></ion-icon>
+            </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button clear icon-only color="white" (click)="move(10, 0)">
+              <ion-icon name="arrow-round-forward"></ion-icon>
+            </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="orange" block (click)="reset()">
+                Reset
+              </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-only color="orange" block (click)="clear()">
+                <ion-icon name="close"></ion-icon>
+              </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-only color="secondary" block (click)="save()">
+                <ion-icon name="checkmark"></ion-icon>
+              </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
